@@ -33,11 +33,16 @@ cards = {
                 'secondLine': 'Tsuyu ni nure tsutsu'
             }
         },
-        cardData: {
-
+        'cardData': {
+            'author': {
+                'english': 'Emperor Tenchi',
+                'japanese': '天智天皇',
+                'romaji': 'Tenchi Tenno'
+            }
         }
     },
-    citations: {
-        'webSourceUrl': 'https://jti.lib.virginia.edu/japanese/hyakunin/index.html'
+    'citations': {
+        'webSourceUrl': 'https://jti.lib.virginia.edu/japanese/hyakunin/index.html',
+        'organization': 'The University of Virginia Library Electronic Text Center and the University of Pittsburgh East Asian Library'
     }
 }
