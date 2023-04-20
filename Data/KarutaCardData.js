@@ -1,5 +1,30 @@
 cards = {
     0: {
+
+        'yomifuda': {
+            'english': {
+                'firstLine': 'Coarse the rush-mat roof',
+                'secondLine': 'Sheltering the harvest-hut',
+                'thirdLine': 'Of the autumn rice-field;',
+            },
+            'japanese':{
+                'firstLine': '秋の田の',
+                'secondLine': 'かりほの庵の',
+                'thirdLine': '苫をあらみ',
+            }
+        },
+        'torifuda': {
+            'english': {
+                'firstLine': 'And my sleeves are growing wet',
+                'secondLine': 'With the moisture dripping through.'
+            },
+            'japanese': {
+                'firstLine': 'わが衣手は',
+                'secondLine': '露にぬれつつ'
+            }
+        },
+
+
         'english': {
             'yomifuda':{
                 'firstLine': 'Coarse the rush-mat roof',
@@ -47,4 +72,4 @@ cards = {
     }
 }
 // currently language -> yomifuda -> text
-// think about adjusting structure to be yomifuda -> language -> language text, I think this one makes more sense with data flow. Select the type of text you want then select the language.
+// think about adjusting structure to be yomifuda -> language -> language text
