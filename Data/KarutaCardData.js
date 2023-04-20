@@ -46,3 +46,5 @@ cards = {
         'organization': 'The University of Virginia Library Electronic Text Center and the University of Pittsburgh East Asian Library'
     }
 }
+// currently language -> yomifuda -> text
+// think about adjusting structure to be yomifuda -> language -> language text, I think this one makes more sense with data flow. Select the type of text you want then select the language.
