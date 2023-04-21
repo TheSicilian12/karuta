@@ -169,86 +169,86 @@ cards = {
     },
     6: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Abe no Nakamaro',
+            'japanese': '安倍仲麿',
+            'romaji': 'Abe no Nakamaro'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'When I look up at',
+            1: 'The wide-stretched plain of heaven,',
+            2: 'Is the moon the same',
+            3: 'That rose on Mount Mikasa',
+            4: 'In the land of Kasuga?'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Ama no hara',
+            1: 'Furisake mireba',
+            2: 'Kasuga naru',
+            3: 'Mikasa no yama ni',
+            4: 'Ideshi tsuki kamo'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '天の原',
+            1: 'ふりさけ見れば',
+            2: '春日なる',
+            3: '三笠の山に',
+            4: '出でし月かも'
         },
     },
     7: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'The Monk Kisen',
+            'japanese': '喜撰法師',
+            'romaji': 'Kisen Hoshi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'My lowly hut is',
+            1: 'Southeast from the capital.',
+            2: 'Thus I choose to live.',
+            3: 'And the world in which I live',
+            4: 'Men have named a "Mount of Gloom."'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'わが庵は',
+            1: '都のたつみ',
+            2: 'しかぞすむ',
+            3: '世をうぢ山と',
+            4: '人はいふなり'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Waga io wa',
+            1: 'Miyako no tatsumi',
+            2: 'Shika zo sumu',
+            3: 'Yo o Ujiyama to',
+            4: 'Hito wa iu nari'
         },
     },
     8: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Ono no Komachi',
+            'japanese': 'Ono no Komachi',
+            'romaji': '小野小町'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Color of the flower',
+            1: 'Has already faded away,',
+            2: 'While in idle thoughts',
+            3: 'My life passes vainly by,',
+            4: 'As I watch the long rains fall.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '花の色は',
+            1: 'うつりにけりな',
+            2: 'いたづらに',
+            3: 'わが身世にふる',
+            4: 'ながめせしまに'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Hana no iro wa',
+            1: 'Utsuri ni keri na',
+            2: 'Itazura ni',
+            3: 'Waga mi yo ni furu',
+            4: 'Nagame seshi ma ni'
         },
     },
     9: {
