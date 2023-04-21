@@ -28,90 +28,90 @@ cards = {
         },
     },
     1: {
-    'author': {
-        'english': 'Empress Jito',
-        'japanese': '持統天皇',
-        'romaji': 'Jito Tenno'
+        'author': {
+            'english': 'Empress Jito',
+            'japanese': '持統天皇',
+            'romaji': 'Jito Tenno'
+        },
+        'english': {
+            0: 'The spring has passed',
+            1: 'And the summer come again;',
+            2: 'For the silk-white robes,',
+            3: 'So they say, are spread to dry',
+            4: `On the "Mount of Heaven's Perfume."`
+        },
+        'japanese': {
+            0: '春過ぎて',
+            1: '夏来にけらし',
+            2: '白妙の',
+            3: '衣ほすてふ',
+            4: '天の香具山'
+        },
+        'romaji': {
+            0: 'Haru sugite',
+            1: 'Natsu ki ni kerashi',
+            2: 'Shirotae no',
+            3: 'Koromo hosu cho',
+            4: 'Ama no Kaguyama'
+        },
     },
-    'english': {
-        0: 'The spring has passed',
-        1: 'And the summer come again;',
-        2: 'For the silk-white robes,',
-        3: 'So they say, are spread to dry',
-        4: `On the "Mount of Heaven's Perfume."`
+    2: {
+        'author': {
+            'english': 'Kakinomoto no Hitomaro',
+            'japanese': '柿本人麿',
+            'romaji': 'Kakinomoto no Hitomaro'
+        },
+        'english': {
+            0: 'Oh, the foot-drawn trail',
+            1: "Of the mountain-pheasant's tail",
+            2: 'Drooped like down-curved branch!',
+            3: 'Through this long, long-dragging night',
+            4: 'Must I lie in bed alone?'
+        },
+        'japanese': {
+            0: 'あしびきの',
+            1: '山鳥の尾の',
+            2: 'しだり尾の',
+            3: 'ながながし夜を',
+            4: 'ひとりかもねむ'
+        },
+        'romaji': {
+            0: 'Ashibiki no',
+            1: 'Yamadori no o no',
+            2: 'Shidari o no',
+            3: 'Naganagashi yo o',
+            4: 'Hitori ka mo nen'
+        },
     },
-    'japanese': {
-        0: '春過ぎて',
-        1: '夏来にけらし',
-        2: '白妙の',
-        3: '衣ほすてふ',
-        4: '天の香具山'
+    3: {
+        'author': {
+            'english': 'Yamabe no Akahito',
+            'japanese': 'Yamabe no Akahito',
+            'romaji': '山辺赤人'
+        },
+        'english': {
+            0: 'When I take the path',
+            1: "To Tago's coast, I see",
+            2: 'Perfect whiteness laid',
+            3: "On Mount Fuji's lofty peak",
+            4: 'By the drift of falling snow.'
+        },
+        'japanese': {
+            0: '田子の浦に',
+            1: '打ち出でてみれば',
+            2: '白妙の',
+            3: '富士の高嶺に',
+            4: '雪はふりつつ'
+        },
+        'romaji': {
+            0: 'Tago no Ura ni',
+            1: 'Uchi idete mireba',
+            2: 'Shirotae no',
+            3: 'Fuji no takane ni',
+            4: 'Yuki wa furi tsutsu'
+        },
     },
-    'romaji': {
-        0: 'Haru sugite',
-        1: 'Natsu ki ni kerashi',
-        2: 'Shirotae no',
-        3: 'Koromo hosu cho',
-        4: 'Ama no Kaguyama'
-    },
-},
-2: {
-    'author': {
-        'english': 'Kakinomoto no Hitomaro',
-        'japanese': '柿本人麿',
-        'romaji': 'Kakinomoto no Hitomaro'
-    },
-    'english': {
-        0: 'Oh, the foot-drawn trail',
-        1: "Of the mountain-pheasant's tail",
-        2: 'Drooped like down-curved branch!',
-        3: 'Through this long, long-dragging night',
-        4: 'Must I lie in bed alone?'
-    },
-    'japanese': {
-        0: 'あしびきの',
-        1: '山鳥の尾の',
-        2: 'しだり尾の',
-        3: 'ながながし夜を',
-        4: 'ひとりかもねむ'
-    },
-    'romaji': {
-        0: 'Ashibiki no',
-        1: 'Yamadori no o no',
-        2: 'Shidari o no',
-        3: 'Naganagashi yo o',
-        4: 'Hitori ka mo nen'
-    },
-},
-3: {
-    'author': {
-        'english': 'Yamabe no Akahito',
-        'japanese': 'Yamabe no Akahito',
-        'romaji': '山辺赤人'
-    },
-    'english': {
-        0: 'When I take the path',
-        1: "To Tago's coast, I see",
-        2: 'Perfect whiteness laid',
-        3: "On Mount Fuji's lofty peak",
-        4: 'By the drift of falling snow.'
-    },
-    'japanese': {
-        0: '田子の浦に',
-        1: '打ち出でてみれば',
-        2: '白妙の',
-        3: '富士の高嶺に',
-        4: '雪はふりつつ'
-    },
-    'romaji': {
-        0: 'Tago no Ura ni',
-        1: 'Uchi idete mireba',
-        2: 'Shirotae no',
-        3: 'Fuji no takane ni',
-        4: 'Yuki wa furi tsutsu'
-    },
-},
-4: {
+    4: {
         'author': {
             'english': 'Sarumaru',
             'japanese': '猿丸大夫',
@@ -280,368 +280,621 @@ cards = {
         },
     },
     10: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
         },
-        11: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
         },
-        12: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
         },
-        13: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
         },
-        14: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
+    },
+    11: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
         },
-        15: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
         },
-        16: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
         },
-        17: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
         },
-        18: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
+    },
+    12: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
         },
-        19: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
         },
-        20: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
         },
-        21: {
-            'author': {
-                'english': '',
-                'japanese': '',
-                'romaji': ''
-            },
-            'english': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'japanese': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            'romaji': {
-                0: '',
-                1: '',
-                2: '',
-                3: '',
-                4: ''
-            },
-            22: {
-                'author': {
-                    'english': '',
-                    'japanese': '',
-                    'romaji': ''
-                },
-                'english': {
-                    0: '',
-                    1: '',
-                    2: '',
-                    3: '',
-                    4: ''
-                },
-                'japanese': {
-                    0: '',
-                    1: '',
-                    2: '',
-                    3: '',
-                    4: ''
-                },
-                'romaji': {
-                    0: '',
-                    1: '',
-                    2: '',
-                    3: '',
-                    4: ''
-                },
-            },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    13: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    14: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    15: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    16: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    17: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    18: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    19: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    20: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    21: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        }
+    },
+    22: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    23: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    24: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    25: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    26: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    27: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    28: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    29: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    30: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
+    26: {
+        'author': {
+            'english': '',
+            'japanese': '',
+            'romaji': ''
+        },
+        'english': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'japanese': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+        'romaji': {
+            0: '',
+            1: '',
+            2: '',
+            3: '',
+            4: ''
+        },
+    },
 
     'citations': {
         'webSourceUrl': 'https://jti.lib.virginia.edu/japanese/hyakunin/index.html',
