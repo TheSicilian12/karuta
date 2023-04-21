@@ -83,6 +83,34 @@ cards = {
         4: 'Hitori ka mo nen'
     },
 },
+0: {
+    'author': {
+        'english': 'Yamabe no Akahito',
+        'japanese': 'Yamabe no Akahito',
+        'romaji': '山辺赤人'
+    },
+    'english': {
+        0: 'When I take the path',
+        1: "To Tago's coast, I see",
+        2: 'Perfect whiteness laid',
+        3: "On Mount Fuji's lofty peak",
+        4: 'By the drift of falling snow.'
+    },
+    'japanese': {
+        0: '田子の浦に',
+        1: '打ち出でてみれば',
+        2: '白妙の',
+        3: '富士の高嶺に',
+        4: '雪はふりつつ'
+    },
+    'romaji': {
+        0: 'Tago no Ura ni',
+        1: 'Uchi idete mireba',
+        2: 'Shirotae no',
+        3: 'Fuji no takane ni',
+        4: 'Yuki wa furi tsutsu'
+    },
+},
 
     'citations': {
         'webSourceUrl': 'https://jti.lib.virginia.edu/japanese/hyakunin/index.html',
