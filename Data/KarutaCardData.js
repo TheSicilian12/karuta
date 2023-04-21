@@ -253,30 +253,30 @@ cards = {
     },
     9: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Semimaru',
+            'japanese': '蝉丸',
+            'romaji': 'Semimaru'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Truly, this is where',
+            1: 'Travelers who go or come',
+            2: 'Over parting ways--',
+            3: 'Friends or strangers--all must meet:',
+            4: 'The gate of "Meeting Hill."'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'これやこの',
+            1: '行くも帰るも',
+            2: '別れては',
+            3: '知るも知らぬも',
+            4: '逢坂の関'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Kore ya kono',
+            1: 'Yuku mo kaeru mo',
+            2: 'Wakarete wa',
+            3: 'Shiru mo shiranu mo',
+            4: 'Osaka no seki'
         },
     },
 
