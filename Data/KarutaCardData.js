@@ -27,6 +27,35 @@ cards = {
             4: 'Tsuyu ni nure tsutsu'
         },
     },
+    1: {
+    'author': {
+        'english': 'Empress Jito',
+        'japanese': '持統天皇',
+        'romaji': 'Jito Tenno'
+    },
+    'english': {
+        0: 'The spring has passed',
+        1: 'And the summer come again;',
+        2: 'For the silk-white robes,',
+        3: 'So they say, are spread to dry',
+        4: `On the "Mount of Heaven's Perfume."`
+    },
+    'japanese': {
+        0: '春過ぎて',
+        1: '夏来にけらし',
+        2: '白妙の',
+        3: '衣ほすてふ',
+        4: '天の香具山'
+    },
+    'romaji': {
+        0: 'Haru sugite',
+        1: 'Natsu ki ni kerashi',
+        2: 'Shirotae no',
+        3: 'Koromo hosu cho',
+        4: 'Ama no Kaguyama'
+    },
+},
+
     'citations': {
         'webSourceUrl': 'https://jti.lib.virginia.edu/japanese/hyakunin/index.html',
         'organization': 'The University of Virginia Library Electronic Text Center and the University of Pittsburgh East Asian Library'
