@@ -55,6 +55,34 @@ cards = {
         4: 'Ama no Kaguyama'
     },
 },
+0: {
+    'author': {
+        'english': 'Kakinomoto no Hitomaro',
+        'japanese': '柿本人麿',
+        'romaji': 'Kakinomoto no Hitomaro'
+    },
+    'english': {
+        0: 'Oh, the foot-drawn trail',
+        1: "Of the mountain-pheasant's tail",
+        2: 'Drooped like down-curved branch!',
+        3: 'Through this long, long-dragging night',
+        4: 'Must I lie in bed alone?'
+    },
+    'japanese': {
+        0: 'あしびきの',
+        1: '山鳥の尾の',
+        2: 'しだり尾の',
+        3: 'ながながし夜を',
+        4: 'ひとりかもねむ'
+    },
+    'romaji': {
+        0: 'Ashibiki no',
+        1: 'Yamadori no o no',
+        2: 'Shidari o no',
+        3: 'Naganagashi yo o',
+        4: 'Hitori ka mo nen'
+    },
+},
 
     'citations': {
         'webSourceUrl': 'https://jti.lib.virginia.edu/japanese/hyakunin/index.html',
