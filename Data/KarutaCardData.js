@@ -113,58 +113,58 @@ cards = {
 },
 4: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Sarumaru',
+            'japanese': '猿丸大夫',
+            'romaji': 'Sarumaru Dayu'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'In the mountain depths,',
+            1: 'Treading through the crimson leaves,',
+            2: 'The wandering stag calls.',
+            3: 'When I hear the lonely cry,',
+            4: 'Sad--how sad!--the autumn is.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '奥山に',
+            1: '紅葉ふみわけ',
+            2: '鳴く鹿の',
+            3: '声きく時ぞ',
+            4: '秋は悲しき'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Okuyama ni',
+            1: 'Momiji fumiwake',
+            2: 'Naku shika no',
+            3: 'Koe kiku toki zo',
+            4: 'Aki wa kanashiki'
         },
     },
     5: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Otomo no Yakamochi',
+            'japanese': '中納言家持',
+            'romaji': 'Chunagon Yakamochi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'If I see that bridge',
+            1: 'That is spanned by flights of magpies',
+            2: 'Across the arc of heaven',
+            3: 'Made white with a deep-laid frost,',
+            4: 'Then the night is almost past.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'かささぎの',
+            1: '渡せる橋に',
+            2: '置く霜の',
+            3: '白きを見れば',
+            4: '夜ぞふけにける'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Kasasagi no',
+            1: 'Wataseru hashi ni',
+            2: 'Oku shimo no',
+            3: 'Shiroki o mireba',
+            4: 'Yo zo fuke ni keru'
         },
     },
     6: {
