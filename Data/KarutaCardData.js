@@ -55,7 +55,7 @@ cards = {
         4: 'Ama no Kaguyama'
     },
 },
-0: {
+2: {
     'author': {
         'english': 'Kakinomoto no Hitomaro',
         'japanese': '柿本人麿',
@@ -83,7 +83,7 @@ cards = {
         4: 'Hitori ka mo nen'
     },
 },
-0: {
+3: {
     'author': {
         'english': 'Yamabe no Akahito',
         'japanese': 'Yamabe no Akahito',
