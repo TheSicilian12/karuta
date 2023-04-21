@@ -1119,7 +1119,7 @@ cards = {
             4: ''
         },
     },
-    26: {
+    40: {
         'author': {
             'english': '',
             'japanese': '',
