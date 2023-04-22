@@ -505,30 +505,30 @@ cards = {
     },
     18: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Ise',
+            'japanese': '伊勢',
+            'romaji': 'Ise'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Even for a time',
+            1: 'Short as a piece of the reeds',
+            2: "In Naniwa's marsh,",
+            3: 'We must never meet again:',
+            4: 'Is this what you are asking me?'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '難波潟',
+            1: 'みじかき芦の',
+            2: 'ふしのまも',
+            3: 'あはでこの世を',
+            4: '過ぐしてよとや'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Naniwa gata',
+            1: 'Mijikaki ashi no',
+            2: 'Fushi no ma mo',
+            3: 'Awade kono yo o',
+            4: 'Sugushite yo to ya'
         },
     },
     19: {
