@@ -310,8 +310,8 @@ cards = {
     11: {
         'author': {
             'english': 'The Monk Henjo',
-            'japanese': 'Sojo Henjo',
-            'romaji': '僧正遍昭'
+            'japanese': '僧正遍昭',
+            'romaji': 'Sojo Henjo'
         },
         'english': {
             0: 'Let the winds of heaven',
@@ -338,8 +338,8 @@ cards = {
     12: {
         'author': {
             'english': 'Emperor Yozei',
-            'japanese': 'Yozei In',
-            'romaji': '陽成院'
+            'japanese': '陽成院',
+            'romaji': 'Yozei In'
         },
         'english': {
             0: "From Tsukuba's peak",
@@ -366,8 +366,8 @@ cards = {
     13: {
         'author': {
             'english': 'Minamoto no Toru',
-            'japanese': 'Kawara no Sadaijin',
-            'romaji': '河原左大臣'
+            'japanese': '河原左大臣',
+            'romaji': 'Kawara no Sadaijin'
         },
         'english': {
             0: 'Like Michinoku prints',
