@@ -281,30 +281,30 @@ cards = {
     },
     10: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Ono no Takamura',
+            'japanese': '参議篁',
+            'romaji': 'Sangi Takamura'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Over the wide sea',
+            1: 'Towards its many distant isles',
+            2: 'My ship sets sail.',
+            3: 'Will the fishing boats thronged here',
+            4: 'Proclaim my journey to the world?'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'わたの原',
+            1: '八十島かけて',
+            2: 'こぎ出ぬと',
+            3: '人には告げよ',
+            4: 'あまのつり舟'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Wata no hara',
+            1: 'Yasoshima kakete',
+            2: 'Kogi idenu to',
+            3: 'Hito ni wa tsugeyo',
+            4: 'Ama no tsuri bune'
         },
     },
     11: {
