@@ -309,30 +309,30 @@ cards = {
     },
     11: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'The Monk Henjo',
+            'japanese': 'Sojo Henjo',
+            'romaji': '僧正遍昭'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Let the winds of heaven',
+            1: 'Blow through the paths among the clouds',
+            2: 'And close their gates.',
+            3: 'Then for a while I could detain',
+            4: 'These messengers in maiden form.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '天つ風',
+            1: '雲のかよひ路',
+            2: '吹きとぢよ',
+            3: '乙女のすがた',
+            4: 'しばしとどめむ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Ama tsu kaze',
+            1: 'Kumo no kayoiji',
+            2: 'Fuki toji yo',
+            3: 'Otome no sugata',
+            4: 'Shibashi todomen'
         },
     },
     12: {
