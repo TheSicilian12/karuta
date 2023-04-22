@@ -533,30 +533,30 @@ cards = {
     },
     19: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Prince Motoyoshi',
+            'japanese': 'Motoyoshi Shinno',
+            'romaji': '元良親王'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'In this dire distress',
+            1: 'My life is meaningless.',
+            2: 'So we must meet now,',
+            3: 'Even though it costs my life',
+            4: 'In the Bay of Naniwa.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'わびぬれば',
+            1: '今はた同じ',
+            2: '難波なる',
+            3: '身をつくしても',
+            4: '逢はむとぞ思ふ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Wabi nureba',
+            1: 'Ima hata onaji',
+            2: 'Naniwa naru',
+            3: 'Mi o tsukushite mo',
+            4: 'Awan to zo omou'
         },
     },
     20: {
