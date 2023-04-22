@@ -337,30 +337,30 @@ cards = {
     },
     12: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Emperor Yozei',
+            'japanese': 'Yozei In',
+            'romaji': '陽成院'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: "From Tsukuba's peak",
+            1: 'Falling waters have become',
+            2: "Mina's still, full flow:",
+            3: 'So my love has grown to be',
+            4: "Like the river's quiet deeps."
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '筑波嶺の',
+            1: '峰より落つる',
+            2: 'みなの川',
+            3: '恋ぞつもりて',
+            4: '淵となりぬる'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Tsukuba ne no',
+            1: 'Mine yori otsuru',
+            2: 'Minano-gawa',
+            3: 'Koi zo tsumorite',
+            4: 'Fuchi to nari nuru'
         },
     },
     13: {
