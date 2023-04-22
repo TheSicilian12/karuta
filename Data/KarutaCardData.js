@@ -365,30 +365,30 @@ cards = {
     },
     13: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Minamoto no Toru',
+            'japanese': 'Kawara no Sadaijin',
+            'romaji': '河原左大臣'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Like Michinoku prints',
+            1: 'Of the tangled leaves of ferns,',
+            2: 'It is because of you',
+            3: 'That I have become confused;',
+            4: 'But my love for you remains.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'みちのくの',
+            1: 'しのぶもぢずり',
+            2: '誰故に',
+            3: '乱れそめにし',
+            4: '我ならなくに'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Michinoku no',
+            1: 'Shinobu moji-zuri',
+            2: 'Tare yue ni',
+            3: 'Midare some ni shi',
+            4: 'Ware naranaku ni'
         },
     },
     14: {
