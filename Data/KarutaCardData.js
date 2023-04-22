@@ -477,30 +477,30 @@ cards = {
     },
     17: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Toshiyuki',
+            'japanese': '藤原敏行朝臣',
+            'romaji': 'Fujiwara no Toshiyuki Ason'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'The waves are gathered',
+            1: 'On the shore of Sumi Bay,',
+            2: 'And in the gathered night,',
+            3: 'When in dreams I go to you,',
+            4: "I hide from people's eyes."
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '住の江の',
+            1: '岸による波',
+            2: 'よるさへや',
+            3: '夢の通ひ路',
+            4: '人目よくらむ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Sumi no e no',
+            1: 'Kishi ni yoru nami',
+            2: 'Yoru sae ya',
+            3: 'Yume no kayoi ji',
+            4: 'Hito me yoku ran'
         },
     },
     18: {
