@@ -421,30 +421,30 @@ cards = {
     },
     15: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Ariwara no Yukihira',
+            'japanese': '中納言行平',
+            'romaji': 'Chunagon Yukihira'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Though we are parted,',
+            1: "If on Mount Inaba's peak",
+            2: 'I should hear the sound',
+            3: 'Of the pine trees growing there,',
+            4: "I'll come back again to you."
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '立ち別れ',
+            1: 'いなばの山の',
+            2: '峰に生ふる',
+            3: 'まつとしきかば',
+            4: '今かへりこむ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Tachi wakare',
+            1: 'Inaba no yama no',
+            2: 'Mine ni oru',
+            3: 'Matsu to shi kikaba',
+            4: 'Ima kaeri kon'
         },
     },
     16: {
