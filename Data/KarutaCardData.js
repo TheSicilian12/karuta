@@ -393,30 +393,30 @@ cards = {
     },
     14: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Emperor Koko',
+            'japanese': '光孝天皇',
+            'romaji': 'Koko Tenno'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'It is for your sake',
+            1: 'That I walk the fields in spring,',
+            2: 'Gathering green herbs,',
+            3: "While my garment's hanging sleeves",
+            4: 'Are speckled with falling snow.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '君がため',
+            1: '春の野に出でて',
+            2: '若菜つむ',
+            3: 'わが衣手に',
+            4: '雪はふりつつ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Kimi ga tame',
+            1: 'Haru no no ni idete',
+            2: 'Wakana tsumu',
+            3: 'Waga koromode ni',
+            4: 'Yuki wa furi tsutsu'
         },
     },
     15: {
