@@ -449,30 +449,30 @@ cards = {
     },
     16: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Ariwara no Narihira',
+            'japanese': '在原業平朝臣',
+            'romaji': 'Ariwara no Narihira Ason'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Even when the gods',
+            1: 'Held sway in the ancient days,',
+            2: 'I have never heard',
+            3: 'That water gleamed with autumn red',
+            4: "As it does in Tatta's stream"
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '千早ぶる',
+            1: '神代もきかず',
+            2: '龍田川',
+            3: 'からくれないに',
+            4: '水くくるとは'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Chihayaburu',
+            1: 'Kamiyo mo kikazu',
+            2: 'Tatsuta-gawa',
+            3: 'Kara kurenai ni',
+            4: 'Mizu kukuru to wa'
         },
     },
     17: {
