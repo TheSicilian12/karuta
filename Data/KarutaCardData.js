@@ -701,30 +701,30 @@ cards = {
     },
     25: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Tadahira',
+            'japanese': '貞信公',
+            'romaji': 'Teishin Ko'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'If the maple leaves',
+            1: 'On Ogura mountain',
+            2: 'Could only have hearts,',
+            3: 'They would longingly await',
+            4: "The emperor's pilgrimage."
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '小倉山',
+            1: '峰のもみじ葉',
+            2: '心あらば',
+            3: '今ひとたびの',
+            4: 'みゆきまたなむ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Ogurayama',
+            1: 'Mine no momijiba',
+            2: 'Kokoro araba',
+            3: 'Ima hitotabi no',
+            4: 'Miyuki matanan'
         },
     },
     26: {
