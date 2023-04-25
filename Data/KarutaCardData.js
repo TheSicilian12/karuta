@@ -757,30 +757,30 @@ cards = {
     },
     27: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Minamoto no Muneyuki',
+            'japanese': '源宗于朝臣',
+            'romaji': 'Minamoto no Muneyuki Ason'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Winter loneliness',
+            1: 'In a mountain village grows',
+            2: 'Only deeper, when',
+            3: 'Guests are gone, and leaves and grass',
+            4: 'Are withered: troubling thoughts.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '山里は',
+            1: '冬ぞさびしさ',
+            2: 'まさりける',
+            3: '人めも草も',
+            4: 'かれぬとおもへば'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Yama-zato wa',
+            1: 'Fuyu zo sabishisa',
+            2: 'Masari keru',
+            3: 'Hitome mo kusa mo',
+            4: 'Karenu to omoeba'
         },
     },
     28: {
