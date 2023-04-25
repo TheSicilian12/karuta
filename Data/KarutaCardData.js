@@ -673,30 +673,30 @@ cards = {
     },
     24: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Sadakata',
+            'japanese': '三条右大臣',
+            'romaji': 'Sanjo Udaijin'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'If your name is true,',
+            1: 'Trailing vine of "Meeting Hill,"',
+            2: "Isn't there some way,",
+            3: "Hidden from people's gaze,",
+            4: 'That you can draw her to my side?'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '名にしおはば',
+            1: '逢坂山の',
+            2: 'さねかづら',
+            3: '人にしられで',
+            4: 'くるよしもがな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Na ni shi owaba',
+            1: 'Osakayama no',
+            2: 'Sanekazura',
+            3: 'Hito ni shirarede',
+            4: 'Kuru yoshi mo gana'
         },
     },
     25: {
