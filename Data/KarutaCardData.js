@@ -589,30 +589,30 @@ cards = {
     },
     21: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': "Fun'ya no Yasuhide",
+            'japanese': '文屋康秀',
+            'romaji': "Fun'ya no Yasuhide"
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'It is by its breath',
+            1: "That autumn's leaves of trees and grass",
+            2: 'Are wasted and driven.',
+            3: 'So they call this mountain wind',
+            4: 'The wild one, the destroyer.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '吹くからに',
+            1: '秋の草木の',
+            2: 'しをるれば',
+            3: 'むべ山風を',
+            4: 'あらしといふらむ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Fuku kara ni',
+            1: 'Aki no kusaki no',
+            2: 'Shiorureba',
+            3: 'Mube yama kaze o',
+            4: 'Arashi to iuran'
         }
     },
     22: {
