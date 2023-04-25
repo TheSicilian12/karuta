@@ -729,30 +729,30 @@ cards = {
     },
     26: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Kanesuke',
+            'japanese': '中納言兼輔',
+            'romaji': 'Chunagon Kanesuke'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: "Over Mika's plain,",
+            1: 'Gushing forth and flowing free,',
+            2: "Is Izumi's stream.",
+            3: 'I do not know if we have met:',
+            4: 'Why, then, do I long for her?'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'みかの原',
+            1: 'わきてながるる',
+            2: '泉川',
+            3: 'いつ見きとてか',
+            4: '恋しかるらむ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Mika no Hara',
+            1: 'Wakite nagaruru',
+            2: 'Izumi-gawa',
+            3: 'Itsu mi kitote ka',
+            4: 'Koishi karuran'
         },
     },
     27: {
