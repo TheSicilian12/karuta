@@ -561,30 +561,30 @@ cards = {
     },
     20: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'The Monk Sosei',
+            'japanese': '素性法師',
+            'romaji': 'Sosei Hoshi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Just because she said,',
+            1: '"In a moment I will come,"',
+            2: "I've awaited her",
+            3: 'Until the moon of daybreak,',
+            4: 'In the long month, has appeared.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '今来むと',
+            1: 'いひしばかりに',
+            2: '長月の',
+            3: '有明の月を',
+            4: '待ち出でつるかな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Ima kon to',
+            1: 'Iishi bakari ni',
+            2: 'Nagatsuki no',
+            3: 'Ariake no tsuki o',
+            4: 'Machi idetsuru kana'
         },
     },
     21: {
