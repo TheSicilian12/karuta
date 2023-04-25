@@ -785,30 +785,30 @@ cards = {
     },
     28: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Oshikochi no Mitsune',
+            'japanese': '凡河内躬恒',
+            'romaji': 'Oshikochi no Mitsune'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'If it were my wish',
+            1: 'To pick the white chrysanthemums,',
+            2: 'Puzzled by the frost',
+            3: 'Of the early autumn time,',
+            4: 'I by chance might pluck the flower.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '心あてに',
+            1: '折らばや折らむ',
+            2: '初霜の',
+            3: 'おきまどはせる',
+            4: '白菊の花'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Kokoroate ni',
+            1: 'Orabaya oran',
+            2: 'Hatsushimo no',
+            3: 'Oki madowaseru',
+            4: 'Shiragiku no hana'
         },
     },
     29: {
