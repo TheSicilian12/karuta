@@ -813,30 +813,30 @@ cards = {
     },
     29: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Mibu no Tadamine',
+            'japanese': '壬生忠岑',
+            'romaji': 'Mibu no Tadamine'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Like the morning moon,',
+            1: 'Cold, unpitying was my love.',
+            2: 'And since we parted,',
+            3: 'I dislike nothing so much',
+            4: 'As the breaking light of day.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '有明の',
+            1: 'つれなくみえし',
+            2: '別れより',
+            3: '暁ばかり',
+            4: 'うきものはなし'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Ariake no',
+            1: 'Tsurenaku mieshi',
+            2: 'Wakare yori',
+            3: 'Akatsuki bakari',
+            4: 'Uki mono wa nashi'
         },
     },
     30: {
