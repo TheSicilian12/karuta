@@ -617,30 +617,30 @@ cards = {
     },
     22: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Oe no Chisato',
+            'japanese': '大江千里',
+            'romaji': 'Oe no Chisato'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'As I view the moon,',
+            1: 'Many things come into my mind,',
+            2: 'And my thoughts are sad;',
+            3: "Yet it's not for me alone,",
+            4: 'That the autumn time has come.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '月見れば',
+            1: '千々に物こそ',
+            2: '悲しけれ',
+            3: 'わが身ひとつの',
+            4: '秋にはあらねど'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Tsuki mireba',
+            1: 'Chiji ni mono koso',
+            2: 'Kanashi kere',
+            3: 'Waga mi hitotsu no',
+            4: 'Aki ni wa aranedo'
         },
     },
     23: {
