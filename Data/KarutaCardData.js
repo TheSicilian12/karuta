@@ -841,30 +841,30 @@ cards = {
     },
     30: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Sakanoue no Korenori',
+            'japanese': '坂上是則',
+            'romaji': 'Sakanoue no Korenori'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'At the break of day,',
+            1: 'Just as though the morning moon',
+            2: 'Lightened the dim scene,',
+            3: "Yoshino's village lay",
+            4: 'In a haze of falling snow.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '朝ぼらけ',
+            1: '有明の月と',
+            2: 'みるまでに',
+            3: '吉野の里に',
+            4: 'ふれる白雪'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Asaborake',
+            1: 'Ariake no tsuki to',
+            2: 'Miru made ni',
+            3: 'Yoshino no sato ni',
+            4: 'Fureru shirayuki'
         },
     },
     31: {
