@@ -645,30 +645,30 @@ cards = {
     },
     23: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Sugawara no Michizane',
+            'japanese': '菅家',
+            'romaji': 'Kan Ke'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'At the present time,',
+            1: 'Since I could bring no offering,',
+            2: 'See Mount Tamuke!',
+            3: 'Here are brocades of red leaves,',
+            4: 'As a tribute to the gods.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'このたびは',
+            1: '幣もとりあへず',
+            2: '手向山',
+            3: '紅葉のにしき',
+            4: '神のまにまに'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Kono tabi wa',
+            1: 'Nusa mo toriaezu',
+            2: 'Tamukeyama',
+            3: 'Momiji no nishiki',
+            4: 'Kami no mani mani'
         },
     },
     24: {
