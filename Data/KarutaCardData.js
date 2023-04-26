@@ -869,30 +869,30 @@ cards = {
     },
     31: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Harumichi no Tsuraki',
+            'japanese': '春道列樹',
+            'romaji': 'Harumichi no Tsuraki'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'In a mountain stream',
+            1: 'There is a wattled barrier',
+            2: 'Built by the busy wind.',
+            3: "Yet it's only maple leaves,",
+            4: 'Powerless to flow away.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '山川に',
+            1: '風のかけたる',
+            2: 'しがらみは',
+            3: '流れもあへぬ',
+            4: '紅葉なりけり'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Yama kawa ni',
+            1: 'Kaze no kaketaru',
+            2: 'Shigarami wa',
+            3: 'Nagare mo aenu',
+            4: 'Momiji nari keri'
         },
     },
     32: {
