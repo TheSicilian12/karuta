@@ -981,30 +981,30 @@ cards = {
     },
     35: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Kiyohara no Fukayabu',
+            'japanese': '清原深養父',
+            'romaji': 'Kiyohara no Fukayabu'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'In the summer night',
+            1: 'The evening still seems present,',
+            2: 'But the dawn is here.',
+            3: 'To what region of the clouds',
+            4: 'Has the wandering moon come home?'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '夏の夜は',
+            1: 'まだ宵ながら',
+            2: '明けぬるを',
+            3: '雲のいづくに',
+            4: '月やどるらむ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Natsu no yo wa',
+            1: 'Mada yoi nagara',
+            2: 'Akenuru o',
+            3: 'Kumo no izuko ni',
+            4: 'Tsuki yadoruran'
         },
     },
     36: {
