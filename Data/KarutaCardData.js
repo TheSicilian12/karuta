@@ -1121,30 +1121,30 @@ cards = {
     },
     40: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Mibu no Tadami',
+            'japanese': '壬生忠見',
+            'romaji': 'Mibu no Tadami'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'It is true I love,',
+            1: 'But the rumor of my love',
+            2: 'Had gone far and wide,',
+            3: 'When people should not have known',
+            4: 'That I had begun to love.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '恋すてふ',
+            1: '我が名はまだき',
+            2: '立ちにけり',
+            3: '人しれずこそ',
+            4: '思ひそめしか'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Koisu cho',
+            1: 'Waga na wa madaki',
+            2: 'Tachi ni keri',
+            3: 'Hito shirezu koso',
+            4: 'Omoi someshi ka'
         },
     },
     41: {
