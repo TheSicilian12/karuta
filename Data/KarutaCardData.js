@@ -1037,30 +1037,30 @@ cards = {
     },
     37: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Ukon',
+            'japanese': '右近',
+            'romaji': 'Ukon'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Though he forsook me,',
+            1: 'For myself I do not care:',
+            2: 'He made a promise,',
+            3: 'And his life, who is forsworn,',
+            4: 'Oh how pitiful that is.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '忘らるる',
+            1: '身をば思はず',
+            2: '誓ひてし',
+            3: '人の命の',
+            4: '惜しくもあるかな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Wasuraruru',
+            1: 'Mi o ba omowazu',
+            2: 'Chikaite shi',
+            3: 'Hito no inochi no',
+            4: 'Oshiku mo aru kana'
         },
     },
     38: {
