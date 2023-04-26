@@ -1065,30 +1065,30 @@ cards = {
     },
     38: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Minamoto no Hitoshi',
+            'japanese': '参議等',
+            'romaji': 'Sangi Hitoshi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Bamboo growing',
+            1: 'Among the tangled reeds',
+            2: 'Like my hidden love:',
+            3: 'But it is too much to bear',
+            4: 'That I still love her so.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '浅茅生の',
+            1: '小野の篠原',
+            2: '忍ぶれど',
+            3: 'あまりてなどか',
+            4: '人の恋しき'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Asajiu no',
+            1: 'Ono no shinohara',
+            2: 'Shinoburedo',
+            3: 'Amarite nado ka',
+            4: 'Hito no koishiki'
         },
     },
     39: {
