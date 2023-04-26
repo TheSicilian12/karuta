@@ -953,30 +953,30 @@ cards = {
     },
     34: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Ki no Tsurayuki',
+            'japanese': '紀貫之',
+            'romaji': 'Ki no Tsurayuki'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'The depths of the hearts',
+            1: 'Of humankind cannot be known.',
+            2: 'But in my birthplace',
+            3: 'The plum blossoms smell the same',
+            4: 'As in the years gone by.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '人はいさ',
+            1: '心も知らず',
+            2: 'ふるさとは',
+            3: '花ぞむかしの',
+            4: '香に匂ひける'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Hito wa isa',
+            1: 'Kokoro mo shirazu',
+            2: 'Furusato wa',
+            3: 'Hana zo mukashi no',
+            4: 'Ka ni nioi keru'
         },
     },
     35: {
