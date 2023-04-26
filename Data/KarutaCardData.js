@@ -1093,30 +1093,30 @@ cards = {
     },
     39: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Taira no Kanemori',
+            'japanese': '平兼盛',
+            'romaji': 'Taira no Kanemori'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Though I would hide it,',
+            1: 'In my face it still appears--',
+            2: 'My fond, secret love.',
+            3: 'And now he questions me:',
+            4: '"Is something bothering you?"'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '忍ぶれど',
+            1: '色に出でにけり',
+            2: 'わが恋は',
+            3: '物や思ふと',
+            4: '人の問ふまで'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Shinoburedo',
+            1: 'Iro ni ide ni keri',
+            2: 'Waga koi wa',
+            3: 'Mono ya omou to',
+            4: 'Hito no tou made'
         },
     },
     40: {
