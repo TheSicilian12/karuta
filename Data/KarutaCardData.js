@@ -897,30 +897,30 @@ cards = {
     },
     32: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Ki no Tomonori',
+            'japanese': '紀友則',
+            'romaji': 'Ki no Tomonori'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'In the peaceful light',
+            1: 'Of the ever-shining sun',
+            2: 'In the days of spring,',
+            3: "Why do the cherry's new-blown blooms",
+            4: 'Scatter like restless thoughts?'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '久方の',
+            1: '光のどけき',
+            2: '春の日に',
+            3: 'しづ心なく',
+            4: '花のちるらむ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Hisakata no',
+            1: 'Hikari nodokeki',
+            2: 'Haru no hi ni',
+            3: 'Shizu-gokoro naku',
+            4: 'Hana no chiruran'
         },
     },
     33: {
