@@ -1009,30 +1009,30 @@ cards = {
     },
     36: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': "Bun'ya no Asayasu",
+            'japanese': '文屋朝康',
+            'romaji': "Fun'ya no Asayasu"
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'In the autumn fields',
+            1: 'When the heedless wind blows by',
+            2: 'Over the pure-white dew,',
+            3: 'How the myriad unstrung gems',
+            4: 'Are scattered everywhere around'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '白露を',
+            1: '風のふきしく',
+            2: '秋の野は',
+            3: 'つらぬきとめぬ',
+            4: '玉ぞちりける'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Shiratsuyu o',
+            1: 'Kaze no fukishiku',
+            2: 'Aki no no wa',
+            3: 'Tsuranuki tomenu',
+            4: 'Tama zo chiri keru'
         },
     },
     37: {
