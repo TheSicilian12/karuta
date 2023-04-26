@@ -925,30 +925,30 @@ cards = {
     },
     33: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Okikaze',
+            'japanese': 'Fujiwara no Okikaze',
+            'romaji': '藤原興風'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Who is still alive',
+            1: 'When I have grown so old',
+            2: 'That I can call my friends?',
+            3: "Even Takasago's pines",
+            4: 'No longer offer comfort.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '誰をかも',
+            1: '知る人にせむ',
+            2: '高砂の',
+            3: '松もむかしの',
+            4: '友ならなくに'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Tare o ka mo',
+            1: 'Shiru hito ni sen',
+            2: 'Takasago no',
+            3: 'Matsu mo mukashi no',
+            4: 'Tomo nara naku ni'
         },
     },
     34: {
