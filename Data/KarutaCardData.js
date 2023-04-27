@@ -1177,30 +1177,30 @@ cards = {
     },
     42: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Atsutada',
+            'japanese': '権中納言敦忠',
+            'romaji': 'Gon Chunagon Atsutada'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'I have met my love.',
+            1: 'When I compare this present',
+            2: 'With feelings of the past,',
+            3: 'My passion is now as if',
+            4: 'I have never loved before.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '逢ひ見ての',
+            1: '後の心',
+            2: 'くらぶれば',
+            3: 'むかしは物を',
+            4: '思はざりけり'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Ai mite no',
+            1: 'Nochi no kokoro ni',
+            2: 'Kurabureba',
+            3: 'Mukashi wa mono o',
+            4: 'Omowazari keri'
         },
     },
     43: {
