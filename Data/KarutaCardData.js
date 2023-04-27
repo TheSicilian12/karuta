@@ -1149,30 +1149,30 @@ cards = {
     },
     41: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Kiyohara no Motosuke',
+            'japanese': '清原元輔',
+            'romaji': 'Kiyohara no Motosuke'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Our sleeves were wet with tears',
+            1: 'As pledges that our love--',
+            2: 'Will last until',
+            3: "Over Sue's Mount of Pines",
+            4: 'Ocean waves are breaking.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'ちぎりきな',
+            1: 'かたみに袖を',
+            2: 'しぼりつつ',
+            3: '末の松山',
+            4: '波こさじとは'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Chigiriki na',
+            1: 'Katami ni sode o',
+            2: 'Shibori tsutsu',
+            3: 'Sue no Matsuyama',
+            4: 'Nami kosaji to wa'
         },
     },
     42: {
