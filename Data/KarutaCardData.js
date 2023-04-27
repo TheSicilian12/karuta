@@ -1317,30 +1317,30 @@ cards = {
     },
     47: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Minamoto no Shigeyuki',
+            'japanese': '源重之',
+            'romaji': 'Minamoto no Shigeyuki'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Like a driven wave,',
+            1: 'Dashed by fierce winds on a rock,',
+            2: 'So am I: alone',
+            3: 'And crushed upon the shore,',
+            4: 'Remembering what has been.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '風をいたみ',
+            1: '岩うつ波の',
+            2: 'おのれのみ',
+            3: 'くだけて物を',
+            4: 'おもふ頃かな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Kaze o itami',
+            1: 'Iwa utsu nami no',
+            2: 'Onore nomi',
+            3: 'Kudakete mono o',
+            4: 'Omou koro kana'
         },
     },
     48: {
