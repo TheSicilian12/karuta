@@ -1233,30 +1233,30 @@ cards = {
     },
     44: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Koremasa',
+            'japanese': '謙徳公',
+            'romaji': 'Kentoku Ko'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Surely there is none',
+            1: 'Who will speak a pitying word',
+            2: 'About my lost love.',
+            3: "Now my folly's fitting end",
+            4: 'Is my own nothingness.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'あはれとも',
+            1: 'いふべき人は',
+            2: '思ほえで',
+            3: '身のいたづらに',
+            4: 'なりぬべきかな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Aware to mo',
+            1: 'Iu beki hito wa',
+            2: 'Omooede',
+            3: 'Mi no itazura ni',
+            4: 'Narinu beki kana'
         },
     },
     45: {
