@@ -1401,30 +1401,30 @@ cards = {
     },
     50: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Sanekata',
+            'japanese': '藤原実方朝臣',
+            'romaji': 'Fujiwara no Sanekata Ason'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'How can I tell her',
+            1: 'How fierce my love for her is?',
+            2: 'Will she understand',
+            3: 'That the love I feel for her',
+            4: "Burns like Ibuki's fire plant?"
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'かくとだに',
+            1: 'えやはいぶきの',
+            2: 'さしも草',
+            3: 'さしも知らじな',
+            4: 'もゆる思ひを'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Kaku to dani',
+            1: 'Eyawa ibuki no',
+            2: 'Sashimogusa',
+            3: 'Sashimo shiraji na',
+            4: 'Moyuru omoi o'
         },
     },
     51: {
