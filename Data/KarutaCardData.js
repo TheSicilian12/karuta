@@ -1205,30 +1205,30 @@ cards = {
     },
     43: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Asatada',
+            'japanese': '中納言朝忠',
+            'romaji': 'Chunagon Asatada'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'If it should happen',
+            1: 'That we never met again,',
+            2: 'I would not complain;',
+            3: 'And I doubt that she or I',
+            4: 'Would feel that we were left alone.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '逢ふことの',
+            1: '絶えてしなくは',
+            2: '中々に',
+            3: '人をも身をも',
+            4: '恨みざらまし'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Au koto no',
+            1: 'Taete shi nakuwa',
+            2: 'Nakanaka ni',
+            3: 'Hito o mo mi o mo',
+            4: 'Urami zaramashi'
         },
     },
     44: {
