@@ -1289,30 +1289,30 @@ cards = {
     },
     46: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'The Monk Egyo',
+            'japanese': '恵慶法師',
+            'romaji': 'Egyo Hoshi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'To the dim cottage',
+            1: 'Overgrown with thick-leaved vines',
+            2: 'In its loneliness',
+            3: 'Comes the dreary autumn time:',
+            4: 'But there no people come.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '八重むぐら',
+            1: 'しげれる宿の',
+            2: 'さびしきに',
+            3: '人こそ見えね',
+            4: '秋は来にけり'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Yaemugura',
+            1: 'Shigereru yado no',
+            2: 'Sabishiki ni',
+            3: 'Hito koso miene',
+            4: 'Aki wa ki ni keri'
         },
     },
     47: {
