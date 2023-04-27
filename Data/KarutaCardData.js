@@ -1345,30 +1345,30 @@ cards = {
     },
     48: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Onakatomi no Yoshinobu',
+            'japanese': '大中臣能宣朝臣',
+            'romaji': 'Onakatomi no Yoshinobu Ason'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: "Like the guard's fires",
+            1: 'Kept at the imperial gateway--',
+            2: 'Burning through the night,',
+            3: 'Dull in ashes through the day--',
+            4: 'Is the love aglow in me.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'みかき守',
+            1: '衛士のたく火の',
+            2: '夜はもえ',
+            3: '昼は消えつつ',
+            4: '物をこそおもへ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Mikakimori',
+            1: 'Eji no taku hi no',
+            2: 'Yoru wa moe',
+            3: 'Hiru wa kie tsutsu',
+            4: 'Mono o koso omoe'
         },
     },
     49: {
