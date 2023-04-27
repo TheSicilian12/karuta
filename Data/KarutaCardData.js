@@ -1373,30 +1373,30 @@ cards = {
     },
     49: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Yoshitaka',
+            'japanese': '藤原義孝',
+            'romaji': 'Fujiwara no Yoshitaka'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'For your precious sake,',
+            1: 'Once my eager life itself',
+            2: 'Was not dear to me.',
+            3: "But now it is my heart's desire",
+            4: 'It may long, long years endure.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '君がため',
+            1: '惜しからざりし',
+            2: '命さへ',
+            3: 'ながくもがなと',
+            4: 'おもひけるかな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Kimi ga tame',
+            1: 'Oshi karazarishi',
+            2: 'Inochi sae',
+            3: 'Nagaku mo gana to',
+            4: 'Omoi keru kana'
         },
     },
     50: {
