@@ -1261,30 +1261,30 @@ cards = {
     },
     45: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Sone no Yoshitada',
+            'japanese': '曽禰好忠',
+            'romaji': 'Sone no Yoshitada'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Like a mariner',
+            1: "Sailing over Yura's strait",
+            2: 'With his rudder gone:',
+            3: 'Where, over the deep of love,',
+            4: 'The end lies, I do not know.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '由良のとを',
+            1: 'わたる舟人',
+            2: 'かぢをたえ',
+            3: '行く方もしらぬ',
+            4: '恋の道かな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Yura no to o',
+            1: 'Wataru funabito',
+            2: 'Kaji o tae',
+            3: 'Yukue mo shiranu',
+            4: 'Koi no michi kana'
         },
     },
     46: {
