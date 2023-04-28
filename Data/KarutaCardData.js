@@ -1681,30 +1681,30 @@ cards = {
     },
     60: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Ise no Osuke',
+            'japanese': '伊勢大輔',
+            'romaji': 'Ise no Osuke'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Eight-fold cherry flowers',
+            1: 'That at Nara--ancient seat',
+            2: 'Of our state--have bloomed,',
+            3: 'In our nine-fold palace court',
+            4: 'Shed their sweet perfume today.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'いにしへの',
+            1: '奈良の都の',
+            2: '八重桜',
+            3: '今日九重に',
+            4: '匂ひぬるかな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Inishie no',
+            1: 'Nara no miyako no',
+            2: 'Yae-zakura',
+            3: 'Kyo kokonoe ni',
+            4: 'Nioi nuru kana'
         },
     },
     61: {
