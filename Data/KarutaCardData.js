@@ -1709,30 +1709,30 @@ cards = {
     },
     61: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Sei Shonagon',
+            'japanese': '清少納言',
+            'romaji': 'Sei Shonagon'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: "The rooster's crowing",
+            1: 'In the middle of the night',
+            2: 'Deceived the hearers;',
+            3: "But at Osaka's gateway",
+            4: 'The guards are never fooled.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '夜をこめて',
+            1: '鳥の空音は',
+            2: 'はかるとも',
+            3: 'よにあふさかの',
+            4: '関はゆるさじ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Yo o komete',
+            1: 'Tori no sorane wa',
+            2: 'Hakaru tomo',
+            3: 'Yo ni Osaka no',
+            4: 'Seki wa yurusaji'
         },
     },
     62: {
