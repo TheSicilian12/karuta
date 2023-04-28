@@ -1569,30 +1569,30 @@ cards = {
     },
     56: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Murasaki Shikibu',
+            'japanese': '紫式部',
+            'romaji': 'Murasaki Shikibu'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Meeting on the path:',
+            1: 'But I cannot clearly know',
+            2: 'If it was he,',
+            3: 'Because the midnight moon',
+            4: 'In a cloud had disappeared.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'めぐりあひて',
+            1: '見しやそれとも',
+            2: 'わかぬ間に',
+            3: '雲がくれにし',
+            4: '夜半の月かげ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Meguri aite',
+            1: 'Mishi ya sore to mo',
+            2: 'Wakanu ma ni',
+            3: 'Kumo-gakure ni shi',
+            4: 'Yowa no tsuki kage'
         },
     },
     57: {
