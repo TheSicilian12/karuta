@@ -1597,30 +1597,30 @@ cards = {
     },
     57: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Daini no Sanmi, Lady Kataiko',
+            'japanese': '大弐三位',
+            'romaji': 'Daini no Sanmi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'As Mount Arima',
+            1: 'Sends its rustling winds acros',
+            2: "Ina's bamboo plains,",
+            3: 'I will be just as steadfast',
+            4: 'And never will forget you.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'ありま山',
+            1: '猪名の笹原',
+            2: '風吹けば',
+            3: 'いでそよ人を',
+            4: '忘れやはする'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Arimayama',
+            1: 'Ina no sasawara',
+            2: 'Kaze fukeba',
+            3: 'Ide soyo hito o',
+            4: 'Wasure ya wa suru'
         },
     },
     58: {
