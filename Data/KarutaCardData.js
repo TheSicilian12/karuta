@@ -1485,30 +1485,30 @@ cards = {
     },
     53: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'The Mother of Gido Sanshi',
+            'japanese': '儀同三司母',
+            'romaji': 'Gido Sanshi no Haha'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'If remembering me',
+            1: 'Will for him in future years',
+            2: 'Be too difficult,',
+            3: 'It would be well this very day',
+            4: 'That I should end my life.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '忘れじの',
+            1: '行末までは',
+            2: '難ければ',
+            3: '今日を限りの',
+            4: '命ともがな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Wasureji no',
+            1: 'Yukusue made wa',
+            2: 'Katakereba',
+            3: 'Kyo o kagiri no',
+            4: 'Inochi to mo gana'
         },
     },
     54: {
