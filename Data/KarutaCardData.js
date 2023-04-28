@@ -1625,30 +1625,30 @@ cards = {
     },
     58: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Akazome Emon',
+            'japanese': '赤染衛門',
+            'romaji': 'Akazome Emon'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Better to have slept',
+            1: 'Care-free, than to keep vain watch',
+            2: 'Through the passing night,',
+            3: 'Till I saw the lonely moon',
+            4: 'Traverse her descending path.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'やすらはで',
+            1: '寝なまし物を',
+            2: '小夜更けて',
+            3: 'かたぶくまでの',
+            4: '月を見しかな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Yasurawade',
+            1: 'Nenamashi mono o',
+            2: 'Sayo fukete',
+            3: 'Katabuku made no',
+            4: 'Tsuki o mishi kan'
         },
     },
     59: {
