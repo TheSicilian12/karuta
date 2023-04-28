@@ -1653,30 +1653,30 @@ cards = {
     },
     59: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Koshikibu',
+            'japanese': '小式部内侍',
+            'romaji': 'Koshikibu no Naishi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'By Oe Mountain',
+            1: 'The road to Ikuno',
+            2: 'Is far away,',
+            3: 'And neither have I beheld',
+            4: 'Nor crossed its bridge of heaven.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '大江山',
+            1: 'いく野の道の',
+            2: 'とほければ',
+            3: 'まだふみも見ず',
+            4: '天の橋立'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Oeyama',
+            1: 'Ikuno no michi no',
+            2: 'To kereba',
+            3: 'Mada fumi mo mizu',
+            4: 'Ama no Hashidate'
         },
     },
     60: {
