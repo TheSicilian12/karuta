@@ -1513,30 +1513,30 @@ cards = {
     },
     54: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Kinto',
+            'japanese': '大納言公任',
+            'romaji': 'Dainagon Kinto'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Though the waterfall',
+            1: 'Ceased its flowing long ago,',
+            2: 'And its sound is stilled,',
+            3: 'Yet, in name it ever flows,',
+            4: 'And in fame may yet be heard.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '滝の音は',
+            1: '絶えて久しく',
+            2: 'なりぬれど',
+            3: '名こそ流れて',
+            4: 'なほ聞えけれ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Taki no oto wa',
+            1: 'Taete hisashiku',
+            2: 'Narinuredo',
+            3: 'Na koso nagarete',
+            4: 'Nao kikoe kere'
         },
     },
     55: {
