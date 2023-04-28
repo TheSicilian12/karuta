@@ -1429,30 +1429,30 @@ cards = {
     },
     51: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Michinobu',
+            'japanese': '藤原道信朝臣',
+            'romaji': 'Fujiwara no Michinobu Ason'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Though I know indeed',
+            1: 'That the night will come again',
+            2: 'After day has dawned,',
+            3: 'Still, in truth, I hate the sight',
+            4: "Of the morning's coming light."
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '明けぬれば',
+            1: '暮るるものとは',
+            2: '知りながら',
+            3: 'なをうらめしき',
+            4: 'あさぼらけかな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Akenureba',
+            1: 'Kururu mono to wa',
+            2: 'Shiri nagara',
+            3: 'Nao urameshiki',
+            4: 'Asaborake kana'
         },
     },
     52: {
