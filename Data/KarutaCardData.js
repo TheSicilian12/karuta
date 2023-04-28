@@ -1541,30 +1541,30 @@ cards = {
     },
     55: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Izumi Shikibu',
+            'japanese': '和泉式部',
+            'romaji': 'Izumi Shikibu'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Soon my life will close.',
+            1: 'When I am beyond this world',
+            2: 'And have forgotten it,',
+            3: 'Let me remember only this:',
+            4: 'One final meeting with you.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'あらざらむ',
+            1: 'この世の外の',
+            2: '思ひ出に',
+            3: '今ひとたびの',
+            4: '逢ふこともがな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Arazaran',
+            1: 'Kono yo no hoka no',
+            2: 'Omoide ni',
+            3: 'Ima hitotabi no',
+            4: 'Au koto mo gana'
         },
     },
     56: {
