@@ -1457,30 +1457,30 @@ cards = {
     },
     52: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'The Mother of Michitsuna',
+            'japanese': '右大将道綱母',
+            'romaji': 'Udaisho Michitsuna no Haha'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Lying all alone,',
+            1: 'Through the hours of the night,',
+            2: 'Till the daylight comes:',
+            3: 'Can you realize at all',
+            4: 'The emptiness of that night?'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'なげきつつ',
+            1: 'ひとりぬる夜の',
+            2: '明くる間は',
+            3: 'いかに久しき',
+            4: 'ものとかは知る'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Nageki tsutsu',
+            1: 'Hitori nuru yo no',
+            2: 'Akuru ma wa',
+            3: 'Ikani hisashiki',
+            4: 'Mono to ka wa shiru'
         },
     },
     53: {
