@@ -1737,30 +1737,30 @@ cards = {
     },
     62: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Michimasa',
+            'japanese': '左京大夫道雅',
+            'romaji': 'Sakyo no Daibu Michimasa'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Is there any way',
+            1: 'Except by a messenger',
+            2: 'To send these words to you?',
+            3: "If I could, I'd come to you",
+            4: 'To say goodbye forever.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '今はただ',
+            1: '思ひ絶えなむ',
+            2: 'とばかりを',
+            3: '人づてならで',
+            4: 'いふよしもがな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Ima wa tada',
+            1: 'Omoi taenan',
+            2: 'To bakari wo',
+            3: 'Hito-zute nara de',
+            4: 'Iu yoshi mo gana'
         },
     },
     63: {
