@@ -1849,30 +1849,30 @@ cards = {
     },
     66: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Suo',
+            'japanese': '周防内侍',
+            'romaji': 'Suo no Naishi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'If I lay my head',
+            1: 'Upon his arm in the dark',
+            2: 'Of a short spring night,',
+            3: 'This innocent dream pillow',
+            4: 'Will be the death of my good name.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '春の夜の',
+            1: '夢ばかりなる',
+            2: '手枕に',
+            3: 'かひなく立たむ',
+            4: '名こそ惜しけれ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Haru no yo no',
+            1: 'Yume bakari naru',
+            2: 'Tamakura ni',
+            3: 'Kainaku tatan',
+            4: 'Na koso oshi kere'
         },
     },
     67: {
