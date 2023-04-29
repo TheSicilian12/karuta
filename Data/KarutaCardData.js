@@ -1877,30 +1877,30 @@ cards = {
     },
     67: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Emperor Sanjo',
+            'japanese': '三条院',
+            'romaji': 'Sanjo In'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Though I do not want',
+            1: 'To live on in this floating world,',
+            2: 'If I remain here,',
+            3: 'Let me remember only',
+            4: 'This midnight and this moonrise.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '心にも',
+            1: 'あらで浮世に',
+            2: 'ながらへば',
+            3: '恋しかるべき',
+            4: '夜半の月かな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Kokoro ni mo',
+            1: 'Arade ukiyo ni',
+            2: 'Nagaraeba',
+            3: 'Koishikaru beki',
+            4: 'Yowa no tsuki kana'
         },
     },
     68: {
