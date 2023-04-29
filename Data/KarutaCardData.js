@@ -1933,30 +1933,30 @@ cards = {
     },
     69: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'The Monk Ryosen',
+            'japanese': '良暹法師',
+            'romaji': 'Ryosen Hoshi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'In my loneliness',
+            1: 'I leave my little hut.',
+            2: 'When I look around,',
+            3: 'Everywhere it is the same:',
+            4: 'One lone, darkening autumn eve.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '寂しさに',
+            1: '宿を立出て',
+            2: 'ながむれば',
+            3: 'いづこもおなじ',
+            4: '秋の夕暮'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Sabishisa ni',
+            1: 'Yado o tachi idete',
+            2: 'Nagamureba',
+            3: 'Izuko mo onaji',
+            4: 'Aki no yugure'
         },
     },
     70: {
