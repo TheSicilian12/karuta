@@ -1765,30 +1765,30 @@ cards = {
     },
     63: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Sadayori',
+            'japanese': '権中納言定頼',
+            'romaji': 'GonChunagon Sadayori'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'In the early dawn',
+            1: 'When the mists on Uji River',
+            2: 'Slowly lift and clear,',
+            3: 'From the shallows to the deep,',
+            4: 'The stakes of fishing nets appear.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '朝ぼらけ',
+            1: '宇治の川ぎり',
+            2: 'たえだえに',
+            3: 'あらはれわたる',
+            4: 'ぜぜの網代木'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Asaborake',
+            1: 'Uji no kawagiri',
+            2: 'Tae-dae ni',
+            3: 'Araware wataru',
+            4: 'Zeze no ajirogi'
         },
     },
     64: {
