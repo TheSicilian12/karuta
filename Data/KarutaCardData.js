@@ -1793,30 +1793,30 @@ cards = {
     },
     64: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Sagami',
+            'japanese': '相模',
+            'romaji': 'Sagami'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Even when your hate',
+            1: 'Makes me stain my sleeves with tears',
+            2: 'In cold misery,',
+            3: 'Worse than hate and misery',
+            4: 'Is the loss of my good name.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '恨みわび',
+            1: 'ほさぬ袖だに',
+            2: 'あるものを',
+            3: '恋に朽ちなん',
+            4: '名こそ惜しけれ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Urami wabi',
+            1: 'Hosanu sode da ni',
+            2: 'Aru mono o',
+            3: 'Koi ni kuchinan',
+            4: 'Na koso oshi kere'
         },
     },
     65: {
