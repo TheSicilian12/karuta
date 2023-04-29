@@ -1905,30 +1905,30 @@ cards = {
     },
     68: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'The Monk Noin',
+            'japanese': '能因法師',
+            'romaji': 'Noin Hoshi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: "By the wind storm's blast",
+            1: "From Mimuro's mountain slopes",
+            2: 'Maples leaves are torn,',
+            3: 'Which turn Tatsuta River',
+            4: 'Into a rich brocade.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'あらし吹く',
+            1: '三室の山の',
+            2: 'もみぢ葉は',
+            3: '龍田の川の',
+            4: 'にしきなりけり'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Arashi fuku',
+            1: 'Mimuro no yama no',
+            2: 'Momijiba wa',
+            3: 'Tatsuta no kawa no',
+            4: 'Nishiki nari keri'
         },
     },
     69: {
