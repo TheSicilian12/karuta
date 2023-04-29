@@ -1821,30 +1821,30 @@ cards = {
     },
     65: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Abbot Gyoson',
+            'japanese': '大僧正行尊',
+            'romaji': 'Daisojo Gyoson'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'On a mountain slope,',
+            1: 'Solitary, uncompanioned,',
+            2: 'Stands a cherry tree.',
+            3: 'Except for you, lonely friend,',
+            4: 'To others I am unknown.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'もろともに',
+            1: '哀れと思へ',
+            2: '山桜',
+            3: '花より外に',
+            4: '知る人もなし'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Morotomo ni',
+            1: 'Aware to omoe',
+            2: 'Yama-zakura',
+            3: 'Hana yori hoka ni',
+            4: 'Shiru hito mo nashi'
         },
     },
     66: {
