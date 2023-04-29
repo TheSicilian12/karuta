@@ -1961,30 +1961,30 @@ cards = {
     },
     70: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Minamoto no Tsunenobu',
+            'japanese': '大納言経信',
+            'romaji': 'Dainagon Tsunenobu'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'When the evening comes,',
+            1: 'From the rice leaves at my gate,',
+            2: 'Gentle knocks are heard,',
+            3: 'And, into my round rush-hut,',
+            4: "Enters autumn's roaming breeze."
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '夕されば',
+            1: '門田の稲葉',
+            2: 'おとづれて',
+            3: 'あしのまろやに',
+            4: '秋風ぞふく'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Yu sareba',
+            1: 'Kadota no inaba',
+            2: 'Otozurete',
+            3: 'Ashi no maroya ni',
+            4: 'Akikaze zo fuku'
         },
     },
     71: {
