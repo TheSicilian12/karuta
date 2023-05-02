@@ -2017,30 +2017,30 @@ cards = {
     },
     72: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Oe no Masafusa',
+            'japanese': '権中納言匡房',
+            'romaji': 'GonChunagon Masafusa'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'On that far mountain',
+            1: 'On the slope below the peak',
+            2: 'Cherries are in flower.',
+            3: 'Oh, let the mountain mists',
+            4: 'Not arise to hide the scene.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '高砂の',
+            1: '尾の上の桜',
+            2: '咲きにけり',
+            3: '外山の霞',
+            4: 'たたずもあらなん'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Takasago no',
+            1: 'Onoe no sakura',
+            2: 'Saki ni keri',
+            3: 'Toyama no kasumi',
+            4: 'Tatazu mo aranan'
         },
     },
     73: {
