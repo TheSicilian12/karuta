@@ -2213,30 +2213,30 @@ cards = {
     },
     79: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Horikawa',
+            'japanese': '待賢門院堀河',
+            'romaji': 'Taiken Moin no Horikawa'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Is it forever',
+            1: 'That he hopes our love will last?',
+            2: 'He did not answer.',
+            3: 'And now my daylight thoughts',
+            4: 'Are as tangled as my black hair.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '長からむ',
+            1: '心もしらず',
+            2: '黒髪の',
+            3: 'みだれてけさは',
+            4: '物をこそ思へ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Nagakaran',
+            1: 'Kokoro mo shirazu',
+            2: 'Kurokami no',
+            3: 'Midarete kesa wa',
+            4: 'Mono o koso omoe'
         },
     },
     80: {
