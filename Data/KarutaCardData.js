@@ -2045,30 +2045,30 @@ cards = {
     },
     73: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Minamoto no Toshiyori',
+            'japanese': '源俊頼朝臣',
+            'romaji': 'Minamoto no Toshiyori Ason'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'It was not for this',
+            1: 'I prayed at the holy shrine:',
+            2: 'That she would become',
+            3: 'As pitiless and as cold',
+            4: "As the storms on Hase's hills."
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'うかりける',
+            1: '人をはつせの',
+            2: '山おろしよ',
+            3: 'はげしかれとは',
+            4: '祈らぬものを'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Ukari keru',
+            1: 'Hito o Hatsuse n',
+            2: 'Yama oroshiyo',
+            3: 'Hageshikare to wa',
+            4: 'Inoranu mono o'
         },
     },
     74: {
