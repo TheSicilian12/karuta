@@ -2241,30 +2241,30 @@ cards = {
     },
     80: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Sanesada',
+            'japanese': '後徳大寺左大臣',
+            'romaji': 'Go Tokudaiji no Sadaijin'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'When I turned my look',
+            1: 'Toward the place where I had heard',
+            2: "The cuckoo's call,",
+            3: 'The only thing I found',
+            4: 'Was the moon of early dawn.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'ほととぎす',
+            1: '鳴きつる方を',
+            2: '眺むれば',
+            3: 'ただ有明の',
+            4: '月ぞのこれる'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Hototogisu',
+            1: 'Nakitsuru kata o',
+            2: 'Nagamureba',
+            3: 'Tada ariake no',
+            4: 'Tsuki zo nokoreru'
         },
     },
     81: {
