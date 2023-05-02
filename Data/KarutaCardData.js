@@ -2129,30 +2129,30 @@ cards = {
     },
     76: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Emperor Sutoku',
+            'japanese': '崇徳院御製',
+            'romaji': 'Sutoku In'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Though a swift stream is',
+            1: 'Divided by a boulder',
+            2: 'In its headlong flow,',
+            3: 'Though divided, on it rushes,',
+            4: 'And at last unites again.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '瀬をはやみ',
+            1: '岩にせかるる',
+            2: '滝川の',
+            3: 'われても末に',
+            4: '逢はむとぞ思ふ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Se o hayami',
+            1: 'Iwa ni sekaruru',
+            2: 'Takigawa no',
+            3: 'Warete mo sue ni',
+            4: 'Awan to zo omou'
         },
     },
     77: {
