@@ -2157,30 +2157,30 @@ cards = {
     },
     77: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Minamoto no Kanemasa',
+            'japanese': '源兼昌',
+            'romaji': 'Minamoto no Kanemasa'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Guard of Suma Gate,',
+            1: 'From your sleep, how many nights',
+            2: 'Have you awakened',
+            3: 'At the cries of sanderlings,',
+            4: 'Flying from Awaji Island?'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '淡路島',
+            1: 'かよふ千鳥の',
+            2: 'なく声に',
+            3: 'いくよねざめぬ',
+            4: 'すまの関守'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Awaji shima',
+            1: 'Kayou chidori no',
+            2: 'Naku koe ni',
+            3: 'Ikuyo nezamenu',
+            4: 'Suma no sekimori'
         },
     },
     78: {
