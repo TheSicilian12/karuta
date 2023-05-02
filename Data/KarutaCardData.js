@@ -2101,30 +2101,30 @@ cards = {
     },
     75: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Tadamichi',
+            'japanese': '法性寺入道関白太政大臣',
+            'romaji': 'Hoshoji no Nyudo Kanpaku Dajodaijin'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Over the wide sea',
+            1: 'As I sail and look around,',
+            2: 'It appears to me',
+            3: 'That the white waves, far away,',
+            4: 'Are the ever shining sky.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'わたの原',
+            1: 'こぎ出でて見れば',
+            2: '久方の',
+            3: '雲井にまよふ',
+            4: 'おきつしらなみ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Wata no hara',
+            1: 'Kogi idete mireba',
+            2: 'Hisakata no',
+            3: 'Kumoi ni mayoo',
+            4: 'Okitsu shiranami'
         },
     },
     76: {
