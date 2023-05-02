@@ -2073,30 +2073,30 @@ cards = {
     },
     74: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Mototoshi',
+            'japanese': '藤原基俊',
+            'romaji': 'Fujiwara no Mototosh'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'As dew promises',
+            1: 'New life to the thirsty plant,',
+            2: 'So did your vow to me.',
+            3: 'Yet the year has passed away,',
+            4: 'And autumn has come again.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '契りをきし',
+            1: 'させもが露を',
+            2: '命にて',
+            3: 'あはれことしの',
+            4: '秋もいぬめり'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Chigiri okishi',
+            1: 'Sasemo ga tsuyu o',
+            2: 'Inochi ni te',
+            3: 'Aware kotoshi no',
+            4: 'Aki mo inumeri'
         },
     },
     75: {
