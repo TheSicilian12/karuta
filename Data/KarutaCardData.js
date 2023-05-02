@@ -1989,30 +1989,30 @@ cards = {
     },
     71: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Kii',
+            'japanese': '祐子内親王家紀伊',
+            'romaji': 'Yushi Naishinno-ke no Kii'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Famous are the waves',
+            1: 'That break on Takashi beach',
+            2: 'In noisy arrogance.',
+            3: 'If I should go near that shore.',
+            4: 'I would only wet my sleeves.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '音にきく',
+            1: '高師の浜の',
+            2: 'あだ浪は',
+            3: 'かけじや袖の',
+            4: 'ぬれもこそすれ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Oto ni kiku',
+            1: 'Takashi no hama no',
+            2: 'Adanami wa',
+            3: 'Kakeji ya sode no',
+            4: 'Nure mo koso sure'
         },
     },
     72: {
