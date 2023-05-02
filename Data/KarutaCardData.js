@@ -2185,30 +2185,30 @@ cards = {
     },
     78: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Akisuke',
+            'japanese': '左京大夫顕輔',
+            'romaji': 'Sakyo no Daibu Akisuke'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'See how clear and bright',
+            1: 'Is the moonlight finding ways',
+            2: 'Through the riven clouds',
+            3: 'That, with drifting autumn wind,',
+            4: 'Gracefully float in the sky.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '秋風に',
+            1: 'たなびく雲の',
+            2: 'たえまより',
+            3: 'もれ出づる月の',
+            4: 'かげのさやけさ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Akikaze ni',
+            1: 'Tanabiku kumo no',
+            2: 'Taema yori',
+            3: 'More izuru tsuki no',
+            4: 'Kage no sayakes'
         },
     },
     79: {
