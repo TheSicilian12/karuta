@@ -2381,30 +2381,30 @@ cards = {
     },
     85: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'The Monk Saigyo',
+            'japanese': '西行法師',
+            'romaji': 'Saigyo Hoshi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Should I blame the moon',
+            1: 'For bringing forth this sadness,',
+            2: 'As if it pictured grief?',
+            3: 'Lifting up my troubled face,',
+            4: 'I regard it through my tears.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'なげけとて',
+            1: '月やは物を',
+            2: '思はする',
+            3: 'かこちがほなる',
+            4: 'わがなみだかな'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Nageke tote',
+            1: 'Tsuki ya wa mono o',
+            2: 'Omowasuru',
+            3: 'Kakochi gao naru',
+            4: 'Waga namida kana'
         },
     },
     86: {
