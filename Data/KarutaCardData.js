@@ -2353,30 +2353,30 @@ cards = {
     },
     84: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': "The Monk Shun'e",
+            'japanese': '俊恵法師',
+            'romaji': "Shun'e Hoshi"
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Through an unsleeping night',
+            1: 'Longingly I pass the hours,',
+            2: "While the day's dawn lags.",
+            3: 'And now the bedroom shutters',
+            4: 'Are keeping light and life from me.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '夜もすがら',
+            1: '物思ふ頃は',
+            2: '明けやらぬ',
+            3: 'ねやのひまさへ',
+            4: 'つれなかりけり'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Yo mo sugara',
+            1: 'Mono omou koro wa',
+            2: 'Ake yaranu',
+            3: 'Neya no hima sae',
+            4: 'Tsure nakari keri'
         },
     },
     85: {
