@@ -2437,30 +2437,30 @@ cards = {
     },
     87: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Attendant to Empress Koka',
+            'japanese': '皇嘉門院別当',
+            'romaji': 'Koka Moin no Betto'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'After one brief night--',
+            1: 'Short as a piece of the reeds',
+            2: 'Growing in Naniwa bay--',
+            3: 'Must I forever long for him',
+            4: 'With my whole heart, till life ends?'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '難波江の',
+            1: '芦のかりねの',
+            2: '一夜ゆへ',
+            3: '身をつくしてや',
+            4: '恋わたるべき'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Naniwae no',
+            1: 'Ashi no karine no',
+            2: 'Hitoyo yue',
+            3: 'Mi o tsukushite ya',
+            4: 'Koi wataru beki'
         },
     },
     88: {
