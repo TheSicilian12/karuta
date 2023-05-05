@@ -2465,30 +2465,30 @@ cards = {
     },
     88: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Princess Shokushi',
+            'japanese': '式子内親王',
+            'romaji': 'Shokushi Naishinno'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Like a string of gems',
+            1: 'Grown weak, my life will break now;',
+            2: 'For if I live on,',
+            3: 'All I do to hide my love',
+            4: 'May at last grow weak and fail.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '玉の緒よ',
+            1: '絶えなば絶えね',
+            2: 'ながらへば',
+            3: 'しのぶることの',
+            4: 'よはりもぞする'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Tama no o yo',
+            1: 'Taenaba taene',
+            2: 'Nagaraeba',
+            3: 'Shinoburu koto no',
+            4: 'Yowari mo zo suru'
         },
     },
     89: {
