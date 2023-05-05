@@ -2409,30 +2409,30 @@ cards = {
     },
     86: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'The Monk Jakuren',
+            'japanese': '寂蓮法師',
+            'romaji': 'Jakuren Hoshi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'An autumn eve:',
+            1: 'See the valley mists arise',
+            2: 'Among the fir leaves',
+            3: 'That still hold the dripping wet',
+            4: "Of the chill day's sudden showers."
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'むらさめの',
+            1: '露もまだひぬ',
+            2: 'まきの葉に',
+            3: '霧立ちのぼる',
+            4: '秋の夕暮'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Murasame no',
+            1: 'Tsuyu mo mada hinu',
+            2: 'Maki no ha ni',
+            3: 'Kiri tachinoboru',
+            4: 'Aki no yugure'
         },
     },
     87: {
