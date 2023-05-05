@@ -2521,30 +2521,30 @@ cards = {
     },
     90: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Yoshitsune',
+            'japanese': '後京極摂政太政大臣',
+            'romaji': 'Go Kyogoku no Sessho Dajodaijin'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'In my cold bed,',
+            1: 'Drawing close my folded quilt,',
+            2: 'I sleep alone,',
+            3: 'While all through the frosty night',
+            4: "I hear a cricket's lonely sound."
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'きりぎりす',
+            1: '鳴くや霜夜の',
+            2: 'さむしろに',
+            3: '衣かたしき',
+            4: 'ひとりかも寝む'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Kirigirisu',
+            1: 'Naku ya shimo yo no',
+            2: 'Samushiro ni',
+            3: 'Koromo katashiki',
+            4: 'Hitori kamo nen'
         },
     },
     91: {
