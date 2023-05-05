@@ -2325,30 +2325,30 @@ cards = {
     },
     83: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Kiyosuke',
+            'japanese': '藤原清輔朝臣',
+            'romaji': 'Fujiwara no Kiyosuke Ason'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'If I should live long,',
+            1: 'Then perhaps the present days',
+            2: 'May be dear to me,',
+            3: 'Just as past time filled with grief',
+            4: 'Comes quietly back in thought.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'ながらへば',
+            1: 'またこの頃や',
+            2: 'しのばれむ',
+            3: '憂しと見し世ぞ',
+            4: '今は恋しき'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Nagaraeba',
+            1: 'Mata konogoro ya',
+            2: 'Shinobaren',
+            3: 'Ushi to mishi yo zo',
+            4: 'Ima wa koishiki'
         },
     },
     84: {
