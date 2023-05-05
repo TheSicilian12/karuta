@@ -2493,30 +2493,30 @@ cards = {
     },
     89: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Attendant to Empress Inpu',
+            'japanese': '殷富門院大輔',
+            'romaji': 'Inpu Moin no Taifu'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Let me show him these!',
+            1: "Even the fishermen's sleeves",
+            2: "On Ojima's shores,",
+            3: 'Though wet through and wet again,',
+            4: 'Do not so change their colors.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '見せばやな',
+            1: '雄島のあまの',
+            2: '袖だにも',
+            3: 'ぬれにぞぬれし',
+            4: '色はかはらず'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Misebaya na',
+            1: 'Ojima no ama no',
+            2: 'Sode dani mo',
+            3: 'Nure ni zo nureshi',
+            4: 'Iro wa kawarazu'
         },
     },
     90: {
