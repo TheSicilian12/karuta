@@ -2297,30 +2297,30 @@ cards = {
     },
     82: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Toshinari',
+            'japanese': '皇太后宮大夫俊成',
+            'romaji': 'Kotaigogu no Daibu Toshinari'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'From this world I think',
+            1: 'That there is nowhere to escape.',
+            2: 'I wanted to hide',
+            3: "In the mountains' farthest depths;",
+            4: "But there I hear the stag's cry."
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '世の中よ',
+            1: '道こそなけれ',
+            2: '思ひ入る',
+            3: '山のおくにも',
+            4: '鹿ぞ鳴くなる'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Yo no naka yo',
+            1: 'Michi koso nakere',
+            2: 'Omoi iru',
+            3: 'Yama no oku ni mo',
+            4: 'Shika zo naku naru'
         },
     },
     83: {
