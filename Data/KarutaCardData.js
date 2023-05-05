@@ -2269,30 +2269,30 @@ cards = {
     },
     81: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'The Monk Doin',
+            'japanese': '道因法師',
+            'romaji': 'Doin Hoshi'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Though in deep distress',
+            1: 'Through your cruel blow, my life',
+            2: 'Still is left to me.',
+            3: 'But I cannot keep my tears;',
+            4: 'They break forth from my grief.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '思ひわび',
+            1: 'さても命は',
+            2: 'あるものを',
+            3: '憂きに堪へぬは',
+            4: 'なみだなりけり'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Omoi wabi',
+            1: 'Satemo inochi wa',
+            2: 'Aru mono o',
+            3: 'Uki ni taenu wa',
+            4: 'Namida nari keri'
         },
     },
     82: {
