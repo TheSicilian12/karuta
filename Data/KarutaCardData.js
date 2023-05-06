@@ -2661,30 +2661,30 @@ cards = {
     },
     95: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Kintsune',
+            'japanese': '入道前太政大臣',
+            'romaji': 'Nyudo Saki no Dajodaijin'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Not the snow of flowers,',
+            1: 'That the hurrying wild wind whirls',
+            2: 'Round the garden court:',
+            3: 'What withers and falls away',
+            4: 'In this place is I myself.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '花さそふ',
+            1: 'あらしの庭の',
+            2: '雪ならで',
+            3: 'ふりゆくものは',
+            4: 'わが身なりけり'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Hana sasou',
+            1: 'Arashi no niwa no',
+            2: 'Yuki nara de',
+            3: 'Furi yuku mono wa',
+            4: 'Waga mi nari keri'
         },
     },
     96: {
