@@ -2745,30 +2745,30 @@ cards = {
     },
     98: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Emperor Gotoba',
+            'japanese': '後鳥羽院御製',
+            'romaji': 'Gotoba In'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'For some men I grieve;',
+            1: 'Some men are hateful to me;',
+            2: 'And this wretched world',
+            3: 'To me, with all my sadness,',
+            4: 'Is a place of misery.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '人も惜し',
+            1: '人も恨めし',
+            2: 'あぢきなく',
+            3: '世を思ふゆゑに',
+            4: 'もの思ふ身は'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Hito mo oshi',
+            1: 'Hito mo urameshi',
+            2: 'Ajiki naku',
+            3: 'Yo o omou yue ni',
+            4: 'Mono omou mi wa'
         },
     },
     99: {
