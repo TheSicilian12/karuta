@@ -2717,30 +2717,30 @@ cards = {
     },
     97: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Ietaka',
+            'japanese': '従二位家隆',
+            'romaji': 'Junii Ietaka'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: "To Nara's brook comes",
+            1: 'Evening, and the rustling winds',
+            2: "Stir the oak-trees' leaves.",
+            3: 'Not a sign of summer left',
+            4: 'But the sacred bathing there.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '風そよぐ',
+            1: 'ならの小川の',
+            2: '夕ぐれは',
+            3: 'みそぎぞ夏の',
+            4: 'しるしなりける'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Kaze soyogu',
+            1: 'Nara no ogawa no',
+            2: 'Yugure wa',
+            3: 'Misogi zo natsu no',
+            4: 'Shirushi nari keru'
         },
     },
     98: {
