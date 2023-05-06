@@ -2633,30 +2633,30 @@ cards = {
     },
     94: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Abbot Jien',
+            'japanese': '前大僧正慈円',
+            'romaji': 'Saki no Daisojo Jien'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'From the monastery',
+            1: 'On Mount Hiei I look out',
+            2: 'On this world of tears,',
+            3: 'And though I am unworthy,',
+            4: 'I shield it with my black sleeves.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'おほけなく',
+            1: 'うき世の民に',
+            2: 'おほふかな',
+            3: 'わがたつそまに',
+            4: '墨染の袖'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Okenaku',
+            1: 'Ukiyo no tami ni',
+            2: 'Ou kana',
+            3: 'Waga tatsu soma ni',
+            4: 'Sumizome no sode'
         },
     },
     95: {
