@@ -2549,86 +2549,86 @@ cards = {
     },
     91: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Lady Sanuki',
+            'japanese': 'わが袖は',
+            'romaji': 'Waga sode wa'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Like a rock at sea,',
+            1: 'At ebb-tide hidden from view,',
+            2: 'Is my tear-drenched sleeve:',
+            3: 'Never for a moment dry,',
+            4: 'And no one knows it is there.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'わが袖は',
+            1: '潮干に見えぬ',
+            2: '沖の石の',
+            3: '人こそしらね',
+            4: 'かはくまもなし'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Waga sode wa',
+            1: 'Shiohi ni mienu',
+            2: 'Oki no ishi no',
+            3: 'Hito koso shirane',
+            4: 'Kawaku ma mo nashi'
         },
     },
     92: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Minamoto no Sanetomo',
+            'japanese': '鎌倉右大臣',
+            'romaji': 'Kamakura no Udaijin'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'If only our world',
+            1: 'Could be always as it is!',
+            2: 'How moving the sight',
+            3: 'Of the little fishing boat',
+            4: 'Drawn by ropes along the bank.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '世の中は',
+            1: 'つねにもがもな',
+            2: 'なぎさこぐ',
+            3: 'あまの小舟の',
+            4: '綱手かなしも'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Yo no naka wa',
+            1: 'Tsune ni mo ga mo na',
+            2: 'Nagisa kogu',
+            3: 'Ama no obune no',
+            4: 'Tsuna de kanashi mo'
         },
     },
     93: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Masatsune',
+            'japanese': '参議雅経',
+            'romaji': 'Sangi Masatsune'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'From Mount Yoshino',
+            1: 'Blows a chill, autumnal wind.',
+            2: 'In the deepening night',
+            3: 'The ancient village shivers:',
+            4: 'Sounds of beating cloth I hear.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'みよし野の',
+            1: '山の秋風',
+            2: 'さよふけて',
+            3: 'ふるさとさむく',
+            4: '衣うつなり'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Miyoshino no',
+            1: 'Yama no akikaze',
+            2: 'Sayo fukete',
+            3: 'Furusato samuku',
+            4: 'Koromo utsu nari'
         },
     },
     94: {
