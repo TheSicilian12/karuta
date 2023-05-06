@@ -2773,30 +2773,30 @@ cards = {
     },
     99: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Emperor Juntoku',
+            'japanese': '順徳院御製',
+            'romaji': 'Juntoku In'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'In this ancient house,',
+            1: 'Paved with a hundred stones,',
+            2: 'Ferns grow in the eaves;',
+            3: 'But numerous as they are,',
+            4: 'My old memories are more.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: '百敷や',
+            1: '古き軒端の',
+            2: 'しのぶにも',
+            3: 'なほあまりある',
+            4: 'むかしなりけり'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Momoshiki ya',
+            1: 'Furuki nokiba no',
+            2: 'Shinobu ni mo',
+            3: 'Nao amari aru',
+            4: 'Mukashi nari keri'
         },
     },
 
