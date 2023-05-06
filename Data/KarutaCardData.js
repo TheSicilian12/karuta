@@ -2689,30 +2689,30 @@ cards = {
     },
     96: {
         'author': {
-            'english': '',
-            'japanese': '',
-            'romaji': ''
+            'english': 'Fujiwara no Sadaie, Fujiwara no Teika',
+            'japanese': '権中納言定家',
+            'romaji': 'GonChunagon Sadaie'
         },
         'english': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Like the salt sea-weed,',
+            1: 'Burning in the evening calm.',
+            2: "On Matsuo's shore,",
+            3: 'All my being is aflame,',
+            4: 'Awaiting her who does not come.'
         },
         'japanese': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'こぬ人を',
+            1: 'まつほの浦の',
+            2: '夕なぎに',
+            3: 'やくやもしほの',
+            4: '身もこがれつつ'
         },
         'romaji': {
-            0: '',
-            1: '',
-            2: '',
-            3: '',
-            4: ''
+            0: 'Konu hito o',
+            1: 'Matsuho no ura no',
+            2: 'Yunagi ni',
+            3: 'Yaku ya moshio no',
+            4: 'Mi mo kogare tsutsu'
         },
     },
     97: {
