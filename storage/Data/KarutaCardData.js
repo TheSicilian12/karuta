@@ -928,8 +928,8 @@ const cards = {
     33: {
         'author': {
             'english': 'Fujiwara no Okikaze',
-            'japanese': 'Fujiwara no Okikaze',
-            'romaji': '藤原興風'
+            'japanese': '藤原興風',
+            'romaji': 'Fujiwara no Okikaze'
         },
         'english': {
             0: 'Who is still alive',
