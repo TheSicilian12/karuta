@@ -1,6 +1,5 @@
 from app.models import db, karuta_cards, environment, SCHEMA;
 from sqlalchemy.sql import text;
-# import cards from '../../storage/Data/KarutaCardData.js';
 
 def seed_karuta_cards():
     # card1 = karuta_cards(
@@ -48,8 +47,54 @@ def seed_karuta_cards():
         romaji_line5 = 'Tsuyu ni nure tsutsu',
         romaji_author = 'Tenchi Tenno',
     )
+    card2 = karuta_cards(
+        english_line1 = 'The spring has passed',
+        english_line2 = 'And the summer come again;',
+        english_line3 = 'For the silk-white robes,',
+        english_line4 = 'So they say, are spread to dry',
+        english_line5 = 'On the "Mount of Heaven\'s Perfume."',
+        english_author = 'Empress Jito',
+
+        japanese_line1 = '春過ぎて',
+        japanese_line2 = '夏来にけらし',
+        japanese_line3 = '白妙の',
+        japanese_line4 = '衣ほすてふ',
+        japanese_line5 = '天の香具山',
+        japanese_author = '持統天皇',
+
+        romaji_line1 = 'Haru sugite',
+        romaji_line2 = 'Natsu ki ni kerashi',
+        romaji_line3 = 'Shirotae no',
+        romaji_line4 = 'Koromo hosu cho',
+        romaji_line5 = 'Ama no Kaguyama',
+        romaji_author = 'Jito Tenno',
+    )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
 
     db.session.add(card1)
+    db.session.add(card2)
     db.session.commit()
 
 
