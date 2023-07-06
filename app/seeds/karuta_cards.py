@@ -91,7 +91,6 @@ def seed_karuta_cards():
         romaji_line5='Hitori ka mo nen',
         romaji_author='Kakinomoto no Hitomaro',
     )
-
     card4 = karuta_cards(
         english_line1 = 'When I take the path',
         english_line2 = "To Tago's coast, I see",
@@ -114,30 +113,28 @@ def seed_karuta_cards():
         romaji_line5 = 'Yuki wa furi tsutsu',
         romaji_author = 'Yamabe no Akahito',
     )
+    card5 = karuta_cards(
+        english_line1 = 'In the mountain depths,',
+        english_line2 = 'Treading through the crimson leaves,',
+        english_line3 = 'The wandering stag calls.',
+        english_line4 = 'When I hear the lonely cry,',
+        english_line5 = 'Sad--how sad!--the autumn is.',
+        english_author = 'Sarumaru',
 
-    # card1 = karuta_cards(
-    #     english_line1 = "",
-    #     english_line2 = "",
-    #     english_line3 = "",
-    #     english_line4 = "",
-    #     english_line5 = "",
-    #     english_author = "",
+        japanese_line1 = '奥山に',
+        japanese_line2 = '紅葉ふみわけ',
+        japanese_line3 = '鳴く鹿の',
+        japanese_line4 = '声きく時ぞ',
+        japanese_line5 = '秋は悲しき',
+        japanese_author = '猿丸大夫',
 
-    #     japanese_line1 = "",
-    #     japanese_line2 = "",
-    #     japanese_line3 = "",
-    #     japanese_line4 = "",
-    #     japanese_line5 = "",
-    #     japanese_author = "",
-
-    #     romaji_line1 = "",
-    #     romaji_line2 = "",
-    #     romaji_line3 = "",
-    #     romaji_line4 = "",
-    #     romaji_line5 = "",
-    #     romaji_author = "",
-    # )
-
+        romaji_line1 = 'Okuyama ni',
+        romaji_line2 = 'Momiji fumiwake',
+        romaji_line3 = 'Naku shika no',
+        romaji_line4 = 'Koe kiku toki zo',
+        romaji_line5 = 'Aki wa kanashiki',
+        romaji_author = 'Sarumaru Dayu',
+    )
     # card1 = karuta_cards(
     #     english_line1 = "",
     #     english_line2 = "",
