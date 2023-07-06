@@ -135,29 +135,28 @@ def seed_karuta_cards():
         romaji_line5 = 'Aki wa kanashiki',
         romaji_author = 'Sarumaru Dayu',
     )
-    # card1 = karuta_cards(
-    #     english_line1 = "",
-    #     english_line2 = "",
-    #     english_line3 = "",
-    #     english_line4 = "",
-    #     english_line5 = "",
-    #     english_author = "",
+    card6 = karuta_cards(
+        english_line1 = 'If I see that bridge',
+        english_line2 = 'That is spanned by flights of magpies',
+        english_line3 = 'Across the arc of heaven',
+        english_line4 = 'Made white with a deep-laid frost,',
+        english_line5 = 'Then the night is almost past.',
+        english_author = 'Otomo no Yakamochi',
 
-    #     japanese_line1 = "",
-    #     japanese_line2 = "",
-    #     japanese_line3 = "",
-    #     japanese_line4 = "",
-    #     japanese_line5 = "",
-    #     japanese_author = "",
+        japanese_line1 = 'かささぎの',
+        japanese_line2 = '渡せる橋に',
+        japanese_line3 = '置く霜の',
+        japanese_line4 = '白きを見れば',
+        japanese_line5 = '夜ぞふけにける',
+        japanese_author = '中納言家持',
 
-    #     romaji_line1 = "",
-    #     romaji_line2 = "",
-    #     romaji_line3 = "",
-    #     romaji_line4 = "",
-    #     romaji_line5 = "",
-    #     romaji_author = "",
-    # )
-
+        romaji_line1 = 'Kasasagi no',
+        romaji_line2 = 'Wataseru hashi ni',
+        romaji_line3 = 'Oku shimo no',
+        romaji_line4 = 'Shiroki o mireba',
+        romaji_line5 = 'Yo zo fuke ni keru',
+        romaji_author = 'Chunagon Yakamochi',
+    )
     # card1 = karuta_cards(
     #     english_line1 = "",
     #     english_line2 = "",
