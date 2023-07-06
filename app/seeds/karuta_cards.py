@@ -1990,20 +1990,196 @@ def seed_karuta_cards():
         english_line4='Though wet through and wet again,',
         english_line5='Do not so change their colors.',
         english_author='Attendant to Empress Inpu',
-    
+
         japanese_line1='見せばやな',
         japanese_line2='雄島のあまの',
         japanese_line3='袖だにも',
         japanese_line4='ぬれにぞぬれし',
         japanese_line5='色はかはらず',
         japanese_author='殷富門院大輔',
-    
+
         romaji_line1='Misebaya na',
         romaji_line2='Ojima no ama no',
         romaji_line3='Sode dani mo',
         romaji_line4='Nure ni zo nureshi',
         romaji_line5='Iro wa kawarazu',
         romaji_author='Inpu Moin no Taifu',
+    )
+    card91 = karuta_cards(
+        english_line1='In my cold bed,',
+        english_line2='Drawing close my folded quilt,',
+        english_line3='I sleep alone,',
+        english_line4='While all through the frosty night',
+        english_line5="I hear a cricket's lonely sound.",
+        english_author='Fujiwara no Yoshitsune',
+
+        japanese_line1='きりぎりす',
+        japanese_line2='鳴くや霜夜の',
+        japanese_line3='さむしろに',
+        japanese_line4='衣かたしき',
+        japanese_line5='ひとりかも寝む',
+        japanese_author='後京極摂政太政大臣',
+
+        romaji_line1='Kirigirisu',
+        romaji_line2='Naku ya shimo yo no',
+        romaji_line3='Samushiro ni',
+        romaji_line4='Koromo katashiki',
+        romaji_line5='Hitori kamo nen',
+        romaji_author='Go Kyogoku no Sessho Dajodaijin',
+    )
+    card92 = karuta_cards(
+        english_line1='Like a rock at sea,',
+        english_line2='At ebb-tide hidden from view,',
+        english_line3='Is my tear-drenched sleeve:',
+        english_line4='Never for a moment dry,',
+        english_line5='And no one knows it is there.',
+        english_author='Lady Sanuki',
+
+        japanese_line1='わが袖は',
+        japanese_line2='潮干に見えぬ',
+        japanese_line3='沖の石の',
+        japanese_line4='人こそしらね',
+        japanese_line5='かはくまもなし',
+        japanese_author='わが袖は',
+
+        romaji_line1='Waga sode wa',
+        romaji_line2='Shiohi ni mienu',
+        romaji_line3='Oki no ishi no',
+        romaji_line4='Hito koso shirane',
+        romaji_line5='Kawaku ma mo nashi',
+        romaji_author='Waga sode wa',
+    )
+    card93 = karuta_cards(
+        english_line1='If only our world',
+        english_line2='Could be always as it is!',
+        english_line3='How moving the sight',
+        english_line4='Of the little fishing boat',
+        english_line5='Drawn by ropes along the bank.',
+        english_author='Minamoto no Sanetomo',
+
+        japanese_line1='世の中は',
+        japanese_line2='つねにもがもな',
+        japanese_line3='なぎさこぐ',
+        japanese_line4='あまの小舟の',
+        japanese_line5='綱手かなしも',
+        japanese_author='鎌倉右大臣',
+
+        romaji_line1='Yo no naka wa',
+        romaji_line2='Tsune ni mo ga mo na',
+        romaji_line3='Nagisa kogu',
+        romaji_line4='Ama no obune no',
+        romaji_line5='Tsuna de kanashi mo',
+        romaji_author='Kamakura no Udaijin',
+    )
+    card94 = karuta_cards(
+        english_line1='From Mount Yoshino',
+        english_line2='Blows a chill, autumnal wind.',
+        english_line3='In the deepening night',
+        english_line4='The ancient village shivers:',
+        english_line5='Sounds of beating cloth I hear.',
+        english_author='Fujiwara no Masatsune',
+
+        japanese_line1='みよし野の',
+        japanese_line2='山の秋風',
+        japanese_line3='さよふけて',
+        japanese_line4='ふるさとさむく',
+        japanese_line5='衣うつなり',
+        japanese_author='参議雅経',
+
+        romaji_line1='Miyoshino no',
+        romaji_line2='Yama no akikaze',
+        romaji_line3='Sayo fukete',
+        romaji_line4='Furusato samuku',
+        romaji_line5='Koromo utsu nari',
+        romaji_author='Sangi Masatsune',
+    )
+    card95 = karuta_cards(
+        english_line1='From the monastery',
+        english_line2='On Mount Hiei I look out',
+        english_line3='On this world of tears,',
+        english_line4='And though I am unworthy,',
+        english_line5='I shield it with my black sleeves.',
+        english_author='Abbot Jien',
+
+        japanese_line1='おほけなく',
+        japanese_line2='うき世の民に',
+        japanese_line3='おほふかな',
+        japanese_line4='わがたつそまに',
+        japanese_line5='墨染の袖',
+        japanese_author='前大僧正慈円',
+
+        romaji_line1='Okenaku',
+        romaji_line2='Ukiyo no tami ni',
+        romaji_line3='Ou kana',
+        romaji_line4='Waga tatsu soma ni',
+        romaji_line5='Sumizome no sode',
+        romaji_author='Saki no Daisojo Jien',
+    )
+    card96 = karuta_cards(
+        english_line1='Not the snow of flowers,',
+        english_line2='That the hurrying wild wind whirls',
+        english_line3='Round the garden court:',
+        english_line4='What withers and falls away',
+        english_line5='In this place is I myself.',
+        english_author='Fujiwara no Kintsune',
+
+        japanese_line1='花さそふ',
+        japanese_line2='あらしの庭の',
+        japanese_line3='雪ならで',
+        japanese_line4='ふりゆくものは',
+        japanese_line5='わが身なりけり',
+        japanese_author='入道前太政大臣',
+
+        romaji_line1='Hana sasou',
+        romaji_line2='Arashi no niwa no',
+        romaji_line3='Yuki nara de',
+        romaji_line4='Furi yuku mono wa',
+        romaji_line5='Waga mi nari keri',
+        romaji_author='Nyudo Saki no Dajodaijin',
+    )
+    card97 = karuta_cards(
+        english_line1='Like the salt sea-weed,',
+        english_line2='Burning in the evening calm.',
+        english_line3="On Matsuo's shore,",
+        english_line4='All my being is aflame,',
+        english_line5='Awaiting her who does not come.',
+        english_author='Fujiwara no Sadaie, Fujiwara no Teika',
+
+        japanese_line1='こぬ人を',
+        japanese_line2='まつほの浦の',
+        japanese_line3='夕なぎに',
+        japanese_line4='やくやもしほの',
+        japanese_line5='身もこがれつつ',
+        japanese_author='権中納言定家',
+
+        romaji_line1='Konu hito o',
+        romaji_line2='Matsuho no ura no',
+        romaji_line3='Yunagi ni',
+        romaji_line4='Yaku ya moshio no',
+        romaji_line5='Mi mo kogare tsutsu',
+        romaji_author='GonChunagon Sadaie',
+    )
+    card98 = karuta_cards(
+        english_line1 = "",
+        english_line2 = "",
+        english_line3 = "",
+        english_line4 = "",
+        english_line5 = "",
+        english_author = "",
+
+        japanese_line1 = "",
+        japanese_line2 = "",
+        japanese_line3 = "",
+        japanese_line4 = "",
+        japanese_line5 = "",
+        japanese_author = "",
+
+        romaji_line1 = "",
+        romaji_line2 = "",
+        romaji_line3 = "",
+        romaji_line4 = "",
+        romaji_line5 = "",
+        romaji_author = "",
     )
     # card1 = karuta_cards(
     #     english_line1 = "",
@@ -2028,32 +2204,7 @@ def seed_karuta_cards():
     #     romaji_author = "",
     # )
 
-
-# card1 = karuta_cards(
-    #     english_line1 = "",
-    #     english_line2 = "",
-    #     english_line3 = "",
-    #     english_line4 = "",
-    #     english_line5 = "",
-    #     english_author = "",
-
-    #     japanese_line1 = "",
-    #     japanese_line2 = "",
-    #     japanese_line3 = "",
-    #     japanese_line4 = "",
-    #     japanese_line5 = "",
-    #     japanese_author = "",
-
-    #     romaji_line1 = "",
-    #     romaji_line2 = "",
-    #     romaji_line3 = "",
-    #     romaji_line4 = "",
-    #     romaji_line5 = "",
-    #     romaji_author = "",
-    # )
-
-
-# card1 = karuta_cards(
+    # card1 = karuta_cards(
     #     english_line1 = "",
     #     english_line2 = "",
     #     english_line3 = "",
