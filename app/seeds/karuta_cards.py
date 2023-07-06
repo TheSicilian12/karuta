@@ -223,29 +223,28 @@ def seed_karuta_cards():
         romaji_line5 = 'Nagame seshi ma ni',
         romaji_author = 'Ono no Komachi',
     )
-    # card1 = karuta_cards(
-    #     english_line1 = "",
-    #     english_line2 = "",
-    #     english_line3 = "",
-    #     english_line4 = "",
-    #     english_line5 = "",
-    #     english_author = "",
+    card10 = karuta_cards(
+        english_line1 = 'Truly, this is where',
+        english_line2 = 'Travelers who go or come',
+        english_line3 = 'Over parting ways--',
+        english_line4 = 'Friends or strangers--all must meet:',
+        english_line5 = 'The gate of "Meeting Hill."',
+        english_author = 'Semimaru',
 
-    #     japanese_line1 = "",
-    #     japanese_line2 = "",
-    #     japanese_line3 = "",
-    #     japanese_line4 = "",
-    #     japanese_line5 = "",
-    #     japanese_author = "",
+        japanese_line1 = 'これやこの',
+        japanese_line2 = '行くも帰るも',
+        japanese_line3 = '別れては',
+        japanese_line4 = '知るも知らぬも',
+        japanese_line5 = '逢坂の関',
+        japanese_author = '蝉丸',
 
-    #     romaji_line1 = "",
-    #     romaji_line2 = "",
-    #     romaji_line3 = "",
-    #     romaji_line4 = "",
-    #     romaji_line5 = "",
-    #     romaji_author = "",
-    # )
-
+        romaji_line1 = 'Kore ya kono',
+        romaji_line2 = 'Yuku mo kaeru mo',
+        romaji_line3 = 'Wakarete wa',
+        romaji_line4 = 'Shiru mo shiranu mo',
+        romaji_line5 = 'Osaka no seki',
+        romaji_author = 'Semimaru',
+    )
     # card1 = karuta_cards(
     #     english_line1 = "",
     #     english_line2 = "",
