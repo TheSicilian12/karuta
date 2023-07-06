@@ -2,12 +2,28 @@ from app.models import db, karuta_cards, environment, SCHEMA
 from sqlalchemy.sql import text
 
 def karuta_cards():
-    card1 = Comment(
-        details='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        rating=1,
-        user_id=2,
-        product_id=1
-        )
+    card1 = karuta_cards(
+        english_line1 = "",
+        english_line2 = "",
+        english_line3 = "",
+        english_line4 = "",
+        english_line5 = "",
+        english_author = "",
+
+        japanese_line1 = "",
+        japanese_line2 = "",
+        japanese_line3 = "",
+        japanese_line4 = "",
+        japanese_line5 = "",
+        japanese_author = "",
+
+        romaji_line1 = "",
+        romaji_line2 = "",
+        romaji_line3 = "",
+        romaji_line4 = "",
+        romaji_line5 = "",
+        romaji_author = "",
+    )
 
 
     db.session.add(card1)
