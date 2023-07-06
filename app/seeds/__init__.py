@@ -1,7 +1,7 @@
 from flask.cli import AppGroup
 from .users import seed_users, undo_users
 from .carts import seed_carts, undo_carts
-from .comments import seed_comments, undo_comments
+from .karuta_cards import seed_comments, undo_comments
 from .products import seed_products, undo_products
 from .images import seed_images, undo_images
 

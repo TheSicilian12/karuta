@@ -62,7 +62,6 @@ class karuta_cards(db.Model):
             'romaji_line5': self.romaji_line5,
             'romaji_author': self.romaji_author,
 
-
             'created_at': self.created_at,
             'updated_at': self.updated_at
         }
