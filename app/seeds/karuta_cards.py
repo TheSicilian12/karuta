@@ -179,29 +179,28 @@ def seed_karuta_cards():
         romaji_line5 = 'Ideshi tsuki kamo',
         romaji_author = 'Abe no Nakamaro',
     )
-    # card1 = karuta_cards(
-    #     english_line1 = "",
-    #     english_line2 = "",
-    #     english_line3 = "",
-    #     english_line4 = "",
-    #     english_line5 = "",
-    #     english_author = "",
+    card8 = karuta_cards(
+        english_line1 = 'My lowly hut is',
+        english_line2 = 'Southeast from the capital.',
+        english_line3 = 'Thus I choose to live.',
+        english_line4 = 'And the world in which I live',
+        english_line5 = 'Men have named a "Mount of Gloom."',
+        english_author = 'The Monk Kisen',
 
-    #     japanese_line1 = "",
-    #     japanese_line2 = "",
-    #     japanese_line3 = "",
-    #     japanese_line4 = "",
-    #     japanese_line5 = "",
-    #     japanese_author = "",
+        japanese_line1 = 'わが庵は',
+        japanese_line2 = '都のたつみ',
+        japanese_line3 = 'しかぞすむ',
+        japanese_line4 = '世をうぢ山と',
+        japanese_line5 = '人はいふなり',
+        japanese_author = '喜撰法師',
 
-    #     romaji_line1 = "",
-    #     romaji_line2 = "",
-    #     romaji_line3 = "",
-    #     romaji_line4 = "",
-    #     romaji_line5 = "",
-    #     romaji_author = "",
-    # )
-
+        romaji_line1 = 'Waga io wa',
+        romaji_line2 = 'Miyako no tatsumi',
+        romaji_line3 = 'Shika zo sumu',
+        romaji_line4 = 'Yo o Ujiyama to',
+        romaji_line5 = 'Hito wa iu nari',
+        romaji_author = 'Kisen Hoshi',
+    )
     # card1 = karuta_cards(
     #     english_line1 = "",
     #     english_line2 = "",
