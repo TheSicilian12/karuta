@@ -2,7 +2,7 @@ from app.models import db, karuta_cards, environment, SCHEMA;
 from sqlalchemy.sql import text;
 # import cards from '../../storage/Data/KarutaCardData.js';
 
-def karuta_cards():
+def seed_karuta_cards():
     # card1 = karuta_cards(
     #     english_line1 = "",
     #     english_line2 = "",

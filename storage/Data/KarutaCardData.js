@@ -1,4 +1,6 @@
-export default cards = {
+// export default cards is located at the bottom of the file
+
+const cards = {
     0: {
         'author': {
             'english': 'Emperor Tenchi',
@@ -2806,6 +2808,7 @@ export default cards = {
     }
 }
 
+export default cards
 
 //card data structure outline
 // 0: {
