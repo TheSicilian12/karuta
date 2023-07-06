@@ -228,8 +228,8 @@ const cards = {
     8: {
         'author': {
             'english': 'Ono no Komachi',
-            'japanese': 'Ono no Komachi',
-            'romaji': '小野小町'
+            'japanese': '小野小町',
+            'romaji': 'Ono no Komachi'
         },
         'english': {
             0: 'Color of the flower',

@@ -201,29 +201,28 @@ def seed_karuta_cards():
         romaji_line5 = 'Hito wa iu nari',
         romaji_author = 'Kisen Hoshi',
     )
-    # card1 = karuta_cards(
-    #     english_line1 = "",
-    #     english_line2 = "",
-    #     english_line3 = "",
-    #     english_line4 = "",
-    #     english_line5 = "",
-    #     english_author = "",
+    card9 = karuta_cards(
+        english_line1 = 'Color of the flower',
+        english_line2 = 'Has already faded away,',
+        english_line3 = 'While in idle thoughts',
+        english_line4 = 'My life passes vainly by,',
+        english_line5 = 'As I watch the long rains fall.',
+        english_author = 'Ono no Komachi',
 
-    #     japanese_line1 = "",
-    #     japanese_line2 = "",
-    #     japanese_line3 = "",
-    #     japanese_line4 = "",
-    #     japanese_line5 = "",
-    #     japanese_author = "",
+        japanese_line1 = '花の色は',
+        japanese_line2 = 'うつりにけりな',
+        japanese_line3 = 'いたづらに',
+        japanese_line4 = 'わが身世にふる',
+        japanese_line5 = 'ながめせしまに',
+        japanese_author = '小野小町',
 
-    #     romaji_line1 = "",
-    #     romaji_line2 = "",
-    #     romaji_line3 = "",
-    #     romaji_line4 = "",
-    #     romaji_line5 = "",
-    #     romaji_author = "",
-    # )
-
+        romaji_line1 = 'Hana no iro wa',
+        romaji_line2 = 'Utsuri ni keri na',
+        romaji_line3 = 'Itazura ni',
+        romaji_line4 = 'Waga mi yo ni furu',
+        romaji_line5 = 'Nagame seshi ma ni',
+        romaji_author = 'Ono no Komachi',
+    )
     # card1 = karuta_cards(
     #     english_line1 = "",
     #     english_line2 = "",
