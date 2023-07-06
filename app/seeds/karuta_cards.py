@@ -157,29 +157,28 @@ def seed_karuta_cards():
         romaji_line5 = 'Yo zo fuke ni keru',
         romaji_author = 'Chunagon Yakamochi',
     )
-    # card1 = karuta_cards(
-    #     english_line1 = "",
-    #     english_line2 = "",
-    #     english_line3 = "",
-    #     english_line4 = "",
-    #     english_line5 = "",
-    #     english_author = "",
+    card7 = karuta_cards(
+        english_line1 = 'When I look up at',
+        english_line2 = 'The wide-stretched plain of heaven,',
+        english_line3 = 'Is the moon the same',
+        english_line4 = 'That rose on Mount Mikasa',
+        english_line5 = 'In the land of Kasuga?',
+        english_author = 'Abe no Nakamaro',
 
-    #     japanese_line1 = "",
-    #     japanese_line2 = "",
-    #     japanese_line3 = "",
-    #     japanese_line4 = "",
-    #     japanese_line5 = "",
-    #     japanese_author = "",
+        japanese_line1 = '天の原',
+        japanese_line2 = 'ふりさけ見れば',
+        japanese_line3 = '春日なる',
+        japanese_line4 = '三笠の山に',
+        japanese_line5 = '出でし月かも',
+        japanese_author = '安倍仲麿',
 
-    #     romaji_line1 = "",
-    #     romaji_line2 = "",
-    #     romaji_line3 = "",
-    #     romaji_line4 = "",
-    #     romaji_line5 = "",
-    #     romaji_author = "",
-    # )
-
+        romaji_line1 = 'Ama no hara',
+        romaji_line2 = 'Furisake mireba',
+        romaji_line3 = 'Kasuga naru',
+        romaji_line4 = 'Mikasa no yama ni',
+        romaji_line5 = 'Ideshi tsuki kamo',
+        romaji_author = 'Abe no Nakamaro',
+    )
     # card1 = karuta_cards(
     #     english_line1 = "",
     #     english_line2 = "",

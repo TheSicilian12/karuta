@@ -183,18 +183,18 @@ const cards = {
             4: 'In the land of Kasuga?'
         },
         'japanese': {
-            0: 'Ama no hara',
-            1: 'Furisake mireba',
-            2: 'Kasuga naru',
-            3: 'Mikasa no yama ni',
-            4: 'Ideshi tsuki kamo'
-        },
-        'romaji': {
             0: '天の原',
             1: 'ふりさけ見れば',
             2: '春日なる',
             3: '三笠の山に',
             4: '出でし月かも'
+        },
+        'romaji': {
+            0: 'Ama no hara',
+            1: 'Furisake mireba',
+            2: 'Kasuga naru',
+            3: 'Mikasa no yama ni',
+            4: 'Ideshi tsuki kamo'
         },
     },
     7: {
