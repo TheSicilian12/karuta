@@ -1125,6 +1125,226 @@ def seed_karuta_cards():
         romaji_line5 = 'Omoi keru kana',
         romaji_author = 'Fujiwara no Yoshitaka',
     )
+    card51 = karuta_cards(
+        english_line1 = 'How can I tell her',
+        english_line2 = 'How fierce my love for her is?',
+        english_line3 = 'Will she understand',
+        english_line4 = 'That the love I feel for her',
+        english_line5 = "Burns like Ibuki's fire plant?",
+        english_author = 'Fujiwara no Sanekata',
+
+        japanese_line1 = 'かくとだに',
+        japanese_line2 = 'えやはいぶきの',
+        japanese_line3 = 'さしも草',
+        japanese_line4 = 'さしも知らじな',
+        japanese_line5 = 'もゆる思ひを',
+        japanese_author = '藤原実方朝臣',
+
+        romaji_line1 = 'Kaku to dani',
+        romaji_line2 = 'Eyawa ibuki no',
+        romaji_line3 = 'Sashimogusa',
+        romaji_line4 = 'Sashimo shiraji na',
+        romaji_line5 = 'Moyuru omoi o',
+        romaji_author = 'Fujiwara no Sanekata Ason',
+    )
+    card52 = karuta_cards(
+        english_line1 = 'Though I know indeed',
+        english_line2 = 'That the night will come again',
+        english_line3 = 'After day has dawned,',
+        english_line4 = 'Still, in truth, I hate the sight',
+        english_line5 = "Of the morning's coming light.",
+        english_author = 'Fujiwara no Michinobu',
+
+        japanese_line1 = '明けぬれば',
+        japanese_line2 = '暮るるものとは',
+        japanese_line3 = '知りながら',
+        japanese_line4 = 'なをうらめしき',
+        japanese_line5 = 'あさぼらけかな',
+        japanese_author = '藤原道信朝臣',
+
+        romaji_line1 = 'Akenureba',
+        romaji_line2 = 'Kururu mono to wa',
+        romaji_line3 = 'Shiri nagara',
+        romaji_line4 = 'Nao urameshiki',
+        romaji_line5 = 'Asaborake kana',
+        romaji_author = 'Fujiwara no Michinobu Ason',
+    )
+    card53 = karuta_cards(
+        english_line1 = 'Lying all alone,',
+        english_line2 = 'Through the hours of the night,',
+        english_line3 = 'Till the daylight comes:',
+        english_line4 = 'Can you realize at all',
+        english_line5 = 'The emptiness of that night?',
+        english_author = 'The Mother of Michitsuna',
+
+        japanese_line1 = 'なげきつつ',
+        japanese_line2 = 'ひとりぬる夜の',
+        japanese_line3 = '明くる間は',
+        japanese_line4 = 'いかに久しき',
+        japanese_line5 = 'ものとかは知る',
+        japanese_author = '右大将道綱母',
+
+        romaji_line1 = 'Nageki tsutsu',
+        romaji_line2 = 'Hitori nuru yo no',
+        romaji_line3 = 'Akuru ma wa',
+        romaji_line4 = 'Ikani hisashiki',
+        romaji_line5 = 'Mono to ka wa shiru',
+        romaji_author = 'Udaisho Michitsuna no Haha',
+    )
+    card54 = karuta_cards(
+        english_line1 = 'If remembering me',
+        english_line2 = 'Will for him in future years',
+        english_line3 = 'Be too difficult,',
+        english_line4 = 'It would be well this very day',
+        english_line5 = 'That I should end my life.',
+        english_author = 'The Mother of Gido Sanshi',
+
+        japanese_line1 = '忘れじの',
+        japanese_line2 = '行末までは',
+        japanese_line3 = '難ければ',
+        japanese_line4 = '今日を限りの',
+        japanese_line5 = '命ともがな',
+        japanese_author = '儀同三司母',
+
+        romaji_line1 = 'Wasureji no',
+        romaji_line2 = 'Yukusue made wa',
+        romaji_line3 = 'Katakereba',
+        romaji_line4 = 'Kyo o kagiri no',
+        romaji_line5 = 'Inochi to mo gana',
+        romaji_author = 'Gido Sanshi no Haha',
+    )
+    card55 = karuta_cards(
+        english_line1 = 'Though the waterfall',
+        english_line2 = 'Ceased its flowing long ago,',
+        english_line3 = 'And its sound is stilled,',
+        english_line4 = 'Yet, in name it ever flows,',
+        english_line5 = 'And in fame may yet be heard.',
+        english_author = 'Fujiwara no Kinto',
+
+        japanese_line1 = '滝の音は',
+        japanese_line2 = '絶えて久しく',
+        japanese_line3 = 'なりぬれど',
+        japanese_line4 = '名こそ流れて',
+        japanese_line5 = 'なほ聞えけれ',
+        japanese_author = '大納言公任',
+
+        romaji_line1 = 'Taki no oto wa',
+        romaji_line2 = 'Taete hisashiku',
+        romaji_line3 = 'Narinuredo',
+        romaji_line4 = 'Na koso nagarete',
+        romaji_line5 = 'Nao kikoe kere',
+        romaji_author = 'Dainagon Kinto',
+    )
+    card56 = karuta_cards(
+        english_line1 = 'Soon my life will close.',
+        english_line2 = 'When I am beyond this world',
+        english_line3 = 'And have forgotten it,',
+        english_line4 = 'Let me remember only this:',
+        english_line5 = 'One final meeting with you.',
+        english_author = 'Lady Izumi Shikibu',
+
+        japanese_line1 = 'あらざらむ',
+        japanese_line2 = 'この世の外の',
+        japanese_line3 = '思ひ出に',
+        japanese_line4 = '今ひとたびの',
+        japanese_line5 = '逢ふこともがな',
+        japanese_author = '和泉式部',
+
+        romaji_line1 = 'Arazaran',
+        romaji_line2 = 'Kono yo no hoka no',
+        romaji_line3 = 'Omoide ni',
+        romaji_line4 = 'Ima hitotabi no',
+        romaji_line5 = 'Au koto mo gana',
+        romaji_author = 'Izumi Shikibu',
+    )
+    card57 = karuta_cards(
+        english_line1 = 'Meeting on the path:',
+        english_line2 = 'But I cannot clearly know',
+        english_line3 = 'If it was he,',
+        english_line4 = 'Because the midnight moon',
+        english_line5 = 'In a cloud had disappeared.',
+        english_author = 'Lady Murasaki Shikibu',
+
+        japanese_line1 = 'めぐりあひて',
+        japanese_line2 = '見しやそれとも',
+        japanese_line3 = 'わかぬ間に',
+        japanese_line4 = '雲がくれにし',
+        japanese_line5 = '夜半の月かげ',
+        japanese_author = '紫式部',
+
+        romaji_line1 = 'Meguri aite',
+        romaji_line2 = 'Mishi ya sore to mo',
+        romaji_line3 = 'Wakanu ma ni',
+        romaji_line4 = 'Kumo-gakure ni shi',
+        romaji_line5 = 'Yowa no tsuki kage',
+        romaji_author = 'Murasaki Shikibu',
+    )
+    card58 = karuta_cards(
+        english_line1 = 'As Mount Arima',
+        english_line2 = 'Sends its rustling winds across',
+        english_line3 = "Ina's bamboo plains,",
+        english_line4 = 'I will be just as steadfast',
+        english_line5 = 'And never will forget you.',
+        english_author = 'Daini no Sanmi, Lady Kataiko',
+
+        japanese_line1 = 'ありま山',
+        japanese_line2 = '猪名の笹原',
+        japanese_line3 = '風吹けば',
+        japanese_line4 = 'いでそよ人を',
+        japanese_line5 = '忘れやはする',
+        japanese_author = '大弐三位',
+
+        romaji_line1 = 'Arimayama',
+        romaji_line2 = 'Ina no sasawara',
+        romaji_line3 = 'Kaze fukeba',
+        romaji_line4 = 'Ide soyo hito o',
+        romaji_line5 = 'Wasure ya wa suru',
+        romaji_author = 'Daini no Sanmi',
+    )
+    card59 = karuta_cards(
+        english_line1 = 'Better to have slept',
+        english_line2 = 'Care-free, than to keep vain watch',
+        english_line3 = 'Through the passing night,',
+        english_line4 = 'Till I saw the lonely moon',
+        english_line5 = 'Traverse her descending path.',
+        english_author = 'Lady Akazome Emon',
+
+        japanese_line1 = 'やすらはで',
+        japanese_line2 = '寝なまし物を',
+        japanese_line3 = '小夜更けて',
+        japanese_line4 = 'かたぶくまでの',
+        japanese_line5 = '月を見しかな',
+        japanese_author = '赤染衛門',
+
+        romaji_line1 = 'Yasurawade',
+        romaji_line2 = 'Nenamashi mono o',
+        romaji_line3 = 'Sayo fukete',
+        romaji_line4 = 'Katabuku made no',
+        romaji_line5 = 'Tsuki o mishi kan',
+        romaji_author = 'Akazome Emon',
+    )
+    card60 = karuta_cards(
+        english_line1 = 'By Oe Mountain',
+        english_line2 = 'The road to Ikuno',
+        english_line3 = 'Is far away,',
+        english_line4 = 'And neither have I beheld',
+        english_line5 = 'Nor crossed its bridge of heaven.',
+        english_author = 'Lady Koshikibu',
+
+        japanese_line1 = '大江山',
+        japanese_line2 = 'いく野の道の',
+        japanese_line3 = 'とほければ',
+        japanese_line4 = 'まだふみも見ず',
+        japanese_line5 = '天の橋立',
+        japanese_author = '小式部内侍',
+
+        romaji_line1 = 'Oeyama',
+        romaji_line2 = 'Ikuno no michi no',
+        romaji_line3 = 'To kereba',
+        romaji_line4 = 'Mada fumi mo mizu',
+        romaji_line5 = 'Ama no Hashidate',
+        romaji_author = 'Koshikibu no Naishi',
+    )
     # card1 = karuta_cards(
     #     english_line1 = "",
     #     english_line2 = "",
@@ -1216,6 +1436,237 @@ def seed_karuta_cards():
     #     romaji_line5 = "",
     #     romaji_author = "",
     # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
 
 
 
