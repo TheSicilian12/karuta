@@ -1,6 +1,6 @@
-from app.models import db, karuta_cards, environment, SCHEMA
-from sqlalchemy.sql import text
-import karutaData from '../storage/Data/KarutaCardData.js'
+from app.models import db, karuta_cards, environment, SCHEMA;
+from sqlalchemy.sql import text;
+# import cards from '../../storage/Data/KarutaCardData.js';
 
 def karuta_cards():
     # card1 = karuta_cards(
@@ -26,8 +26,28 @@ def karuta_cards():
     #     romaji_author = "",
     # )
 
+    card1 = karuta_cards(
+        english_line1 = 'Coarse the rush-mat roof',
+        english_line2 = 'Sheltering the harvest-hut',
+        english_line3 = 'Of the autumn rice-field;',
+        english_line4 = 'And my sleeves are growing wet',
+        english_line5 = 'With the moisture dripping through.',
+        english_author = 'Emperor Tenchi',
 
+        japanese_line1 = '秋の田の',
+        japanese_line2 = 'かりほの庵の',
+        japanese_line3 = '苫をあらみ',
+        japanese_line4 = 'わが衣手は',
+        japanese_line5 = '露にぬれつつ',
+        japanese_author = '天智天皇',
 
+        romaji_line1 = 'Aki no ta no',
+        romaji_line2 = 'Kariho no io no',
+        romaji_line3 = 'Toma o arami',
+        romaji_line4 = 'Waga koromode wa',
+        romaji_line5 = 'Tsuyu ni nure tsutsu',
+        romaji_author = 'Tenchi Tenno',
+    )
 
     db.session.add(card1)
     db.session.commit()

@@ -1,4 +1,4 @@
-cards = {
+export default cards = {
     0: {
         'author': {
             'english': 'Emperor Tenchi',
