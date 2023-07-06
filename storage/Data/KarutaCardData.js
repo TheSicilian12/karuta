@@ -88,8 +88,8 @@ const cards = {
     3: {
         'author': {
             'english': 'Yamabe no Akahito',
-            'japanese': 'Yamabe no Akahito',
-            'romaji': '山辺赤人'
+            'japanese': '山辺赤人',
+            'romaji': 'Yamabe no Akahito'
         },
         'english': {
             0: 'When I take the path',

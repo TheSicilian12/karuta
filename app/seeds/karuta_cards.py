@@ -69,6 +69,212 @@ def seed_karuta_cards():
         romaji_line5 = 'Ama no Kaguyama',
         romaji_author = 'Jito Tenno',
     )
+    card3 = karuta_cards(
+        english_line1='Oh, the foot-drawn trail',
+        english_line2="Of the mountain-pheasant's tail",
+        english_line3='Drooped like down-curved branch!',
+        english_line4='Through this long, long-dragging night',
+        english_line5='Must I lie in bed alone?',
+        english_author='Kakinomoto no Hitomaro',
+
+        japanese_line1='あしびきの',
+        japanese_line2='山鳥の尾の',
+        japanese_line3='しだり尾の',
+        japanese_line4='ながながし夜を',
+        japanese_line5='ひとりかもねむ',
+        japanese_author='柿本人麿',
+
+        romaji_line1='Ashibiki no',
+        romaji_line2='Yamadori no o no',
+        romaji_line3='Shidari o no',
+        romaji_line4='Naganagashi yo o',
+        romaji_line5='Hitori ka mo nen',
+        romaji_author='Kakinomoto no Hitomaro',
+    )
+
+    card4 = karuta_cards(
+        english_line1 = 'When I take the path',
+        english_line2 = "To Tago's coast, I see",
+        english_line3 = 'Perfect whiteness laid',
+        english_line4 = "On Mount Fuji's lofty peak",
+        english_line5 = 'By the drift of falling snow.',
+        english_author = 'Yamabe no Akahito',
+
+        japanese_line1 = '田子の浦に',
+        japanese_line2 = '打ち出でてみれば',
+        japanese_line3 = '白妙の',
+        japanese_line4 = '富士の高嶺に',
+        japanese_line5 = '雪はふりつつ',
+        japanese_author = '山辺赤人',
+
+        romaji_line1 = 'Tago no Ura ni',
+        romaji_line2 = 'Uchi idete mireba',
+        romaji_line3 = 'Shirotae no',
+        romaji_line4 = 'Fuji no takane ni',
+        romaji_line5 = 'Yuki wa furi tsutsu',
+        romaji_author = 'Yamabe no Akahito',
+    )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+    # card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
 
     # card1 = karuta_cards(
     #     english_line1 = "",
