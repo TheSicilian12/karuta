@@ -1785,6 +1785,226 @@ def seed_karuta_cards():
         romaji_line5 = 'Mono o koso omoe',
         romaji_author = 'Taiken Moin no Horikawa',
     )
+    card81 = karuta_cards(
+        english_line1 = 'When I turned my look',
+        english_line2 = 'Toward the place where I had heard',
+        english_line3 = "The cuckoo's call,",
+        english_line4 = 'The only thing I found',
+        english_line5 = 'Was the moon of early dawn.',
+        english_author = 'Fujiwara no Sanesada',
+
+        japanese_line1 = 'ほととぎす',
+        japanese_line2 = '鳴きつる方を',
+        japanese_line3 = '眺むれば',
+        japanese_line4 = 'ただ有明の',
+        japanese_line5 = '月ぞのこれる',
+        japanese_author = '後徳大寺左大臣',
+
+        romaji_line1 = 'Hototogisu',
+        romaji_line2 = 'Nakitsuru kata o',
+        romaji_line3 = 'Nagamureba',
+        romaji_line4 = 'Tada ariake no',
+        romaji_line5 = 'Tsuki zo nokoreru',
+        romaji_author = 'Go Tokudaiji no Sadaijin',
+    )
+    card82 = karuta_cards(
+        english_line1 = 'Though in deep distress',
+        english_line2 = 'Through your cruel blow, my life',
+        english_line3 = 'Still is left to me.',
+        english_line4 = 'But I cannot keep my tears;',
+        english_line5 = 'They break forth from my grief.',
+        english_author = 'The Monk Doin',
+
+        japanese_line1 = '思ひわび',
+        japanese_line2 = 'さても命は',
+        japanese_line3 = 'あるものを',
+        japanese_line4 = '憂きに堪へぬは',
+        japanese_line5 = 'なみだなりけり',
+        japanese_author = '道因法師',
+
+        romaji_line1 = 'Omoi wabi',
+        romaji_line2 = 'Satemo inochi wa',
+        romaji_line3 = 'Aru mono o',
+        romaji_line4 = 'Uki ni taenu wa',
+        romaji_line5 = 'Namida nari keri',
+        romaji_author = 'Doin Hoshi',
+    )
+    card83 = karuta_cards(
+        english_line1 = 'From this world I think',
+        english_line2 = 'That there is nowhere to escape.',
+        english_line3 = 'I wanted to hide',
+        english_line4 = "In the mountains' farthest depths;",
+        english_line5 = "But there I hear the stag's cry.",
+        english_author = 'Fujiwara no Toshinari',
+
+        japanese_line1 = '世の中よ',
+        japanese_line2 = '道こそなけれ',
+        japanese_line3 = '思ひ入る',
+        japanese_line4 = '山のおくにも',
+        japanese_line5 = '鹿ぞ鳴くなる',
+        japanese_author = '皇太后宮大夫俊成',
+
+        romaji_line1 = 'Yo no naka yo',
+        romaji_line2 = 'Michi koso nakere',
+        romaji_line3 = 'Omoi iru',
+        romaji_line4 = 'Yama no oku ni mo',
+        romaji_line5 = 'Shika zo naku naru',
+        romaji_author = 'Kotaigogu no Daibu Toshinari',
+    )
+    card84 = karuta_cards(
+        english_line1 = 'If I should live long,',
+        english_line2 = 'Then perhaps the present days',
+        english_line3 = 'May be dear to me,',
+        english_line4 = 'Just as past time filled with grief',
+        english_line5 = 'Comes quietly back in thought.',
+        english_author = 'Fujiwara no Kiyosuke',
+
+        japanese_line1 = 'ながらへば',
+        japanese_line2 = 'またこの頃や',
+        japanese_line3 = 'しのばれむ',
+        japanese_line4 = '憂しと見し世ぞ',
+        japanese_line5 = '今は恋しき',
+        japanese_author = '藤原清輔朝臣',
+
+        romaji_line1 = 'Nagaraeba',
+        romaji_line2 = 'Mata konogoro ya',
+        romaji_line3 = 'Shinobaren',
+        romaji_line4 = 'Ushi to mishi yo zo',
+        romaji_line5 = 'Ima wa koishiki',
+        romaji_author = 'Fujiwara no Kiyosuke Ason',
+    )
+    card85 = karuta_cards(
+        english_line1 = 'Through an unsleeping night',
+        english_line2 = 'Longingly I pass the hours,',
+        english_line3 = "While the day's dawn lags.",
+        english_line4 = 'And now the bedroom shutters',
+        english_line5 = 'Are keeping light and life from me.',
+        english_author = "The Monk Shun'e",
+
+        japanese_line1 = '夜もすがら',
+        japanese_line2 = '物思ふ頃は',
+        japanese_line3 = '明けやらぬ',
+        japanese_line4 = 'ねやのひまさへ',
+        japanese_line5 = 'つれなかりけり',
+        japanese_author = '俊恵法師',
+
+        romaji_line1 = 'Yo mo sugara',
+        romaji_line2 = 'Mono omou koro wa',
+        romaji_line3 = 'Ake yaranu',
+        romaji_line4 = 'Neya no hima sae',
+        romaji_line5 = 'Tsure nakari keri',
+        romaji_author = 'Shun\'e Hoshi',
+    )
+    card86 = karuta_cards(
+        english_line1 = 'Should I blame the moon',
+        english_line2 = 'For bringing forth this sadness,',
+        english_line3 = 'As if it pictured grief?',
+        english_line4 = 'Lifting up my troubled face,',
+        english_line5 = 'I regard it through my tears.',
+        english_author = 'The Monk Saigyo',
+
+        japanese_line1 = 'なげけとて',
+        japanese_line2 = '月やは物を',
+        japanese_line3 = '思はする',
+        japanese_line4 = 'かこちがほなる',
+        japanese_line5 = 'わがなみだかな',
+        japanese_author = '西行法師',
+
+        romaji_line1 = 'Nageke tote',
+        romaji_line2 = 'Tsuki ya wa mono o',
+        romaji_line3 = 'Omowasuru',
+        romaji_line4 = 'Kakochi gao naru',
+        romaji_line5 = 'Waga namida kana',
+        romaji_author = 'Saigyo Hoshi',
+    )
+    card87 = karuta_cards(
+        english_line1 = 'An autumn eve:',
+        english_line2 = 'See the valley mists arise',
+        english_line3 = 'Among the fir leaves',
+        english_line4 = "That still hold the dripping wet",
+        english_line5 = "Of the chill day's sudden showers.",
+        english_author = 'The Monk Jakuren',
+
+        japanese_line1 = 'むらさめの',
+        japanese_line2 = '露もまだひぬ',
+        japanese_line3 = 'まきの葉に',
+        japanese_line4 = '霧立ちのぼる',
+        japanese_line5 = '秋の夕暮',
+        japanese_author = '寂蓮法師',
+
+        romaji_line1 = 'Murasame no',
+        romaji_line2 = 'Tsuyu mo mada hinu',
+        romaji_line3 = 'Maki no ha ni',
+        romaji_line4 = 'Kiri tachinoboru',
+        romaji_line5 = 'Aki no yugure',
+        romaji_author = 'Jakuren Hoshi',
+    )
+    card88 = karuta_cards(
+        english_line1 = 'After one brief night--',
+        english_line2 = 'Short as a piece of the reeds',
+        english_line3 = 'Growing in Naniwa bay--',
+        english_line4 = 'Must I forever long for him',
+        english_line5 = 'With my whole heart, till life ends?',
+        english_author = 'Attendant to Empress Koka',
+
+        japanese_line1 = '難波江の',
+        japanese_line2 = '芦のかりねの',
+        japanese_line3 = '一夜ゆへ',
+        japanese_line4 = '身をつくしてや',
+        japanese_line5 = '恋わたるべき',
+        japanese_author = '皇嘉門院別当',
+
+        romaji_line1 = 'Naniwae no',
+        romaji_line2 = 'Ashi no karine no',
+        romaji_line3 = 'Hitoyo yue',
+        romaji_line4 = 'Mi o tsukushite ya',
+        romaji_line5 = 'Koi wataru beki',
+        romaji_author = 'Koka Moin no Betto',
+    )
+    card89 = karuta_cards(
+        english_line1 = 'Like a string of gems',
+        english_line2 = 'Grown weak, my life will break now;',
+        english_line3 = 'For if I live on,',
+        english_line4 = 'All I do to hide my love',
+        english_line5 = 'May at last grow weak and fail.',
+        english_author = 'Princess Shokushi',
+
+        japanese_line1 = '玉の緒よ',
+        japanese_line2 = '絶えなば絶えね',
+        japanese_line3 = 'ながらへば',
+        japanese_line4 = 'しのぶることの',
+        japanese_line5 = 'よはりもぞする',
+        japanese_author = '式子内親王',
+
+        romaji_line1 = 'Tama no o yo',
+        romaji_line2 = 'Taenaba taene',
+        romaji_line3 = 'Nagaraeba',
+        romaji_line4 = 'Shinoburu koto no',
+        romaji_line5 = 'Yowari mo zo suru',
+        romaji_author = 'Shokushi Naishinno',
+    )
+    card90 = karuta_cards(
+        english_line1='Let me show him these!',
+        english_line2="Even the fishermen's sleeves",
+        english_line3="On Ojima's shores,",
+        english_line4='Though wet through and wet again,',
+        english_line5='Do not so change their colors.',
+        english_author='Attendant to Empress Inpu',
+    
+        japanese_line1='見せばやな',
+        japanese_line2='雄島のあまの',
+        japanese_line3='袖だにも',
+        japanese_line4='ぬれにぞぬれし',
+        japanese_line5='色はかはらず',
+        japanese_author='殷富門院大輔',
+    
+        romaji_line1='Misebaya na',
+        romaji_line2='Ojima no ama no',
+        romaji_line3='Sode dani mo',
+        romaji_line4='Nure ni zo nureshi',
+        romaji_line5='Iro wa kawarazu',
+        romaji_author='Inpu Moin no Taifu',
+    )
     # card1 = karuta_cards(
     #     english_line1 = "",
     #     english_line2 = "",
@@ -1808,7 +2028,8 @@ def seed_karuta_cards():
     #     romaji_author = "",
     # )
 
-    # card1 = karuta_cards(
+
+# card1 = karuta_cards(
     #     english_line1 = "",
     #     english_line2 = "",
     #     english_line3 = "",
@@ -1830,6 +2051,33 @@ def seed_karuta_cards():
     #     romaji_line5 = "",
     #     romaji_author = "",
     # )
+
+
+# card1 = karuta_cards(
+    #     english_line1 = "",
+    #     english_line2 = "",
+    #     english_line3 = "",
+    #     english_line4 = "",
+    #     english_line5 = "",
+    #     english_author = "",
+
+    #     japanese_line1 = "",
+    #     japanese_line2 = "",
+    #     japanese_line3 = "",
+    #     japanese_line4 = "",
+    #     japanese_line5 = "",
+    #     japanese_author = "",
+
+    #     romaji_line1 = "",
+    #     romaji_line2 = "",
+    #     romaji_line3 = "",
+    #     romaji_line4 = "",
+    #     romaji_line5 = "",
+    #     romaji_author = "",
+    # )
+
+
+
 
 
 
