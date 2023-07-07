@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import karutaCards from './session'
+import karutaCards from './karutaCards'
 
 const rootReducer = combineReducers({
   karutaCards

@@ -12,8 +12,8 @@ const loadAll = (data) => ({
 
 // GET all cards THUNK
 export const getAllKarutaCardsTHUNK = () => async (dispatch) => {
-	// console.log("get all cards thunk")
-	const response = await fetch('/api/karuta');
+	console.log("get all cards thunk")
+	const response = await fetch('/api/karuta/');
 	if (response.ok) {
 		const responseJSON = await response.json();
 		dispatch(loadAll(responseJSON))
@@ -25,6 +25,7 @@ const initialState = {};
 export default function karutaReducer(state = initialState, action) {
 	switch (action.type) {
 		case LOAD_KARUTA_CARDS: {
+			console.log("action.payload: ", action.payload)
 			const newState={...action.payload}
 			return newState
 		}

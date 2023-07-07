@@ -14,6 +14,6 @@ def get_all_karuta_cards():
     '''
     print("---------------------------get all karuta cards---------------------------------")
     all_cards = karuta_cards.query.all()
-    print("------------------------all_Cards: ", all_cards)
+    print("------------------------all_Cards: ", all_cards[0].to_dict())
 
-    return {'cards': all_cards}
+    return {'cards': all_cards[0].to_dict()}
