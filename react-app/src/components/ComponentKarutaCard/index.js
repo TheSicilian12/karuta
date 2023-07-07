@@ -6,7 +6,8 @@ import "./ComponentKarutaCard.css";
 export default function ComponentKarutaCard({cardData}) {
   // Main text should toggle between Japanese and English
   // Change between first card and second card
-
+  // full poem + picture of poet 5-7-5-7-7
+  // last two lines 7-7
 
   if (!cardData) return null
 
