@@ -8,9 +8,9 @@ import "./HomePage.css";
 export default function HomePage() {
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(getAllKarutaCardsTHUNK())
-  // }, dispatch)
+  useEffect(() => {
+    dispatch(getAllKarutaCardsTHUNK())
+  }, [dispatch])
 
 
   return (
