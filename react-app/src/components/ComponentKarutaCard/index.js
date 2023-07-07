@@ -4,6 +4,9 @@ import { useDispatch } from 'react-redux';
 import "./ComponentKarutaCard.css";
 
 export default function ComponentKarutaCard({cardData}) {
+  // Main text should toggle between Japanese and English
+  // Change between first card and second card
+
 
   if (!cardData) return null
 
@@ -16,7 +19,7 @@ export default function ComponentKarutaCard({cardData}) {
   <div className='karuta-card-container'>
     {cardData.english[0]}
     {cardData.english[1]}
-    
+
 
   </div>
   );
