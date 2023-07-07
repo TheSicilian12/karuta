@@ -41,4 +41,5 @@ export const karutaCardNormalizer = (data) => {
       }
     }
   })
+  return newObj
 }

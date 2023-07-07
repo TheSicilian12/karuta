@@ -1,3 +1,5 @@
+import { karutaCardNormalizer } from "./storeFunctions"
+
 // constants
 const LOAD_KARUTA_CARDS = 'cards/all'
 
@@ -12,12 +14,11 @@ const loadAll = (data) => ({
 
 // GET all cards THUNK
 export const getAllKarutaCardsTHUNK = () => async (dispatch) => {
-	console.log("get all cards thunk")
 	const response = await fetch('/api/karuta');
-	console.log("response: ", response)
 	if (response.ok) {
 		const responseJSON = await response.json();
-		dispatch(loadAll(responseJSON))
+		const responseNormalized = karutaCardNormalizer(responseJSON.cards)
+		dispatch(loadAll(responseNormalized))
 	}
 }
 
