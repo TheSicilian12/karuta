@@ -1,9 +1,10 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
+import karutaCards from './session'
 
 const rootReducer = combineReducers({
+  karutaCards
 });
-
 
 let enhancer;
 
