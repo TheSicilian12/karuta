@@ -12,6 +12,7 @@ const loadAll = (data) => ({
 
 // GET all cards THUNK
 export const getAllKarutaCardsTHUNK = () => async (dispatch) => {
+	// console.log("get all cards thunk")
 	const response = await fetch('/api/karuta');
 	if (response.ok) {
 		const responseJSON = await response.json();
