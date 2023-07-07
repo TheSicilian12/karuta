@@ -2210,14 +2210,14 @@ def seed_karuta_cards():
         english_line4='But numerous as they are,',
         english_line5='My old memories are more.',
         english_author='Emperor Juntoku',
-    
+
         japanese_line1='百敷や',
         japanese_line2='古き軒端の',
         japanese_line3='しのぶにも',
         japanese_line4='なほあまりある',
         japanese_line5='むかしなりけり',
         japanese_author='順徳院御製',
-    
+
         romaji_line1='Momoshiki ya',
         romaji_line2='Furuki nokiba no',
         romaji_line3='Shinobu ni mo',
@@ -2227,14 +2227,104 @@ def seed_karuta_cards():
     )
 
 
-
-
-
-
-
-
-
-
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card3)
+    db.session.add(card4)
+    db.session.add(card5)
+    db.session.add(card6)
+    db.session.add(card7)
+    db.session.add(card8)
+    db.session.add(card9)
+    db.session.add(card10)
+    db.session.add(card11)
+    db.session.add(card12)
+    db.session.add(card13)
+    db.session.add(card14)
+    db.session.add(card15)
+    db.session.add(card16)
+    db.session.add(card17)
+    db.session.add(card18)
+    db.session.add(card19)
+    db.session.add(card20)
+    db.session.add(card21)
+    db.session.add(card22)
+    db.session.add(card23)
+    db.session.add(card24)
+    db.session.add(card25)
+    db.session.add(card26)
+    db.session.add(card27)
+    db.session.add(card28)
+    db.session.add(card29)
+    db.session.add(card30)
+    db.session.add(card31)
+    db.session.add(card32)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
+    db.session.add(card1)
+    db.session.add(card2)
     db.session.add(card1)
     db.session.add(card2)
     db.session.commit()
