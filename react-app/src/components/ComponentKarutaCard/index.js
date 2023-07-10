@@ -17,8 +17,6 @@ export default function ComponentKarutaCard({language, cardData}) {
 
   const {author} = cardData
 
-  console.log("language: ", language)
-
   return (
   <div className='karuta-card-container'>
     {language === 'english' ? <div>
