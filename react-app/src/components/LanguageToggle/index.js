@@ -25,10 +25,11 @@ export default function LanguageToggle({displayLanguage, setDisplayLanguage, lan
   }
 
   return (
-    <div className={`language-toggle-container ${toggleCSS}`}>
+    <div
+      onClick={() => toggle()}
+      className={`language-toggle-container ${toggleCSS}`}>
       <div
         className="language-toggle-item"
-        onClick={() => toggle()}
         >
       </div>
     </div>
