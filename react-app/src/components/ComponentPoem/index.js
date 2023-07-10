@@ -44,31 +44,37 @@ export default function ComponentPoem({ language, cardData }) {
       <div className="karuta-main-text-poem-container">
         {language === 'english' ? <div className="displayFlex-column">
 
+          {showRomaji && <div>{cardData.romaji[0]}</div>}
           {showTranslation && <div>{cardData.japanese[0]}</div>}
           <div>
             {cardData.english[0]}
           </div>
 
+          {showRomaji && <div>{cardData.romaji[1]}</div>}
           {showTranslation && <div>{cardData.japanese[1]}</div>}
           <div>
             {cardData.english[1]}
           </div>
 
+          {showRomaji && <div>{cardData.romaji[2]}</div>}
           {showTranslation && <div>{cardData.japanese[2]}</div>}
           <div>
             {cardData.english[2]}
           </div>
 
+          {showRomaji && <div>{cardData.romaji[3]}</div>}
           {showTranslation && <div>{cardData.japanese[3]}</div>}
           <div>
             {cardData.english[3]}
           </div>
 
+          {showRomaji && <div>{cardData.romaji[4]}</div>}
           {showTranslation && <div>{cardData.japanese[4]}</div>}
           <div>
             {cardData.english[4]}
           </div>
 
+          {showRomaji && <div>{author.romaji}</div>}
           {showTranslation && <div>{author.japanese}</div>}
           <div>
             {author.english}
@@ -77,31 +83,37 @@ export default function ComponentPoem({ language, cardData }) {
           <div className="displayFlex-column">
 
             {showTranslation && <div>{cardData.english[0]}</div>}
+            {showRomaji && <div>{cardData.romaji[0]}</div>}
             <div>
               {cardData.japanese[0]}
             </div>
 
             {showTranslation && <div>{cardData.english[1]}</div>}
+            {showRomaji && <div>{cardData.romaji[1]}</div>}
             <div>
               {cardData.japanese[1]}
             </div>
 
             {showTranslation && <div>{cardData.english[2]}</div>}
+            {showRomaji && <div>{cardData.romaji[2]}</div>}
             <div>
               {cardData.japanese[2]}
             </div>
 
             {showTranslation && <div>{cardData.english[3]}</div>}
+            {showRomaji && <div>{cardData.romaji[3]}</div>}
             <div>
               {cardData.japanese[3]}
             </div>
 
             {showTranslation && <div>{cardData.english[4]}</div>}
+            {showRomaji && <div>{cardData.romaji[4]}</div>}
             <div>
               {cardData.japanese[4]}
             </div>
 
             {showTranslation && <div>{author.english}</div>}
+            {showRomaji && <div>{author.romaji}</div>}
             <div>
               {author.japanese}
             </div>
