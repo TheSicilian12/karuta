@@ -2552,8 +2552,8 @@ const cards = {
     91: {
         'author': {
             'english': 'Lady Sanuki',
-            'japanese': 'わが袖は',
-            'romaji': 'Waga sode wa'
+            'japanese': '二条院讃岐',
+            'romaji': 'Nijo In no Sanuki'
         },
         'english': {
             0: 'Like a rock at sea,',
