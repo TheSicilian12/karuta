@@ -90,9 +90,9 @@ export default function ComponentPoem({ language, cardData }) {
           </div>
 
           <div className="karuta-main-text-line">
+            <div>----</div>
             {showRomaji && <div>{author.romaji}</div>}
             {showTranslation && <div>{author.japanese}</div>}
-            <div>----</div>
             <div className="karuta-main-text-emphasis">
               {author.english}
             </div>

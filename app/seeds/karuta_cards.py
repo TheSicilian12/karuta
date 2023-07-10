@@ -2040,14 +2040,14 @@ def seed_karuta_cards():
         japanese_line3='沖の石の',
         japanese_line4='人こそしらね',
         japanese_line5='かはくまもなし',
-        japanese_author='わが袖は',
+        japanese_author='二条院讃岐',
 
         romaji_line1='Waga sode wa',
         romaji_line2='Shiohi ni mienu',
         romaji_line3='Oki no ishi no',
         romaji_line4='Hito koso shirane',
         romaji_line5='Kawaku ma mo nashi',
-        romaji_author='Waga sode wa',
+        romaji_author='Nijo In no Sanuki',
     )
     card93 = karuta_cards(
         english_line1='If only our world',
