@@ -26,30 +26,12 @@ export default function ComponentPoem({ language, cardData }) {
 
   return (
     <div className="displayFlex">
-      {/* <div className='karuta-card-poem-container'>
-        {language === 'english' ?
-          <div className="displayFlex-column">
-            <div>{cardData.english[0]}</div>
-            <div>{cardData.english[1]}</div>
-            <div>{cardData.english[2]}</div>
-            <div>{cardData.english[3]}</div>
-            <div>{cardData.english[4]}</div>
-          </div> :
-          <div className="displayFlex-column">
-            <div>{cardData.japanese[0]}</div>
-            <div>{cardData.japanese[1]}</div>
-            <div>{cardData.japanese[2]}</div>
-            <div>{cardData.japanese[3]}</div>
-            <div>{cardData.japanese[4]}</div>
-          </div>
-        }
-      </div> */}
       <div className="karuta-main-text-poem-container">
         {language === 'english' ? <div className="displayFlex-column">
           <div className="karuta-main-text-line">
             {showRomaji && <div>{cardData.romaji[0]}</div>}
             {showTranslation && <div>{cardData.japanese[0]}</div>}
-            <div>
+            <div className="karuta-main-text-emphasis">
               {cardData.english[0]}
             </div>
           </div>
@@ -57,7 +39,7 @@ export default function ComponentPoem({ language, cardData }) {
           <div className="karuta-main-text-line">
             {showRomaji && <div>{cardData.romaji[1]}</div>}
             {showTranslation && <div>{cardData.japanese[1]}</div>}
-            <div>
+            <div className="karuta-main-text-emphasis">
               {cardData.english[1]}
             </div>
           </div>
@@ -65,7 +47,7 @@ export default function ComponentPoem({ language, cardData }) {
           <div className="karuta-main-text-line">
             {showRomaji && <div>{cardData.romaji[2]}</div>}
             {showTranslation && <div>{cardData.japanese[2]}</div>}
-            <div>
+            <div className="karuta-main-text-emphasis">
               {cardData.english[2]}
             </div>
           </div>
@@ -73,7 +55,7 @@ export default function ComponentPoem({ language, cardData }) {
           <div className="karuta-main-text-line">
             {showRomaji && <div>{cardData.romaji[3]}</div>}
             {showTranslation && <div>{cardData.japanese[3]}</div>}
-            <div>
+            <div className="karuta-main-text-emphasis">
               {cardData.english[3]}
             </div>
           </div>
@@ -81,7 +63,7 @@ export default function ComponentPoem({ language, cardData }) {
           <div className="karuta-main-text-line">
             {showRomaji && <div>{cardData.romaji[4]}</div>}
             {showTranslation && <div>{cardData.japanese[4]}</div>}
-            <div>
+            <div className="karuta-main-text-emphasis">
               {cardData.english[4]}
             </div>
           </div>
@@ -89,9 +71,9 @@ export default function ComponentPoem({ language, cardData }) {
           <div className="karuta-main-text-line">
             {showRomaji && <div>{author.romaji}</div>}
             {showTranslation && <div>{author.japanese}</div>}
-            <div>
+            <div className="karuta-main-text-emphasis">
+              {author.english}
             </div>
-            {author.english}
           </div>
         </div> :
           <div className="displayFlex-column">
@@ -145,20 +127,22 @@ export default function ComponentPoem({ language, cardData }) {
             </div>
           </div>}
 
-        <button
-          onClick={translate}>
-          add translation
-        </button>
-
-        {(language === 'japanese' ||
-          showRomaji === true ||
-          (language === 'english' && showTranslation === true))
-          &&
+        <div>
           <button
-            onClick={addRomaji}
-          >
-            romaji
-          </button>}
+            onClick={translate}>
+            add translation
+          </button>
+
+          {(language === 'japanese' ||
+            showRomaji === true ||
+            (language === 'english' && showTranslation === true))
+            &&
+            <button
+              onClick={addRomaji}
+            >
+              romaji
+            </button>}
+        </div>
       </div>
     </div>
   );

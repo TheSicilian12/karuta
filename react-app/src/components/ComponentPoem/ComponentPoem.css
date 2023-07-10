@@ -1,18 +1,19 @@
-.karuta-card-poem-container {
+.karuta-main-text-poem-container {
     display: flex;
     flex-direction: column;
-    border: 5px solid green;
-    height: 200px;
-    width: 150px;
-}
-
-.karuta-main-text-poem-container {
+    align-items: center;
     border: 1px solid green;
     height: 415px;
+    width: 500px;
 }
 
 .karuta-main-text-line {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 14px;
+}
+
+.karuta-main-text-emphasis {
+    font-weight: bold;
+    font-size: 15px;
 }
