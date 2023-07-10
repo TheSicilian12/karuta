@@ -42,7 +42,7 @@ export default function OneHundredPoemsPage() {
           All
         </button>}
         {currentSelection === "1 - 100" && <button
-          className="button-basic button-basic-selected"
+          className="button-basic-selected"
           onClick={() => displayCards(1, 100)}
         >
           All
@@ -55,7 +55,7 @@ export default function OneHundredPoemsPage() {
           1 - 10
         </button>}
         {currentSelection === "1 - 10" && <button
-          className="button-basic button-basic-selected"
+          className="button-basic-selected"
           onClick={() => displayCards(1, 10)}
         >
           1 - 10
@@ -68,7 +68,7 @@ export default function OneHundredPoemsPage() {
           11 - 20
         </button>}
         {currentSelection === "11 - 20" && <button
-         className="button-basic button-basic-selected"
+         className="button-basic-selected"
           onClick={() => displayCards(11, 20)}
         >
           11 - 20
@@ -81,7 +81,7 @@ export default function OneHundredPoemsPage() {
           21 - 30
         </button>}
         {currentSelection === "21 - 30" && <button
-         className="button-basic button-basic-selected"
+         className="button-basic-selected"
           onClick={() => displayCards(21, 30)}
         >
           21 - 30
@@ -94,7 +94,7 @@ export default function OneHundredPoemsPage() {
           31 - 40
         </button>}
         {currentSelection === "31 - 40" && <button
-         className="button-basic button-basic-selected"
+         className="button-basic-selected"
           onClick={() => displayCards(31, 40)}
         >
           31 - 40
@@ -107,7 +107,7 @@ export default function OneHundredPoemsPage() {
           41 - 50
         </button>}
         {currentSelection === "41 - 50" && <button
-         className="button-basic button-basic-selected"
+         className="button-basic-selected"
           onClick={() => displayCards(41, 50)}
         >
           41 - 50
@@ -120,7 +120,7 @@ export default function OneHundredPoemsPage() {
           51 - 60
         </button>}
         {currentSelection === "51 - 60" && <button
-         className="button-basic button-basic-selected"
+         className="button-basic-selected"
           onClick={() => displayCards(51, 60)}
         >
           51 - 60
@@ -133,30 +133,50 @@ export default function OneHundredPoemsPage() {
           61 - 70
         </button>}
         {currentSelection === "61 - 70" && <button
-         className="button-basic button-basic-selected"
+         className="button-basic-selected"
           onClick={() => displayCards(61, 70)}
         >
           61 - 70
         </button>}
 
-        <button
+        {currentSelection !== "71 - 80" && <button
          className="button-basic"
           onClick={() => displayCards(71, 80)}
         >
           71 - 80
-        </button>
-        <button
+        </button>}
+        {currentSelection === "71 - 80" && <button
+         className="button-basic-selected"
+          onClick={() => displayCards(71, 80)}
+        >
+          71 - 80
+        </button>}
+
+        {currentSelection !== "81 - 90" && <button
          className="button-basic"
           onClick={() => displayCards(81, 90)}
         >
           81 - 90
-        </button>
-        <button
+        </button>}
+        {currentSelection === "81 - 90" && <button
+         className="button-basic-selected"
+          onClick={() => displayCards(81, 90)}
+        >
+          81 - 90
+        </button>}
+
+        {currentSelection !== "91 - 100" && <button
          className="button-basic"
           onClick={() => displayCards(91, 100)}
         >
           91 - 100
-        </button>
+        </button>}
+        {currentSelection === "91 - 100" && <button
+         className="button-basic-selected"
+          onClick={() => displayCards(91, 100)}
+        >
+          91 - 100
+        </button>}
 
       </div>
       <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
