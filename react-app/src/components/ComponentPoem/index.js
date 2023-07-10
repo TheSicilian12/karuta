@@ -13,6 +13,7 @@ export default function ComponentPoem({ language, cardData }) {
   // full poem + picture of poet 5-7-5-7-7
   // last two lines 7-7
   const [showTranslation, setShowTranslation] = useState(false)
+  const [showRomaji, setShowRomaji] = useState(false)
 
   if (!cardData) return null
 
@@ -20,6 +21,10 @@ export default function ComponentPoem({ language, cardData }) {
 
   const translate = () => {
     setShowTranslation(!showTranslation)
+  }
+
+  const addRomaji = () => {
+    setShowRomaji(!showRomaji)
   }
 
   return (
@@ -101,9 +106,19 @@ export default function ComponentPoem({ language, cardData }) {
               {author.japanese}
             </div>
           </div>}
+
         <button
-          onClick={translate}
-        >add translation</button>
+          onClick={translate}>
+            add translation
+        </button>
+
+        {(language === 'japanese' ||
+        (language === 'english' && showTranslation === true)) &&
+        <button
+          onClick={addRomaji}
+        >
+          romaji
+        </button>}
       </div>
     </div>
   );
