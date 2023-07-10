@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 import { authenticate } from "./store/session";
-import HomePage from "./components/HomePage";
+import OneHundredPoemsPage from "./components/OneHundredPoemsPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -16,8 +16,8 @@ function App() {
     <>
       {isLoaded && (
         <Switch>
-          <Route path="/" exact>
-            <HomePage />
+          <Route path="/100poems" exact>
+            <OneHundredPoemsPage />
           </Route>
         </Switch>
       )}

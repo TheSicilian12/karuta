@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { getAllKarutaCardsTHUNK } from "../../store/karutaCards";
 
-import "./HomePage.css";
+import "./OneHundredPoemsPage.css";
 import ComponentKarutaCard from "../ComponentKarutaCard";
 import ComponentPoem from "../ComponentPoem";
 import LanguageToggle from "../LanguageToggle";
