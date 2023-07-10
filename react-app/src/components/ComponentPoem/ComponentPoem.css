@@ -1,0 +1,12 @@
+
+
+.karuta-card-poem-container {
+    border: 5px solid green;
+    height: 200px;
+    width: 150px;
+}
+
+.karuta-main-text-poem-container {
+    border: 1px solid green;
+
+}

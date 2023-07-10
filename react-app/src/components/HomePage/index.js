@@ -1,10 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 
 import { getAllKarutaCardsTHUNK } from "../../store/karutaCards";
 
 import "./HomePage.css";
 import ComponentKarutaCard from "../ComponentKarutaCard";
+import ComponentPoem from "../ComponentPoem";
 import LanguageToggle from "../LanguageToggle";
 import { Modal } from "../../context/Modal";
 
@@ -27,8 +28,6 @@ export default function HomePage() {
     setStartNum(num1);
     setEndNum(num2);
   }
-
-  // Object.values(cards).map((card) => console.log(card.id))
 
   return (
     <div>
@@ -92,9 +91,8 @@ export default function HomePage() {
       </div>
       <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
       {Object.values(cards).map((card) =>
-        // {console.log(typeof card.id)}
-        card.id >= startNum && card.id <= endNum && <div>
-          <ComponentKarutaCard language={displayLanguage} cardData={card} />
+        card.id >= startNum && card.id <= endNum && <div key={card.id}>
+          <ComponentPoem language={displayLanguage} cardData={card} />
         </div>
       )}
     </div>

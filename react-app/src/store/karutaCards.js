@@ -27,7 +27,6 @@ const initialState = {};
 export default function karutaReducer(state = initialState, action) {
 	switch (action.type) {
 		case LOAD_KARUTA_CARDS: {
-			console.log("action.payload: ", action.payload)
 			const newState={...action.payload}
 			return newState
 		}
