@@ -1,21 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from 'react-redux';
 
 import "./LanguageToggle.css";
 
 export default function LanguageToggle(languageOne, languageTwo) {
-  console.log("test")
+  const [displayLanguage, setDisplayLanguage] = useState(languageOne)
+  const [toggleCSS, setToggleCSS] = useState("")
 
   if (!languageOne || !languageTwo) return null
 
-  let toggleCSS = ""
   const toggle = () => {
-    toggleCSS = "langauge-toggle-start-toggle"
-    console.log(toggleCSS)
+    if (toggleCSS === "language-toggle-toggle-on") {
+      setToggleCSS("language-toggle-toggle-off")
+    } else setToggleCSS("language-toggle-toggle-on")
+
   }
 
   return (
-    <div className={`language-toggle-container`}>
+    <div className={`language-toggle-container ${toggleCSS}`}>
       <div
         className="language-toggle-item"
         onClick={() => toggle()}

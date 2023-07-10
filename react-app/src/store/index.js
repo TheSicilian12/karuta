@@ -1,9 +1,11 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import karutaCards from './karutaCards'
+import language from './mainLanguage'
 
 const rootReducer = combineReducers({
-  karutaCards
+  karutaCards,
+  language
 });
 
 let enhancer;
