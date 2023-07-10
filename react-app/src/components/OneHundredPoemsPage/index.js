@@ -61,12 +61,20 @@ export default function OneHundredPoemsPage() {
           1 - 10
         </button>}
 
-        <button
+        {currentSelection !== "11 - 20" && <button
          className="button-basic"
           onClick={() => displayCards(11, 20)}
         >
           11 - 20
-        </button>
+        </button>}
+        {currentSelection === "11 - 20" && <button
+         className="button-basic button-basic-selected"
+          onClick={() => displayCards(11, 20)}
+        >
+          11 - 20
+        </button>}
+
+
         <button
          className="button-basic"
           onClick={() => displayCards(21, 30)}
