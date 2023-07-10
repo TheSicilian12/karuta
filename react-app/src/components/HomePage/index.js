@@ -6,6 +6,7 @@ import { getAllKarutaCardsTHUNK } from "../../store/karutaCards";
 import "./HomePage.css";
 import ComponentKarutaCard from "../ComponentKarutaCard";
 import LanguageToggle from "../LanguageToggle";
+import { Modal } from "../../context/Modal";
 
 export default function HomePage() {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ export default function HomePage() {
   return (
    <div>
     Hello
+    
     <LanguageToggle languageOne={"english"} languageTwo={"japanese"} />
     <ComponentKarutaCard cardData={cards[1]} />
     </div>

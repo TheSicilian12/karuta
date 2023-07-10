@@ -13,9 +13,6 @@ export default function ComponentKarutaCard({cardData}) {
 
   const {author} = cardData
 
-  // console.log("cardData: ", cardData)
-  // console.log("cardData author: ", author)
-
   return (
   <div className='karuta-card-container'>
     {cardData.english[0]}

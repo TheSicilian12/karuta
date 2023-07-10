@@ -19,8 +19,6 @@ export default function LanguageToggle({languageOne, languageTwo}) {
     }
   }
 
-  console.log(displayLanguage)
-
   return (
     <div className={`language-toggle-container ${toggleCSS}`}>
       <div
