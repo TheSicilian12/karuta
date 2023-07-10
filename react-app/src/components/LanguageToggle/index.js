@@ -3,8 +3,14 @@ import { useDispatch } from 'react-redux';
 
 import "./LanguageToggle.css";
 
-export default function LanguageToggle({languageOne, languageTwo}) {
-  const [displayLanguage, setDisplayLanguage] = useState(languageOne)
+export default function LanguageToggle({displayLanguage, setDisplayLanguage, languageOne, languageTwo}) {
+  // Language toggle takes in:
+  // 1. const [displayLanguage, setDisplayLanguage] = useState("")
+  //    - displayLanguage
+  //    - setDisplayLanguage
+  // 2. languageOne, default language
+  // 3. languageTwo, optional language
+
   const [toggleCSS, setToggleCSS] = useState("language-toggle-toggle-off")
 
   if (!languageOne || !languageTwo) return null

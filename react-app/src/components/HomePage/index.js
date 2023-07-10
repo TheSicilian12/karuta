@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 
 import { getAllKarutaCardsTHUNK } from "../../store/karutaCards";
@@ -10,6 +10,7 @@ import { Modal } from "../../context/Modal";
 
 export default function HomePage() {
   const dispatch = useDispatch();
+  const [displayLanguage, setDisplayLanguage] = useState("")
 
   const cards = useSelector(state => state.karutaCards)
 
@@ -19,11 +20,11 @@ export default function HomePage() {
 
   if (!cards[1]) return null
 
+  console.log("displayLanguage: ", displayLanguage)
   return (
    <div>
     Hello
-    
-    <LanguageToggle languageOne={"english"} languageTwo={"japanese"} />
+    <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
     <ComponentKarutaCard cardData={cards[1]} />
     </div>
   );
