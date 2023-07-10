@@ -29,7 +29,7 @@ export default function ComponentPoem({ language, cardData }) {
       <div className="karuta-main-text-poem-container">
         <div className="displayFlex">
           <button
-            className="button-basic"
+            className="button-basic karuta-main-button"
             onClick={translate}>
             add translation
           </button>
@@ -39,7 +39,7 @@ export default function ComponentPoem({ language, cardData }) {
             (language === 'english' && showTranslation === true))
             &&
             <button
-              className="button-basic"
+              className="button-basic karuta-main-button"
               onClick={addRomaji}
             >
               romaji
