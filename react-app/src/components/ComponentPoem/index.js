@@ -27,6 +27,7 @@ export default function ComponentPoem({ language, cardData }) {
   return (
     <div className="displayFlex">
       <div className="karuta-main-text-poem-container">
+          <h2>Poem {cardData.id}</h2>
         <div className="displayFlex">
           <button
             className="button-basic karuta-main-button"
@@ -46,7 +47,6 @@ export default function ComponentPoem({ language, cardData }) {
             </button>}
         </div>
 
-        <div>Poem {cardData.id}</div>
 
         {language === 'english' ? <div className="displayFlex-column">
           <div className="karuta-main-text-line">
