@@ -35,151 +35,157 @@ export default function OneHundredPoemsPage() {
   return (
     <div>
       <div className="poems-page-nav-buttons-container">
-        {currentSelection !== "1 - 100" && <button
-          className="button-basic poems-page-nav-buttons"
-          onClick={() => displayCards(1, 100)}
-        >
-          All
-        </button>}
-        {currentSelection === "1 - 100" && <button
-          className="button-basic-selected poems-page-nav-buttons"
-          onClick={() => displayCards(1, 100)}
-        >
-          All
-        </button>}
+        <div>
 
-        {currentSelection !== "1 - 10" && <button
-          className="button-basic poems-page-nav-buttons"
-          onClick={() => displayCards(1, 10)}
-        >
-          1 - 10
-        </button>}
-        {currentSelection === "1 - 10" && <button
-          className="button-basic-selected poems-page-nav-buttons"
-          onClick={() => displayCards(1, 10)}
-        >
-          1 - 10
-        </button>}
+          {currentSelection !== "1 - 100" && <button
+            className="button-basic poems-page-nav-buttons"
+            onClick={() => displayCards(1, 100)}
+          >
+            All
+          </button>}
+          {currentSelection === "1 - 100" && <button
+            className="button-basic-selected poems-page-nav-buttons"
+            onClick={() => displayCards(1, 100)}
+          >
+            All
+          </button>}
+        </div>
+        <div>
+          {currentSelection !== "1 - 10" && <button
+            className="button-basic poems-page-nav-buttons"
+            onClick={() => displayCards(1, 10)}
+          >
+            1 - 10
+          </button>}
+          {currentSelection === "1 - 10" && <button
+            className="button-basic-selected poems-page-nav-buttons"
+            onClick={() => displayCards(1, 10)}
+          >
+            1 - 10
+          </button>}
 
-        {currentSelection !== "11 - 20" && <button
-          className="button-basic poems-page-nav-buttons"
-          onClick={() => displayCards(11, 20)}
-        >
-          11 - 20
-        </button>}
-        {currentSelection === "11 - 20" && <button
-          className="button-basic-selected poems-page-nav-buttons"
-          onClick={() => displayCards(11, 20)}
-        >
-          11 - 20
-        </button>}
+          {currentSelection !== "11 - 20" && <button
+            className="button-basic poems-page-nav-buttons"
+            onClick={() => displayCards(11, 20)}
+          >
+            11 - 20
+          </button>}
+          {currentSelection === "11 - 20" && <button
+            className="button-basic-selected poems-page-nav-buttons"
+            onClick={() => displayCards(11, 20)}
+          >
+            11 - 20
+          </button>}
 
-        {currentSelection !== "21 - 30" && <button
-          className="button-basic poems-page-nav-buttons"
-          onClick={() => displayCards(21, 30)}
-        >
-          21 - 30
-        </button>}
-        {currentSelection === "21 - 30" && <button
-          className="button-basic-selected poems-page-nav-buttons"
-          onClick={() => displayCards(21, 30)}
-        >
-          21 - 30
-        </button>}
+          {currentSelection !== "21 - 30" && <button
+            className="button-basic poems-page-nav-buttons"
+            onClick={() => displayCards(21, 30)}
+          >
+            21 - 30
+          </button>}
+          {currentSelection === "21 - 30" && <button
+            className="button-basic-selected poems-page-nav-buttons"
+            onClick={() => displayCards(21, 30)}
+          >
+            21 - 30
+          </button>}
 
-        {currentSelection !== "31 - 40" && <button
-          className="button-basic poems-page-nav-buttons"
-          onClick={() => displayCards(31, 40)}
-        >
-          31 - 40
-        </button>}
-        {currentSelection === "31 - 40" && <button
-          className="button-basic-selected poems-page-nav-buttons"
-          onClick={() => displayCards(31, 40)}
-        >
-          31 - 40
-        </button>}
+          {currentSelection !== "31 - 40" && <button
+            className="button-basic poems-page-nav-buttons"
+            onClick={() => displayCards(31, 40)}
+          >
+            31 - 40
+          </button>}
+          {currentSelection === "31 - 40" && <button
+            className="button-basic-selected poems-page-nav-buttons"
+            onClick={() => displayCards(31, 40)}
+          >
+            31 - 40
+          </button>}
 
-        {currentSelection !== "41 - 50" && <button
-          className="button-basic poems-page-nav-buttons"
-          onClick={() => displayCards(41, 50)}
-        >
-          41 - 50
-        </button>}
-        {currentSelection === "41 - 50" && <button
-          className="button-basic-selected poems-page-nav-buttons"
-          onClick={() => displayCards(41, 50)}
-        >
-          41 - 50
-        </button>}
+          {currentSelection !== "41 - 50" && <button
+            className="button-basic poems-page-nav-buttons"
+            onClick={() => displayCards(41, 50)}
+          >
+            41 - 50
+          </button>}
+          {currentSelection === "41 - 50" && <button
+            className="button-basic-selected poems-page-nav-buttons"
+            onClick={() => displayCards(41, 50)}
+          >
+            41 - 50
+          </button>}
 
-        {currentSelection !== "51 - 60" && <button
-          className="button-basic poems-page-nav-buttons"
-          onClick={() => displayCards(51, 60)}
-        >
-          51 - 60
-        </button>}
-        {currentSelection === "51 - 60" && <button
-          className="button-basic-selected poems-page-nav-buttons"
-          onClick={() => displayCards(51, 60)}
-        >
-          51 - 60
-        </button>}
+          {currentSelection !== "51 - 60" && <button
+            className="button-basic poems-page-nav-buttons"
+            onClick={() => displayCards(51, 60)}
+          >
+            51 - 60
+          </button>}
+          {currentSelection === "51 - 60" && <button
+            className="button-basic-selected poems-page-nav-buttons"
+            onClick={() => displayCards(51, 60)}
+          >
+            51 - 60
+          </button>}
 
-        {currentSelection !== "61 - 70" && <button
-          className="button-basic poems-page-nav-buttons"
-          onClick={() => displayCards(61, 70)}
-        >
-          61 - 70
-        </button>}
-        {currentSelection === "61 - 70" && <button
-          className="button-basic-selected poems-page-nav-buttons"
-          onClick={() => displayCards(61, 70)}
-        >
-          61 - 70
-        </button>}
+          {currentSelection !== "61 - 70" && <button
+            className="button-basic poems-page-nav-buttons"
+            onClick={() => displayCards(61, 70)}
+          >
+            61 - 70
+          </button>}
+          {currentSelection === "61 - 70" && <button
+            className="button-basic-selected poems-page-nav-buttons"
+            onClick={() => displayCards(61, 70)}
+          >
+            61 - 70
+          </button>}
 
-        {currentSelection !== "71 - 80" && <button
-          className="button-basic poems-page-nav-buttons"
-          onClick={() => displayCards(71, 80)}
-        >
-          71 - 80
-        </button>}
-        {currentSelection === "71 - 80" && <button
-          className="button-basic-selected poems-page-nav-buttons"
-          onClick={() => displayCards(71, 80)}
-        >
-          71 - 80
-        </button>}
+          {currentSelection !== "71 - 80" && <button
+            className="button-basic poems-page-nav-buttons"
+            onClick={() => displayCards(71, 80)}
+          >
+            71 - 80
+          </button>}
+          {currentSelection === "71 - 80" && <button
+            className="button-basic-selected poems-page-nav-buttons"
+            onClick={() => displayCards(71, 80)}
+          >
+            71 - 80
+          </button>}
 
-        {currentSelection !== "81 - 90" && <button
-          className="button-basic poems-page-nav-buttons"
-          onClick={() => displayCards(81, 90)}
-        >
-          81 - 90
-        </button>}
-        {currentSelection === "81 - 90" && <button
-          className="button-basic-selected poems-page-nav-buttons"
-          onClick={() => displayCards(81, 90)}
-        >
-          81 - 90
-        </button>}
+          {currentSelection !== "81 - 90" && <button
+            className="button-basic poems-page-nav-buttons"
+            onClick={() => displayCards(81, 90)}
+          >
+            81 - 90
+          </button>}
+          {currentSelection === "81 - 90" && <button
+            className="button-basic-selected poems-page-nav-buttons"
+            onClick={() => displayCards(81, 90)}
+          >
+            81 - 90
+          </button>}
 
-        {currentSelection !== "91 - 100" && <button
-          className="button-basic poems-page-nav-buttons"
-          onClick={() => displayCards(91, 100)}
-        >
-          91 - 100
-        </button>}
-        {currentSelection === "91 - 100" && <button
-          className="button-basic-selected poems-page-nav-buttons"
-          onClick={() => displayCards(91, 100)}
-        >
-          91 - 100
-        </button>}
+          {currentSelection !== "91 - 100" && <button
+            className="button-basic poems-page-nav-buttons"
+            onClick={() => displayCards(91, 100)}
+          >
+            91 - 100
+          </button>}
+          {currentSelection === "91 - 100" && <button
+            className="button-basic-selected poems-page-nav-buttons"
+            onClick={() => displayCards(91, 100)}
+          >
+            91 - 100
+          </button>}
+        </div>
       </div>
       <div className="poems-page-poems-container">
-        <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
+        <div className="poems-page-toggle">
+          <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
+        </div>
         {Object.values(cards).map((card) =>
           card.id >= startNum && card.id <= endNum && <div
             className="poems-page-poem-margin "

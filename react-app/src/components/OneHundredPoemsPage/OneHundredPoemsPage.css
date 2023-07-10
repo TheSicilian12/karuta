@@ -1,5 +1,4 @@
 .poems-page-poems-container {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,14 +7,20 @@
 .poems-page-poem-margin {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid black;
 }
 
 .poems-page-nav-buttons-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
 }
 
 .poems-page-nav-buttons {
     margin: 5px;
+}
+
+.poems-page-toggle {
+    margin-bottom: 15px;
 }
