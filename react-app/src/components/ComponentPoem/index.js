@@ -43,6 +43,9 @@ export default function ComponentPoem({ language, cardData }) {
               romaji
             </button>}
         </div>
+
+        <div>Poem {cardData.id}</div>
+
         {language === 'english' ? <div className="displayFlex-column">
           <div className="karuta-main-text-line">
             {showRomaji && <div>{cardData.romaji[0]}</div>}
