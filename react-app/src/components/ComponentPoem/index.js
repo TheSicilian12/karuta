@@ -154,7 +154,9 @@ export default function ComponentPoem({ language, cardData }) {
         </button>
 
         {(language === 'japanese' ||
-          (language === 'english' && showTranslation === true)) &&
+          showRomaji === true ||
+          (language === 'english' && showTranslation === true))
+          &&
           <button
             onClick={addRomaji}
           >
