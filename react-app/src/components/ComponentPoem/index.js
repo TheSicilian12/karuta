@@ -27,6 +27,22 @@ export default function ComponentPoem({ language, cardData }) {
   return (
     <div className="displayFlex">
       <div className="karuta-main-text-poem-container">
+      <div className="displayFlex">
+          <button
+            onClick={translate}>
+            add translation
+          </button>
+
+          {(language === 'japanese' ||
+            showRomaji === true ||
+            (language === 'english' && showTranslation === true))
+            &&
+            <button
+              onClick={addRomaji}
+            >
+              romaji
+            </button>}
+        </div>
         {language === 'english' ? <div className="displayFlex-column">
           <div className="karuta-main-text-line">
             {showRomaji && <div>{cardData.romaji[0]}</div>}
@@ -81,7 +97,7 @@ export default function ComponentPoem({ language, cardData }) {
             <div className="karuta-main-text-line">
               {showTranslation && <div>{cardData.english[0]}</div>}
               {showRomaji && <div>{cardData.romaji[0]}</div>}
-              <div>
+              <div className="karuta-main-text-emphasis">
                 {cardData.japanese[0]}
               </div>
             </div>
@@ -89,7 +105,7 @@ export default function ComponentPoem({ language, cardData }) {
             <div className="karuta-main-text-line">
               {showTranslation && <div>{cardData.english[1]}</div>}
               {showRomaji && <div>{cardData.romaji[1]}</div>}
-              <div>
+              <div className="karuta-main-text-emphasis">
                 {cardData.japanese[1]}
               </div>
             </div>
@@ -97,7 +113,7 @@ export default function ComponentPoem({ language, cardData }) {
             <div className="karuta-main-text-line">
               {showTranslation && <div>{cardData.english[2]}</div>}
               {showRomaji && <div>{cardData.romaji[2]}</div>}
-              <div>
+              <div className="karuta-main-text-emphasis">
                 {cardData.japanese[2]}
               </div>
             </div>
@@ -105,7 +121,7 @@ export default function ComponentPoem({ language, cardData }) {
             <div className="karuta-main-text-line">
               {showTranslation && <div>{cardData.english[3]}</div>}
               {showRomaji && <div>{cardData.romaji[3]}</div>}
-              <div>
+              <div className="karuta-main-text-emphasis">
                 {cardData.japanese[3]}
               </div>
             </div>
@@ -113,7 +129,7 @@ export default function ComponentPoem({ language, cardData }) {
             <div className="karuta-main-text-line">
               {showTranslation && <div>{cardData.english[4]}</div>}
               {showRomaji && <div>{cardData.romaji[4]}</div>}
-              <div>
+              <div className="karuta-main-text-emphasis">
                 {cardData.japanese[4]}
               </div>
             </div>
@@ -121,13 +137,13 @@ export default function ComponentPoem({ language, cardData }) {
             <div className="karuta-main-text-line">
               {showTranslation && <div>{author.english}</div>}
               {showRomaji && <div>{author.romaji}</div>}
-              <div>
+              <div className="karuta-main-text-emphasis">
                 {author.japanese}
               </div>
             </div>
           </div>}
 
-        <div className="displayFlex-column">
+        {/* <div className="displayFlex-column">
           <button
             onClick={translate}>
             add translation
@@ -142,7 +158,7 @@ export default function ComponentPoem({ language, cardData }) {
             >
               romaji
             </button>}
-        </div>
+        </div> */}
       </div>
     </div>
   );
