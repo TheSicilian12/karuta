@@ -33,36 +33,36 @@ export default function ComponentPoem({ language, cardData }) {
       </div>
       <div className="karuta-main-text-poem-container">
         {language === 'english' ? <div className="displayFlex-column">
-          <div>
+          <div className="karuta-main-text-line">
             {cardData.english[0]}
           </div>
-          <div>
+          <div className="karuta-main-text-line">
             {cardData.english[1]}
           </div>
-          <div>
+          <div className="karuta-main-text-line">
             {cardData.english[2]}
           </div>
-          <div>
+          <div className="karuta-main-text-line">
             {cardData.english[3]}
           </div>
-          <div>
+          <div className="karuta-main-text-line">
             {cardData.english[4]}
           </div>
         </div> :
           <div className="displayFlex-column">
-            <div>
+            <div className="karuta-main-text-line">
               {cardData.japanese[0]}
             </div>
-            <div>
+            <div className="karuta-main-text-line">
               {cardData.japanese[1]}
             </div>
-            <div>
+            <div className="karuta-main-text-line">
               {cardData.japanese[2]}
             </div>
-            <div>
+            <div className="karuta-main-text-line">
               {cardData.japanese[3]}
             </div>
-            <div>
+            <div className="karuta-main-text-line">
               {cardData.japanese[4]}
             </div>
           </div>}
