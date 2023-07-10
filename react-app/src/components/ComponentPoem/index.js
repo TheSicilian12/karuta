@@ -9,9 +9,6 @@ export default function ComponentPoem({ language, cardData }) {
   // 2. data about the card
 
   // Main text should toggle between Japanese and English
-  // Change between first card and second card
-  // full poem + picture of poet 5-7-5-7-7
-  // last two lines 7-7
   const [showTranslation, setShowTranslation] = useState(false)
   const [showRomaji, setShowRomaji] = useState(false)
 
