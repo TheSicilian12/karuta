@@ -181,7 +181,9 @@ export default function OneHundredPoemsPage() {
       <div className="poems-page-poems-container">
         <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
         {Object.values(cards).map((card) =>
-          card.id >= startNum && card.id <= endNum && <div key={card.id}>
+          card.id >= startNum && card.id <= endNum && <div
+            className="poems-page-poem-margin "
+            key={card.id}>
             <ComponentPoem language={displayLanguage} cardData={card} />
           </div>
         )}

@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
-    border: 1px solid green;
     height: 415px;
     width: 400px;
 }
