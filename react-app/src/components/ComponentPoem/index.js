@@ -22,8 +22,6 @@ export default function ComponentPoem({ language, cardData }) {
     setShowTranslation(!showTranslation)
   }
 
-  console.log(showTranslation)
-
   return (
     <div className="displayFlex">
       <div className='karuta-card-poem-container'>
@@ -65,6 +63,11 @@ export default function ComponentPoem({ language, cardData }) {
           <div>
             {cardData.english[4]}
           </div>
+
+          {showTranslation && <div>{author.japanese}</div>}
+          <div>
+            {author.english}
+          </div>
         </div> :
           <div className="displayFlex-column">
 
@@ -92,10 +95,15 @@ export default function ComponentPoem({ language, cardData }) {
             <div>
               {cardData.japanese[4]}
             </div>
+
+            {showTranslation && <div>{author.english}</div>}
+            <div>
+              {author.japanese}
+            </div>
           </div>}
-         <button
+        <button
           onClick={translate}
-         >add translation</button>
+        >add translation</button>
       </div>
     </div>
   );
