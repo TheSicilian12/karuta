@@ -27,7 +27,7 @@ export default function ComponentPoem({ language, cardData }) {
   return (
     <div className="displayFlex">
       <div className="karuta-main-text-poem-container">
-      <div className="displayFlex">
+        <div className="displayFlex">
           <button
             onClick={translate}>
             add translation
