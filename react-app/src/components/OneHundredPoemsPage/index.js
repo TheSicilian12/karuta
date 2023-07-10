@@ -15,6 +15,7 @@ export default function OneHundredPoemsPage() {
   const [displayLanguage, setDisplayLanguage] = useState("english")
   const [startNum, setStartNum] = useState(1);
   const [endNum, setEndNum] = useState(100)
+  const [currentSelection, setCurrentSelection] = useState("1 - 100")
 
   const cards = useSelector(state => state.karutaCards)
 
@@ -28,23 +29,38 @@ export default function OneHundredPoemsPage() {
   const displayCards = (num1, num2) => {
     setStartNum(num1);
     setEndNum(num2);
+    setCurrentSelection(`${num1} - ${num2}`)
   }
 
   return (
     <div>
       <div>
-        <button
+        {currentSelection !== "1 - 100" && <button
           className="button-basic"
           onClick={() => displayCards(1, 100)}
         >
           All
-        </button>
-        <button
+        </button>}
+        {currentSelection === "1 - 100" && <button
+          className="button-basic button-basic-selected"
+          onClick={() => displayCards(1, 100)}
+        >
+          All
+        </button>}
+
+        {currentSelection !== "1 - 10" && <button
           className="button-basic"
           onClick={() => displayCards(1, 10)}
         >
           1 - 10
-        </button>
+        </button>}
+        {currentSelection === "1 - 10" && <button
+          className="button-basic button-basic-selected"
+          onClick={() => displayCards(1, 10)}
+        >
+          1 - 10
+        </button>}
+
         <button
          className="button-basic"
           onClick={() => displayCards(11, 20)}
