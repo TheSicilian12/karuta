@@ -127,7 +127,7 @@ export default function ComponentPoem({ language, cardData }) {
             </div>
           </div>}
 
-        <div>
+        <div className="displayFlex-column">
           <button
             onClick={translate}>
             add translation
