@@ -13,6 +13,7 @@ export const karutaCardNormalizer = (data) => {
   let newObj = {}
   data.forEach(item => {
     newObj[item.id] = {
+      'id': item.id,
       'author': {
         'english': item.english_author,
         'japanese': item.japanese_author,

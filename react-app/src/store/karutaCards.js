@@ -38,6 +38,7 @@ export default function karutaReducer(state = initialState, action) {
 
 // state = {
 // 	0: {
+//		'id': 0,
 // 		'author': {
 // 			'english': '',
 // 			'japanese': '',
