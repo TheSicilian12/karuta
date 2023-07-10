@@ -10,3 +10,12 @@
     padding-bottom: 20px;
     border-bottom: 1px solid black;
 }
+
+.poems-page-nav-buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.poems-page-nav-buttons {
+    margin: 5px;
+}
