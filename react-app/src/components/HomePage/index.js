@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
    <div>
     Hello
-    <LanguageToggle langaugeOne={"english"} languageTwo={"japanese"} />
+    <LanguageToggle languageOne={"english"} languageTwo={"japanese"} />
     <ComponentKarutaCard cardData={cards[1]} />
     </div>
   );
