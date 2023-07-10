@@ -74,37 +74,71 @@ export default function OneHundredPoemsPage() {
           11 - 20
         </button>}
 
-
-        <button
+        {currentSelection !== "21 - 30" && <button
          className="button-basic"
           onClick={() => displayCards(21, 30)}
         >
           21 - 30
-        </button>
-        <button
+        </button>}
+        {currentSelection === "21 - 30" && <button
+         className="button-basic button-basic-selected"
+          onClick={() => displayCards(21, 30)}
+        >
+          21 - 30
+        </button>}
+
+        {currentSelection !== "31 - 40" && <button
          className="button-basic"
           onClick={() => displayCards(31, 40)}
         >
           31 - 40
-        </button>
-        <button
+        </button>}
+        {currentSelection === "31 - 40" && <button
+         className="button-basic button-basic-selected"
+          onClick={() => displayCards(31, 40)}
+        >
+          31 - 40
+        </button>}
+
+        {currentSelection !== "41 - 50" && <button
          className="button-basic"
           onClick={() => displayCards(41, 50)}
         >
           41 - 50
-        </button>
-        <button
+        </button>}
+        {currentSelection === "41 - 50" && <button
+         className="button-basic button-basic-selected"
+          onClick={() => displayCards(41, 50)}
+        >
+          41 - 50
+        </button>}
+
+        {currentSelection !== "51 - 60" && <button
          className="button-basic"
           onClick={() => displayCards(51, 60)}
         >
           51 - 60
-        </button>
-        <button
+        </button>}
+        {currentSelection === "51 - 60" && <button
+         className="button-basic button-basic-selected"
+          onClick={() => displayCards(51, 60)}
+        >
+          51 - 60
+        </button>}
+
+        {currentSelection !== "61 - 70" && <button
          className="button-basic"
           onClick={() => displayCards(61, 70)}
         >
           61 - 70
-        </button>
+        </button>}
+        {currentSelection === "61 - 70" && <button
+         className="button-basic button-basic-selected"
+          onClick={() => displayCards(61, 70)}
+        >
+          61 - 70
+        </button>}
+
         <button
          className="button-basic"
           onClick={() => displayCards(71, 80)}
