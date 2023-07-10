@@ -47,7 +47,7 @@ export function Toggle() {
   // Render the following component to the div referenced by the modalRef
   return ReactDOM.createPortal(
     <div id="toggle">
-      <div id="toggle-background" onClick={toggleOff} />
+      <div id="toggle-background" onClick={offToggle} />
       <div id="toggle-content">
         {toggleContent}
       </div>
