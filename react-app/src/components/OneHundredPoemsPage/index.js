@@ -9,7 +9,7 @@ import ComponentPoem from "../ComponentPoem";
 import LanguageToggle from "../LanguageToggle";
 import { Modal } from "../../context/Modal";
 
-export default function HomePage() {
+export default function OneHundredPoemsPage() {
   const dispatch = useDispatch();
   const [displayLanguage, setDisplayLanguage] = useState("english")
   const [startNum, setStartNum] = useState(1);

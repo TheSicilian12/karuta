@@ -3,6 +3,9 @@ import { useDispatch } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 import { authenticate } from "./store/session";
 import OneHundredPoemsPage from "./components/OneHundredPoemsPage";
+import Navigation from "./components/Navigation";
+import HomePage from "./components/Homepage";
+import PoemPracticePage from "./components/PoemPracticePage";
 
 function App() {
   const dispatch = useDispatch();
@@ -16,8 +19,17 @@ function App() {
     <>
       {isLoaded && (
         <Switch>
+          <Route path="/" exact>
+            <Navigation />
+            <HomePage />
+          </Route>
           <Route path="/100poems" exact>
+            <Navigation />
             <OneHundredPoemsPage />
+          </Route>
+          <Route path="/poempractice" exact>
+            <Navigation />
+            <PoemPracticePage />
           </Route>
         </Switch>
       )}

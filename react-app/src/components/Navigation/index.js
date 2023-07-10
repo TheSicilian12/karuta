@@ -1,17 +1,15 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import ProfileButton from './ProfileButton';
+// import { useSelector, useDispatch } from 'react-redux';
+// import ProfileButton from './ProfileButton';
 
 import './Navigation.css';
-import OpenModal from '../OpenModal';
+// import OpenModal from '../OpenModal';
 
 function Navigation({ isLoaded }) {
-	const dispatch = useDispatch()
-	const history = useHistory()
-
 	const [showMenu, setShowMenu] = useState(false);
 	const ulRef = useRef();
+	const history = useHistory();
 
 	const openMenu = () => {
 		if (showMenu) return;
@@ -25,7 +23,6 @@ function Navigation({ isLoaded }) {
 			if (!ulRef.current.contains(e.target)) {
 				setShowMenu(false);
 			}
-			// setShowMenu(false);
 		};
 
 		document.addEventListener("click", closeMenu);
@@ -41,15 +38,35 @@ function Navigation({ isLoaded }) {
 		openMenu()
 	}
 
+	const redirectPoems = () => {
+		history.push('/100poems')
+	}
+
+	const redirectHomepage = () => {
+		history.push('/')
+	}
+
+	const redirectPoemPractice = () => {
+		history.push('/poempractice')
+	}
+
 	return (
-		<div className="shinano-color-background nav-container">
-			<div className="nav-prof-cart-container">
-				<ul className={ulClassName} ref={ulRef}>
-					<>
-						<div>Hello</div>
-					</>
-				</ul>
-			</div>
+		<div className="nav-bar-container">
+			<button
+				onClick={() => redirectPoems()}
+			>
+				Poems
+			</button>
+			<button
+				onClick={() => redirectHomepage()}
+			>
+				Homepage
+			</button>
+			<button
+				onClick={() => redirectPoemPractice()}
+			>
+				Poem Practice
+			</button>
 		</div>
 	);
 }
