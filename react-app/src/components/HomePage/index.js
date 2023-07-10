@@ -20,12 +20,11 @@ export default function HomePage() {
 
   if (!cards[1]) return null
 
-  console.log("displayLanguage: ", displayLanguage)
   return (
    <div>
     Hello
     <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
-    <ComponentKarutaCard cardData={cards[1]} />
+    <ComponentKarutaCard language={displayLanguage} cardData={cards[1]} />
     </div>
   );
 }

@@ -3,7 +3,11 @@ import { useDispatch } from 'react-redux';
 
 import "./ComponentKarutaCard.css";
 
-export default function ComponentKarutaCard({cardData}) {
+export default function ComponentKarutaCard({language, cardData}) {
+  // ComponentKarutaCard takes in:
+  // 1. language
+  // 2. data about the card
+
   // Main text should toggle between Japanese and English
   // Change between first card and second card
   // full poem + picture of poet 5-7-5-7-7
@@ -13,12 +17,19 @@ export default function ComponentKarutaCard({cardData}) {
 
   const {author} = cardData
 
+  console.log("language: ", language)
+
   return (
   <div className='karuta-card-container'>
+    {language === 'english' ? <div>
     {cardData.english[0]}
     {cardData.english[1]}
-
-
+    </div> :
+    <div>
+    {cardData.japanese[0]}
+    {cardData.japanese[1]}
+    </div>
+    }
   </div>
   );
 }
