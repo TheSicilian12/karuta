@@ -6,6 +6,7 @@ import OneHundredPoemsPage from "./components/OneHundredPoemsPage";
 import Navigation from "./components/Navigation";
 import HomePage from "./components/Homepage";
 import PoemPracticePage from "./components/PoemPracticePage";
+import KarutaPoemPage from "./components/KarutaPoemPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -26,6 +27,10 @@ function App() {
           <Route path="/100poems" exact>
             <Navigation />
             <OneHundredPoemsPage />
+          </Route>
+          <Route path="/100poems/:poemId" exact>
+            <Navigation />
+            <KarutaPoemPage />
           </Route>
           <Route path="/poempractice" exact>
             <Navigation />
