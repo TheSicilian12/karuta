@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import "./ComponentPoem.css";
 import "../UniversalCSS.css";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function ComponentPoem({ language, cardData }) {
   // ComponentPoem takes in:
@@ -26,8 +27,11 @@ export default function ComponentPoem({ language, cardData }) {
 
   return (
     <div className="displayFlex">
+
       <div className="karuta-main-text-poem-container">
+      <NavLink to={`/100poems/${cardData.id}`}>
           <h2>Poem {cardData.id}</h2>
+      </NavLink>
         <div className="displayFlex">
           <button
             className="button-basic karuta-main-button"
@@ -42,7 +46,7 @@ export default function ComponentPoem({ language, cardData }) {
             <button
               className="button-basic karuta-main-button"
               onClick={addRomaji}
-            >
+              >
               romaji
             </button>}
         </div>
