@@ -29,11 +29,11 @@ export const getAllKarutaCardsTHUNK = () => async (dispatch) => {
 
 // GET one card THUNK
 export const getOneKarutaCardTHUNK = (cardId) => async (dispatch) => {
-	console.log("get one card thunk")
+	// console.log("get one card thunk")
 	const response = await fetch(`/api/karuta/${cardId}`)
 	if (response.ok) {
 		const responseJSON = await response.json();
-		console.log("responseJSON: ", responseJSON)
+		// console.log("responseJSON: ", responseJSON)
 		const responseNormalized = karutaCardNormalizer(responseJSON)
 		dispatch(loadOne(responseNormalized))
 	}
