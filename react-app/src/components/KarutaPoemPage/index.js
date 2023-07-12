@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 import "./KarutaPoemPage.css";
 import ComponentKarutaCard from "../ComponentKarutaCard";
+import ComponentPoem from "../ComponentPoem";
 import LanguageToggle from "../LanguageToggle";
 import {getOneKarutaCardTHUNK} from "../../store/karutaCards"
 
@@ -28,6 +29,7 @@ export default function KarutaPoemPage() {
     <div>by: {cardData[poemId].author.english}</div>
     <ComponentKarutaCard displayLanguage={displayLanguage} cardData={cardData[poemId]} size={'large'}/>
     <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"}/>
+    <ComponentPoem language={displayLanguage} cardData={cardData[poemId]}/>
     </div>
   );
 }
