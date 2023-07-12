@@ -13,7 +13,7 @@ export default function KarutaPoemPage() {
   return (
     <div>
     Karuta Poem Page
-    <img src={`https://jti.lib.virginia.edu/japanese/hyakunin/images/onna${poemId}.jpg`} />
+    
     </div>
   );
 }
