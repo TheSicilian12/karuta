@@ -3,7 +3,7 @@ import React from "react";
 
 import "./ComponentKarutaCard.css";
 
-export default function ComponentKarutaCard({language, cardData}) {
+export default function ComponentKarutaCard({displayLanguage, cardData}) {
   // ComponentKarutaCard takes in:
   // 1. language
   // 2. data about the card
@@ -19,7 +19,7 @@ export default function ComponentKarutaCard({language, cardData}) {
 
   return (
   <div className='karuta-card-container'>
-    {language === 'english' ? <div>
+    {displayLanguage === 'english' ? <div>
     {cardData.english[0]}
     {cardData.english[1]}
     </div> :

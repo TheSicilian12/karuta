@@ -2,11 +2,16 @@ import { karutaCardNormalizer } from "./storeFunctions"
 
 // constants
 const LOAD_KARUTA_CARDS = 'cards/all'
-
+const LOAD_KARUTA_ONE = 'cards/one'
 
 // dispatch
 const loadAll = (data) => ({
 	type: LOAD_KARUTA_CARDS,
+	payload: data
+})
+
+const loadOne = (data) => ({
+	type: LOAD_KARUTA_ONE,
 	payload: data
 })
 
@@ -22,12 +27,28 @@ export const getAllKarutaCardsTHUNK = () => async (dispatch) => {
 	}
 }
 
+// GET one card THUNK
+export const getOneKarutaCardTHUNK = (cardId) => async (dispatch) => {
+	console.log("get one card thunk")
+	const response = await fetch(`/api/karuta/${cardId}`)
+	if (response.ok) {
+		const responseJSON = await response.json();
+		console.log("responseJSON: ", responseJSON)
+		const responseNormalized = karutaCardNormalizer(responseJSON)
+		dispatch(loadOne(responseNormalized))
+	}
+}
+
 const initialState = {};
 
 export default function karutaReducer(state = initialState, action) {
 	switch (action.type) {
 		case LOAD_KARUTA_CARDS: {
 			const newState={...action.payload}
+			return newState
+		}
+		case LOAD_KARUTA_ONE: {
+			const newState={singleCard: action.payload}
 			return newState
 		}
 		default:

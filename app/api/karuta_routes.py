@@ -19,3 +19,15 @@ def get_all_karuta_cards():
     response = [card.to_dict() for card in all_cards]
 
     return {'cards': response}
+
+
+#GET one karuta card
+@karuta_routes.route('/<int:cardId>')
+def get_one_karuta_card(cardId):
+    '''
+    GET one karuta card
+    '''
+    print("---------------------------get one card-------------------------")
+    one_card = karuta_cards.query.filter(cardId == karuta_cards.id).first()
+    print("-------------one_card: ", one_card.to_dict())
+    return [one_card.to_dict()]
