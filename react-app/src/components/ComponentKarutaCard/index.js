@@ -24,14 +24,14 @@ export default function ComponentKarutaCard({ displayLanguage, cardData, size })
   return (
     <div className={`${cardDimensions}`}>
       {displayLanguage === 'english' ? <div className="displayFlex-column">
-        <div>{author.english}</div>
+        {author.english}
         <div>{cardData.english[0]}</div>
         <div>{cardData.english[1]}</div>
         <div>{cardData.english[2]}</div>
         <div>{cardData.english[3]}</div>
         <div>{cardData.english[4]}</div>
       </div> :
-        <div className="displayFlex-column">
+        <div className="vertical-writing-rl">
           <div>{author.japanese}</div>
           <div>{cardData.japanese[0]}</div>
           <div>{cardData.japanese[1]}</div>

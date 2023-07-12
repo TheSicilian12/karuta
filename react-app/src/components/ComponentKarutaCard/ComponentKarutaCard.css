@@ -5,6 +5,8 @@
 }
 
 .karuta-card-container-large {
+    display: flex;
+    justify-content: center;
     border: 5px solid green;
     height: 300px;
     width: 200px;
