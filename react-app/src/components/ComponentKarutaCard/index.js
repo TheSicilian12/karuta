@@ -3,10 +3,11 @@ import React from "react";
 
 import "./ComponentKarutaCard.css";
 
-export default function ComponentKarutaCard({displayLanguage, cardData}) {
+export default function ComponentKarutaCard({displayLanguage, cardData, size}) {
   // ComponentKarutaCard takes in:
   // 1. language
   // 2. data about the card
+  // 3. size dimensions for the card
 
   // Main text should toggle between Japanese and English
   // Change between first card and second card
@@ -15,10 +16,13 @@ export default function ComponentKarutaCard({displayLanguage, cardData}) {
 
   if (!cardData) return null
 
+  let cardDimensions = "karuta-card-container"
+  if (size === "large") cardDimensions = "karuta-card-container-large"
+
   const {author} = cardData
 
   return (
-  <div className='karuta-card-container'>
+  <div className={`${cardDimensions}`}>
     {displayLanguage === 'english' ? <div>
     {author.english}
     {cardData.english[0]}

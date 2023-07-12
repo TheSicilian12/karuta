@@ -25,7 +25,7 @@ export default function KarutaPoemPage() {
   return (
     <div>
     Karuta Poem Page
-    <ComponentKarutaCard displayLanguage={displayLanguage} cardData={cardData[poemId]}/>
+    <ComponentKarutaCard displayLanguage={displayLanguage} cardData={cardData[poemId]} size={'large'}/>
     <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"}/>
     </div>
   );

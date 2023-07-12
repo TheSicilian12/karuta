@@ -3,3 +3,9 @@
     height: 200px;
     width: 150px;
 }
+
+.karuta-card-container-large {
+    border: 5px solid green;
+    height: 300px;
+    width: 200px;
+}
