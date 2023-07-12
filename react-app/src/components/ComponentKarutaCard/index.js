@@ -3,7 +3,7 @@ import React from "react";
 
 import "./ComponentKarutaCard.css";
 
-export default function ComponentKarutaCard({displayLanguage, cardData, size}) {
+export default function ComponentKarutaCard({ displayLanguage, cardData, size }) {
   // ComponentKarutaCard takes in:
   // 1. language
   // 2. data about the card
@@ -19,28 +19,27 @@ export default function ComponentKarutaCard({displayLanguage, cardData, size}) {
   let cardDimensions = "karuta-card-container"
   if (size === "large") cardDimensions = "karuta-card-container-large"
 
-  const {author} = cardData
+  const { author } = cardData
 
   return (
-  <div className={`${cardDimensions}`}>
-    {displayLanguage === 'english' ? <div>
-    {author.english}
-    {cardData.english[0]}
-    {cardData.english[1]}
-    {cardData.english[2]}
-    {cardData.english[3]}
-    {cardData.english[4]}
-
-    </div> :
-    <div>
-    {author.japanese}
-    {cardData.japanese[0]}
-    {cardData.japanese[1]}
-    {cardData.japanese[2]}
-    {cardData.japanese[3]}
-    {cardData.japanese[4]}
+    <div className={`${cardDimensions}`}>
+      {displayLanguage === 'english' ? <div className="displayFlex-column">
+        <div>{author.english}</div>
+        <div>{cardData.english[0]}</div>
+        <div>{cardData.english[1]}</div>
+        <div>{cardData.english[2]}</div>
+        <div>{cardData.english[3]}</div>
+        <div>{cardData.english[4]}</div>
+      </div> :
+        <div className="displayFlex-column">
+          <div>{author.japanese}</div>
+          <div>{cardData.japanese[0]}</div>
+          <div>{cardData.japanese[1]}</div>
+          <div>{cardData.japanese[2]}</div>
+          <div>{cardData.japanese[3]}</div>
+          <div>{cardData.japanese[4]}</div>
+        </div>
+      }
     </div>
-    }
-  </div>
   );
 }
