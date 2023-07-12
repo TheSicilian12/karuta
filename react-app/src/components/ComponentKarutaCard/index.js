@@ -20,12 +20,21 @@ export default function ComponentKarutaCard({displayLanguage, cardData}) {
   return (
   <div className='karuta-card-container'>
     {displayLanguage === 'english' ? <div>
+    {author.english}
     {cardData.english[0]}
     {cardData.english[1]}
+    {cardData.english[2]}
+    {cardData.english[3]}
+    {cardData.english[4]}
+
     </div> :
     <div>
+    {author.japanese}
     {cardData.japanese[0]}
     {cardData.japanese[1]}
+    {cardData.japanese[2]}
+    {cardData.japanese[3]}
+    {cardData.japanese[4]}
     </div>
     }
   </div>
