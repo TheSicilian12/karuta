@@ -1,16 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector} from 'react-redux';
 import { useParams } from "react-router-dom";
 
 import "./KarutaPoemPage.css";
 import ComponentKarutaCard from "../ComponentKarutaCard";
+import LanguageToggle from "../LanguageToggle";
 import {getOneKarutaCardTHUNK} from "../../store/karutaCards"
 
 export default function KarutaPoemPage() {
   const dispatch = useDispatch();
 
-  const {poemId} = useParams()
+  const [displayLanguage, setDisplayLanguage] = useState("english")
+
   const cardData = useSelector(state => state.karutaCards.singleCard)
+
+  const {poemId} = useParams()
+
   useEffect(() => {
     dispatch(getOneKarutaCardTHUNK(poemId))
   }, [dispatch])
@@ -20,7 +25,8 @@ export default function KarutaPoemPage() {
   return (
     <div>
     Karuta Poem Page
-    <ComponentKarutaCard displayLanguage={"english"} cardData={cardData[poemId]}/>
+    <ComponentKarutaCard displayLanguage={displayLanguage} cardData={cardData[poemId]}/>
+    <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"}/>
     </div>
   );
 }
