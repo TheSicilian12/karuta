@@ -5,6 +5,7 @@ import "./GameKarutaMemory.css";
 import ComponentKarutaCard from "../ComponentKarutaCard";
 import LanguageToggle from "../LanguageToggle";
 import { getRandomKarutaCardsTHUNK } from "../../store/karutaCards";
+
 export default function GameKarutaMemory({ gameSize }) {
   const dispatch = useDispatch();
   const [displayLanguage, setDisplayLanguage] = useState("english")
@@ -30,7 +31,7 @@ export default function GameKarutaMemory({ gameSize }) {
       <div>
         Test
         {Object.values(randomCards).map((card) => {
-          return<div><ComponentKarutaCard displayLanguage={displayLanguage} cardData={card} size={'small'}/></div>
+          return<div><ComponentKarutaCard displayLanguage={displayLanguage} cardData={card} size={'small'} poemDisplay={"second"}/></div>
         })
         }
       </div>
