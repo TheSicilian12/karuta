@@ -15,6 +15,7 @@ const loadOne = (data) => ({
 	payload: data
 })
 
+
 //thunk
 
 // GET all cards THUNK
@@ -36,6 +37,16 @@ export const getOneKarutaCardTHUNK = (cardId) => async (dispatch) => {
 		// console.log("responseJSON: ", responseJSON)
 		const responseNormalized = karutaCardNormalizer(responseJSON)
 		dispatch(loadOne(responseNormalized))
+	}
+}
+
+// GET a specific amount of random cards THUNK
+export const getRandomKarutaCardsTHUNK = (cardAmount) => async (dispatch) => {
+	const response = await fetch(`/api/karuta/random/${cardAmount}`)
+	if (response.ok) {
+		const responseJSON = await response.json();
+		const responseNormalized = karutaCardNormalizer(responseJSON.cards)
+		dispatch(loadAll(responseNormalized))
 	}
 }
 
