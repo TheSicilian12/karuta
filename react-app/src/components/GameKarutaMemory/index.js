@@ -31,7 +31,10 @@ export default function GameKarutaMemory({ gameSize }) {
       <div>
         Test
         {Object.values(randomCards).map((card) => {
-          return<div><ComponentKarutaCard displayLanguage={displayLanguage} cardData={card} size={'small'} poemDisplay={"second"}/></div>
+          return<div>
+              <ComponentKarutaCard displayLanguage={displayLanguage} cardData={card} size={'small'} poemDisplay={"second"}/>
+              <ComponentKarutaCard displayLanguage={displayLanguage} cardData={card} size={'small'} poemDisplay={"first"}/>
+            </div>
         })
         }
       </div>

@@ -191,6 +191,7 @@ export default function OneHundredPoemsPage() {
             className="poems-page-poem-margin "
             key={card.id}>
             <ComponentPoem language={displayLanguage} cardData={card} />
+            
           </div>
         )}
       </div>
