@@ -33,6 +33,9 @@ export default function ComponentKarutaCard({ displayLanguage, cardData, size, p
           <div>{cardData.english[3]}</div>
           <div>{cardData.english[4]}</div>
         </div>}
+        {poemDisplay === 'first' && <div>
+          <div>{cardData.english[0]}</div>
+        </div>}
         {poemDisplay === 'second' && <div>
           <div>{cardData.english[3]}</div>
           <div>{cardData.english[4]}</div>
@@ -46,6 +49,9 @@ export default function ComponentKarutaCard({ displayLanguage, cardData, size, p
             <div>{cardData.japanese[2]}</div>
             <div>{cardData.japanese[3]}</div>
             <div>{cardData.japanese[4]}</div>
+          </div>}
+          {poemDisplay === 'first' && <div>
+            <div>{cardData.japanese[0]}</div>
           </div>}
           {poemDisplay === 'second' && <div>
             <div>{cardData.japanese[3]}</div>
