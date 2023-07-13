@@ -3,6 +3,7 @@ import { useDispatch} from 'react-redux';
 
 import "./PoemPracticePage.css";
 import GameKarutaMemory from "../GameKarutaMemory";
+import LanguageToggle from "../LanguageToggle";
 
 export default function PoemPracticePage() {
   const dispatch = useDispatch();
@@ -10,7 +11,7 @@ export default function PoemPracticePage() {
   return (
     <div>
     Poem Practice
-    <GameKarutaMemory />
+    <GameKarutaMemory gameSize={10}/>
     </div>
   );
 }
