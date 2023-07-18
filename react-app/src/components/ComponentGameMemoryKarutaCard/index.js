@@ -25,10 +25,22 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
   if (size === "large") cardDimensions = "karuta-card-container-large"
 
   const { author, match } = cardData
-  console.log("match: ", match)
+
+  const answerCheck = () => {
+    if (!firstGuessCard) setFirstGuessCard(cardData.id);
+    else {
+      if (firstGuessCard === cardData.id) console.log("got the card!")
+      else setFirstGuessCard("")
+    }
+  }
+
+  console.log("first guess: ", firstGuessCard)
+  console.log("card: ", cardData.id)
 
   return (
-    <div className={`${cardDimensions} memory-game-container`}>
+    <div className={`${cardDimensions} memory-game-container`}
+          onClick={answerCheck}
+    >
       {displayLanguage === 'english' ? <div className="displayFlex-column">
         {/* matchHalf, match the first part of the poem with the second */}
         {gameType === 'matchHalf' && <div>
