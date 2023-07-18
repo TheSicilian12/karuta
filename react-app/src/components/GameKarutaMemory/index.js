@@ -2,13 +2,16 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import "./GameKarutaMemory.css";
-import ComponentKarutaCard from "../ComponentKarutaCard";
+import ComponentGameMemoryKarutaCard from "../ComponentGameMemoryKarutaCard";
 import LanguageToggle from "../LanguageToggle";
 import { getRandomKarutaCardsTHUNK } from "../../store/karutaCards";
 
 export default function GameKarutaMemory({ gameSize }) {
   const dispatch = useDispatch();
   const [displayLanguage, setDisplayLanguage] = useState("english")
+  const [firstGuessCard, setFirstGuessCard] = useState("");
+  const [secondGuessCard, setSecondGuessCard] = useState("");
+
 
   const randomCards = useSelector(state => state.karutaCards)
 
@@ -32,8 +35,7 @@ export default function GameKarutaMemory({ gameSize }) {
         Test
         {Object.values(randomCards).map((card) => {
           return<div>
-              <ComponentKarutaCard displayLanguage={displayLanguage} cardData={card} size={'small'} poemDisplay={"second"}/>
-              <ComponentKarutaCard displayLanguage={displayLanguage} cardData={card} size={'small'} poemDisplay={"first"}/>
+              <ComponentGameMemoryKarutaCard displayLanguage={displayLanguage} cardData={card} size={'small'} gameType={"second"}/>
             </div>
         })
         }

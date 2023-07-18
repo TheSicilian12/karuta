@@ -11,7 +11,7 @@ export default function PoemPracticePage() {
   return (
     <div>
     Poem Practice
-    <GameKarutaMemory gameSize={10}/>
+    <GameKarutaMemory gameSize={1}/>
     </div>
   );
 }
