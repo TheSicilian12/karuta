@@ -1,7 +1,7 @@
 from app.models import db, Deck_Cards, Decks, environment, SCHEMA;
 from sqlalchemy.sql import text;
 
-def seed_deck_cards():
+def seed_deck_card_association():
     card1 = Deck_Cards(
         question = 'What is the first karuta poem in the data?',
         answer = 'Coarse the rush-mat roof',
@@ -35,10 +35,10 @@ def seed_deck_cards():
 # incrementing primary key, CASCADE deletes any dependent entities.  With
 # sqlite3 in development you need to instead use DELETE to remove all data and
 # it will reset the primary keys for you as well.
-def undo_deck_cards():
+def undo_deck_card_association():
     if environment == "production":
-        db.session.execute(f"TRUNCATE table {SCHEMA}.deck_cards RESTART IDENTITY CASCADE;")
+        db.session.execute(f"TRUNCATE table {SCHEMA}.deck_card_association RESTART IDENTITY CASCADE;")
     else:
-        db.session.execute(text("DELETE FROM deck_cards"))
+        db.session.execute(text("DELETE FROM deck_card_association"))
 
     db.session.commit()
