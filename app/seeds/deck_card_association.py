@@ -7,10 +7,19 @@ def seed_deck_card_association():
     deck3 = Decks.query.filer(name = 'Deck 1').first()
     deck4 = Decks.query.filer(name = 'Deck 1').first()
 
-card1 = Deck_Cards.query.filter(question = 'What is the first karuta poem in the data?').first()
-card1 = Deck_Cards.query.filter(question = 'What is 2 + 2?').first()
-card1 = Deck_Cards.query.filter(question = 'How do you play karuta?').first()
-card1 = Deck_Cards.query.filter(question = 'Memorize the cards and select the right one first').first()
+
+    card1 = Deck_Cards.query.filter(question = 'What is the first karuta poem in the data?').first()
+    card2 = Deck_Cards.query.filter(question = 'What is 2 + 2?').first()
+    card3 = Deck_Cards.query.filter(question = 'How do you play karuta?').first()
+    card4 = Deck_Cards.query.filter(question = 'Memorize the cards and select the right one first').first()
+
+
+    deck_card_association = db.Table('deck_card_association',
+        db.metadata,
+        autoload=True,
+        autoload_with=db.engine
+    )
+
 
     db.session.add(card1)
     db.session.add(card2)
