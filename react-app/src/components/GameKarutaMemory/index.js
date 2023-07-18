@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { shuffleObj } from "../ComponentFunctions";
 
 import "./GameKarutaMemory.css";
 import ComponentGameMemoryKarutaCard from "../ComponentGameMemoryKarutaCard";
@@ -24,10 +25,8 @@ export default function GameKarutaMemory({ gameSize }) {
 
  console.log("randomCards: ", randomCards)
 
-  Object.values(randomCards).forEach((card) => {
-    console.log("card: ", card)
-  })
-
+let randomCardsArr = shuffleObj(randomCards)
+console.log("randomCardsArr: ", randomCardsArr )
 // need to take care of whether this is a "first" card or "second" card to send to the karuta card
 // also need to take care of the randomization on this side.
 
