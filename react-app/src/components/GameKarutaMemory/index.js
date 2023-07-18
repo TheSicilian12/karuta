@@ -10,7 +10,7 @@ export default function GameKarutaMemory({ gameSize }) {
   const dispatch = useDispatch();
   const [displayLanguage, setDisplayLanguage] = useState("english")
   const [firstGuessCard, setFirstGuessCard] = useState("");
-  const [secondGuessCard, setSecondGuessCard] = useState("");
+  // const [secondGuessCard, setSecondGuessCard] = useState("");
 
 
   const randomCards = useSelector(state => state.karutaCards)
@@ -35,7 +35,13 @@ export default function GameKarutaMemory({ gameSize }) {
         Test
         {Object.values(randomCards).map((card) => {
           return<div>
-              <ComponentGameMemoryKarutaCard displayLanguage={displayLanguage} cardData={card} size={'small'} gameType={"second"}/>
+              <ComponentGameMemoryKarutaCard
+                displayLanguage={displayLanguage}
+                cardData={card}
+                size={'small'}
+                gameType={"matchHalf"}
+                firstGuessCard={firstGuessCard}
+                setFirstGuessCard={setFirstGuessCard}/>
             </div>
         })
         }
