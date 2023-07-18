@@ -23,12 +23,16 @@ export default function GameKarutaMemory({ gameSize }) {
 
   if (Object.keys(randomCards).length === 0) return null
 
- console.log("randomCards: ", randomCards)
+  console.log("randomCards: ", randomCards)
+  let randomCardsDouble = {}
 
-let randomCardsArr = shuffleObj(randomCards)
-console.log("randomCardsArr: ", randomCardsArr )
-// need to take care of whether this is a "first" card or "second" card to send to the karuta card
-// also need to take care of the randomization on this side.
+  // determine which cards should show the first part of the card or the second part
+  Object.values(randomCards).map((card) => {
+    randomCardsDouble[card.id] = { ...card, 'match': 'first' }
+    randomCardsDouble[card.id + 100] = { ...card, 'match': 'second' }
+  })
+
+  let randomCardsArr = shuffleObj(randomCardsDouble)
 
   return (
     <div className="game-memory-container">
@@ -36,16 +40,16 @@ console.log("randomCardsArr: ", randomCardsArr )
       <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
       <div>
         Test
-        {Object.values(randomCards).map((card) => {
-          return<div>
-              <ComponentGameMemoryKarutaCard
-                displayLanguage={displayLanguage}
-                cardData={card}
-                size={'small'}
-                gameType={"matchHalf"}
-                firstGuessCard={firstGuessCard}
-                setFirstGuessCard={setFirstGuessCard}/>
-            </div>
+        {randomCardsArr.map((card) => {
+          return <div>
+            <ComponentGameMemoryKarutaCard
+              displayLanguage={displayLanguage}
+              cardData={card}
+              size={'small'}
+              gameType={"matchHalf"}
+              firstGuessCard={firstGuessCard}
+              setFirstGuessCard={setFirstGuessCard} />
+          </div>
         })
         }
       </div>
