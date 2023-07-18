@@ -24,48 +24,35 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
   let cardDimensions = "karuta-card-container"
   if (size === "large") cardDimensions = "karuta-card-container-large"
 
-  const { author } = cardData
+  const { author, match } = cardData
+  console.log("match: ", match)
 
   return (
     <div className={`${cardDimensions} memory-game-container`}>
       {displayLanguage === 'english' ? <div className="displayFlex-column">
-        {/* {!poemDisplay && <div>
-          <div>{author.english}</div>
-          <div>{cardData.english[0]}</div>
-          <div>{cardData.english[1]}</div>
-          <div>{cardData.english[2]}</div>
-          <div>{cardData.english[3]}</div>
-          <div>{cardData.english[4]}</div>
-        </div>}
-        {poemDisplay === 'first' && <div>
-          <div>{cardData.english[0]}</div>
-        </div>}
-        {poemDisplay === 'second' && <div>
-          <div>{cardData.english[3]}</div>
-          <div>{cardData.english[4]}</div>
-        </div>} */}
-
-        {gameType === 'halfMatch' && <div>
-
+        {/* matchHalf, match the first part of the poem with the second */}
+        {gameType === 'matchHalf' && <div>
+          {match === 'first' && <div>
+            <div>{cardData.english[0]}</div>
+          </div>}
+          {match === 'second' && <div>
+            <div>{cardData.english[3]}</div>
+            <div>{cardData.english[4]}</div>
+            </div>}
         </div>}
       </div>
         :
         <div className="vertical-writing-rl">
-          {/* {!poemDisplay && <div>
-            <div>{author.japanese}</div>
-            <div>{cardData.japanese[0]}</div>
-            <div>{cardData.japanese[1]}</div>
-            <div>{cardData.japanese[2]}</div>
-            <div>{cardData.japanese[3]}</div>
-            <div>{cardData.japanese[4]}</div>
-          </div>}
-          {poemDisplay === 'first' && <div>
+          {/* matchHalf, match the first part of the poem with the second */}
+          {gameType === 'matchHalf' && <div>
+          {match === 'first' && <div>
             <div>{cardData.japanese[0]}</div>
           </div>}
-          {poemDisplay === 'second' && <div>
+          {match === 'second' && <div>
             <div>{cardData.japanese[3]}</div>
             <div>{cardData.japanese[4]}</div>
-          </div>} */}
+            </div>}
+        </div>}
         </div>
       }
 
