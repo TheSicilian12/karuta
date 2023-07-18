@@ -1,5 +1,6 @@
 from .db import db, environment, SCHEMA, add_prefix_for_prod
 from datetime import datetime
+from .deck_card_association import deck_card_association
 
 class Deck_Cards(db.Model):
     __tablename__ = 'deck_cards'
@@ -19,6 +20,8 @@ class Deck_Cards(db.Model):
     # Foreign Keys
 
     # Relationships
+    # Many to Many
+    decks = db.relationship('Decks', secondary=deck_card_association, back_populates='cards')
 
     def to_dict(self):
         return {
