@@ -22,10 +22,14 @@ export default function GameKarutaMemory({ gameSize }) {
 
   if (Object.keys(randomCards).length === 0) return null
 
-  console.log("randomCards: ", randomCards)
+ console.log("randomCards: ", randomCards)
+
   Object.values(randomCards).forEach((card) => {
     console.log("card: ", card)
   })
+
+// need to take care of whether this is a "first" card or "second" card to send to the karuta card
+// also need to take care of the randomization on this side.
 
   return (
     <div className="game-memory-container">
