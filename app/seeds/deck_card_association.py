@@ -2,25 +2,15 @@ from app.models import db, Deck_Cards, Decks, environment, SCHEMA;
 from sqlalchemy.sql import text;
 
 def seed_deck_card_association():
-    card1 = Deck_Cards(
-        question = 'What is the first karuta poem in the data?',
-        answer = 'Coarse the rush-mat roof',
-        answer_long = 'Coarse the rush-mat roof Sheltering the harvest-hut Of the autumn rice-field; And my sleeves are growing wet With the moisture dripping through. Emperor Tenchi'
-    )
-    card2 = Deck_Cards(
-        question='What is 2 + 2?',
-        answer='4'
-    )
-    card3 = Deck_Cards(
-        question = 'How do you play karuta?',
-        answer = 'Memorize the cards and select the right one first',
-    )
-    card4 = Deck_Cards(
-        question = 'writing systems',
-        answer = 'hirgana and katakan',
-        answer_long = 'hiragana, katakana, and kanji'
-    )
+    deck1 = Decks.query.filer(name = 'Deck 1').first()
+    deck2 = Decks.query.filer(name = 'Deck 1').first()
+    deck3 = Decks.query.filer(name = 'Deck 1').first()
+    deck4 = Decks.query.filer(name = 'Deck 1').first()
 
+card1 = Deck_Cards.query.filter(question = 'What is the first karuta poem in the data?').first()
+card1 = Deck_Cards.query.filter(question = 'What is 2 + 2?').first()
+card1 = Deck_Cards.query.filter(question = 'How do you play karuta?').first()
+card1 = Deck_Cards.query.filter(question = 'Memorize the cards and select the right one first').first()
 
     db.session.add(card1)
     db.session.add(card2)
