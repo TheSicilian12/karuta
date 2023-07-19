@@ -7,16 +7,8 @@ import random
 deck_routes = Blueprint('deck', __name__)
 
 
-# GET all karuta cards
+
+# GET all your decks
 @deck_routes.route('/')
-def get_all_decks():
-    '''
-    GET all decks
-    '''
-    print("---------------------------get all decks---------------------------------")
-    all_decks = Decks.query.all()
-    # print("---------------------all_decks: ", all_decks)
-
-    response = [deck.to_dict() for deck in all_decks]
-
-    return {'decks': response}
+@login_required
+def get_your_decks()

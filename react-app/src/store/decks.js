@@ -9,9 +9,9 @@ const loadAll = (data) => ({
 
 //thunk
 
-// GET all cards THUNK
-export const getAllDecksTHUNK = () => async (dispatch) => {
-	const response = await fetch('/api/decks');
+// GET all of a users cards THUNK
+export const getAllUsersDecksTHUNK = () => async (dispatch) => {
+	const response = await fetch(`/api/decks/${userId}`);
 	if (response.ok) {
 		const responseJSON = await response.json();
 		dispatch(loadAll(responseJSON))
