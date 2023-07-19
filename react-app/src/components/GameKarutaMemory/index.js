@@ -24,19 +24,20 @@ export default function GameKarutaMemory({ gameSize }) {
 
   if (!randomCards.random) return null
   if (randomCards.random.length === 0) return null
-  console.log("randomCards: ", randomCards.random)
+
   let randomCardsArr = randomCards.random;
   // console.log("randomCards: ", randomCards)
 
+  let key = 0;
   return (
     <div className="game-memory-container">
       Hello
       Karuta Memory
       <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
       <div>
-        Test
         {randomCardsArr.map((card) => {
-          return <div>
+          key++;
+          return <div key={key}>
             <ComponentGameMemoryKarutaCard
               displayLanguage={displayLanguage}
               cardData={card}
