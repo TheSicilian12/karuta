@@ -18,6 +18,7 @@ class Deck_Cards(db.Model):
     updated_at = db.Column(db.DateTime)
 
     # Foreign Keys
+    owner_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod("users.id")))
 
     # Relationships
     # Many to Many
@@ -30,6 +31,7 @@ class Deck_Cards(db.Model):
             'answer': self.answer,
             'answer_long': self.answer_long,
             'question': self.question,
+            'owner_id': self.owner_id,
 
             'created_at': self.created_at,
             'updated_at': self.updated_at

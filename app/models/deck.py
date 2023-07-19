@@ -16,6 +16,7 @@ class Decks(db.Model):
     updated_at = db.Column(db.DateTime)
 
     # Foreign Keys
+    owner_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod("users.id")))
 
     # Relationships
     # Many to Many
@@ -26,6 +27,7 @@ class Decks(db.Model):
             'id': self.id,
 
             'name': self.name,
+            'owner_id': self.owner_id,
 
             'created_at': self.created_at,
             'updated_at': self.updated_at
