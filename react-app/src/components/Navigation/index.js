@@ -50,6 +50,10 @@ function Navigation({ isLoaded }) {
 		history.push('/poempractice')
 	}
 
+	const redirectStudyDeck = () => {
+		history.push('/studyDecks')
+	}
+
 	return (
 		<div className="nav-bar-container">
 			<button
@@ -66,6 +70,11 @@ function Navigation({ isLoaded }) {
 				onClick={() => redirectPoemPractice()}
 			>
 				Poem Practice
+			</button>
+			<button
+				onClick={() => redirectStudyDeck()}
+			>
+				Study Decks
 			</button>
 		</div>
 	);

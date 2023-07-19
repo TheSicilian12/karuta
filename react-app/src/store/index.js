@@ -1,9 +1,11 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import karutaCards from './karutaCards'
+import decks from './decks';
 
 const rootReducer = combineReducers({
   karutaCards,
+  decks
 });
 
 let enhancer;
