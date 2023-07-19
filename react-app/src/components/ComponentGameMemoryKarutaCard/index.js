@@ -34,8 +34,8 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
     }
   }
 
-  console.log("first guess: ", firstGuessCard)
-  console.log("card: ", cardData.id)
+  // console.log("first guess: ", firstGuessCard)
+  // console.log("card: ", cardData.id)
 
   return (
     <div className={`${cardDimensions} memory-game-container`}

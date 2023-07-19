@@ -5,37 +5,32 @@ import { shuffleObj } from "../ComponentFunctions";
 import "./GameKarutaMemory.css";
 import ComponentGameMemoryKarutaCard from "../ComponentGameMemoryKarutaCard";
 import LanguageToggle from "../LanguageToggle";
-import { getRandomKarutaCardsTHUNK } from "../../store/karutaCards";
+import { getRandomKarutaCardsTHUNK, getShuffleRandomKarutaCardsTHUNK, getMemoryShuffleRandomKarutaCardsTHUNK} from "../../store/karutaCards";
 
 export default function GameKarutaMemory({ gameSize }) {
   const dispatch = useDispatch();
   const [displayLanguage, setDisplayLanguage] = useState("english")
   const [firstGuessCard, setFirstGuessCard] = useState("");
+  // const [randomCardsArr, setRandomCardsArr] = useState([])
   // const [secondGuessCard, setSecondGuessCard] = useState("");
 
 
   const randomCards = useSelector(state => state.karutaCards)
-
   // retreive a random set of cards depending on the game size
   useEffect(() => {
-    dispatch(getRandomKarutaCardsTHUNK(gameSize))
+    dispatch(getMemoryShuffleRandomKarutaCardsTHUNK(gameSize))
+    // console.log("use effect")
   }, [dispatch])
 
-  if (Object.keys(randomCards).length === 0) return null
-
-  console.log("randomCards: ", randomCards)
-  let randomCardsDouble = {}
-
-  // determine which cards should show the first part of the card or the second part
-  Object.values(randomCards).map((card) => {
-    randomCardsDouble[card.id] = { ...card, 'match': 'first' }
-    randomCardsDouble[card.id + 100] = { ...card, 'match': 'second' }
-  })
-
-  let randomCardsArr = shuffleObj(randomCardsDouble)
+  if (!randomCards.random) return null
+  if (randomCards.random.length === 0) return null
+  console.log("randomCards: ", randomCards.random)
+  let randomCardsArr = randomCards.random;
+  // console.log("randomCards: ", randomCards)
 
   return (
     <div className="game-memory-container">
+      Hello
       Karuta Memory
       <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
       <div>

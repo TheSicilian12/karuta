@@ -1,8 +1,10 @@
+import { shuffleObj } from "../components/ComponentFunctions"
 import { karutaCardNormalizer } from "./storeFunctions"
 
 // constants
 const LOAD_KARUTA_CARDS = 'cards/all'
 const LOAD_KARUTA_ONE = 'cards/one'
+const LOAD_RANDOM_SHUFFLE = 'cards/randomShuffle'
 
 // dispatch
 const loadAll = (data) => ({
@@ -15,6 +17,10 @@ const loadOne = (data) => ({
 	payload: data
 })
 
+const loadRandomShuffle = (data) => ({
+	type: LOAD_RANDOM_SHUFFLE,
+	payload: data
+})
 
 //thunk
 
@@ -50,16 +56,56 @@ export const getRandomKarutaCardsTHUNK = (cardAmount) => async (dispatch) => {
 	}
 }
 
+// GET and shuffle cards - OUTPUT: ARRAY
+export const getShuffleRandomKarutaCardsTHUNK = (cardAmount) => async (dispatch) => {
+	let randomResponse = await fetch(`/api/karuta/random/${cardAmount}`)
+	if (randomResponse.ok) {
+		const randomResponseJSON = await randomResponse.json();
+		const randomResponseNormalized = karutaCardNormalizer(randomResponseJSON.cards);
+
+		// shuffle
+		let randomCardsArr = shuffleObj(randomResponseNormalized)
+		// console.log("randomCardsArr THUNK: ", randomCardsArr)
+		dispatch(loadRandomShuffle(randomCardsArr))
+	}
+}
+
+// GET and shuffle cards, memory game - OUTPUT: ARRAY
+export const getMemoryShuffleRandomKarutaCardsTHUNK = (cardAmount) => async (dispatch) => {
+	let randomResponse = await fetch(`/api/karuta/random/${cardAmount}`)
+	if (randomResponse.ok) {
+		const randomResponseJSON = await randomResponse.json();
+		const randomResponseNormalized = karutaCardNormalizer(randomResponseJSON.cards);
+
+		let randomCardsDouble = {};
+
+		Object.values(randomResponseNormalized).map((card) => {
+			randomCardsDouble[card.id] = { ...card, 'match': 'first' };
+			randomCardsDouble[card.id + 100] = { ...card, 'match': 'second' };
+		})
+
+		// shuffle
+		let randomCardsArr = shuffleObj(randomCardsDouble)
+		// console.log("randomCardsArr THUNK: ", randomCardsArr)
+
+		dispatch(loadRandomShuffle(randomCardsArr))
+	}
+}
+
 const initialState = {};
 
 export default function karutaReducer(state = initialState, action) {
 	switch (action.type) {
 		case LOAD_KARUTA_CARDS: {
-			const newState={...action.payload}
+			const newState = { ...action.payload }
 			return newState
 		}
 		case LOAD_KARUTA_ONE: {
-			const newState={singleCard: action.payload}
+			const newState = { singleCard: action.payload }
+			return newState
+		}
+		case LOAD_RANDOM_SHUFFLE: {
+			const newState = { random: action.payload }
 			return newState
 		}
 		default:
