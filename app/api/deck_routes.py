@@ -49,5 +49,7 @@ def get_one_deck(deck_id):
     user = [user.to_dict() for user in deck_users if user.id == current_user.id]
 
     # checking  if there is exactly 1 user in the list.
-    if len(user) != 0:
+    if len(user) != 1:
         return {'error': 'Invalid route'}
+
+    return deck.to_dict()

@@ -30,8 +30,10 @@ export const getCurrentUserDecksTHUNK = (userId) => async (dispatch) => {
 // GET a specific deck THUNK
 export const getDeckTHUNK = (deckId) => async (dispatch) => {
 	const response = await fetch(`/api/decks/${deckId}`);
+	console.log('thunk response: ', response)
 	if (response.ok) {
 		const responseJSON = await response.json();
+		console.log('responseJSON: ', responseJSON)
 		dispatch(loadOne(responseJSON))
 	}
 }
@@ -44,7 +46,7 @@ export default function studyDeckReducer(state = initialState, action) {
 			const newState = { ...action.payload }
 			return newState
 		}
-		case LOAD_DECKS: {
+		case LOAD_ONE: {
 			const newState = { singleDeck: {...action.payload} }
 			return newState
 		}
