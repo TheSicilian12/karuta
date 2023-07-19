@@ -2,6 +2,7 @@ from .db import db, environment, SCHEMA, add_prefix_for_prod
 from datetime import datetime
 from .deck_card_association import deck_card_association
 
+
 class Deck_Cards(db.Model):
     __tablename__ = 'deck_cards'
 
