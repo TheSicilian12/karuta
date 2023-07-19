@@ -8,6 +8,7 @@ import HomePage from "./components/Homepage";
 import PoemPracticePage from "./components/PoemPracticePage";
 import KarutaPoemPage from "./components/KarutaPoemPage";
 import StudyDeckPage from "./components/StudyDeckPage";
+import LoginFormPage from "./components/LoginFormPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -40,6 +41,9 @@ function App() {
           <Route path="/studyDecks" exact>
             <Navigation isLoaded={isLoaded}/>
             <StudyDeckPage />
+          </Route>
+          <Route path="/login" exact>
+            <LoginFormPage />
           </Route>
         </Switch>
       )}

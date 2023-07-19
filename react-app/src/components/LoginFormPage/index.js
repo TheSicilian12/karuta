@@ -24,7 +24,7 @@ function LoginFormPage() {
   };
 
   return (
-    <div>Hello
+    <div>Login Form Page
     </div>
   );
 }
