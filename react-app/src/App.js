@@ -8,6 +8,7 @@ import HomePage from "./components/Homepage";
 import PoemPracticePage from "./components/PoemPracticePage";
 import KarutaPoemPage from "./components/KarutaPoemPage";
 import StudyDeckPage from "./components/StudyDeckPage";
+import DeckPage from "./components/DeckPage";
 import LoginFormPage from "./components/LoginFormPage";
 
 function App() {
@@ -41,6 +42,10 @@ function App() {
           <Route path="/studyDecks" exact>
             <Navigation isLoaded={isLoaded}/>
             <StudyDeckPage />
+          </Route>
+          <Route path="/studyDecks/:deckId" exact>
+            <Navigation isLoaded={isLoaded}/>
+            <DeckPage />
           </Route>
           <Route path="/login" exact>
             <LoginFormPage />
