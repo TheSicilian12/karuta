@@ -1,15 +1,19 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
-// import { useSelector, useDispatch } from 'react-redux';
-// import ProfileButton from './ProfileButton';
+import { useSelector, useDispatch } from 'react-redux';
+import ProfileButton from './ProfileButton';
 
 import './Navigation.css';
 // import OpenModal from '../OpenModal';
 
 function Navigation({ isLoaded }) {
-	const [showMenu, setShowMenu] = useState(false);
 	const ulRef = useRef();
 	const history = useHistory();
+
+	const [showMenu, setShowMenu] = useState(false);
+
+	const sessionUser = useSelector(state => state.session.user);
+	console.log("isLoaded: ", isLoaded)
 
 	const openMenu = () => {
 		if (showMenu) return;
@@ -76,6 +80,9 @@ function Navigation({ isLoaded }) {
 			>
 				Study Decks
 			</button>
+			{isLoaded &&
+				<ProfileButton user={sessionUser} />
+			}
 		</div>
 	);
 }

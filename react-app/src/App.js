@@ -22,23 +22,23 @@ function App() {
       {isLoaded && (
         <Switch>
           <Route path="/" exact>
-            <Navigation />
+            <Navigation isLoaded={isLoaded}/>
             <HomePage />
           </Route>
           <Route path="/100poems" exact>
-            <Navigation />
+            <Navigation isLoaded={isLoaded}/>
             <OneHundredPoemsPage />
           </Route>
           <Route path="/100poems/:poemId" exact>
-            <Navigation />
+            <Navigation isLoaded={isLoaded}/>
             <KarutaPoemPage />
           </Route>
           <Route path="/poempractice" exact>
-            <Navigation />
+            <Navigation isLoaded={isLoaded}/>
             <PoemPracticePage />
           </Route>
           <Route path="/studyDecks" exact>
-            <Navigation />
+            <Navigation isLoaded={isLoaded}/>
             <StudyDeckPage />
           </Route>
         </Switch>
