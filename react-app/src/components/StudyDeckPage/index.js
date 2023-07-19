@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
 import { getCurrentUserDecksTHUNK } from "../../store/decks";
 
@@ -22,7 +23,13 @@ export default function StudyDeckPage() {
     <div>
       StudyDeckPage
       {Object.values(decks).map((deck) => {
-        return <div>{deck.name}</div>
+        return (
+          <div>
+            <NavLink to={`/deck/${deck.id}`}>
+              {deck.name}
+            </NavLink>
+          </div>
+        )
       })}
     </div>
   );
