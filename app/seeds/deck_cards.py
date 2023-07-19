@@ -5,20 +5,24 @@ def seed_deck_cards():
     card1 = Deck_Cards(
         question = 'What is the first karuta poem in the data?',
         answer = 'Coarse the rush-mat roof',
-        answer_long = 'Coarse the rush-mat roof Sheltering the harvest-hut Of the autumn rice-field; And my sleeves are growing wet With the moisture dripping through. Emperor Tenchi'
+        answer_long = 'Coarse the rush-mat roof Sheltering the harvest-hut Of the autumn rice-field; And my sleeves are growing wet With the moisture dripping through. Emperor Tenchi',
+        owner_id = 1
     )
     card2 = Deck_Cards(
         question='What is 2 + 2?',
-        answer='4'
+        answer='4',
+        owner_id = 1
     )
     card3 = Deck_Cards(
         question = 'How do you play karuta?',
         answer = 'Memorize the cards and select the right one first',
+        owner_id = 2
     )
     card4 = Deck_Cards(
         question = 'writing systems',
         answer = 'hirgana and katakan',
-        answer_long = 'hiragana, katakana, and kanji'
+        answer_long = 'hiragana, katakana, and kanji',
+        owner_id = 1
     )
 
 

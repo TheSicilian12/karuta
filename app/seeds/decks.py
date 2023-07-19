@@ -3,16 +3,20 @@ from sqlalchemy.sql import text;
 
 def seed_decks():
     deck1 = Decks(
-        name = 'deck 1'
+        name = 'deck 1',
+        owner_id = 1
     )
     deck2 = Decks(
-        name = 'deck 2'
+        name = 'deck 2',
+        owner_id = 2
     )
     deck3 = Decks(
-        name = 'deck 3'
+        name = 'deck 3',
+        owner_id = 3
     )
     deck4 = Decks(
-        name = 'deck 4'
+        name = 'deck 4',
+        owner_id = 4
     )
 
 
