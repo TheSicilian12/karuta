@@ -28,7 +28,7 @@ def get_your_decks(user_id):
     return response
 
 # GET a specific deck
-@deck_routes.route('/decks/<int:deck_id>')
+@deck_routes.route('/<int:deck_id>')
 @login_required
 def get_one_deck(deck_id):
     """
@@ -40,3 +40,14 @@ def get_one_deck(deck_id):
 
     # check if user is subscribed to the deck
     # check if the user is the owner of the deck
+
+    # all users subscribed to this deck
+    deck_users = deck.users
+
+    # what about invalid responses?
+    # checking for the current user to be in the subscribed list
+    user = [user.to_dict() for user in deck_users if user.id == current_user.id]
+
+    # checking  if there is exactly 1 user in the list.
+    if len(user) != 0:
+        return {'error': 'Invalid route'}
