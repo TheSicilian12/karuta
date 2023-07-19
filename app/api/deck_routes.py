@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, session, request
-from app.models import User, Decks, user_deck_association, db
+from app.models import User, Decks, user_deck_association, deck_card_association, db
 from flask_login import current_user, login_user, logout_user, login_required
 from app.forms import karuta_form
 import random
@@ -44,6 +44,9 @@ def get_one_deck(deck_id):
     # all users subscribed to this deck
     deck_users = deck.users
 
+    # all cards associated with this deck
+    cards_association = deck.cards
+
     # what about invalid responses?
     # checking for the current user to be in the subscribed list
     user = [user.to_dict() for user in deck_users if user.id == current_user.id]
@@ -52,4 +55,12 @@ def get_one_deck(deck_id):
     if len(user) != 1:
         return {'error': 'Invalid route'}
 
-    return deck.to_dict()
+    # preparing cards
+    cards = [card.to_dict() for card in cards_association]
+
+    response = {}
+    response['deck'] = deck.to_dict()
+    response['cards'] = cards
+    print('---------------------response: ', response)
+
+    return response
