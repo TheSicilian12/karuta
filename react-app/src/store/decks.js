@@ -1,3 +1,5 @@
+import { normalizer } from "./storeFunctions";
+
 // constants
 const LOAD_DECKS = 'cards/all'
 
@@ -10,11 +12,12 @@ const loadAll = (data) => ({
 //thunk
 
 // GET all of a users cards THUNK
-export const getAllUsersDecksTHUNK = () => async (dispatch) => {
+export const getCurrentUserDecksTHUNK = (userId) => async (dispatch) => {
 	const response = await fetch(`/api/decks/${userId}`);
 	if (response.ok) {
 		const responseJSON = await response.json();
-		dispatch(loadAll(responseJSON))
+		const responseNormalized = normalizer(responseJSON);
+		dispatch(loadAll(responseNormalized))
 	}
 }
 

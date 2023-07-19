@@ -13,7 +13,6 @@ function Navigation({ isLoaded }) {
 	const [showMenu, setShowMenu] = useState(false);
 
 	const sessionUser = useSelector(state => state.session.user);
-	console.log("isLoaded: ", isLoaded)
 
 	const openMenu = () => {
 		if (showMenu) return;
