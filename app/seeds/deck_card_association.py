@@ -1,30 +1,31 @@
-from app.models import db, Deck_Cards, Decks, environment, SCHEMA;
+from app.models import db, Deck_Cards, Decks, deck_card_association, environment, SCHEMA;
 from sqlalchemy.sql import text;
 
 def seed_deck_card_association():
-    deck1 = Decks.query.filer(name = 'Deck 1').first()
-    deck2 = Decks.query.filer(name = 'Deck 1').first()
-    deck3 = Decks.query.filer(name = 'Deck 1').first()
-    deck4 = Decks.query.filer(name = 'Deck 1').first()
+    deck1 = Decks.query.get(1)
+    deck2 = Decks.query.get(2)
+    deck3 = Decks.query.get(3)
+    deck4 = Decks.query.get(4)
 
 
-    card1 = Deck_Cards.query.filter(question = 'What is the first karuta poem in the data?').first()
-    card2 = Deck_Cards.query.filter(question = 'What is 2 + 2?').first()
-    card3 = Deck_Cards.query.filter(question = 'How do you play karuta?').first()
-    card4 = Deck_Cards.query.filter(question = 'Memorize the cards and select the right one first').first()
+    card1 = Deck_Cards.query.get(1)
+    card2 = Deck_Cards.query.get(2)
+    card3 = Deck_Cards.query.get(3)
+    card4 = Deck_Cards.query.get(4)
 
 
-    deck_card_association = db.Table('deck_card_association',
-        db.metadata,
-        autoload=True,
-        autoload_with=db.engine
-    )
+    deck1.cards.append(card1)
+    deck1.cards.append(card2)
+    deck1.cards.append(card3)
+    deck1.cards.append(card4)
 
+    deck2.cards.append(card1)
+    deck2.cards.append(card2)
 
-    db.session.add(card1)
-    db.session.add(card2)
-    db.session.add(card3)
-    db.session.add(card4)
+    deck3.cards.append(card3)
+
+    deck4.cards.append(card4)
+
     db.session.commit()
 
 
