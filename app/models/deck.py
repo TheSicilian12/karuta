@@ -22,7 +22,7 @@ class Decks(db.Model):
     # Relationships
     # Many to Many
     cards = db.relationship('Deck_Cards', secondary=deck_card_association, back_populates='decks')
-    users = db.relationship('Users', secondary=user_deck_association, back_populates='decks')
+    users = db.relationship('User', secondary=user_deck_association, back_populates='decks')
 
     def to_dict(self):
         return {
