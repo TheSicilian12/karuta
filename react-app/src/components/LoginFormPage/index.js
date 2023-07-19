@@ -25,6 +25,50 @@ function LoginFormPage() {
 
   return (
     <div>Login Form Page
+      <form
+        onSubmit={handleSubmit}
+      >
+
+        {/* Email */}
+        <div>
+          <label>
+            Email
+          </label>
+          <input
+            type="text"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value)
+              // setDisEmailErr(true)
+            }}
+          // required
+          />
+        </div>
+
+        {/* Password */}
+        <div>
+          <label>
+            Password
+          </label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => {
+              setPassword(e.target.value)
+              // setDisPassErr(true)
+            }}
+          // required
+          />
+        </div>
+
+        <button
+          type="submit"
+          // disabled={Object.values(err).length > 0}
+          >
+          Log In
+        </button>
+
+      </form>
     </div>
   );
 }
