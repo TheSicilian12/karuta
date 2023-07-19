@@ -45,29 +45,12 @@ function ProfileButton({ user }) {
 
   return (
     <>
-    <div className="nav-bar-account-signin-container">
-      <button
-        className="nav-bar-info-container
-        border-none shinano-color-background"
-        onClick={openMenu}>
-        {/* <i className="fas fa-user-circle" /> */}
-        Hello, {userCheck ? `${user.username}` : "sign in"} <br />
-        Account Info
-      </button>
-      {!sessionUser && <p onClick={() => history.push("/login")} className="nav-bar-signed-out-text">Sign In and Start Shop</p>}
-          </div>
       <ul className={`${ulClassName} nav-bar-profile-dropdown nav-bar-font`} ref={ulRef}>
         {user ? (
           <div className="nav-bar-user-dropdown">
             <div className="nav-bar-dropwdown-margin">{user.username}</div>
               <div className="nav-bar-dropwdown-margin">{user.email}</div>
-              <button className="nav-bar-dropwdown-margin button-full" onClick={() => (
-                history.push('/products/new'),
-                closeMenu()
-              )}>Add Product</button>
-
               <button className="nav-bar-dropwdown-margin button-full" onClick={handleLogout}>Log Out</button>
-
           </div>
         ) : (
           <div className="nav-bar-logged-out-dropdown">
@@ -84,7 +67,6 @@ function ProfileButton({ user }) {
               }}>
               Log In
             </button>
-
 
             {/* <OpenModalButton
               buttonText="Sign Up"
