@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useParams } from 'react-router-dom';
 
 import ComponentStudyCardQuestion from "../ComponentStudyCardQuestion";
+import ComponentStudyCardAnswer from "../ComponentStudyCardAnswer";
+
 import { getCurrentUserDecksTHUNK, getDeckTHUNK } from "../../store/decks";
 
 import "./DeckPage.css";
@@ -10,7 +12,7 @@ import "./DeckPage.css";
 export default function DeckPage() {
   const dispatch = useDispatch();
 
-  const {deckId} = useParams()
+  const { deckId } = useParams()
 
   const [displayLanguage, setDisplayLanguage] = useState("english")
 
@@ -33,7 +35,12 @@ export default function DeckPage() {
         Cards
         {
           cards.map((card) => {
-            return <ComponentStudyCardQuestion cardData={card}/>
+            return (
+              <div className="displayFlex">
+                <ComponentStudyCardQuestion cardData={card} />
+                <ComponentStudyCardAnswer cardData={card}/>
+              </div>
+            )
           })
         }
 

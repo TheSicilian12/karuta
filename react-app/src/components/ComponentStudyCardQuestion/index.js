@@ -10,8 +10,10 @@ export default function ComponentStudyCardQuestion({ cardData }) {
   console.log("study card")
   console.log("cardData: ", cardData)
   return (
-    <div className="displayFlex">
-        {cardData.question}
+    <div className="study-card-question-container break-word">
+        <h2>
+          {cardData.question}
+        </h2>
     </div>
   );
 }

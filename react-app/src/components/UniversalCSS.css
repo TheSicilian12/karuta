@@ -21,6 +21,10 @@ body {
     writing-mode: vertical-rl;
 }
 
+.break-word {
+    word-break: break-word;
+}
+
 .button-basic {
     background-color: rgb(137, 218, 137);
     border: 1px solid black;
