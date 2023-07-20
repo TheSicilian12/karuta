@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useParams } from 'react-router-dom';
 
-import ComponentKarutaCard from '../ComponentKarutaCard';
+import ComponentStudyCard from "../ComponentStudyCard";
 import { getCurrentUserDecksTHUNK, getDeckTHUNK } from "../../store/decks";
 
 import "./DeckPage.css";
@@ -24,16 +24,18 @@ export default function DeckPage() {
 
   if (!cardsObj) return <div>No cards</div>
   const cards = cardsObj.cards
-  cards.map((card) => {
-    console.log("card: ", card)
-  })
+
 
   return (
     <div>
       DeckPage
       <div>
         Cards
-        
+        {
+          cards.map((card) => {
+            return <ComponentStudyCard cardData={card}/>
+          })
+        }
 
       </div>
     </div>
