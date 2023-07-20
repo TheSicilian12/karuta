@@ -17,13 +17,17 @@ function OpenModalEditStudyCard({
   const [question, setQuestion] = useState(cardData.question)
   const [answer, setAnswer] = useState(cardData.answer)
   const [answerLong, setAnswerLong] = useState(cardData.answer_long)
-
+  const [displayLongAnswer, setDisplayLongAnswer] = useState(false)
 
 
   const { closeModal } = useModal();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+  }
+
+  const handleContEdit = () => {
+
   }
 
   console.log("cardData: ", cardData)
@@ -33,11 +37,9 @@ function OpenModalEditStudyCard({
       <form
         onSubmit={handleSubmit}>
 
-        {editType === 'question' && <h1>Edit Question</h1>}
-        {editType === 'answer' && <h1>Edit Answer</h1>}
-
         {/* main edit*/}
         {editType === 'question' && <div>
+        <h1>Edit Question</h1>
           <textarea
             className="open-modal-edit-question-text-container"
             type="text"
@@ -51,6 +53,12 @@ function OpenModalEditStudyCard({
           </textarea>
         </div>}
         {editType === 'answer' && <div>
+
+        <div className="displayFlex open-modal-answers-title-container">
+          <h1 className="open-modal-answer-short-title-container">Edit Short Answer</h1>
+          <h1 className="open-modal-answer-long-title-container">Edit Long Answer</h1>
+        </div>
+
           <textarea
             className="open-modal-edit-question-text-container"
             type="text"
@@ -62,8 +70,13 @@ function OpenModalEditStudyCard({
             placeholder="question"
           >
           </textarea>
+
         </div>}
 
+        <button
+          onClick={handleContEdit}>
+          Would you like to edit the {editType === 'question' ? 'answer' : 'question'}
+        </button>
 
         {editType === 'question' && <div>
           Answer
