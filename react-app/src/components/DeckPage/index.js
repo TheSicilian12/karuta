@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink, useParams } from 'react-router-dom';
+import { NavLink, useParams, useHistory } from 'react-router-dom';
 
 import ComponentStudyCardQuestion from "../ComponentStudyCardQuestion";
 import ComponentStudyCardAnswer from "../ComponentStudyCardAnswer";
 
-import { getCurrentUserDecksTHUNK, getDeckTHUNK } from "../../store/decks";
+import { getDeckTHUNK } from "../../store/decks";
 
 import "./DeckPage.css";
 
 export default function DeckPage() {
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const { deckId } = useParams()
 
   const [displayLanguage, setDisplayLanguage] = useState("english")
-
 
   // const sessionUser = useSelector(state => state.session.user);
   const cardsObj = useSelector(state => state.decks.singleDeck)
@@ -27,9 +27,17 @@ export default function DeckPage() {
   if (!cardsObj) return <div>No cards</div>
   const cards = cardsObj.cards
 
+  const makeCard = () => {
+    history.push(`/makeCard/${deckId}`)
+  }
+
   return (
     <div>
       DeckPage
+      <button
+        onClick={makeCard}>
+        <i className="fa fa-plus"></i> Make Card
+      </button>
       <div>
         Cards
         {

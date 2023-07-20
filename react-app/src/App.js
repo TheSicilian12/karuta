@@ -9,6 +9,8 @@ import PoemPracticePage from "./components/PoemPracticePage";
 import KarutaPoemPage from "./components/KarutaPoemPage";
 import StudyDeckPage from "./components/StudyDeckPage";
 import DeckPage from "./components/DeckPage";
+import MakeCardPage from "./components/MakeCardPage";
+import MakeCardPageWrapper from "./components/MakeCardPage/MakeCardWrapper";
 import LoginFormPage from "./components/LoginFormPage";
 
 function App() {
@@ -46,6 +48,14 @@ function App() {
           <Route path="/studyDecks/:deckId" exact>
             <Navigation isLoaded={isLoaded}/>
             <DeckPage />
+          </Route>
+          <Route path="/makeCard/:deckId" exact>
+            <Navigation isLoaded={isLoaded}/>
+            <MakeCardPageWrapper />
+          </Route>
+          <Route path="/makeCard/" exact>
+            <Navigation isLoaded={isLoaded}/>
+            <MakeCardPage />
           </Route>
           <Route path="/login" exact>
             <LoginFormPage />
