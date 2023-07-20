@@ -30,7 +30,8 @@ function OpenModalEditStudyCard({
 
   }
 
-  console.log("cardData: ", cardData)
+  console.log("answer :", answer)
+  console.log("answerLong: ", answerLong)
 
   return (
     <div className="delete-comment-modal-container">
@@ -70,12 +71,12 @@ function OpenModalEditStudyCard({
           <textarea
             className="open-modal-edit-question-text-container"
             type="text"
-            value={answer}
+            value={displayAnswer === 'short' ? answer : answerLong}
             onChange={(e) => {
-              setAnswer(e.target.value)
+              displayAnswer === 'short' ? setAnswer(e.target.value) : setAnswerLong(e.target.value)
               // setDisQuestionErr(true)
             }}
-            placeholder="question"
+            placeholder="answer"
           >
           </textarea>
 
