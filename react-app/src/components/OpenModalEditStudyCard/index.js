@@ -60,8 +60,6 @@ function OpenModalEditStudyCard({
     )
   }
 
-  console.log("additional: ", additional)
-
   return (
     <div className="delete-comment-modal-container">
       <form
@@ -92,20 +90,10 @@ function OpenModalEditStudyCard({
           Would you like to edit the {editType === 'question' ? 'answer' : 'question'}
         </button>}
 
-        {editType === 'question' && additional === true && <div>
-          Answer
-          <textarea
-            className="open-modal-edit-question-text-container"
-            type="text"
-            value={answer}
-            onChange={(e) => {
-              setAnswer(e.target.value)
-              // setDisQuestionErr(true)
-            }}
-            placeholder="question"
-          >
-          </textarea>
-        </div>}
+        {editType === 'question' && additional === true &&
+          <div>
+            {displayAnswerTitle(displayAnswer, setDisplayAnswer)}
+          </div>}
         {editType === 'answer' && additional === true && <div>
           Question
           <textarea
@@ -120,10 +108,7 @@ function OpenModalEditStudyCard({
           >
           </textarea>
         </div>}
-
-
-
-
+        
         <button
           type="submit">
           Save
