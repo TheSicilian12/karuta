@@ -15,8 +15,15 @@ const editOne = (data) => ({
 
 // EDIT a users card THUNK
 export const editCardQuestionTHUNK = (cardData) => async (dispatch) => {
-	const {cardId, question} = cardData
-
+	const {cardId, ownerId, question, answer, answer_long} = cardData
+	console.log('edit study card THUNK')
+	const payload = {
+		owner_id: ownerId,
+		question,
+		answer_long,
+		answer
+	}
+	console.log("cardId: ", cardId)
 
 	const response = await fetch(`/api/study_cards/${cardId}`, {
 		method: "PUT",
@@ -24,7 +31,7 @@ export const editCardQuestionTHUNK = (cardData) => async (dispatch) => {
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify(
-			cardData
+			payload
 		)
 	})
 

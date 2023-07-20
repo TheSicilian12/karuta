@@ -10,10 +10,6 @@ export default function ComponentStudyCardQuestion({ cardData }) {
   // ComponentStudyCard takes in:
   // 1. study card data
 
-  const handleEdit = () => {
-
-  }
-
   return (
     <div className="study-card-question-container break-word">
         <h2>

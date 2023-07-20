@@ -9,6 +9,7 @@ from .api.user_routes import user_routes
 from .api.auth_routes import auth_routes
 from .api.karuta_routes import karuta_routes
 from .api.deck_routes import deck_routes
+from .api.study_card_routes import study_card_routes
 from .seeds import seed_commands
 from .config import Config
 
@@ -32,6 +33,7 @@ app.register_blueprint(user_routes, url_prefix='/api/users')
 app.register_blueprint(auth_routes, url_prefix='/api/auth')
 app.register_blueprint(karuta_routes, url_prefix='/api/karuta')
 app.register_blueprint(deck_routes, url_prefix='/api/decks')
+app.register_blueprint(study_card_routes, url_prefix='/api/study_cards')
 db.init_app(app)
 Migrate(app, db)
 

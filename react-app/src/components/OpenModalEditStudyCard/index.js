@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useModal } from '../../context/Modal';
+import { useDispatch, useSelector } from 'react-redux';
 
 import './OpenModalEditStudyCard.css'
 import '../UniversalCSS.css'
+import { editCardQuestionTHUNK } from '../../store/studyCards';
 
 function OpenModalEditStudyCard({
   modalComponent, // component to render inside the modal
@@ -14,17 +16,31 @@ function OpenModalEditStudyCard({
   cardData,
   editType
 }) {
+  const dispatch = useDispatch();
+
+  const sessionUser = useSelector(state => state.session.user);
+
   const [question, setQuestion] = useState(cardData.question);
   const [answer, setAnswer] = useState(cardData.answer);
   const [answerLong, setAnswerLong] = useState(cardData.answer_long);
   const [displayAnswer, setDisplayAnswer] = useState('short');
   const [additional, setAdditional] = useState(false);
 
-
   const { closeModal } = useModal();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const payload = {
+      cardId: cardData.id,
+      ownerId: sessionUser.id,
+      answer,
+      answer_long: answerLong,
+      question
+    }
+
+    dispatch(editCardQuestionTHUNK(payload));
+    closeModal();
   }
 
   const handleAdditionalEdit = () => {
@@ -108,7 +124,7 @@ function OpenModalEditStudyCard({
           >
           </textarea>
         </div>}
-        
+
         <button
           type="submit">
           Save
