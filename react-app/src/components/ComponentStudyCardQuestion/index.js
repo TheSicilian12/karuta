@@ -15,7 +15,9 @@ export default function ComponentStudyCardQuestion({ cardData }) {
           {cardData.question}
         </h2>
 
+      <div className="study-card-question-edit-icon">
         <i className="fa fa-pen"></i>
+      </div>
     </div>
   );
 }
