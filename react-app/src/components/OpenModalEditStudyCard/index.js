@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import './OpenModalEditStudyCard.css'
 import '../UniversalCSS.css'
 import { editCardQuestionTHUNK } from '../../store/studyCards';
+import { getDeckTHUNK } from '../../store/decks';
 
 function OpenModalEditStudyCard({
   modalComponent, // component to render inside the modal
@@ -14,7 +15,8 @@ function OpenModalEditStudyCard({
 
   className,
   cardData,
-  editType
+  editType,
+  deckId
 }) {
   const dispatch = useDispatch();
 
@@ -40,6 +42,7 @@ function OpenModalEditStudyCard({
     }
 
     await dispatch(editCardQuestionTHUNK(payload));
+    if (deckId) await dispatch(getDeckTHUNK(deckId));
     closeModal();
   }
 

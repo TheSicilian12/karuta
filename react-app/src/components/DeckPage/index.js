@@ -27,7 +27,6 @@ export default function DeckPage() {
   if (!cardsObj) return <div>No cards</div>
   const cards = cardsObj.cards
 
-
   return (
     <div>
       DeckPage
@@ -37,8 +36,8 @@ export default function DeckPage() {
           cards.map((card) => {
             return (
               <div className="displayFlex">
-                <ComponentStudyCardQuestion cardData={card} />
-                <ComponentStudyCardAnswer cardData={card}/>
+                <ComponentStudyCardQuestion cardData={card} deckId={deckId} />
+                <ComponentStudyCardAnswer cardData={card} deckId={deckId}/>
               </div>
             )
           })
