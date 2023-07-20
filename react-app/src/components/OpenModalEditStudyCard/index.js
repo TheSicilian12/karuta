@@ -60,9 +60,6 @@ function OpenModalEditStudyCard({
     )
   }
 
-  // console.log("answer :", answer)
-  // console.log("answerLong: ", answerLong)
-
   console.log("additional: ", additional)
 
   return (
