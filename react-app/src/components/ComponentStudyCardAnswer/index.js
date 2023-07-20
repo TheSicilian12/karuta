@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 
+import OpenModalButton from '../OpenModalButton';
 import "./ComponentStudyCardAnswer.css";
 import "../UniversalCSS.css";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+import OpenModalEditStudyCard from "../OpenModalEditStudyCard";
 
 export default function ComponentStudyCardAnswer({ cardData }) {
   // ComponentStudyCard takes in:
@@ -12,6 +14,11 @@ export default function ComponentStudyCardAnswer({ cardData }) {
   return (
     <div className="study-card-answer-container">
         {cardData.answer}
+
+        <OpenModalButton
+      className="study-card-question-edit-icon"
+      buttonText={<i className="fa fa-pen"></i>}
+      modalComponent={<OpenModalEditStudyCard cardData={cardData} editType={'answer'}/>}/>
     </div>
   );
 }

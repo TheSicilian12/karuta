@@ -4,7 +4,7 @@ import OpenModalButton from '../OpenModalButton';
 import "./ComponentStudyCardQuestion.css";
 import "../UniversalCSS.css";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
-import OpenModalEditQuestion from "../OpenModalEditQuestion";
+import OpenModalEditStudyCard from "../OpenModalEditStudyCard";
 
 export default function ComponentStudyCardQuestion({ cardData }) {
   // ComponentStudyCard takes in:
@@ -23,7 +23,7 @@ export default function ComponentStudyCardQuestion({ cardData }) {
      <OpenModalButton
       className="study-card-question-edit-icon"
       buttonText={<i className="fa fa-pen"></i>}
-      modalComponent={<OpenModalEditQuestion cardData={cardData}/>}/>
+      modalComponent={<OpenModalEditStudyCard cardData={cardData} editType={'question'}/>}/>
     </div>
   );
 }
