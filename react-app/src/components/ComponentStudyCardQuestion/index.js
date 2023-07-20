@@ -23,7 +23,7 @@ export default function ComponentStudyCardQuestion({ cardData }) {
      <OpenModalButton
       className="study-card-question-edit-icon"
       buttonText={<i className="fa fa-pen"></i>}
-      modalComponent={<OpenModalEditQuestion />}/>
+      modalComponent={<OpenModalEditQuestion cardData={cardData}/>}/>
     </div>
   );
 }
