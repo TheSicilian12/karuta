@@ -11,7 +11,7 @@ export default function ComponentStudyCardQuestion({ cardData }) {
   console.log("cardData: ", cardData)
   return (
     <div className="displayFlex">
-        Study card question
+        {cardData.question}
     </div>
   );
 }
