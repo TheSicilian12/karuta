@@ -15,6 +15,10 @@ function OpenModalEditStudyCard({
   editType
 }) {
   const [question, setQuestion] = useState(cardData.question)
+  const [answer, setAnswer] = useState(cardData.answer)
+  const [answerLong, setAnswerLong] = useState(cardData.answer_long)
+
+
 
   const { closeModal } = useModal();
 
@@ -22,13 +26,18 @@ function OpenModalEditStudyCard({
     e.preventDefault();
   }
 
+  console.log("cardData: ", cardData)
+
   return (
     <div className="delete-comment-modal-container">
       <form
         onSubmit={handleSubmit}>
 
-      {editType === 'question' && <h1>Q. {question}</h1>}
-      <div>
+      {editType === 'question' && <h1>Edit Question</h1>}
+      {editType === 'answer' && <h1>Edit Answer</h1>}
+
+      {/* main edit*/}
+      {editType === 'question' && <div>
         <textarea
           className="open-modal-edit-question-text-container"
           type="text"
@@ -40,7 +49,28 @@ function OpenModalEditStudyCard({
           placeholder="question"
         >
         </textarea>
-      </div>
+      </div>}
+      {editType === 'answer' && <div>
+        <textarea
+          className="open-modal-edit-question-text-container"
+          type="text"
+          value={answer}
+          onChange={(e) => {
+            setAnswer(e.target.value)
+            // setDisQuestionErr(true)
+          }}
+          placeholder="question"
+        >
+        </textarea>
+
+
+      </div>}
+
+
+
+
+
+
       <button
         type="submit">
           Save
