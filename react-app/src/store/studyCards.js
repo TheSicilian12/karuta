@@ -13,6 +13,20 @@ const editOne = (data) => ({
 
 //thunk
 
+// ADD a card THUNK
+export const addCardTHUNK = (cardData) => async (dispatch) => {
+	// this may or may not associate with a deck
+
+	// make the card
+	// if there is a deckId then associateCardDeckTHUNK
+	// if there is not a deckId then don't associate
+}
+
+// ASSOCIATE a card with a deck THUNK
+export const associateCardDeckTHUNK = (cardId, deckId) => async (dispatch) => {
+
+}
+
 // EDIT a users card THUNK
 export const editCardQuestionTHUNK = (cardData) => async (dispatch) => {
 	const {cardId, ownerId, question, answer, answer_long} = cardData

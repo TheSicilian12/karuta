@@ -12,12 +12,29 @@ export default function MakeCardPage({ deckId }) {
   const [answerLong, setAnswerLong] = useState("");
   const [question, setQuestion] = useState("");
 
+  const handleSubmit = (e) => {
+    e.prevent.default()
+
+    let payload = {
+      question,
+      answer,
+      answerLong
+    }
+
+    if (deckId) payload.deckId = deckId
+  }
+
+
   return (
     <div>
       Make Card Page
 
-      <form>
+      <form
+        onSubmit={handleSubmit}>
 
+        <label>
+          Question
+        </label>
         <textarea
           className=''
           type='text'
@@ -29,6 +46,9 @@ export default function MakeCardPage({ deckId }) {
           }}
         ></textarea>
 
+        <label>
+          Answer
+        </label>
         <textarea
           className=''
           type='text'
@@ -40,6 +60,9 @@ export default function MakeCardPage({ deckId }) {
           }}
         ></textarea>
 
+        <label>
+          Long answer
+        </label>
         <textarea
           className=''
           type='text'
@@ -51,7 +74,10 @@ export default function MakeCardPage({ deckId }) {
           }}
         ></textarea>
 
-
+          <button
+            type='submit'>
+            Make Card
+          </button>
       </form>
     </div>
   );
