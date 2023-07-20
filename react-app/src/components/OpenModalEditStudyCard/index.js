@@ -33,48 +33,74 @@ function OpenModalEditStudyCard({
       <form
         onSubmit={handleSubmit}>
 
-      {editType === 'question' && <h1>Edit Question</h1>}
-      {editType === 'answer' && <h1>Edit Answer</h1>}
+        {editType === 'question' && <h1>Edit Question</h1>}
+        {editType === 'answer' && <h1>Edit Answer</h1>}
 
-      {/* main edit*/}
-      {editType === 'question' && <div>
-        <textarea
-          className="open-modal-edit-question-text-container"
-          type="text"
-          value={question}
-          onChange={(e) => {
-            setQuestion(e.target.value)
-            // setDisQuestionErr(true)
-          }}
-          placeholder="question"
-        >
-        </textarea>
-      </div>}
-      {editType === 'answer' && <div>
-        <textarea
-          className="open-modal-edit-question-text-container"
-          type="text"
-          value={answer}
-          onChange={(e) => {
-            setAnswer(e.target.value)
-            // setDisQuestionErr(true)
-          }}
-          placeholder="question"
-        >
-        </textarea>
-
-
-      </div>}
+        {/* main edit*/}
+        {editType === 'question' && <div>
+          <textarea
+            className="open-modal-edit-question-text-container"
+            type="text"
+            value={question}
+            onChange={(e) => {
+              setQuestion(e.target.value)
+              // setDisQuestionErr(true)
+            }}
+            placeholder="question"
+          >
+          </textarea>
+        </div>}
+        {editType === 'answer' && <div>
+          <textarea
+            className="open-modal-edit-question-text-container"
+            type="text"
+            value={answer}
+            onChange={(e) => {
+              setAnswer(e.target.value)
+              // setDisQuestionErr(true)
+            }}
+            placeholder="question"
+          >
+          </textarea>
+        </div>}
 
 
+        {editType === 'question' && <div>
+          Answer
+          <textarea
+            className="open-modal-edit-question-text-container"
+            type="text"
+            value={answer}
+            onChange={(e) => {
+              setAnswer(e.target.value)
+              // setDisQuestionErr(true)
+            }}
+            placeholder="question"
+          >
+          </textarea>
+        </div>}
+        {editType === 'answer' && <div>
+          Question
+          <textarea
+            className="open-modal-edit-question-text-container"
+            type="text"
+            value={question}
+            onChange={(e) => {
+              setQuestion(e.target.value)
+              // setDisQuestionErr(true)
+            }}
+            placeholder="question"
+          >
+          </textarea>
+        </div>}
 
 
 
 
-      <button
-        type="submit">
+        <button
+          type="submit">
           Save
-      </button>
+        </button>
       </form>
     </div>
   );
