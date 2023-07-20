@@ -17,7 +17,7 @@ function OpenModalEditQuestion({
 
   const { closeModal } = useModal();
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
   }
 
