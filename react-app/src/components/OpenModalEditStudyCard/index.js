@@ -28,7 +28,7 @@ function OpenModalEditStudyCard({
 
   const { closeModal } = useModal();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const payload = {
@@ -39,7 +39,7 @@ function OpenModalEditStudyCard({
       question
     }
 
-    dispatch(editCardQuestionTHUNK(payload));
+    await dispatch(editCardQuestionTHUNK(payload));
     closeModal();
   }
 
