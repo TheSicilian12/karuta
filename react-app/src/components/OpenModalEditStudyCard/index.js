@@ -31,6 +31,35 @@ function OpenModalEditStudyCard({
     setAdditional(true);
   }
 
+  const displayAnswerTitle = (displayAsnwer, setDisplayAnswer) => {
+    return (
+      <>
+        <div className="displayFlex open-modal-answers-title-container">
+          <h2 className={displayAnswer === 'short' ? `open-modal-answer-${displayAnswer}-title-container` : ''}
+            onClick={() => setDisplayAnswer('short')}>
+            Edit Short Answer
+          </h2>
+          <h2 className={displayAnswer === 'long' ? `open-modal-answer-${displayAnswer}-title-container` : ''}
+            onClick={() => setDisplayAnswer('long')}>
+            Edit Long Answer
+          </h2>
+        </div>
+
+        <textarea
+          className="open-modal-edit-question-text-container"
+          type="text"
+          value={displayAnswer === 'short' ? answer : answerLong}
+          onChange={(e) => {
+            displayAnswer === 'short' ? setAnswer(e.target.value) : setAnswerLong(e.target.value)
+            // setDisQuestionErr(true)
+          }}
+          placeholder="answer"
+        >
+        </textarea>
+      </>
+    )
+  }
+
   // console.log("answer :", answer)
   // console.log("answerLong: ", answerLong)
 
@@ -56,33 +85,9 @@ function OpenModalEditStudyCard({
           >
           </textarea>
         </div>}
+
         {editType === 'answer' && <div>
-
-          <div className="displayFlex open-modal-answers-title-container">
-
-            <h1 className={displayAnswer === 'short' ? `open-modal-answer-${displayAnswer}-title-container` : ''}
-              onClick={() => setDisplayAnswer('short')}>
-              Edit Short Answer
-            </h1>
-            <h1 className={displayAnswer === 'long' ? `open-modal-answer-${displayAnswer}-title-container` : ''}
-              onClick={() => setDisplayAnswer('long')}>
-              Edit Long Answer
-            </h1>
-
-          </div>
-
-          <textarea
-            className="open-modal-edit-question-text-container"
-            type="text"
-            value={displayAnswer === 'short' ? answer : answerLong}
-            onChange={(e) => {
-              displayAnswer === 'short' ? setAnswer(e.target.value) : setAnswerLong(e.target.value)
-              // setDisQuestionErr(true)
-            }}
-            placeholder="answer"
-          >
-          </textarea>
-
+          {displayAnswerTitle(displayAnswer, setDisplayAnswer)}
         </div>}
 
         {additional === false && <button
