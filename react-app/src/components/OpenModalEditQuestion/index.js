@@ -16,12 +16,20 @@ function OpenModalEditQuestion({
   const [question, setQuestion] = useState(cardData.question)
 
   const { closeModal } = useModal();
-  console.log("cardData: ", cardData)
+
+  const handleSubmit = () => {
+    e.preventDefault();
+  }
+
   return (
     <div className="delete-comment-modal-container">
+      <form
+        onSubmit={handleSubmit}>
+
       <h1>Q. {question}</h1>
       <div>
         <textarea
+          className="open-modal-edit-question-text-container"
           type="text"
           value={question}
           onChange={(e) => {
@@ -32,6 +40,11 @@ function OpenModalEditQuestion({
         >
         </textarea>
       </div>
+      <button
+        type="submit">
+          Save
+      </button>
+      </form>
     </div>
   );
 }
