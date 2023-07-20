@@ -14,10 +14,11 @@ function OpenModalEditStudyCard({
   cardData,
   editType
 }) {
-  const [question, setQuestion] = useState(cardData.question)
-  const [answer, setAnswer] = useState(cardData.answer)
-  const [answerLong, setAnswerLong] = useState(cardData.answer_long)
-  const [displayAnswer, setDisplayAnswer] = useState('short')
+  const [question, setQuestion] = useState(cardData.question);
+  const [answer, setAnswer] = useState(cardData.answer);
+  const [answerLong, setAnswerLong] = useState(cardData.answer_long);
+  const [displayAnswer, setDisplayAnswer] = useState('short');
+  const [additional, setAdditional] = useState(false);
 
 
   const { closeModal } = useModal();
@@ -26,12 +27,14 @@ function OpenModalEditStudyCard({
     e.preventDefault();
   }
 
-  const handleContEdit = () => {
-
+  const handleAdditionalEdit = () => {
+    setAdditional(true);
   }
 
-  console.log("answer :", answer)
-  console.log("answerLong: ", answerLong)
+  // console.log("answer :", answer)
+  // console.log("answerLong: ", answerLong)
+
+  console.log("additional: ", additional)
 
   return (
     <div className="delete-comment-modal-container">
@@ -82,12 +85,12 @@ function OpenModalEditStudyCard({
 
         </div>}
 
-        <button
-          onClick={handleContEdit}>
+        {additional === false && <button
+          onClick={handleAdditionalEdit}>
           Would you like to edit the {editType === 'question' ? 'answer' : 'question'}
-        </button>
+        </button>}
 
-        {editType === 'question' && <div>
+        {editType === 'question' && additional === true && <div>
           Answer
           <textarea
             className="open-modal-edit-question-text-container"
@@ -101,7 +104,7 @@ function OpenModalEditStudyCard({
           >
           </textarea>
         </div>}
-        {editType === 'answer' && <div>
+        {editType === 'answer' && additional === true && <div>
           Question
           <textarea
             className="open-modal-edit-question-text-container"
