@@ -17,7 +17,7 @@ function OpenModalEditStudyCard({
   const [question, setQuestion] = useState(cardData.question)
   const [answer, setAnswer] = useState(cardData.answer)
   const [answerLong, setAnswerLong] = useState(cardData.answer_long)
-  const [displayLongAnswer, setDisplayLongAnswer] = useState(false)
+  const [displayAnswer, setDisplayAnswer] = useState('short')
 
 
   const { closeModal } = useModal();
@@ -39,7 +39,7 @@ function OpenModalEditStudyCard({
 
         {/* main edit*/}
         {editType === 'question' && <div>
-        <h1>Edit Question</h1>
+          <h1>Edit Question</h1>
           <textarea
             className="open-modal-edit-question-text-container"
             type="text"
@@ -54,10 +54,18 @@ function OpenModalEditStudyCard({
         </div>}
         {editType === 'answer' && <div>
 
-        <div className="displayFlex open-modal-answers-title-container">
-          <h1 className="open-modal-answer-short-title-container">Edit Short Answer</h1>
-          <h1 className="open-modal-answer-long-title-container">Edit Long Answer</h1>
-        </div>
+          <div className="displayFlex open-modal-answers-title-container">
+
+            <h1 className={`open-modal-answer-${displayAnswer}-title-container`}
+              onClick={() => setDisplayAnswer('short')}>
+              Edit Short Answer
+            </h1>
+            <h1 className={`open-modal-answer-${displayAnswer}-title-container`}
+              onClick={() => setDisplayAnswer('long')}>
+              Edit Long Answer
+            </h1>
+
+          </div>
 
           <textarea
             className="open-modal-edit-question-text-container"

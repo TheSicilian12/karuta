@@ -3,13 +3,13 @@
 }
 
 .open-modal-answers-title-container {
-    border-bottom: 1px solid black
+    border-bottom: 1px solid black;
 }
 
 .open-modal-answer-short-title-container {
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 .open-modal-answer-long-title-container {
-    border: 1px solid black
+    border: 1px solid blue;
 }
