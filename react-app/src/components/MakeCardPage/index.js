@@ -3,25 +3,31 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useParams, useHistory } from 'react-router-dom';
 
 import "./MakeCardPage.css";
+import { addCardTHUNK } from "../../store/studyCards";
 
 export default function MakeCardPage({ deckId }) {
   const dispatch = useDispatch();
   const history = useHistory();
+
+  const sessionUser = useSelector(state => state.session.user);
 
   const [answer, setAnswer] = useState("");
   const [answerLong, setAnswerLong] = useState("");
   const [question, setQuestion] = useState("");
 
   const handleSubmit = (e) => {
-    e.prevent.default()
+    e.preventDefault()
 
     let payload = {
       question,
       answer,
-      answerLong
+      answerLong,
+      ownerId: sessionUser.id
     }
 
-    if (deckId) payload.deckId = deckId
+    if (deckId) payload.deckId = deckId;
+    console.log("handleSubmit")
+    dispatch(addCardTHUNK(payload));
   }
 
 

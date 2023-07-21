@@ -20,6 +20,44 @@ export const addCardTHUNK = (cardData) => async (dispatch) => {
 	// make the card
 	// if there is a deckId then associateCardDeckTHUNK
 	// if there is not a deckId then don't associate
+	console.log("----addCardThunk----")
+	const {question, answer, answerLong, ownerId} = cardData;
+	console.log("cardData: ", cardData)
+	let payload = {
+		question,
+		answer,
+		answer_long: answerLong,
+		owner_id: ownerId
+	}
+
+	let response;
+	if (cardData.deckId) {
+		payload.deck_id = cardData.deckId;
+		response = await fetch(`/api/study_cards/post`, {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(
+				payload
+			)
+		})
+	} else {
+		response = await fetch(`/api/study_cards/post`, {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(
+				payload
+			)
+		})
+	}
+	if (response.ok) {
+		const data = await response.json();
+		console.log("data: ", data)
+	}
+
 }
 
 // ASSOCIATE a card with a deck THUNK

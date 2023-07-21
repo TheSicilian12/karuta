@@ -39,3 +39,33 @@ def edit_study_card(cardId):
         return {"card": card.to_dict()}
     else:
         return {"error": form.errors}
+
+# POST a study card
+@study_card_routes.route('/post', methods=['POST'])
+@login_required
+def post_study_card():
+    """
+    POST a study card
+    """
+    print('------------------------post a study card-------------------------')
+
+    form = DeckCardForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    print('------------form validate: ', form.validate_on_submit())
+    print('--------------------form: ', form.data)
+
+    if form.validate_on_submit():
+        data = form.data
+        new_card = Deck_Cards(
+            answer = data['answer'],
+            answer_long = data['answer_long'],
+            question = data['question'],
+            owner_id = data['owner_id']
+        )
+        db.session.add(new_card)
+        db.session.commit()
+        print('----------------new card: ', new_card.to_dict())
+        return {'card': new_card}
+    else:
+        return {'error': 'not a valid route'}
