@@ -62,9 +62,47 @@ def post_study_card():
             question = data['question'],
             owner_id = data['owner_id']
         )
+        db.session.commit()
         db.session.add(new_card)
         db.session.commit()
         print('----------------new card: ', new_card.to_dict())
         return {'card': new_card.to_dict()}
     else:
         return {'error': 'not a valid route'}
+
+
+# PUT / ASSOCIATE a card and a deck
+@study_card_routes.route('/associate/card/<int:cardId>/deck/<int:deckId>', methods=['PUT'])
+@login_required
+def associate_card_deck(cardId, deckId):
+    """
+    PUT / ASSOCIATE a card and a deck
+    """
+    print('------------------------Put / associate a card and a deck-----------------------')
+    deck = Decks.query.get(deckId)
+    card = Deck_Cards.query.get(cardId)
+
+    if deck.owner_id != current_user.id:
+        return {'error': 'not a valid rotue'}
+
+    if card.owner_id != current_user.id:
+        return {'error': 'not a valid route'}
+
+    form = DeckCardForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    print('----------------------form validate associate: ', form.validate_on_submit())
+
+    if form.validate_on_submit():
+        print('------------------form: ', form.data)
+        # card.answer = form.data["answer"]
+        # card.answer_long = form.data["answer_long"]
+        # card.question = form.data["question"]
+        # card.owner_id = form.data["owner_id"]
+
+        # this doesn't work: AttributeError: 'dict' object has no attribute 'decks'
+        card.to_dict().decks.append(deckId)
+        db.session.commit()
+
+    else:
+        return {"error": form.errors}

@@ -22,7 +22,7 @@ export const addCardTHUNK = (cardData) => async (dispatch) => {
 	// if there is not a deckId then don't associate
 	console.log("----addCardThunk----")
 	const {question, answer, answerLong, ownerId} = cardData;
-	console.log("cardData: ", cardData)
+	// console.log("cardData: ", cardData)
 	let payload = {
 		question,
 		answer,
@@ -45,16 +45,31 @@ export const addCardTHUNK = (cardData) => async (dispatch) => {
 		console.log("data: ", data)
 
 		if (cardData.deckId) {
-			let cardId = data.card.id;
+			let card = data.card;
 			let deckId = cardData.deckId;
-			dispatch(associateCardDeckTHUNK(cardId, deckId))
+
+			console.log("card: ", card)
+			console.log("deck: ", deckId)
+			dispatch(associateCardDeckTHUNK(card, deckId))
 		}
 	}
 }
 
 // ASSOCIATE a card with a deck THUNK
-export const associateCardDeckTHUNK = (cardId, deckId) => async (dispatch) => {
+export const associateCardDeckTHUNK = (cardData, deckId) => async (dispatch) => {
 	console.log("----associate card deck thunk---")
+	const cardId = cardData.id;
+
+	let response = await fetch(`/api/study_cards/associate/card/${cardId}/deck/${deckId}`, {
+		method: "PUT",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(
+			cardData
+		)
+	})
+	
 }
 
 // EDIT a users card THUNK
