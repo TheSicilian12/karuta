@@ -30,39 +30,31 @@ export const addCardTHUNK = (cardData) => async (dispatch) => {
 		owner_id: ownerId
 	}
 
-	let response;
-	if (cardData.deckId) {
-		payload.deck_id = cardData.deckId;
-		response = await fetch(`/api/study_cards/post`, {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify(
-				payload
-			)
-		})
-	} else {
-		response = await fetch(`/api/study_cards/post`, {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify(
-				payload
-			)
-		})
-	}
+	let response = await fetch(`/api/study_cards/post`, {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(
+			payload
+		)
+	})
+
 	if (response.ok) {
 		const data = await response.json();
 		console.log("data: ", data)
-	}
 
+		if (cardData.deckId) {
+			let cardId = data.card.id;
+			let deckId = cardData.deckId;
+			dispatch(associateCardDeckTHUNK(cardId, deckId))
+		}
+	}
 }
 
 // ASSOCIATE a card with a deck THUNK
 export const associateCardDeckTHUNK = (cardId, deckId) => async (dispatch) => {
-
+	console.log("----associate card deck thunk---")
 }
 
 // EDIT a users card THUNK

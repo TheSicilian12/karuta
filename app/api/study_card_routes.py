@@ -51,9 +51,8 @@ def post_study_card():
 
     form = DeckCardForm()
     form['csrf_token'].data = request.cookies['csrf_token']
-
-    print('------------form validate: ', form.validate_on_submit())
-    print('--------------------form: ', form.data)
+    # print('------------form validate: ', form.validate_on_submit())
+    # print('--------------------form: ', form.data)
 
     if form.validate_on_submit():
         data = form.data
