@@ -66,6 +66,6 @@ def post_study_card():
         db.session.add(new_card)
         db.session.commit()
         print('----------------new card: ', new_card.to_dict())
-        return {'card': new_card}
+        return {'card': new_card.to_dict()}
     else:
         return {'error': 'not a valid route'}
