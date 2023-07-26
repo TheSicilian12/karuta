@@ -2,6 +2,7 @@ from flask import Blueprint, jsonify, session, request
 from app.models import User, Decks, Deck_Cards, user_deck_association, deck_card_association, db
 from flask_login import current_user, login_user, logout_user, login_required
 from app.forms import DeckCardForm
+
 import random
 
 study_card_routes = Blueprint('study_cards', __name__)
@@ -101,8 +102,9 @@ def associate_card_deck(cardId, deckId):
         # card.owner_id = form.data["owner_id"]
 
         # this doesn't work: AttributeError: 'dict' object has no attribute 'decks'
-        card.to_dict().decks.append(deckId)
+        # card.to_dict().decks.append(deckId)
+        deck.cards.append(card)
         db.session.commit()
-
+        return {'message': 'Card associated'}
     else:
         return {"error": form.errors}
