@@ -7,6 +7,7 @@ import '../UniversalCSS.css'
 
 import { getDeckTHUNK } from '../../store/decks';
 import { getCardsTHUNK } from '../../store/studyCards';
+import ComponentStudyCardPreview from '../ComponentStudyCardPreview';
 
 function OpenModalAddCardToDeck({
   modalComponent, // component to render inside the modal
@@ -43,11 +44,10 @@ function OpenModalAddCardToDeck({
     <div className="open-modal-add-card-to-deck">
       <form
         onSubmit={handleSubmit}>
-        test
         {Object.values(cards).map(card => {
           return (
             <div>
-              {card.question}
+              <ComponentStudyCardPreview cardData={card} />
             </div>
           )
         })}
