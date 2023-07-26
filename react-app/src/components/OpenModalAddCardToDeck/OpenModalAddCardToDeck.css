@@ -1,15 +1,6 @@
-.open-modal-edit-question-text-container {
-    width: 500px;
-}
-
-.open-modal-answers-title-container {
-    border-bottom: 1px solid black;
-}
-
-.open-modal-answer-short-title-container {
-    border: 2px solid black;
-}
-
-.open-modal-answer-long-title-container {
-    border: 2px solid blue;
+.open-modal-add-card-to-deck {
+    overflow: auto;
+    border: 10px solid green;
+    height: 90vh;
+    width: 90vw;
 }

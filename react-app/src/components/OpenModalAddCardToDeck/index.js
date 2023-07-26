@@ -40,7 +40,7 @@ function OpenModalAddCardToDeck({
   }
 
   return (
-    <div className="delete-comment-modal-container">
+    <div className="open-modal-add-card-to-deck">
       <form
         onSubmit={handleSubmit}>
         test
