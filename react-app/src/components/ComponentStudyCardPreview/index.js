@@ -14,6 +14,13 @@ export default function ComponentStudyCardPreview({ cardData }) {
         <h2>
           {cardData.question}
         </h2>
+        
+        <button>
+          <i className="fa fa-plus"></i>
+        </button>
+        <button>
+          <i className="fa fa-minus"></i>
+        </button>
     </div>
   );
 }
