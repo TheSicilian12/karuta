@@ -40,10 +40,19 @@ function OpenModalAddCardToDeck({
     closeModal();
   }
 
+  // All cards
+  // all cards needs a way to distinguish between cards in deck and cards not in deck
+  // cards not in deck
+  // cards in deck
+
+
   return (
     <div className="open-modal-add-card-to-deck">
       <form
         onSubmit={handleSubmit}>
+
+
+        {/* All cards */}
         <div className="add-card-to-deck-cards-container">
           {Object.values(cards).map(card => {
             return (
