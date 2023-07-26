@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 
 import { getCurrentUserDecksTHUNK } from "../../store/decks";
 import { getCardsTHUNK } from "../../store/studyCards";
@@ -12,6 +12,7 @@ import "./StudyDeckPage.css";
 
 export default function StudyDeckPage() {
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const sessionUser = useSelector(state => state.session.user);
   const decks = useSelector(state => state.decks)
@@ -24,6 +25,10 @@ export default function StudyDeckPage() {
   }, [dispatch])
 
   if (Object.values(decks).length === 0) return <div>No decks</div>
+
+  const makeCard = () => {
+    history.push(`/makeCard/`)
+  }
 
   return (
     <div>
@@ -38,6 +43,10 @@ export default function StudyDeckPage() {
         )
       })}
       cards
+      <button
+        onClick={makeCard}>
+        <i className="fa fa-plus"></i> Make Card
+      </button>
       {Object.values(cards).map((card) => {
         return (
           <div>
