@@ -12,6 +12,7 @@ export default function StudyDeckPage() {
 
   const sessionUser = useSelector(state => state.session.user);
   const decks = useSelector(state => state.decks)
+  const cards = useSelector(state => state.studyCards)
 
   console.log("decks: ", decks)
   useEffect(() => {
@@ -34,6 +35,15 @@ export default function StudyDeckPage() {
         )
       })}
       cards
+      {Object.values(cards).map((card) => {
+        return (
+          <div>
+            {/* <NavLink to={`/studyDecks/${deck.id}`}> */}
+              {card.question}
+            {/* </NavLink> */}
+          </div>
+        )
+      })}
 
     </div>
   );
