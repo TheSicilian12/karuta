@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink, useParams, useHistory } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 
+import OpenModalButton from "../OpenModalButton";
+import OpenModalAddCardToDeck from "../OpenModalAddCardToDeck";
 import ComponentStudyCardQuestion from "../ComponentStudyCardQuestion";
 import ComponentStudyCardAnswer from "../ComponentStudyCardAnswer";
 
@@ -38,6 +40,14 @@ export default function DeckPage() {
         onClick={makeCard}>
         <i className="fa fa-plus"></i> Make Card
       </button>
+
+    <div>
+      <OpenModalButton
+      className="study-card-question-edit-icon"
+      buttonText={<i className="fa fa-plus"></i>}
+      modalComponent={<OpenModalAddCardToDeck />}/>
+    </div>
+
       <div>
         Cards
         {
