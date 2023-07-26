@@ -45,7 +45,7 @@ export default function DeckPage() {
       <OpenModalButton
       className="study-card-question-edit-icon"
       buttonText={<i className="fa fa-plus"></i>}
-      modalComponent={<OpenModalAddCardToDeck />}/>
+      modalComponent={<OpenModalAddCardToDeck deckId={deckId}/>}/>
     </div>
 
       <div>
