@@ -44,13 +44,15 @@ function OpenModalAddCardToDeck({
     <div className="open-modal-add-card-to-deck">
       <form
         onSubmit={handleSubmit}>
-        {Object.values(cards).map(card => {
-          return (
-            <div>
-              <ComponentStudyCardPreview cardData={card} />
-            </div>
-          )
-        })}
+        <div className="add-card-to-deck-cards-container">
+          {Object.values(cards).map(card => {
+            return (
+              <div>
+                <ComponentStudyCardPreview cardData={card} />
+              </div>
+            )
+          })}
+        </div>
 
       </form>
     </div>

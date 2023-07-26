@@ -4,3 +4,9 @@
     height: 90vh;
     width: 90vw;
 }
+
+.add-card-to-deck-cards-container {
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}

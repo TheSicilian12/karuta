@@ -10,7 +10,7 @@ export default function ComponentStudyCardPreview({ cardData }) {
   // 1. study card data
 
   return (
-    <div className="">
+    <div className="study-card-preview">
         <h2>
           {cardData.question}
         </h2>
