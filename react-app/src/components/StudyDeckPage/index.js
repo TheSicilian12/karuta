@@ -5,6 +5,9 @@ import { NavLink } from 'react-router-dom';
 import { getCurrentUserDecksTHUNK } from "../../store/decks";
 import { getCardsTHUNK } from "../../store/studyCards";
 
+import ComponentStudyCardQuestion from "../ComponentStudyCardQuestion";
+import ComponentStudyCardAnswer from "../ComponentStudyCardAnswer";
+
 import "./StudyDeckPage.css";
 
 export default function StudyDeckPage() {
@@ -40,6 +43,8 @@ export default function StudyDeckPage() {
           <div>
             {/* <NavLink to={`/studyDecks/${deck.id}`}> */}
               {card.question}
+              <ComponentStudyCardQuestion cardData={card} deckId={""} />
+              <ComponentStudyCardAnswer cardData={card} deckId={""}/>
             {/* </NavLink> */}
           </div>
         )
