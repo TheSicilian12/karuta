@@ -7,6 +7,21 @@ import random
 
 study_card_routes = Blueprint('study_cards', __name__)
 
+# GET a users cards
+@study_card_routes.route('/users')
+@login_required
+def get_users_cards():
+    """
+    GET a users cards
+    """
+    print("---------------------------get a users cards-------------------------")
+
+    cards = Deck_Cards.query.filter(Deck_Cards.owner_id == current_user.id).all()
+
+    cardsResponse = [card.to_dict() for card in cards]
+    # print("----cardsResponse: ", cardsResponse)
+    return cardsResponse
+
 
 # EDIT a study card
 @study_card_routes.route('/<int:cardId>', methods=['PUT'])

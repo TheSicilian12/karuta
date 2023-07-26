@@ -1,10 +1,15 @@
 import { normalizer } from "./storeFunctions";
 
 // constants
+const GET_USERS = 'cards/users'
 const EDIT_ONE = 'cards/edit'
 
-
 // dispatch
+const getUsers = (data) => ({
+	type: GET_USERS,
+	payload: data
+})
+
 const editOne = (data) => ({
 	type: EDIT_ONE,
 	payload: data
@@ -12,6 +17,18 @@ const editOne = (data) => ({
 
 
 //thunk
+
+// GET a users cards THUNK
+export const getCardsTHUNK = (userId) => async (dispatch) => {
+	console.log("----getCardsTHUNK----")
+	let response = await fetch ('/api/study_cards/users');
+	if (response.ok) {
+		const data = await response.json();
+		const normalizedData = normalizer(data)
+		// console.log("normalizedData: ", normalizedData);
+		dispatch(getUsers(normalizedData));
+	}
+}
 
 // ADD a card THUNK
 export const addCardTHUNK = (cardData) => async (dispatch) => {
@@ -69,7 +86,7 @@ export const associateCardDeckTHUNK = (cardData, deckId) => async (dispatch) => 
 			cardData
 		)
 	})
-	
+
 }
 
 // EDIT a users card THUNK
@@ -105,6 +122,10 @@ const initialState = {};
 
 export default function studyCardReducer(state = initialState, action) {
 	switch (action.type) {
+		case GET_USERS: {
+			const newState = { ...action.payload }
+			return newState
+		}
 		case EDIT_ONE: {
 			const newState = { ...action.payload }
 			return newState

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
 import { getCurrentUserDecksTHUNK } from "../../store/decks";
+import { getCardsTHUNK } from "../../store/studyCards";
 
 import "./StudyDeckPage.css";
 
@@ -14,7 +15,8 @@ export default function StudyDeckPage() {
 
   console.log("decks: ", decks)
   useEffect(() => {
-    dispatch(getCurrentUserDecksTHUNK(sessionUser.id))
+    dispatch(getCurrentUserDecksTHUNK(sessionUser.id));
+    dispatch(getCardsTHUNK());
   }, [dispatch])
 
   if (Object.values(decks).length === 0) return <div>No decks</div>
@@ -31,6 +33,8 @@ export default function StudyDeckPage() {
           </div>
         )
       })}
+      cards
+
     </div>
   );
 }

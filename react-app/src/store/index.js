@@ -3,11 +3,13 @@ import thunk from 'redux-thunk';
 import session from './session'
 import karutaCards from './karutaCards'
 import decks from './decks';
+import studyCards from './studyCards'
 
 const rootReducer = combineReducers({
   session,
   karutaCards,
-  decks
+  decks,
+  studyCards
 });
 
 let enhancer;
