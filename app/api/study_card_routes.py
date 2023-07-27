@@ -16,7 +16,6 @@ def get_users_cards():
     """
     print("---------------------------get a users cards-------------------------")
 
-
     cards = Deck_Cards.query.filter(Deck_Cards.owner_id == current_user.id).all()
 
     # decks_association = cards[0].decks
@@ -33,10 +32,8 @@ def get_users_cards():
 
         cardUpdate = card.to_dict()
         cardUpdate["decks"] = cardDecks
-        print('---------------------------addCard: ', cardUpdate)
         cardsResponse.append(cardUpdate)
 
-    print("********************************END GET A USERS CARDS********************************")
     return cardsResponse
 
 

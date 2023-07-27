@@ -49,15 +49,15 @@ function OpenModalAddCardToDeck({
   }
 
   // All cards
-  // all cards needs a way to distinguish between cards in deck and cards not in deck
-  // cards not in deck
-  // cards in deck
+  // all cards includes id's for the cards
+
+
 
 
   let cards = [];
-  if (displayCards === 'deck') cards = deck.singleDeck.cards
   if (displayCards === 'all') cards = cardsAll;
-  if (displayCards === 'notDeck') cards = [];
+  if (displayCards === 'deck') cards = deck.singleDeck.cards
+  // if (displayCards === 'notDeck') cards = cardsAll.map(card => card);
 
   return (
     <div className="open-modal-add-card-to-deck">
