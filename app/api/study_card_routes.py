@@ -16,10 +16,27 @@ def get_users_cards():
     """
     print("---------------------------get a users cards-------------------------")
 
+
     cards = Deck_Cards.query.filter(Deck_Cards.owner_id == current_user.id).all()
 
-    cardsResponse = [card.to_dict() for card in cards]
-    # print("----cardsResponse: ", cardsResponse)
+    # decks_association = cards[0].decks
+
+    # cardsAddDeck = [deck.to_dict() for deck in decks_association]
+    # print("----------------add cards deck: ", cardsAddDeck)
+    # cardsResponse = [card.to_dict() for card in cards]
+
+    cardsResponse = []
+    for card in cards:
+        # print('-------------------------card: ', card)
+        decks = card.decks
+        cardDecks = [deck.to_dict() for deck in decks]
+
+        cardUpdate = card.to_dict()
+        cardUpdate["decks"] = cardDecks
+        print('---------------------------addCard: ', cardUpdate)
+        cardsResponse.append(cardUpdate)
+
+    print("********************************END GET A USERS CARDS********************************")
     return cardsResponse
 
 

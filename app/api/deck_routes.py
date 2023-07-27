@@ -27,6 +27,7 @@ def get_your_decks(user_id):
     # print('---------------------user_decks: ', user_decks)
     return response
 
+
 # GET a specific deck
 @deck_routes.route('/<int:deck_id>')
 @login_required
@@ -61,6 +62,5 @@ def get_one_deck(deck_id):
     response = {}
     response['deck'] = deck.to_dict()
     response['cards'] = cards
-    print('---------------------response: ', response)
 
     return response

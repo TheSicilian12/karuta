@@ -30,10 +30,8 @@ export const getCurrentUserDecksTHUNK = (userId) => async (dispatch) => {
 // GET a specific deck THUNK
 export const getDeckTHUNK = (deckId) => async (dispatch) => {
 	const response = await fetch(`/api/decks/${deckId}`);
-	console.log('thunk response: ', response)
 	if (response.ok) {
 		const responseJSON = await response.json();
-		console.log('responseJSON: ', responseJSON)
 		dispatch(loadOne(responseJSON))
 	}
 }

@@ -55,9 +55,9 @@ function OpenModalAddCardToDeck({
 
 
   let cards = [];
-  if (displayCards === 'notDeck') cards = deck.singleDeck.cards
+  if (displayCards === 'deck') cards = deck.singleDeck.cards
   if (displayCards === 'all') cards = cardsAll;
-  if (displayCards === 'deck') cards = [];
+  if (displayCards === 'notDeck') cards = [];
 
   return (
     <div className="open-modal-add-card-to-deck">
@@ -89,26 +89,6 @@ function OpenModalAddCardToDeck({
             )
           })}
         </div>
-
-        {/* {displayCards === 'all' && <div className="add-card-to-deck-cards-container">
-          {Object.values(cardsAll).map(card => {
-            return (
-              <div>
-                <ComponentStudyCardPreview cardData={card} />
-              </div>
-            )
-          })}
-        </div>} */}
-
-        {/* {displayCards === 'notDeck' && <div className="add-card-to-deck-cards-container">
-          {Object.values(cardsDeck).map(card => {
-            return (
-              <div>
-                <ComponentStudyCardPreview cardData={card} />
-              </div>
-            )
-          })}
-        </div>} */}
 
       </form>
     </div>
