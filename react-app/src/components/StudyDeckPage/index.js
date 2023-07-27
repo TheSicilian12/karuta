@@ -18,7 +18,6 @@ export default function StudyDeckPage() {
   const decks = useSelector(state => state.decks)
   const cards = useSelector(state => state.studyCards)
 
-  console.log("decks: ", decks)
   useEffect(() => {
     dispatch(getCurrentUserDecksTHUNK(sessionUser.id));
     dispatch(getCardsTHUNK());

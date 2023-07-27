@@ -23,7 +23,8 @@ function OpenModalAddCardToDeck({
   const dispatch = useDispatch();
 
   const sessionUser = useSelector(state => state.session.user);
-  const cards = useSelector(state => state.studyCards);
+  const cardsAll = useSelector(state => state.studyCards);
+  const deck = useSelector(state => state.decks)
 
   const { closeModal } = useModal();
 
@@ -34,9 +35,11 @@ function OpenModalAddCardToDeck({
 
   useEffect(() => {
     dispatch(getCardsTHUNK());
+    dispatch(getDeckTHUNK(deckId));
   }, [dispatch])
 
-  if (!cards) return null;
+  if (!cardsAll) return null;
+  if (!deck) return null
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -50,6 +53,11 @@ function OpenModalAddCardToDeck({
   // cards not in deck
   // cards in deck
 
+
+  let cards = [];
+  if (displayCards === 'notDeck') cards = deck.singleDeck.cards
+  if (displayCards === 'all') cards = cardsAll;
+  if (displayCards === 'deck') cards = [];
 
   return (
     <div className="open-modal-add-card-to-deck">
@@ -81,6 +89,26 @@ function OpenModalAddCardToDeck({
             )
           })}
         </div>
+
+        {/* {displayCards === 'all' && <div className="add-card-to-deck-cards-container">
+          {Object.values(cardsAll).map(card => {
+            return (
+              <div>
+                <ComponentStudyCardPreview cardData={card} />
+              </div>
+            )
+          })}
+        </div>} */}
+
+        {/* {displayCards === 'notDeck' && <div className="add-card-to-deck-cards-container">
+          {Object.values(cardsDeck).map(card => {
+            return (
+              <div>
+                <ComponentStudyCardPreview cardData={card} />
+              </div>
+            )
+          })}
+        </div>} */}
 
       </form>
     </div>
