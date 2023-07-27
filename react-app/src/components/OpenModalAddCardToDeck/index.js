@@ -51,7 +51,10 @@ function OpenModalAddCardToDeck({
   // All cards
   // all cards includes id's for the cards
 
-
+// study cards now have deck ids
+// display the correct cards based on the deck id
+// think about how the deck ids should be used
+// possibly normalize this data
 
 
   let cards = [];
