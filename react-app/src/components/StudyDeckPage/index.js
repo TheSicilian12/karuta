@@ -26,7 +26,11 @@ export default function StudyDeckPage() {
   if (Object.values(decks).length === 0) return <div>No decks</div>
 
   const makeCard = () => {
-    history.push(`/makeCard/`)
+    history.push(`/makeCard`)
+  }
+
+  const makeDeck = () => {
+    history.push(`/makeDeck`)
   }
 
   return (
@@ -45,6 +49,10 @@ export default function StudyDeckPage() {
       <button
         onClick={makeCard}>
         <i className="fa fa-plus"></i> Make Card
+      </button>
+      <button
+        onClick={makeDeck}>
+        <i className="fa fa-plus"></i> Make Deck
       </button>
       {Object.values(cards).map((card) => {
         return (
