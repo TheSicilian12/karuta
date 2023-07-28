@@ -1,15 +1,18 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 
 import OpenModalButton from '../OpenModalButton';
 
 import "./ComponentStudyCardPreview.css";
 import "../UniversalCSS.css";
+import { associateCardDeckTHUNK, testTHUNK } from "../../store/studyCards";
 
 
 export default function ComponentStudyCardPreview({ cardData, deckId }) {
   // ComponentStudyCard takes in:
   // 1. study card data
   // 2. deck id
+  const dispatch = useDispatch();
 
   deckId = Number(deckId);
 
@@ -17,7 +20,7 @@ export default function ComponentStudyCardPreview({ cardData, deckId }) {
 
   const addCard = () => {
     console.log("add card")
-
+    dispatch(associateCardDeckTHUNK(cardData, deckId))
   }
 
   const removeCard = () => {
