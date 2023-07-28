@@ -33,6 +33,10 @@ export default function DeckPage() {
     history.push(`/makeCard/${deckId}`)
   }
 
+  const studyDeck = () => {
+    history.push(`/study/${deckId}`)
+  }
+
   return (
     <div>
       DeckPage
@@ -47,6 +51,11 @@ export default function DeckPage() {
       buttonText={<i className="fa fa-plus"></i>}
       modalComponent={<OpenModalAddCardToDeck deckId={deckId}/>}/>
     </div>
+
+    <button
+        onClick={studyDeck}>
+        Study Deck
+      </button>
 
       <div>
         Cards

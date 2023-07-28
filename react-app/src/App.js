@@ -13,6 +13,7 @@ import MakeCardPage from "./components/MakeCardPage";
 import MakeDeckPage from "./components/MakeDeckPage";
 import MakeCardPageWrapper from "./components/MakeCardPage/MakeCardWrapper";
 import LoginFormPage from "./components/LoginFormPage";
+import StudyCardDeckPage from "./components/StudyCardDeckPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -61,6 +62,10 @@ function App() {
           <Route path="/makeDeck/" exact>
             <Navigation isLoaded={isLoaded}/>
             <MakeDeckPage />
+          </Route>
+          <Route path="/study/:deckId" exact>
+            <Navigation isLoaded={isLoaded}/>
+            <StudyCardDeckPage />
           </Route>
           <Route path="/login" exact>
             <LoginFormPage />
