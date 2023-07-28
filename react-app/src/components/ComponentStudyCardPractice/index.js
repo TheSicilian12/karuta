@@ -15,13 +15,12 @@ export default function ComponentStudyCardPractice({cards}) {
   const dispatch = useDispatch();
   const history = useHistory();
 
-  const [randNum, setRandNum] = useState(Math.floor(Math.random() * cards.length))
-
-  let studySet = new Set()
+  const [randNum, setRandNum] = useState(Math.floor(Math.random() * cards.length));
+  const [showAnswer, setShowAnswer] = useState(false);
 
   const newCard = () => {
-    studySet.add(randNum)
-    setRandNum(Math.floor(Math.random() * cards.length))
+    setRandNum(Math.floor(Math.random() * cards.length));
+    setShowAnswer(false);
   }
 
   // const [displayCard, setDisplayCard] = useState(cardsObj?.cards[0])
@@ -34,6 +33,11 @@ export default function ComponentStudyCardPractice({cards}) {
         onClick={() => newCard()}>
         Next
       </button>
+      <button
+        onClick={() => setShowAnswer(!showAnswer)}>
+        show answer
+      </button>
+      {showAnswer === true && <ComponentStudyCardAnswer cardData={cards[randNum]} deckId={""} />}
     </div>
   );
 }
