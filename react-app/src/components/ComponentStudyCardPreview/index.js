@@ -5,7 +5,7 @@ import OpenModalButton from '../OpenModalButton';
 
 import "./ComponentStudyCardPreview.css";
 import "../UniversalCSS.css";
-import { associateCardDeckTHUNK, testTHUNK } from "../../store/studyCards";
+import { associateCardDeckTHUNK, disassociateCardDeckTHUNK, testTHUNK } from "../../store/studyCards";
 
 
 export default function ComponentStudyCardPreview({ cardData, deckId }) {
@@ -25,6 +25,7 @@ export default function ComponentStudyCardPreview({ cardData, deckId }) {
 
   const removeCard = () => {
     console.log("remove card")
+    dispatch(disassociateCardDeckTHUNK(cardData.id, deckId))
   }
 
 

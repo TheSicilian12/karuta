@@ -142,3 +142,27 @@ def associate_card_deck(cardId, deckId):
         return {'message': 'Card associated'}
     else:
         return {"error": form.errors}
+
+
+# DELETE / DISASSOCIATE a card from a deck
+@study_card_routes.route('/associate/card/<int:cardId>/deck/<int:deckId>', methods=['DELETE'])
+@login_required
+def disassociate_card_deck(cardId, deckId):
+    """
+    DELETE / DISASSOCIATE a card from a deck
+    """
+    print('------------------------Delete / disassociate a card from a deck-----------------------')
+    deck = Decks.query.get(deckId)
+    card = Deck_Cards.query.get(cardId)
+
+    if deck.owner_id != current_user.id:
+        return {'error': 'not a valid rotue'}
+
+    if card.owner_id != current_user.id:
+        return {'error': 'not a valid route'}
+
+    deck.cards.remove(card)
+
+    db.session.commit()
+
+    return {'message': 'Card successfully removed'}

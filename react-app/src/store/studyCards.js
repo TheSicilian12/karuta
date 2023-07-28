@@ -127,7 +127,17 @@ export const associateCardDeckTHUNK = (cardData, deckId) => async (dispatch) => 
 	})
 }
 
+// DISASSOCIATE a card from a deck THUNK
+export const disassociateCardDeckTHUNK = (cardId, deckId) => async (dispatch) => {
+	console.log("----disassociate card deck thunk----")
 
+	const response = await fetch (`/api/study_cards/associate/card/${cardId}/deck/${deckId}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json",
+        }
+    })
+}
 
 // EDIT a users card THUNK
 export const editCardQuestionTHUNK = (cardData) => async (dispatch) => {
