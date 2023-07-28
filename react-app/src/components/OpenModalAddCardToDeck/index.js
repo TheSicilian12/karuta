@@ -36,7 +36,7 @@ function OpenModalAddCardToDeck({
   useEffect(() => {
     dispatch(getCardsDivideTHUNK(deckId));
     dispatch(getDeckTHUNK(deckId));
-  }, [dispatch])
+  }, [dispatch, cardsAll])
 
   if (!cardsAll.all) return null;
   if (!cardsAll.inDeck) return null;

@@ -23,7 +23,7 @@ function OpenModal({
   };
 
   return (
-    <button className={className ? className : ""}onClick={onClick}>{buttonText}</button>
+    <button className={className ? className : ""} onClick={onClick}>{buttonText}</button>
   );
 }
 
