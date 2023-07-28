@@ -5,15 +5,25 @@ import OpenModalButton from '../OpenModalButton';
 import "./ComponentStudyCardPreview.css";
 import "../UniversalCSS.css";
 
+
 export default function ComponentStudyCardPreview({ cardData, deckId }) {
   // ComponentStudyCard takes in:
   // 1. study card data
+  // 2. deck id
+
   deckId = Number(deckId);
 
-  console.log("cardData: ", cardData.decks)
   let decks = cardData.decks;
-  console.log("decks: ", decks)
-  console.log("includes: ", decks.includes(deckId))
+
+  const addCard = () => {
+    console.log("add card")
+
+  }
+
+  const removeCard = () => {
+    console.log("remove card")
+  }
+
 
   return (
     <div className="study-card-preview">
@@ -21,12 +31,15 @@ export default function ComponentStudyCardPreview({ cardData, deckId }) {
           {cardData.question}
         </h2>
 
-        {!decks.includes(deckId) && <button>
+        {!decks.includes(deckId) && <div
+          onClick={() => addCard()}>
           <i className="fa fa-plus"></i>
-        </button>}
-        {decks.includes(deckId) && <button>
+        </div>}
+
+        {decks.includes(deckId) && <div
+          onClick={() => removeCard()}>
           <i className="fa fa-minus"></i>
-        </button>}
+        </div>}
     </div>
   );
 }
