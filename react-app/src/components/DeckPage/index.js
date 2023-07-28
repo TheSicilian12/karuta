@@ -4,6 +4,7 @@ import { useParams, useHistory } from 'react-router-dom';
 
 import OpenModalButton from "../OpenModalButton";
 import OpenModalAddCardToDeck from "../OpenModalAddCardToDeck";
+import OpenModalDeleteDeck from "../OpenModalDeleteDeck";
 import ComponentStudyCardQuestion from "../ComponentStudyCardQuestion";
 import ComponentStudyCardAnswer from "../ComponentStudyCardAnswer";
 
@@ -50,6 +51,12 @@ export default function DeckPage() {
       className="study-card-question-edit-icon"
       buttonText={<i className="fa fa-plus"></i>}
       modalComponent={<OpenModalAddCardToDeck deckId={deckId}/>}/>
+    </div>
+    <div>
+      <OpenModalButton
+      className="study-card-question-edit-icon"
+      buttonText={<i className="fa fa-minus">Delete</i>}
+      modalComponent={<OpenModalDeleteDeck deckId={deckId}/>}/>
     </div>
 
     <button

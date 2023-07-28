@@ -55,6 +55,21 @@ export const addDeckTHUNK = (payload) => async (dispatch) => {
 	}
 }
 
+// DELETE a deck THUNK
+export const deleteDeckTHUNK = (deckId) => async (dispatch) => {
+	console.log("----delete deck thunk----")
+	const response = await fetch (`/api/decks/${deckId}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json",
+        }
+    })
+	if (response.ok) {
+		const data = await response.json();
+		console.log("data: ", data)
+	}
+}
+
 const initialState = {};
 
 export default function studyDeckReducer(state = initialState, action) {

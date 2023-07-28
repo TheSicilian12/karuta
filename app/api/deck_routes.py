@@ -99,3 +99,22 @@ def post_deck():
         return {'deck': new_deck.to_dict()}
     else:
         return {'error': 'Invlaid route'}
+
+
+# DELETE a deck
+@deck_routes.route('/<int:deck_id>', methods=['DELETE'])
+@login_required
+def delete_deck(deck_id):
+    """
+    DELETE a deck
+    """
+    print("------------------------------delete a deck----------------------------------")
+    deck = Decks.query.get(deck_id)
+
+    if deck.owner_id != current_user.id:
+        return {"message": "Invalid route"}
+
+    db.session.delete(deck)
+    db.session.commit()
+
+    return {"message": "deck deleted"}
