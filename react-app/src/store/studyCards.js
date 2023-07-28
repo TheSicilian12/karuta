@@ -35,6 +35,8 @@ export const getCardsDivideTHUNK = (deckId) => async (dispatch) => {
 	console.log("----getCardsDivideTHUNK----")
 	let response = await fetch ('/api/study_cards/users');
 	if (response.ok) {
+		deckId = Number(deckId);
+		console.log("deckId: ", deckId)
 		let cardObj = {};
 
 		const data = await response.json();
@@ -42,19 +44,27 @@ export const getCardsDivideTHUNK = (deckId) => async (dispatch) => {
 		console.log("normalizedData: ", normalizedData);
 
 		cardObj["all"] = {...normalizedData};
-
-		console.log("cardObj: ", cardObj)
-
-		for (const card in normalizedData) {
-			console.log("card: ", normalizedData[card].decks)
-			console.log("card decks includes: ", normalizedData[card].decks.includes(1))
-
-			if (normalizedData[card].decks.includes(deckId)) {
-				console.log("includes")
-			}
+		cardObj = {
+			"all": {...normalizedData},
+			"notDeck": {},
+			"inDeck": {}
 		}
 
-		// dispatch(getUsers(normalizedData));
+		for (const card in normalizedData) {
+			// console.log("card: ", normalizedData[card].decks)
+			// console.log("card decks includes: ", normalizedData[card].decks.includes(1))
+			// console.log("deckId: ", typeof deckId)
+			if (normalizedData[card].decks.includes(deckId)) {
+				// console.log("includes")
+				// console.log(normalizedData[card].id)
+				cardObj.inDeck[normalizedData[card].id] = normalizedData[card];
+			} else {
+				cardObj.notDeck[normalizedData[card].id] = normalizedData[card];
+			}
+		}
+		// console.log("cardObj: ", cardObj)
+
+		dispatch(getUsers(cardObj));
 	}
 }
 

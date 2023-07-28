@@ -6,7 +6,7 @@ import './OpenModalAddCardToDeck.css'
 import '../UniversalCSS.css'
 
 import { getDeckTHUNK } from '../../store/decks';
-import { getCardsDivideTHUNK, getCardsTHUNK } from '../../store/studyCards';
+import { getCardsDivideTHUNK} from '../../store/studyCards';
 import ComponentStudyCardPreview from '../ComponentStudyCardPreview';
 
 function OpenModalAddCardToDeck({
