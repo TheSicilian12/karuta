@@ -167,6 +167,21 @@ export const editCardQuestionTHUNK = (cardData) => async (dispatch) => {
 	}
 }
 
+// DELETE a card THUNK
+export const deleteCardTHUNK = (cardId) => async (dispatch) => {
+	console.log("----delete card thunk---")
+	const response = await fetch (`/api/study_cards/${cardId}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json",
+        }
+    })
+	if (response.ok) {
+		const data = await response.json();
+		console.log("data: ", data)
+	}
+}
+
 
 const initialState = {};
 

@@ -166,3 +166,22 @@ def disassociate_card_deck(cardId, deckId):
     db.session.commit()
 
     return {'message': 'Card successfully removed'}
+
+
+# DELETE a card
+@study_card_routes.route('/<int:card_id>', methods=['DELETE'])
+@login_required
+def delete_card_deck(card_id):
+    """
+    Delete a card
+    """
+    print("-----------------------------delete a card-------------------------------")
+    card = Deck_Cards.query.get(card_id)
+
+    if card.owner_id != current_user.id:
+        return {"message": "Invalid route"}
+
+    db.session.delete(card)
+    db.session.commit()
+
+    return {"message": "card deleted"}
