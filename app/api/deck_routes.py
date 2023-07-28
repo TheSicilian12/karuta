@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify, session, request
 from app.models import User, Decks, user_deck_association, deck_card_association, db
 from flask_login import current_user, login_user, logout_user, login_required
-from app.forms import karuta_form
+from app.forms import karuta_form, DeckForm
 import random
 
 deck_routes = Blueprint('deck', __name__)
@@ -64,3 +64,36 @@ def get_one_deck(deck_id):
     response['cards'] = cards
 
     return response
+
+
+# POST a deck
+@deck_routes.route('/post', methods=['POST'])
+@login_required
+def post_deck():
+    """
+    POST a deck
+    """
+    print('--------------------POST a deck--------------------')
+    form = DeckForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    user = User.query.get(current_user.id)
+
+    if form.validate_on_submit():
+        data = form.data
+
+        if current_user.id != data['owner_id']:
+            return {'message': 'Invalid route'}
+
+        new_deck = Decks(
+            name = data['name'],
+            owner_id = data['owner_id']
+        )
+        db.session.add(new_deck)
+        user.decks.append(new_deck)
+        db.session.commit()
+
+        print('--------------------------new_deck: ', new_deck.to_dict())
+        return {'deck': new_deck.to_dict()}
+    else:
+        return {'error': 'Invlaid route'}

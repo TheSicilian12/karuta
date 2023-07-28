@@ -36,6 +36,25 @@ export const getDeckTHUNK = (deckId) => async (dispatch) => {
 	}
 }
 
+// POST a deck THUNK
+export const addDeckTHUNK = (payload) => async (dispatch) => {
+	console.log("----add deck thunk----")
+	const response = await fetch(`/api/decks/post`, {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify(
+			payload
+		)
+	})
+	if (response.ok) {
+		const data = await response.json();
+		console.log("data: ", data)
+
+	}
+}
+
 const initialState = {};
 
 export default function studyDeckReducer(state = initialState, action) {
