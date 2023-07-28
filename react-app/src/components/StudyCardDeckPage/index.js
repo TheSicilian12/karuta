@@ -28,7 +28,7 @@ export default function StudyCardDeckPage() {
   }, [dispatch])
 
   if (!cardsObj) return <div>No cards</div>
-  if (!cardsObj.cards[0]) return <div>No cards</div>
+  // if (!cardsObj.cards[0]) return <div>No cards</div>
   const cards = cardsObj.cards
 
 

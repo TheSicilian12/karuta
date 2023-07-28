@@ -17,13 +17,14 @@ export default function ComponentStudyCardPractice({cards}) {
 
   const [randNum, setRandNum] = useState(Math.floor(Math.random() * cards.length))
 
+  let studySet = new Set()
+
   const newCard = () => {
+    studySet.add(randNum)
     setRandNum(Math.floor(Math.random() * cards.length))
   }
 
   // const [displayCard, setDisplayCard] = useState(cardsObj?.cards[0])
-
-  console.log("cards: ", cards)
 
   return (
     <div>
