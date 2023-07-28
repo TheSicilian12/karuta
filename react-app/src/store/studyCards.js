@@ -36,12 +36,12 @@ export const getCardsDivideTHUNK = (deckId) => async (dispatch) => {
 	let response = await fetch ('/api/study_cards/users');
 	if (response.ok) {
 		deckId = Number(deckId);
-		console.log("deckId: ", deckId)
+		// console.log("deckId: ", deckId)
 		let cardObj = {};
 
 		const data = await response.json();
 		const normalizedData = normalizer(data)
-		console.log("normalizedData: ", normalizedData);
+		// console.log("normalizedData: ", normalizedData);
 
 		cardObj["all"] = {...normalizedData};
 		cardObj = {

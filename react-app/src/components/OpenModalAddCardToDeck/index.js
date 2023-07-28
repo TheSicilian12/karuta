@@ -38,8 +38,11 @@ function OpenModalAddCardToDeck({
     dispatch(getDeckTHUNK(deckId));
   }, [dispatch])
 
-  if (!cardsAll) return null;
+  if (!cardsAll.all) return null;
+  if (!cardsAll.inDeck) return null;
+  if (!cardsAll.notDeck) return null;
   if (!deck) return null
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -56,11 +59,11 @@ function OpenModalAddCardToDeck({
 // think about how the deck ids should be used
 // possibly normalize this data
 
-
+  // console.log("cardAll.all: ", cardsAll.all)
   let cards = [];
-  if (displayCards === 'all') cards = cardsAll;
-  if (displayCards === 'deck') cards = deck.singleDeck.cards
-  // if (displayCards === 'notDeck') cards = cardsAll.map(card => card);
+  if (displayCards === 'all') cards = cardsAll.all;
+  if (displayCards === 'deck') cards = cardsAll.inDeck;
+  if (displayCards === 'notDeck') cards = cardsAll.notDeck;
 
   return (
     <div className="open-modal-add-card-to-deck">
