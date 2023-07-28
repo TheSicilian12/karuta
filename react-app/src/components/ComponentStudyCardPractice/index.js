@@ -17,10 +17,13 @@ export default function ComponentStudyCardPractice({cards}) {
 
   const [randNum, setRandNum] = useState(Math.floor(Math.random() * cards.length));
   const [showAnswer, setShowAnswer] = useState(false);
+  const [showLongAnswer, setShowLongAnswer] = useState(false);
+
 
   const newCard = () => {
     setRandNum(Math.floor(Math.random() * cards.length));
     setShowAnswer(false);
+    setShowLongAnswer(false);
   }
 
   // const [displayCard, setDisplayCard] = useState(cardsObj?.cards[0])
@@ -37,7 +40,12 @@ export default function ComponentStudyCardPractice({cards}) {
         onClick={() => setShowAnswer(!showAnswer)}>
         show answer
       </button>
+      <button
+        onClick={() => setShowLongAnswer(!showLongAnswer)}>
+        show long answer
+      </button>
       {showAnswer === true && <ComponentStudyCardAnswer cardData={cards[randNum]} deckId={""} />}
+      {showLongAnswer === true && <ComponentStudyCardAnswer cardData={cards[randNum]} deckId={""} longAnswer={true} />}
     </div>
   );
 }
