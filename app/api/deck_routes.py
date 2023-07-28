@@ -90,6 +90,8 @@ def post_deck():
             owner_id = data['owner_id']
         )
         db.session.add(new_deck)
+
+        # append to user
         user.decks.append(new_deck)
         db.session.commit()
 
