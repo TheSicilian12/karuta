@@ -5,7 +5,7 @@ import OpenModalButton from '../OpenModalButton';
 
 import "./ComponentStudyCardPreview.css";
 import "../UniversalCSS.css";
-import { associateCardDeckTHUNK, disassociateCardDeckTHUNK, testTHUNK } from "../../store/studyCards";
+import { associateCardDeckTHUNK, disassociateCardDeckTHUNK, getCardsDivideTHUNK, testTHUNK } from "../../store/studyCards";
 
 
 export default function ComponentStudyCardPreview({ cardData, deckId }) {
@@ -18,14 +18,16 @@ export default function ComponentStudyCardPreview({ cardData, deckId }) {
 
   let decks = cardData.decks;
 
-  const addCard = () => {
+  const addCard = async () => {
     console.log("add card")
-    dispatch(associateCardDeckTHUNK(cardData, deckId))
+    await dispatch(associateCardDeckTHUNK(cardData, deckId));
+    await dispatch(getCardsDivideTHUNK(deckId));
   }
 
-  const removeCard = () => {
+  const removeCard = async () => {
     console.log("remove card")
-    dispatch(disassociateCardDeckTHUNK(cardData.id, deckId))
+    await dispatch(disassociateCardDeckTHUNK(cardData.id, deckId));
+    await dispatch(getCardsDivideTHUNK(deckId));
   }
 
 
