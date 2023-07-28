@@ -27,7 +27,7 @@ export default function DeckPage() {
     dispatch(getDeckTHUNK(deckId))
   }, [dispatch])
 
-  if (!cardsObj) return <div>No cards</div>
+  if (!cardsObj) return <div>No cards object</div>
   const cards = cardsObj.cards
 
   const makeCard = () => {
@@ -59,10 +59,13 @@ export default function DeckPage() {
       modalComponent={<OpenModalDeleteDeck deckId={deckId}/>}/>
     </div>
 
-    <button
+      {cardsObj?.cards[0] ? <button
         onClick={studyDeck}>
         Study Deck
-      </button>
+      </button> :
+      <div>
+        This deck has no cards
+        </div>}
 
       <div>
         Cards
