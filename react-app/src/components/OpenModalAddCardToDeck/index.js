@@ -90,7 +90,7 @@ function OpenModalAddCardToDeck({
           {Object.values(cards).map(card => {
             return (
               <div>
-                <ComponentStudyCardPreview cardData={card} />
+                <ComponentStudyCardPreview cardData={card} deckId={deckId} />
               </div>
             )
           })}
