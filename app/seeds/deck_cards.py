@@ -13,6 +13,7 @@ def seed_deck_cards():
         answer='4',
         owner_id = 1
     )
+
     card3 = Deck_Cards(
         question = 'How do you play karuta?',
         answer = 'Memorize the cards and select the right one first',
@@ -22,7 +23,31 @@ def seed_deck_cards():
         question = 'writing systems',
         answer = 'hirgana and katakan',
         answer_long = 'hiragana, katakana, and kanji',
-        owner_id = 1
+        owner_id = 2
+    )
+
+    card5 = Deck_Cards(
+        question = '1+15',
+        answer = '16',
+        owner_id = 3
+    )
+    card6 = Deck_Cards(
+        question = '1-15',
+        answer = '-14',
+        answer_long = '14 * -1',
+        owner_id = 3
+    )
+
+    card7 = Deck_Cards(
+        question = '4/2',
+        answer = '2',
+        owner_id = 4
+    )
+    card8 = Deck_Cards(
+        question = '4**2',
+        answer = '16',
+        answer_long = '4^2 = 16',
+        owner_id = 4
     )
 
 
@@ -30,6 +55,10 @@ def seed_deck_cards():
     db.session.add(card2)
     db.session.add(card3)
     db.session.add(card4)
+    db.session.add(card5)
+    db.session.add(card6)
+    db.session.add(card7)
+    db.session.add(card8)
     db.session.commit()
 
 

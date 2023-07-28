@@ -12,19 +12,20 @@ def seed_deck_card_association():
     card2 = Deck_Cards.query.get(2)
     card3 = Deck_Cards.query.get(3)
     card4 = Deck_Cards.query.get(4)
+    card5 = Deck_Cards.query.get(5)
+    card6 = Deck_Cards.query.get(6)
+    card7 = Deck_Cards.query.get(7)
 
 
     deck1.cards.append(card1)
     deck1.cards.append(card2)
-    deck1.cards.append(card3)
-    deck1.cards.append(card4)
 
-    deck2.cards.append(card1)
-    deck2.cards.append(card2)
+    deck2.cards.append(card3)
 
-    deck3.cards.append(card3)
+    deck3.cards.append(card5)
+    deck3.cards.append(card6)
 
-    deck4.cards.append(card4)
+    deck4.cards.append(card7)
 
     db.session.commit()
 

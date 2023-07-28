@@ -26,14 +26,14 @@ def get_users_cards():
 
     cardsResponse = []
     for card in cards:
-        print('-------------------------card: ', card)
+        # print('-------------------------card: ', card)
         decks = card.decks
         # cardDecks = [deck.to_dict()["id"] for deck in decks if deck.to_dict()["owner_id"] == current_user.id]
 
         # This may end up being a problem. As of now this is needed and filtering by onwer id doesn't work
         cardDecks = [deck.to_dict()["id"] for deck in decks]
 
-        print('---------------------cardDecks: ', cardDecks)
+        # print('---------------------cardDecks: ', cardDecks)
 
         cardUpdate = card.to_dict()
         cardUpdate["decks"] = cardDecks

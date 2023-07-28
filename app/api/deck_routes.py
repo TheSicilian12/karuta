@@ -23,8 +23,8 @@ def get_your_decks(user_id):
         return {'error': 'Invalid route'}
 
     user_decks = current_user.decks
-    response = [deck.to_dict() for deck in user_decks]
-    # print('---------------------user_decks: ', user_decks)
+    response = [deck.to_dict() for deck in user_decks if deck.to_dict()['owner_id'] == current_user.id]
+    print('---------------------user_decks: ', response)
     return response
 
 
