@@ -6,7 +6,7 @@ import './OpenModalAddCardToDeck.css'
 import '../UniversalCSS.css'
 
 import { getDeckTHUNK } from '../../store/decks';
-import { getCardsTHUNK } from '../../store/studyCards';
+import { getCardsDivideTHUNK, getCardsTHUNK } from '../../store/studyCards';
 import ComponentStudyCardPreview from '../ComponentStudyCardPreview';
 
 function OpenModalAddCardToDeck({
@@ -34,7 +34,7 @@ function OpenModalAddCardToDeck({
   // deck - cards in the deck
 
   useEffect(() => {
-    dispatch(getCardsTHUNK());
+    dispatch(getCardsDivideTHUNK(deckId));
     dispatch(getDeckTHUNK(deckId));
   }, [dispatch])
 

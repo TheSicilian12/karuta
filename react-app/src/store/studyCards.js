@@ -19,7 +19,7 @@ const editOne = (data) => ({
 //thunk
 
 // GET a users cards THUNK
-export const getCardsTHUNK = (userId) => async (dispatch) => {
+export const getCardsTHUNK = () => async (dispatch) => {
 	console.log("----getCardsTHUNK----")
 	let response = await fetch ('/api/study_cards/users');
 	if (response.ok) {
@@ -29,6 +29,35 @@ export const getCardsTHUNK = (userId) => async (dispatch) => {
 		dispatch(getUsers(normalizedData));
 	}
 }
+
+// GET a users cards and divide by deck status THUNK
+export const getCardsDivideTHUNK = (deckId) => async (dispatch) => {
+	console.log("----getCardsDivideTHUNK----")
+	let response = await fetch ('/api/study_cards/users');
+	if (response.ok) {
+		let cardObj = {};
+
+		const data = await response.json();
+		const normalizedData = normalizer(data)
+		console.log("normalizedData: ", normalizedData);
+
+		cardObj["all"] = {...normalizedData};
+
+		console.log("cardObj: ", cardObj)
+
+		for (const card in normalizedData) {
+			console.log("card: ", normalizedData[card].decks)
+			console.log("card decks includes: ", normalizedData[card].decks.includes(1))
+
+			if (normalizedData[card].decks.includes(deckId)) {
+				console.log("includes")
+			}
+		}
+
+		// dispatch(getUsers(normalizedData));
+	}
+}
+
 
 // ADD a card THUNK
 export const addCardTHUNK = (cardData) => async (dispatch) => {

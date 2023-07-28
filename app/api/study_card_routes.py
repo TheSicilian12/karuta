@@ -26,9 +26,10 @@ def get_users_cards():
 
     cardsResponse = []
     for card in cards:
-        # print('-------------------------card: ', card)
+        print('-------------------------card: ', card)
         decks = card.decks
-        cardDecks = [deck.to_dict() for deck in decks]
+        cardDecks = [deck.to_dict()["id"] for deck in decks if deck.to_dict()["owner_id"] == current_user.id]
+        print('---------------------cardDecks: ', cardDecks)
 
         cardUpdate = card.to_dict()
         cardUpdate["decks"] = cardDecks

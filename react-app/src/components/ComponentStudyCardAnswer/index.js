@@ -9,8 +9,7 @@ import OpenModalEditStudyCard from "../OpenModalEditStudyCard";
 export default function ComponentStudyCardAnswer({ cardData, deckId }) {
   // ComponentStudyCard takes in:
   // 1. study card data
-  console.log("study card")
-  console.log("cardData: ", cardData)
+  
   return (
     <div className="study-card-answer-container">
         {cardData.answer}
