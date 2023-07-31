@@ -74,6 +74,17 @@ export const getCardsDivideTHUNK = (deckId) => async (dispatch) => {
 	}
 }
 
+// GET a users cards by deck id THUNK
+export const getCardsDeckTHUNK = (deckId) => async (dispatch) => {
+	console.log("----get cards deck thunk----")
+	let response = await fetch (`/api/study_cards/deck/${deckId}`);
+	if (response.ok) {
+		const data = await response.json();
+		let normalizeData = normalizer(data)
+		// console.log("normalized data: ", normalizeData)
+		dispatch(getUsers(normalizeData));
+	}
+}
 
 // ADD a card THUNK
 export const addCardTHUNK = (cardData) => async (dispatch) => {

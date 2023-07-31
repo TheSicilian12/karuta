@@ -9,6 +9,7 @@ import ComponentStudyCardQuestion from "../ComponentStudyCardQuestion";
 import ComponentStudyCardAnswer from "../ComponentStudyCardAnswer";
 
 import { getDeckTHUNK } from "../../store/decks";
+import { getCardsDeckTHUNK } from "../../store/studyCards";
 
 import "./DeckPage.css";
 
@@ -21,10 +22,13 @@ export default function DeckPage() {
   const [displayLanguage, setDisplayLanguage] = useState("english")
 
   // const sessionUser = useSelector(state => state.session.user);
+  const deck = useSelector(state => state.decks.singleDeck?.deck)
   const cardsObj = useSelector(state => state.decks.singleDeck)
-  // console.log("decks: ", decks)
+  console.log("deck: ", deck)
+
   useEffect(() => {
-    dispatch(getDeckTHUNK(deckId))
+    // dispatch(getDeckTHUNK(deckId))
+    dispatch(getCardsDeckTHUNK(deckId))
   }, [dispatch])
 
   if (!cardsObj) return <div>No cards object</div>
@@ -41,6 +45,7 @@ export default function DeckPage() {
   return (
     <div>
       DeckPage
+      <div>name: {deck.name}</div>
       <button
         onClick={makeCard}>
         <i className="fa fa-plus"></i> Make Card

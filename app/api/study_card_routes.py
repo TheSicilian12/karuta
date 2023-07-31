@@ -42,6 +42,44 @@ def get_users_cards():
     return cardsResponse
 
 
+# GET a users cards by deck
+@study_card_routes.route('/deck/<int:deck_id>')
+@login_required
+def get_users_deck_cards(deck_id):
+    """
+    GET a users cards by deck
+    """
+    print('--------------------------get a users cards by deck-----------------------')
+
+    deck = Decks.query.get(deck_id)
+
+    # check if user is subscribed to the deck
+    # check if the user is the owner of the deck
+
+    # all users subscribed to this deck
+    deck_users = deck.users
+
+    # all cards associated with this deck
+    cards_association = deck.cards
+
+    # what about invalid responses?
+    # checking for the current user to be in the subscribed list
+    user = [user.to_dict() for user in deck_users if user.id == current_user.id]
+
+    # checking  if there is exactly 1 user in the list.
+    if len(user) != 1:
+        return {'error': 'Invalid route'}
+
+    # preparing cards
+    cards = [card.to_dict() for card in cards_association]
+
+    # response = {}
+    # response['deck'] = deck.to_dict()
+    # response['cards'] = cards
+
+    return cards
+
+
 # EDIT a study card
 @study_card_routes.route('/<int:cardId>', methods=['PUT'])
 @login_required
