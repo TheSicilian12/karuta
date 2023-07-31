@@ -59,6 +59,12 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
   }
 
   const flipCard = () => {
+    // A card needs to start covered
+    // on click it is revealed
+    // when any other card is clicked it is hidden again
+
+
+
     setDisplay(!display)
   }
   console.log("display: ", display)
