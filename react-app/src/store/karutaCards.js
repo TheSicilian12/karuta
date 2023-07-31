@@ -80,8 +80,8 @@ export const getMemoryShuffleRandomKarutaCardsTHUNK = (cardAmount) => async (dis
 		let randomCardsDouble = {};
 
 		Object.values(randomResponseNormalized).map((card) => {
-			randomCardsDouble[card.id] = { ...card, 'match': 'first' };
-			randomCardsDouble[card.id + 100] = { ...card, 'match': 'second' };
+			randomCardsDouble[card.id] = { ...card, 'match': true };
+			randomCardsDouble[card.id + 100] = { ...card, 'match': false };
 		})
 
 		// shuffle

@@ -3,7 +3,7 @@ import React from "react";
 
 import "./ComponentGameMemoryKarutaCard.css";
 
-export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardData, size, gameType, firstGuessCard, setFirstGuessCard }) {
+export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardData, size, gameType, firstGuessCard, setFirstGuessCard, matchStatus, setMatchStatus }) {
   // ComponentKarutaCard takes in:
   // 1. language
   // 2. data about the card
@@ -33,49 +33,57 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
     // first guess
     // if it does not exist, set it
     // if it does exist, check the current card id
-    if (!firstGuessCard) setFirstGuessCard(cardData.id);
-    else {
-      if (firstGuessCard === cardData.id) {
-        console.log("got the card!")
-        setFirstGuessCard("")
-      } else setFirstGuessCard("")
+
+    console.log("cardData: ", cardData)
+
+    if (!firstGuessCard) {
+      setFirstGuessCard(cardData.id);
+      setMatchStatus(cardData.match);
+    } else if (firstGuessCard === cardData.id && matchStatus !== cardData.match) {
+      console.log("got the card!")
+      setFirstGuessCard("");
+      setMatchStatus("");
+    } else {
+      setFirstGuessCard("");
+      setMatchStatus("");
     }
-  }
 
-  console.log("first guess: ", firstGuessCard)
-  // console.log("card: ", cardData.id)
+}
 
-  return (
-    <div className={`${cardDimensions} memory-game-container`}
-      onClick={answerCheck}
-    >
-      {displayLanguage === 'english' ? <div className="displayFlex-column">
+console.log("first guess: ", firstGuessCard)
+// console.log("card: ", cardData.id)
+
+return (
+  <div className={`${cardDimensions} memory-game-container`}
+    onClick={answerCheck}
+  >
+    {displayLanguage === 'english' ? <div className="displayFlex-column">
+      {/* matchHalf, match the first part of the poem with the second */}
+      {gameType === 'matchHalf' && <div>
+        {match === true && <div>
+          <div>{cardData.english[0]}</div>
+        </div>}
+        {match === false && <div>
+          <div>{cardData.english[3]}</div>
+          <div>{cardData.english[4]}</div>
+        </div>}
+      </div>}
+    </div>
+      :
+      <div className="vertical-writing-rl">
         {/* matchHalf, match the first part of the poem with the second */}
         {gameType === 'matchHalf' && <div>
-          {match === 'first' && <div>
-            <div>{cardData.english[0]}</div>
+          {match === true && <div>
+            <div>{cardData.japanese[0]}</div>
           </div>}
-          {match === 'second' && <div>
-            <div>{cardData.english[3]}</div>
-            <div>{cardData.english[4]}</div>
+          {match === false && <div>
+            <div>{cardData.japanese[3]}</div>
+            <div>{cardData.japanese[4]}</div>
           </div>}
         </div>}
       </div>
-        :
-        <div className="vertical-writing-rl">
-          {/* matchHalf, match the first part of the poem with the second */}
-          {gameType === 'matchHalf' && <div>
-            {match === 'first' && <div>
-              <div>{cardData.japanese[0]}</div>
-            </div>}
-            {match === 'second' && <div>
-              <div>{cardData.japanese[3]}</div>
-              <div>{cardData.japanese[4]}</div>
-            </div>}
-          </div>}
-        </div>
-      }
+    }
 
-    </div >
-  );
+  </div >
+);
 }

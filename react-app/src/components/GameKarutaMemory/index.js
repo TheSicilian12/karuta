@@ -10,10 +10,10 @@ import { getRandomKarutaCardsTHUNK, getShuffleRandomKarutaCardsTHUNK, getMemoryS
 export default function GameKarutaMemory({ gameSize }) {
   const dispatch = useDispatch();
   const [displayLanguage, setDisplayLanguage] = useState("english")
+  // firstGuessCard for id
+  // matchStatus for first or second half of the card
   const [firstGuessCard, setFirstGuessCard] = useState("");
-  // const [randomCardsArr, setRandomCardsArr] = useState([])
-  // const [secondGuessCard, setSecondGuessCard] = useState("");
-
+  const [matchStatus, setMatchStatus] = useState("");
 
   const randomCards = useSelector(state => state.karutaCards)
   // retreive a random set of cards depending on the game size
@@ -44,7 +44,9 @@ export default function GameKarutaMemory({ gameSize }) {
               size={'small'}
               gameType={"matchHalf"}
               firstGuessCard={firstGuessCard}
-              setFirstGuessCard={setFirstGuessCard} />
+              setFirstGuessCard={setFirstGuessCard}
+              matchStatus={matchStatus}
+              setMatchStatus={setMatchStatus} />
           </div>
         })
         }
