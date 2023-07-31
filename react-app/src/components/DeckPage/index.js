@@ -22,16 +22,17 @@ export default function DeckPage() {
   const [displayLanguage, setDisplayLanguage] = useState("english")
 
   // const sessionUser = useSelector(state => state.session.user);
-  // const deck = useSelector(state => state.decks.singleDeck?.deck)
+  const deck = useSelector(state => state.decks.singleDeck?.deck)
   const cardsObj = useSelector(state => state.studyCards)
-  // console.log("deck: ", deck)
+  console.log("deck: ", deck)
 
   useEffect(() => {
-    // dispatch(getDeckTHUNK(deckId))
+    dispatch(getDeckTHUNK(deckId))
     dispatch(getCardsDeckTHUNK(deckId))
   }, [dispatch])
 
   if (!cardsObj) return <div>No cards object</div>
+  if (!deck) return <div>No deck</div>
   const cards = cardsObj.cards
 
   const makeCard = () => {
@@ -51,7 +52,7 @@ export default function DeckPage() {
   return (
     <div>
       DeckPage
-      {/* <div>name: {deck.name}</div> */}
+      <div>name: {deck.name}</div>
       <button
         onClick={makeCard}>
         <i className="fa fa-plus"></i> Make Card
@@ -70,7 +71,7 @@ export default function DeckPage() {
       modalComponent={<OpenModalDeleteDeck deckId={deckId}/>}/>
     </div>
 
-      {Object.values(cardsObj) !== 0 ? <button
+      {Object.values(cardsObj).length !== 0 ? <button
         onClick={studyDeck}>
         Study Deck
       </button> :
