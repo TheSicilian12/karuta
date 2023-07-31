@@ -1,9 +1,10 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
 
 import "./ComponentGameMemoryKarutaCard.css";
+import { deleteMemoryKarutaCardReducerTHUNK } from "../../store/karutaCards";
 
-export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardData, size, gameType, firstGuessCard, setFirstGuessCard, matchStatus, setMatchStatus }) {
+export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardData, size, gameType, firstGuessCard, setFirstGuessCard, matchStatus, setMatchStatus, correctSelection, setCorrectSelection }) {
   // ComponentKarutaCard takes in:
   // 1. language
   // 2. data about the card
@@ -26,13 +27,21 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
 
   const { author, match } = cardData
 
-  const answerCheck = () => {
+  const AnswerCheck = () => {
     // two guesses. If the second doesn't match the first's id then fail
     // reset data
 
     // first guess
     // if it does not exist, set it
     // if it does exist, check the current card id
+    // const dispatch = useDispatch();
+
+    // useEffect(() => {
+    //   dispatch(deleteMemoryKarutaCardReducerTHUNK(firstGuessCard));
+    //   setFirstGuessCard("");
+    //   setMatchStatus("");
+    // }, [dispatch, correctSelection])
+
 
     console.log("cardData: ", cardData)
 
@@ -41,6 +50,8 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
       setMatchStatus(cardData.match);
     } else if (firstGuessCard === cardData.id && matchStatus !== cardData.match) {
       console.log("got the card!")
+      // dispatch(deleteMemoryKarutaCardReducerTHUNK(firstGuessCard));
+      setCorrectSelection(firstGuessCard);
       setFirstGuessCard("");
       setMatchStatus("");
     } else {
@@ -55,7 +66,7 @@ console.log("first guess: ", firstGuessCard)
 
 return (
   <div className={`${cardDimensions} memory-game-container`}
-    onClick={answerCheck}
+    onClick={AnswerCheck}
   >
     {displayLanguage === 'english' ? <div className="displayFlex-column">
       {/* matchHalf, match the first part of the poem with the second */}

@@ -5,7 +5,7 @@ import { shuffleObj } from "../ComponentFunctions";
 import "./GameKarutaMemory.css";
 import ComponentGameMemoryKarutaCard from "../ComponentGameMemoryKarutaCard";
 import LanguageToggle from "../LanguageToggle";
-import { getRandomKarutaCardsTHUNK, getShuffleRandomKarutaCardsTHUNK, getMemoryShuffleRandomKarutaCardsTHUNK} from "../../store/karutaCards";
+import { getRandomKarutaCardsTHUNK, getShuffleRandomKarutaCardsTHUNK, getMemoryShuffleRandomKarutaCardsTHUNK, deleteMemoryKarutaCardReducerTHUNK} from "../../store/karutaCards";
 
 export default function GameKarutaMemory({ gameSize }) {
   const dispatch = useDispatch();
@@ -14,6 +14,7 @@ export default function GameKarutaMemory({ gameSize }) {
   // matchStatus for first or second half of the card
   const [firstGuessCard, setFirstGuessCard] = useState("");
   const [matchStatus, setMatchStatus] = useState("");
+  const [correctSelection, setCorrectSelection] = useState("");
 
   const randomCards = useSelector(state => state.karutaCards)
   // retreive a random set of cards depending on the game size
@@ -21,6 +22,10 @@ export default function GameKarutaMemory({ gameSize }) {
     dispatch(getMemoryShuffleRandomKarutaCardsTHUNK(gameSize))
     // console.log("use effect")
   }, [dispatch])
+
+  useEffect(() => {
+    dispatch(deleteMemoryKarutaCardReducerTHUNK(correctSelection))
+  }, [correctSelection])
 
   if (!randomCards.random) return null
   if (randomCards.random.length === 0) return null
@@ -46,7 +51,9 @@ export default function GameKarutaMemory({ gameSize }) {
               firstGuessCard={firstGuessCard}
               setFirstGuessCard={setFirstGuessCard}
               matchStatus={matchStatus}
-              setMatchStatus={setMatchStatus} />
+              setMatchStatus={setMatchStatus}
+              correctSelection={correctSelection}
+              setCorrectSelection={setCorrectSelection} />
           </div>
         })
         }

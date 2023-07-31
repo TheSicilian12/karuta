@@ -5,6 +5,7 @@ import { karutaCardNormalizer } from "./storeFunctions"
 const LOAD_KARUTA_CARDS = 'cards/all'
 const LOAD_KARUTA_ONE = 'cards/one'
 const LOAD_RANDOM_SHUFFLE = 'cards/randomShuffle'
+const DELETE_MEMORY_GAME = 'cards/deleteMemoryGame'
 
 // dispatch
 const loadAll = (data) => ({
@@ -19,6 +20,11 @@ const loadOne = (data) => ({
 
 const loadRandomShuffle = (data) => ({
 	type: LOAD_RANDOM_SHUFFLE,
+	payload: data
+})
+
+const deleteMemoryGame = (data) => ({
+	type: DELETE_MEMORY_GAME,
 	payload: data
 })
 
@@ -92,6 +98,13 @@ export const getMemoryShuffleRandomKarutaCardsTHUNK = (cardAmount) => async (dis
 	}
 }
 
+// DELETE a memory game card from the reducer
+export const deleteMemoryKarutaCardReducerTHUNK = (cardId) => async (dispatch) => {
+	// random is an array
+	console.log("delete memory karuta: ", cardId)
+	dispatch(deleteMemoryGame(cardId));
+}
+
 const initialState = {};
 
 export default function karutaReducer(state = initialState, action) {
@@ -107,6 +120,17 @@ export default function karutaReducer(state = initialState, action) {
 		case LOAD_RANDOM_SHUFFLE: {
 			const newState = { random: action.payload }
 			return newState
+		}
+		case DELETE_MEMORY_GAME: {
+			if (!action.payload) return state
+
+			console.log("delete memory game")
+			console.log("action.payload: ", action.payload)
+			console.log("state: ", state.random)
+			let arr = state.random
+			let newState = arr.filter(card => card.id !== action.payload);
+			console.log("new State: ", newState)
+			return { random: newState }
 		}
 		default:
 			return state;
