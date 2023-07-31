@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 
 import "./ComponentGameMemoryKarutaCard.css";
@@ -18,7 +18,7 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
   // game:
   // will need to display the different sets of cards, so render double the number of cards
   // will need to be able to have the cards displayed in a random order together
-
+  const [display, setDisplay] = useState(false)
 
   if (!cardData) return null
 
@@ -42,9 +42,6 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
     //   setMatchStatus("");
     // }, [dispatch, correctSelection])
 
-
-    console.log("cardData: ", cardData)
-
     if (!firstGuessCard) {
       setFirstGuessCard(cardData.id);
       setMatchStatus(cardData.match);
@@ -59,42 +56,52 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
       setMatchStatus("");
     }
 
-}
+  }
 
-console.log("first guess: ", firstGuessCard)
-// console.log("card: ", cardData.id)
+  const flipCard = () => {
+    setDisplay(!display)
+  }
+  console.log("display: ", display)
+  // console.log("first guess: ", firstGuessCard)
+  // console.log("card: ", cardData.id)
 
-return (
-  <div className={`${cardDimensions} memory-game-container`}
-    onClick={AnswerCheck}
-  >
-    {displayLanguage === 'english' ? <div className="displayFlex-column">
-      {/* matchHalf, match the first part of the poem with the second */}
-      {gameType === 'matchHalf' && <div>
-        {match === true && <div>
-          <div>{cardData.english[0]}</div>
-        </div>}
-        {match === false && <div>
-          <div>{cardData.english[3]}</div>
-          <div>{cardData.english[4]}</div>
-        </div>}
-      </div>}
+  return (
+    <div
+      onClick={() => flipCard()}>
+      {display !== true ? <div className={`${cardDimensions} memory-game-container memory-game-container-card-back`}></div> :
+
+        <div className={`${cardDimensions} memory-game-container`}
+          onClick={AnswerCheck}
+        >
+          {displayLanguage === 'english' ? <div className="displayFlex-column">
+            {/* matchHalf, match the first part of the poem with the second */}
+            {gameType === 'matchHalf' &&
+              <div>
+                {match === true && <div>
+                  <div>{cardData.english[0]}</div>
+                </div>}
+                {match === false && <div>
+                  <div>{cardData.english[3]}</div>
+                  <div>{cardData.english[4]}</div>
+                </div>}
+              </div>}
+          </div>
+            :
+            <div className="vertical-writing-rl">
+              {/* matchHalf, match the first part of the poem with the second */}
+              {gameType === 'matchHalf' && <div>
+                {match === true && <div>
+                  <div>{cardData.japanese[0]}</div>
+                </div>}
+                {match === false && <div>
+                  <div>{cardData.japanese[3]}</div>
+                  <div>{cardData.japanese[4]}</div>
+                </div>}
+              </div>}
+            </div>
+          }
+        </div >
+      }
     </div>
-      :
-      <div className="vertical-writing-rl">
-        {/* matchHalf, match the first part of the poem with the second */}
-        {gameType === 'matchHalf' && <div>
-          {match === true && <div>
-            <div>{cardData.japanese[0]}</div>
-          </div>}
-          {match === false && <div>
-            <div>{cardData.japanese[3]}</div>
-            <div>{cardData.japanese[4]}</div>
-          </div>}
-        </div>}
-      </div>
-    }
-
-  </div >
-);
+  );
 }

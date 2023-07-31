@@ -1,3 +1,7 @@
 .memory-game-container:hover {
     border: 10px solid yellow;
 }
+
+.memory-game-container-card-back {
+    background-color: green;
+}
