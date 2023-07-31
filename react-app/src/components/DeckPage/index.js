@@ -22,9 +22,9 @@ export default function DeckPage() {
   const [displayLanguage, setDisplayLanguage] = useState("english")
 
   // const sessionUser = useSelector(state => state.session.user);
-  const deck = useSelector(state => state.decks.singleDeck?.deck)
-  const cardsObj = useSelector(state => state.decks.singleDeck)
-  console.log("deck: ", deck)
+  // const deck = useSelector(state => state.decks.singleDeck?.deck)
+  const cardsObj = useSelector(state => state.studyCards)
+  // console.log("deck: ", deck)
 
   useEffect(() => {
     // dispatch(getDeckTHUNK(deckId))
@@ -42,10 +42,16 @@ export default function DeckPage() {
     history.push(`/study/${deckId}`)
   }
 
+  console.log("cardsObj: ", cardsObj)
+
+  Object.values(cardsObj).map((card) => {
+    console.log("card: ", card)
+  })
+
   return (
     <div>
       DeckPage
-      <div>name: {deck.name}</div>
+      {/* <div>name: {deck.name}</div> */}
       <button
         onClick={makeCard}>
         <i className="fa fa-plus"></i> Make Card
@@ -64,7 +70,7 @@ export default function DeckPage() {
       modalComponent={<OpenModalDeleteDeck deckId={deckId}/>}/>
     </div>
 
-      {cardsObj?.cards[0] ? <button
+      {Object.values(cardsObj) !== 0 ? <button
         onClick={studyDeck}>
         Study Deck
       </button> :
@@ -75,7 +81,7 @@ export default function DeckPage() {
       <div>
         Cards
         {
-          cards.map((card) => {
+          Object.values(cardsObj).map((card) => {
             return (
               <div className="displayFlex">
                 <ComponentStudyCardQuestion cardData={card} deckId={deckId} />
