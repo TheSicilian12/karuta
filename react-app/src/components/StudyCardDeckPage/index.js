@@ -32,8 +32,8 @@ export default function StudyCardDeckPage() {
   const cards = cardsObj.cards
 
 
-  console.log("cardsObj: ", cardsObj.cards)
-  console.log("displayCard: ", displayCard)
+  // console.log("cardsObj: ", cardsObj.cards)
+  // console.log("displayCard: ", displayCard)
 
   return (
     <div>

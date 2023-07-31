@@ -184,4 +184,7 @@ def delete_card_deck(card_id):
     db.session.delete(card)
     db.session.commit()
 
-    return {"message": "card deleted"}
+    return {
+        "message": "deleted",
+        "card_id": f'{card_id}'
+        }

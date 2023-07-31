@@ -3,6 +3,7 @@ import { normalizer } from "./storeFunctions";
 // constants
 const GET_USERS = 'cards/users'
 const EDIT_ONE = 'cards/edit'
+const DELETE_ONE = 'cards/delete'
 
 // dispatch
 const getUsers = (data) => ({
@@ -12,6 +13,11 @@ const getUsers = (data) => ({
 
 const editOne = (data) => ({
 	type: EDIT_ONE,
+	payload: data
+})
+
+const deleteOne = (data) => ({
+	type: DELETE_ONE,
 	payload: data
 })
 
@@ -178,7 +184,8 @@ export const deleteCardTHUNK = (cardId) => async (dispatch) => {
     })
 	if (response.ok) {
 		const data = await response.json();
-		console.log("data: ", data)
+		// console.log("data: ", data)
+		dispatch(deleteOne(data.card_id));
 	}
 }
 
@@ -193,6 +200,13 @@ export default function studyCardReducer(state = initialState, action) {
 		}
 		case EDIT_ONE: {
 			const newState = { ...action.payload }
+			return newState
+		}
+		case DELETE_ONE: {
+			console.log(action.payload)
+			// console.log("state: ", state)
+			delete state[`${action.payload}`]
+			const newState = {...state}
 			return newState
 		}
 		default:
