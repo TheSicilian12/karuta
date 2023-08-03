@@ -42,7 +42,7 @@ export default function GameKarutaMemory({ gameSize }) {
       <div>
         {randomCardsArr.map((card) => {
           key++;
-          return <div key={key}>
+          return <div className="karuta-card-container" key={key}>
             <ComponentGameMemoryKarutaCard
               displayLanguage={displayLanguage}
               cardData={card}

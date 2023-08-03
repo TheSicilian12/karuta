@@ -96,9 +96,6 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
       onClick={() => flipCard()}>
       {display !== true ? <div className={`${cardDimensions} memory-game-container memory-game-container-card-back`}></div> :
 
-
-
-
         <div className={`${cardDimensions} memory-game-container`}
           onClick={AnswerCheck}
         >

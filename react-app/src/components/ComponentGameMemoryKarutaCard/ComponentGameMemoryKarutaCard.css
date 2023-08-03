@@ -4,4 +4,5 @@
 
 .memory-game-container-card-back {
     background-color: green;
+    border: 1px solid purple;
 }

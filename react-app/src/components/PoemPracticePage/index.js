@@ -9,7 +9,7 @@ export default function PoemPracticePage() {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="poem-practice-memory-game">
     Poem Practice
     <GameKarutaMemory gameSize={5}/>
     </div>
