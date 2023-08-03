@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 
 import "./ComponentGameMemoryKarutaCard.css";
@@ -18,7 +18,26 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
   // game:
   // will need to display the different sets of cards, so render double the number of cards
   // will need to be able to have the cards displayed in a random order together
+  const cardRef = useRef();
+
   const [display, setDisplay] = useState(false)
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (cardRef.current && !cardRef.current.contains(event.target)) {
+        setDisplay(false);
+      }
+    }
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    }
+
+  }, []);
+
+
 
   if (!cardData) return null
 
@@ -72,9 +91,13 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
   // console.log("card: ", cardData.id)
 
   return (
+    <div ref={cardRef} onClick={() => flipCard()}>
     <div
       onClick={() => flipCard()}>
       {display !== true ? <div className={`${cardDimensions} memory-game-container memory-game-container-card-back`}></div> :
+
+
+
 
         <div className={`${cardDimensions} memory-game-container`}
           onClick={AnswerCheck}
@@ -108,6 +131,7 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
           }
         </div >
       }
+    </div>
     </div>
   );
 }
