@@ -1,3 +1,10 @@
 .game-memory-container {
     border: 1px solid green;
 }
+
+.game-memory-layout {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}

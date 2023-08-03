@@ -16,6 +16,10 @@ export default function GameKarutaMemory({ gameSize }) {
   const [matchStatus, setMatchStatus] = useState("");
   const [correctSelection, setCorrectSelection] = useState("");
 
+  console.log("firstGuessCard: ", firstGuessCard)
+  
+
+
   const randomCards = useSelector(state => state.karutaCards)
   // retreive a random set of cards depending on the game size
   useEffect(() => {
@@ -39,7 +43,7 @@ export default function GameKarutaMemory({ gameSize }) {
       Hello
       Karuta Memory
       <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
-      <div>
+      <div className="game-memory-layout">
         {randomCardsArr.map((card) => {
           key++;
           return <div className="karuta-card-container" key={key}>

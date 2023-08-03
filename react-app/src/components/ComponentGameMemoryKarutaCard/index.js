@@ -55,12 +55,7 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
     // if it does exist, check the current card id
     // const dispatch = useDispatch();
 
-    // useEffect(() => {
-    //   dispatch(deleteMemoryKarutaCardReducerTHUNK(firstGuessCard));
-    //   setFirstGuessCard("");
-    //   setMatchStatus("");
-    // }, [dispatch, correctSelection])
-
+    console.log("answer check")
     if (!firstGuessCard) {
       setFirstGuessCard(cardData.id);
       setMatchStatus(cardData.match);
@@ -82,11 +77,13 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
     // on click it is revealed
     // when any other card is clicked it is hidden again
 
-
+    console.log("flip card")
 
     setDisplay(!display)
+
+    if (!display) AnswerCheck();
   }
-  console.log("display: ", display)
+  // console.log("display: ", display)
   // console.log("first guess: ", firstGuessCard)
   // console.log("card: ", cardData.id)
 
@@ -97,7 +94,7 @@ export default function ComponentGameMemoryKarutaCard({ displayLanguage, cardDat
       {display !== true ? <div className={`${cardDimensions} memory-game-container memory-game-container-card-back`}></div> :
 
         <div className={`${cardDimensions} memory-game-container`}
-          onClick={AnswerCheck}
+          // onClick={AnswerCheck}
         >
           {displayLanguage === 'english' ? <div className="displayFlex-column">
             {/* matchHalf, match the first part of the poem with the second */}
