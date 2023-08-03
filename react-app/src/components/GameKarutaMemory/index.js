@@ -16,8 +16,8 @@ export default function GameKarutaMemory({ gameSize }) {
   const [matchStatus, setMatchStatus] = useState("");
   const [correctSelection, setCorrectSelection] = useState("");
 
-  console.log("firstGuessCard: ", firstGuessCard)
-  
+  // console.log("firstGuessCard: ", firstGuessCard)
+
 
 
   const randomCards = useSelector(state => state.karutaCards)

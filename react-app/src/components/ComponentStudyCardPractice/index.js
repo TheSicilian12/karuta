@@ -11,7 +11,7 @@ import { getDeckTHUNK } from "../../store/decks";
 
 import "./ComponentStudyCardPractice.css";
 
-export default function ComponentStudyCardPractice({cards}) {
+export default function ComponentStudyCardPractice({cards, study}) {
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -31,7 +31,7 @@ export default function ComponentStudyCardPractice({cards}) {
   return (
     <div>
       card
-      <ComponentStudyCardQuestion cardData={cards[randNum]} deckId={""} />
+      <ComponentStudyCardQuestion cardData={cards[randNum]} deckId={""} study={study} />
       <button
         onClick={() => newCard()}>
         Next
@@ -44,8 +44,8 @@ export default function ComponentStudyCardPractice({cards}) {
         onClick={() => setShowLongAnswer(!showLongAnswer)}>
         show long answer
       </button>
-      {showAnswer === true && <ComponentStudyCardAnswer cardData={cards[randNum]} deckId={""} />}
-      {showLongAnswer === true && <ComponentStudyCardAnswer cardData={cards[randNum]} deckId={""} longAnswer={true} />}
+      {showAnswer === true && <ComponentStudyCardAnswer cardData={cards[randNum]} deckId={""} study={study}/>}
+      {showLongAnswer === true && <ComponentStudyCardAnswer cardData={cards[randNum]} deckId={""} longAnswer={true} study={study}/>}
     </div>
   );
 }

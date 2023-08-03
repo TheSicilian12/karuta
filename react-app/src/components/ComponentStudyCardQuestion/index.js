@@ -8,25 +8,25 @@ import OpenModalDeleteStudyCard from "../OpenModalDeleteStudyCard";
 import "./ComponentStudyCardQuestion.css";
 import "../UniversalCSS.css";
 
-export default function ComponentStudyCardQuestion({ cardData, deckId }) {
+export default function ComponentStudyCardQuestion({ cardData, deckId, study }) {
   // ComponentStudyCard takes in:
   // 1. study card data
-
+  
   return (
     <div className="study-card-question-container break-word">
       <h2>
         {cardData.question}
       </h2>
 
-      <OpenModalButton
+      {!study && <OpenModalButton
         className="study-card-question-edit-icon"
         buttonText={<i className="fa fa-pen"></i>}
-        modalComponent={<OpenModalEditStudyCard cardData={cardData} editType={'question'} deckId={deckId} />} />
+        modalComponent={<OpenModalEditStudyCard cardData={cardData} editType={'question'} deckId={deckId} />} />}
 
-      <OpenModalButton
+      {!study && <OpenModalButton
         className="study-card-question-edit-icon"
         buttonText={"Delete study card"}
-        modalComponent={<OpenModalDeleteStudyCard cardId={cardData.id} />} />
+        modalComponent={<OpenModalDeleteStudyCard cardId={cardData.id} />} />}
     </div>
   );
 }

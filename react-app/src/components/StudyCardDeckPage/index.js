@@ -38,7 +38,7 @@ export default function StudyCardDeckPage() {
   return (
     <div>
       Study cards
-      <ComponentStudyCardPractice cards={cardsObj.cards}/>
+      <ComponentStudyCardPractice cards={cardsObj.cards} study={true}/>
 
     </div>
   );
