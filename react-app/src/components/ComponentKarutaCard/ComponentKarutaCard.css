@@ -1,5 +1,5 @@
 .karuta-card-container {
-    border: 5px solid green;
+    border: 1px solid green;
     height: 200px;
     width: 150px;
 }
@@ -7,7 +7,7 @@
 .karuta-card-container-large {
     display: flex;
     justify-content: center;
-    border: 5px solid green;
+    border: 1px solid green;
     height: 300px;
     width: 200px;
 }
