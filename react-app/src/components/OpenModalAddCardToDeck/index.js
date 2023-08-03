@@ -7,6 +7,8 @@ import '../UniversalCSS.css'
 
 import { getDeckTHUNK } from '../../store/decks';
 import { getCardsDivideTHUNK} from '../../store/studyCards';
+import { getCardsDeckTHUNK } from "../../store/studyCards";
+
 import ComponentStudyCardPreview from '../ComponentStudyCardPreview';
 
 function OpenModalAddCardToDeck({
@@ -34,7 +36,7 @@ function OpenModalAddCardToDeck({
   // deck - cards in the deck
 
   useEffect(() => {
-    dispatch(getCardsDivideTHUNK(deckId));
+    // dispatch(getCardsDivideTHUNK(deckId));
     dispatch(getDeckTHUNK(deckId));
   }, [dispatch, cardsAll])
 
@@ -46,8 +48,8 @@ function OpenModalAddCardToDeck({
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-
+    console.log("test")
+    // dispatch(getCardsDeckTHUNK(deckId))
     closeModal();
   }
 

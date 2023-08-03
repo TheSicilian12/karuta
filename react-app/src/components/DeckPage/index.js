@@ -9,7 +9,7 @@ import ComponentStudyCardQuestion from "../ComponentStudyCardQuestion";
 import ComponentStudyCardAnswer from "../ComponentStudyCardAnswer";
 
 import { getDeckTHUNK } from "../../store/decks";
-import { getCardsDeckTHUNK } from "../../store/studyCards";
+import { getCardsDeckTHUNK, getCardsDivideTHUNK } from "../../store/studyCards";
 
 import "./DeckPage.css";
 
@@ -28,12 +28,16 @@ export default function DeckPage() {
 
   useEffect(() => {
     dispatch(getDeckTHUNK(deckId))
-    dispatch(getCardsDeckTHUNK(deckId))
+    // dispatch(getCardsDeckTHUNK(deckId))
+    dispatch(getCardsDivideTHUNK(deckId));
   }, [dispatch])
 
   if (!cardsObj) return <div>No cards object</div>
+  if (!cardsObj.inDeck) return <div>This deck has no cards</div>
   if (!deck) return <div>No deck</div>
-  const cards = cardsObj.cards
+  const cards = cardsObj.inDeck
+
+  console.log("cards: ", cards)
 
   const makeCard = () => {
     history.push(`/makeCard/${deckId}`)
@@ -42,12 +46,6 @@ export default function DeckPage() {
   const studyDeck = () => {
     history.push(`/study/${deckId}`)
   }
-
-  console.log("cardsObj: ", cardsObj)
-
-  Object.values(cardsObj).map((card) => {
-    console.log("card: ", card)
-  })
 
   return (
     <div>
@@ -71,7 +69,7 @@ export default function DeckPage() {
       modalComponent={<OpenModalDeleteDeck deckId={deckId}/>}/>
     </div>
 
-      {Object.values(cardsObj).length !== 0 ? <button
+      {Object.values(cards).length !== 0 ? <button
         onClick={studyDeck}>
         Study Deck
       </button> :
@@ -82,7 +80,7 @@ export default function DeckPage() {
       <div>
         Cards
         {
-          Object.values(cardsObj).map((card) => {
+          Object.values(cards).map((card) => {
             return (
               <div className="displayFlex">
                 <ComponentStudyCardQuestion cardData={card} deckId={deckId} />
