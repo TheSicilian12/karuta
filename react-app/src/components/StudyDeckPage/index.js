@@ -39,8 +39,6 @@ export default function StudyDeckPage() {
     history.push(`/makeDeck`)
   }
 
-
-
   return (
     <div className="study-deck-page-container">
       <ComponentPageHeader title={"Your Study Page"} image={yourStudyPage} />
@@ -56,13 +54,20 @@ export default function StudyDeckPage() {
           Cards</div>
       </div>
 
-      <h1>Your Decks</h1>
-      <button
+      {displaySelection && <h1>Your Decks</h1>}
+      {!displaySelection && <h1>Your Cards</h1>}
+
+      {displaySelection && <button
         onClick={makeDeck}>
         <i className="fa fa-plus"></i> New Deck
-      </button>
+      </button>}
 
-      <div className="study-deck-page-deck-container">
+      {!displaySelection && <button
+        onClick={makeCard}>
+        <i className="fa fa-plus"></i> New Card
+      </button>}
+
+      {displaySelection && <div className="study-deck-page-deck-container">
         {Object.values(decks).map((deck) => {
           return (
             <NavLink className="study-deck-page-deck-navLink" to={`/studyDecks/${deck.id}`}>
@@ -72,15 +77,9 @@ export default function StudyDeckPage() {
             </NavLink>
           )
         })}
-      </div>
+      </div>}
 
-
-      <button
-        onClick={makeCard}>
-        <i className="fa fa-plus"></i> New Card
-      </button>
-
-      {/* {Object.values(cards).map((card) => {
+      {!displaySelection && Object.values(cards).map((card) => {
         return (
           <div>
               <ComponentStudyCardQuestion cardData={card} deckId={""} />
@@ -88,7 +87,7 @@ export default function StudyDeckPage() {
 
           </div>
         )
-      })} */}
+      })}
 
     </div>
   );
