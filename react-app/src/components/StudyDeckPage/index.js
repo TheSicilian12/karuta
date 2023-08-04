@@ -34,37 +34,39 @@ export default function StudyDeckPage() {
   }
 
   return (
-    <div>
-      StudyDeckPage
+    <div className="study-deck-page-container">
+      <h1>Choose your deck</h1>
       {Object.values(decks).map((deck) => {
         return (
           <div>
-            <NavLink to={`/studyDecks/${deck.id}`}>
-              {deck.name}
+            <NavLink className="study-deck-page-deck" to={`/studyDecks/${deck.id}`}>
+              {/* <div className="study-deck-page-deck"> */}
+                - {deck.name}
+                {/* </div> */}
             </NavLink>
           </div>
         )
       })}
-      cards
-      <button
-        onClick={makeCard}>
-        <i className="fa fa-plus"></i> Make Card
-      </button>
+
       <button
         onClick={makeDeck}>
-        <i className="fa fa-plus"></i> Make Deck
+        <i className="fa fa-plus"></i> Make a Deck
       </button>
-      {Object.values(cards).map((card) => {
+
+      <button
+        onClick={makeCard}>
+        <i className="fa fa-plus"></i> Make a Card
+      </button>
+
+      {/* {Object.values(cards).map((card) => {
         return (
           <div>
-            {/* <NavLink to={`/studyDecks/${deck.id}`}> */}
-              {card.question}
               <ComponentStudyCardQuestion cardData={card} deckId={""} />
               <ComponentStudyCardAnswer cardData={card} deckId={""}/>
-            {/* </NavLink> */}
+
           </div>
         )
-      })}
+      })} */}
 
     </div>
   );

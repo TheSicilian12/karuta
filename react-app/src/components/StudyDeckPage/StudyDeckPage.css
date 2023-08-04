@@ -1,0 +1,11 @@
+.study-deck-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.study-deck-page-deck {
+    font-size: x-large;
+    text-decoration: none;
+}
