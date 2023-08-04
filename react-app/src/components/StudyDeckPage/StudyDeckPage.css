@@ -5,9 +5,18 @@
     align-items: center;
 }
 
-.study-deck-page-deck {
+.study-deck-page-deck-navLink {
     font-size: x-large;
     text-decoration: none;
+}
+
+.study-deck-page-deck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid green;
+    width: 100px;
+    height: 100px;
 }
 
 .study-deck-page-toggle-container {

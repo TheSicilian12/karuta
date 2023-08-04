@@ -61,10 +61,10 @@ export default function StudyDeckPage() {
       {Object.values(decks).map((deck) => {
         return (
           <div>
-            <NavLink className="study-deck-page-deck" to={`/studyDecks/${deck.id}`}>
-              {/* <div className="study-deck-page-deck"> */}
-                - {deck.name}
-                {/* </div> */}
+            <NavLink className="study-deck-page-deck-navLink" to={`/studyDecks/${deck.id}`}>
+              <div className="study-deck-page-deck">
+                {deck.name}
+              </div>
             </NavLink>
           </div>
         )
