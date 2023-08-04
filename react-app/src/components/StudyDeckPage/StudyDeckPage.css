@@ -20,14 +20,17 @@
     text-decoration: underline;
     font-size: x-large;
     font-weight: 100;
+    cursor: pointer;
 }
 
 .study-deck-page-toggle-notSelected {
     color: gray;
     font-size: x-large;
     font-weight: 100;
+    cursor: pointer;
 }
 
 .study-deck-page-cardDeck-buttons {
+    margin-top: 5px;
     margin-left: 10px;
 }
