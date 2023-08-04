@@ -44,11 +44,11 @@ export default function StudyDeckPage() {
       <ComponentPageHeader title={"Your Study Page"} image={yourStudyPage} />
 
       <div className="study-deck-page-toggle-container">
-        <div className={displaySelection === true ? `${displayCSS} study-deck-page-cardDeck-buttons`
+        <div className={displaySelection ? `${displayCSS} study-deck-page-cardDeck-buttons`
           : "study-deck-page-toggle-notSelected study-deck-page-cardDeck-buttons"}
           onClick={() => setDisplaySelection(true)}>
           Decks</div>
-        <div className={displaySelection === false ? `${displayCSS} study-deck-page-cardDeck-buttons`
+        <div className={!displaySelection ? `${displayCSS} study-deck-page-cardDeck-buttons`
           : "study-deck-page-toggle-notSelected study-deck-page-cardDeck-buttons"}
           onClick={() => setDisplaySelection(false)}>
           Cards</div>
