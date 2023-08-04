@@ -1,5 +1,5 @@
 .component-page-header-container {
-  border: 5px solid green;
+  border: 1px solid black;
   width: 100vw;
   height: 70px;
   overflow: hidden;
@@ -7,7 +7,8 @@
 }
 
 .component-page-header-title {
-  font-size: x-large;
+  font-size: xx-large;
+  font-weight: 900;
   margin: 10px;
   position: absolute;
   top: 0px;
