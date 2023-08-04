@@ -14,8 +14,8 @@ export default function OneHundredPoemsPage() {
   const dispatch = useDispatch();
   const [displayLanguage, setDisplayLanguage] = useState("english")
   const [startNum, setStartNum] = useState(1);
-  const [endNum, setEndNum] = useState(100)
-  const [currentSelection, setCurrentSelection] = useState("1 - 100")
+  const [endNum, setEndNum] = useState(10)
+  const [currentSelection, setCurrentSelection] = useState("1 - 10")
 
   const cards = useSelector(state => state.karutaCards)
 
@@ -191,7 +191,7 @@ export default function OneHundredPoemsPage() {
             className="poems-page-poem-margin "
             key={card.id}>
             <ComponentPoem language={displayLanguage} cardData={card} />
-            
+
           </div>
         )}
       </div>
