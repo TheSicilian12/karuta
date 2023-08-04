@@ -10,6 +10,11 @@
     text-decoration: none;
 }
 
+.study-deck-page-toggle-container {
+    display: flex;
+    width: 100vw;
+}
+
 .study-deck-page-toggle-selected {
     color: black;
     text-decoration: underline;
@@ -21,4 +26,8 @@
     color: gray;
     font-size: x-large;
     font-weight: 100;
+}
+
+.study-deck-page-cardDeck-buttons {
+    margin-left: 10px;
 }
