@@ -5,6 +5,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import OpenModalButton from "../OpenModalButton";
 import OpenModalAddCardToDeck from "../OpenModalAddCardToDeck";
 import OpenModalDeleteDeck from "../OpenModalDeleteDeck";
+import OpenModalEditDeck from "../OpenModalEditDeck";
 import ComponentStudyCardQuestion from "../ComponentStudyCardQuestion";
 import ComponentStudyCardAnswer from "../ComponentStudyCardAnswer";
 
@@ -51,30 +52,39 @@ export default function DeckPage() {
     <div>
       DeckPage
       <div>name: {deck.name}</div>
+
+      <div>
+        <OpenModalButton
+          className="study-card-question-edit-icon"
+          buttonText={<i className="fa fa-pen"></i>}
+          modalComponent={<OpenModalEditDeck deck={deck} />} />
+      </div>
+
+
       <button
         onClick={makeCard}>
         <i className="fa fa-plus"></i> Make Card
       </button>
 
-    <div>
-      <OpenModalButton
-      className="study-card-question-edit-icon"
-      buttonText={<i className="fa fa-plus"></i>}
-      modalComponent={<OpenModalAddCardToDeck deckId={deckId}/>}/>
-    </div>
-    <div>
-      <OpenModalButton
-      className="study-card-question-edit-icon"
-      buttonText={<i className="fa fa-minus">Delete</i>}
-      modalComponent={<OpenModalDeleteDeck deckId={deckId}/>}/>
-    </div>
+      <div>
+        <OpenModalButton
+          className="study-card-question-edit-icon"
+          buttonText={<i className="fa fa-plus"></i>}
+          modalComponent={<OpenModalAddCardToDeck deckId={deckId} />} />
+      </div>
+      <div>
+        <OpenModalButton
+          className="study-card-question-edit-icon"
+          buttonText={<i className="fa fa-minus">Delete</i>}
+          modalComponent={<OpenModalDeleteDeck deckId={deckId} />} />
+      </div>
 
       {Object.values(cards).length !== 0 ? <button
         onClick={studyDeck}>
         Study Deck
       </button> :
-      <div>
-        This deck has no cards
+        <div>
+          This deck has no cards
         </div>}
 
       <div>
@@ -84,7 +94,7 @@ export default function DeckPage() {
             return (
               <div className="displayFlex">
                 <ComponentStudyCardQuestion cardData={card} deckId={deckId} />
-                <ComponentStudyCardAnswer cardData={card} deckId={deckId}/>
+                <ComponentStudyCardAnswer cardData={card} deckId={deckId} />
               </div>
             )
           })

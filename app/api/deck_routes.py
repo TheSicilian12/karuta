@@ -101,6 +101,36 @@ def post_deck():
         return {'error': 'Invlaid route'}
 
 
+# EDIT a deck
+@deck_routes.route('/<int:deck_id>', methods=['PUT'])
+@login_required
+def edit_deck(deck_id):
+    """
+    EDIT a deck
+    """
+    print("---------------------------------edit a deck-------------------------------------")
+
+    deck = Decks.query.get(deck_id)
+
+    if not deck:
+        return {'error': 'not a valid route'}
+
+    owner = deck.to_dict()["owner_id"]
+    if owner != current_user.id:
+        return {'error': 'not a valid route'}
+
+    form = DeckForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    if form.validate_on_submit():
+        deck.name = form.data["name"]
+
+        db.session.commit()
+        return {"deck": deck.to_dict()}
+    else:
+        return {"error": form.errors}
+
+
 # DELETE a deck
 @deck_routes.route('/<int:deck_id>', methods=['DELETE'])
 @login_required

@@ -55,6 +55,27 @@ export const addDeckTHUNK = (payload) => async (dispatch) => {
 	}
 }
 
+// EDIT a deck THUNK
+export const editDeckTHUNK = (payload) => async (dispatch) => {
+	console.log("----edit deck thunk----")
+
+	const {deckId} = payload;
+	
+	const response = await fetch (`/api/decks/${deckId}`, {
+		method: "PUT",
+        headers: {
+            "Content-Type": "application/json",
+        },
+		body: JSON.stringify(
+			payload
+		)
+	})
+	if (response.ok) {
+		const data = await response.json();
+		console.log("data: ", data)
+	}
+}
+
 // DELETE a deck THUNK
 export const deleteDeckTHUNK = (deckId) => async (dispatch) => {
 	console.log("----delete deck thunk----")
