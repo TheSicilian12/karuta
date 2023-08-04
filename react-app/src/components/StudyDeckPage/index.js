@@ -56,6 +56,11 @@ export default function StudyDeckPage() {
           Cards</div>
       </div>
 
+      <h1>Your Decks</h1>
+      <button
+        onClick={makeDeck}>
+        <i className="fa fa-plus"></i> New Deck
+      </button>
 
       <div className="study-deck-page-deck-container">
         {Object.values(decks).map((deck) => {
@@ -69,14 +74,10 @@ export default function StudyDeckPage() {
         })}
       </div>
 
-      <button
-        onClick={makeDeck}>
-        <i className="fa fa-plus"></i> Make a Deck
-      </button>
 
       <button
         onClick={makeCard}>
-        <i className="fa fa-plus"></i> Make a Card
+        <i className="fa fa-plus"></i> New Card
       </button>
 
       {/* {Object.values(cards).map((card) => {
