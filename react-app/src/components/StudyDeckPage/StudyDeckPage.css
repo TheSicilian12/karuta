@@ -23,10 +23,13 @@
 }
 
 .study-deck-page-deck-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 690px;
 }
 
 .study-deck-page-toggle-container {
