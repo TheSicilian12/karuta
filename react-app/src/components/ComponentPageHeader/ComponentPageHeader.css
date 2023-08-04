@@ -1,5 +1,19 @@
-.nav-bar-container {
-  display: flex;
-  border: 1px solid green;
-  height: 50px;
+.component-page-header-container {
+  border: 5px solid green;
+  width: 100vw;
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+}
+
+.component-page-header-title {
+  font-size: x-large;
+  margin: 10px;
+  position: absolute;
+  top: 0px;
+}
+
+.component-page-background-image {
+  width: 100%;
+  position: relative;
 }

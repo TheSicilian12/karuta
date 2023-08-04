@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useHistory } from 'react-router-dom';
+
+import yourStudyPage from "../../resources/images/yourStudyPage.jpg";
 
 import { getCurrentUserDecksTHUNK } from "../../store/decks";
 import { getCardsTHUNK } from "../../store/studyCards";
@@ -19,6 +21,8 @@ export default function StudyDeckPage() {
   const decks = useSelector(state => state.decks)
   const cards = useSelector(state => state.studyCards)
 
+  const [display, setDisplay] = useState("decks")
+
   useEffect(() => {
     dispatch(getCurrentUserDecksTHUNK(sessionUser.id));
     dispatch(getCardsTHUNK());
@@ -34,9 +38,13 @@ export default function StudyDeckPage() {
     history.push(`/makeDeck`)
   }
 
+
+
   return (
     <div className="study-deck-page-container">
-      <ComponentPageHeader title={"Your Study Decks"} subTitle={"test"}/>
+      <ComponentPageHeader title={"Your Study Page"} image={yourStudyPage}/>
+
+    {/* <img src={yourStudyPage} /> */}
 
       {Object.values(decks).map((deck) => {
         return (

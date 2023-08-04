@@ -5,17 +5,16 @@ import { useSelector, useDispatch } from 'react-redux';
 import './ComponentPageHeader.css';
 // import OpenModal from '../OpenModal';
 
-function ComponentPageHeader({ title, subTitle }) {
+function ComponentPageHeader({ title, image }) {
 	const ulRef = useRef();
 	const history = useHistory();
 
 	return (
-		<div>
-			<div>
+		<div className="component-page-header-container">
+			<img src={image}
+			className="component-page-background-image" />
+			<div className="component-page-header-title">
 				{title}
-			</div>
-			<div>
-				{subTitle}
 			</div>
 		</div>
 	);
