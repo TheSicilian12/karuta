@@ -9,6 +9,7 @@ import ComponentStudyCardQuestion from "../ComponentStudyCardQuestion";
 import ComponentStudyCardAnswer from "../ComponentStudyCardAnswer";
 
 import "./StudyDeckPage.css";
+import ComponentPageHeader from "../ComponentPageHeader";
 
 export default function StudyDeckPage() {
   const dispatch = useDispatch();
@@ -35,7 +36,8 @@ export default function StudyDeckPage() {
 
   return (
     <div className="study-deck-page-container">
-      <h1>Choose your deck</h1>
+      <ComponentPageHeader title={"Your Study Decks"} subTitle={"test"}/>
+
       {Object.values(decks).map((deck) => {
         return (
           <div>
