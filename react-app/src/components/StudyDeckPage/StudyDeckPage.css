@@ -20,7 +20,7 @@
     overflow: hidden;
     /* overflow: scroll; */
     padding: 5px;
-    margin-bottom: 15px;
+    margin: 5px;
 }
 
 .study-deck-page-deck-container {
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 690px;
 }
