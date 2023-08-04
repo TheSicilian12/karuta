@@ -13,8 +13,12 @@
 .study-deck-page-toggle-selected {
     color: black;
     text-decoration: underline;
+    font-size: x-large;
+    font-weight: 100;
 }
 
 .study-deck-page-toggle-notSelected {
     color: gray;
+    font-size: x-large;
+    font-weight: 100;
 }
