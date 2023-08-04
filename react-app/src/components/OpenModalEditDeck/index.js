@@ -43,8 +43,6 @@ function OpenModalEditDeck({
     closeModal();
   }
 
-  console.log("deck: ", deck)
-
   return (
     <div className="">
       <form
