@@ -43,32 +43,31 @@ export default function StudyDeckPage() {
 
   return (
     <div className="study-deck-page-container">
-      <ComponentPageHeader title={"Your Study Page"} image={yourStudyPage}/>
+      <ComponentPageHeader title={"Your Study Page"} image={yourStudyPage} />
 
-    <div className="study-deck-page-toggle-container">
-      <div className={displaySelection === true ? `${displayCSS} study-deck-page-cardDeck-buttons`
-                                                : "study-deck-page-toggle-notSelected study-deck-page-cardDeck-buttons"}
-        onClick={() => setDisplaySelection(true)}>
+      <div className="study-deck-page-toggle-container">
+        <div className={displaySelection === true ? `${displayCSS} study-deck-page-cardDeck-buttons`
+          : "study-deck-page-toggle-notSelected study-deck-page-cardDeck-buttons"}
+          onClick={() => setDisplaySelection(true)}>
           Decks</div>
-      <div className={displaySelection === false ? `${displayCSS} study-deck-page-cardDeck-buttons`
-                                                : "study-deck-page-toggle-notSelected study-deck-page-cardDeck-buttons"}
-        onClick={() => setDisplaySelection(false)}>
-        Cards</div>
-    </div>
+        <div className={displaySelection === false ? `${displayCSS} study-deck-page-cardDeck-buttons`
+          : "study-deck-page-toggle-notSelected study-deck-page-cardDeck-buttons"}
+          onClick={() => setDisplaySelection(false)}>
+          Cards</div>
+      </div>
 
 
-
-      {Object.values(decks).map((deck) => {
-        return (
-          <div>
+      <div className="study-deck-page-deck-container">
+        {Object.values(decks).map((deck) => {
+          return (
             <NavLink className="study-deck-page-deck-navLink" to={`/studyDecks/${deck.id}`}>
               <div className="study-deck-page-deck">
                 {deck.name}
               </div>
             </NavLink>
-          </div>
-        )
-      })}
+          )
+        })}
+      </div>
 
       <button
         onClick={makeDeck}>

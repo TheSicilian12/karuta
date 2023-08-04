@@ -19,6 +19,14 @@
     height: 100px;
 }
 
+.study-deck-page-deck-container {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
 .study-deck-page-toggle-container {
     display: flex;
     width: 100vw;
