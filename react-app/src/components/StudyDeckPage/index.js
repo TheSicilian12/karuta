@@ -81,10 +81,9 @@ export default function StudyDeckPage() {
 
       {!displaySelection && Object.values(cards).map((card) => {
         return (
-          <div>
+          <div className="study-deck-page-cards-container">
               <ComponentStudyCardQuestion cardData={card} deckId={""} />
-              <ComponentStudyCardAnswer cardData={card} deckId={""}/>
-
+              {/* <ComponentStudyCardAnswer cardData={card} deckId={""}/> */}
           </div>
         )
       })}
