@@ -15,14 +15,14 @@
     align-items: center;
     justify-content: center;
     border: 1px solid green;
-    width: 100px;
+    width: 200px;
     height: 100px;
 }
 
 .study-deck-page-deck-container {
     border: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 5px;
 }
