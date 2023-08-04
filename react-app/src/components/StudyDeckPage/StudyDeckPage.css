@@ -9,3 +9,12 @@
     font-size: x-large;
     text-decoration: none;
 }
+
+.study-deck-page-toggle-selected {
+    color: black;
+    text-decoration: underline;
+}
+
+.study-deck-page-toggle-notSelected {
+    color: gray;
+}

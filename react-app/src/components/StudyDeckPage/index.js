@@ -21,7 +21,8 @@ export default function StudyDeckPage() {
   const decks = useSelector(state => state.decks)
   const cards = useSelector(state => state.studyCards)
 
-  const [display, setDisplay] = useState("decks")
+  const [displayCSS, setDisplayCSS] = useState("study-deck-page-toggle-selected")
+  const [displaySelection, setDisplaySelection] = useState(true);
 
   useEffect(() => {
     dispatch(getCurrentUserDecksTHUNK(sessionUser.id));
@@ -44,7 +45,16 @@ export default function StudyDeckPage() {
     <div className="study-deck-page-container">
       <ComponentPageHeader title={"Your Study Page"} image={yourStudyPage}/>
 
-    {/* <img src={yourStudyPage} /> */}
+    <div className="displayFlex">
+      <div className={displaySelection === true ? displayCSS : "study-deck-page-toggle-notSelected"}
+        onClick={() => setDisplaySelection(true)}>
+          Decks</div>
+      <div className={displaySelection === false ? displayCSS : "study-deck-page-toggle-notSelected"}
+        onClick={() => setDisplaySelection(false)}>
+        Cards</div>
+    </div>
+
+
 
       {Object.values(decks).map((deck) => {
         return (
