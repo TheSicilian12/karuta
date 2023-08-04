@@ -37,8 +37,9 @@ function OpenModalEditDeck({
       name: deckName,
       owner_id: deck.owner_id,
     }
-    
-    dispatch(editDeckTHUNK(payload))
+
+    await dispatch(editDeckTHUNK(payload))
+    if (deck.id) await dispatch(getDeckTHUNK(deck.id))
     closeModal();
   }
 
