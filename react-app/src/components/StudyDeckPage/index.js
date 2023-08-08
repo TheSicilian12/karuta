@@ -58,6 +58,7 @@ export default function StudyDeckPage() {
       {!displaySelection && <h1>Your Cards</h1>}
 
       {displaySelection && <button
+        className="button-basic"
         onClick={makeDeck}>
         <i className="fa fa-plus"></i> New Deck
       </button>}
