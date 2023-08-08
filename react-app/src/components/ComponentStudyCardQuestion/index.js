@@ -26,7 +26,7 @@ export default function ComponentStudyCardQuestion({ cardData, deckId, study }) 
 
         {!study && <OpenModalButton
           className="study-card-question-edit-icon"
-          buttonText={"Delete study card"}
+          buttonText={<i className="fa fa-trash"></i>}
           modalComponent={<OpenModalDeleteStudyCard cardId={cardData.id} />} />}
       </div>
     </div>

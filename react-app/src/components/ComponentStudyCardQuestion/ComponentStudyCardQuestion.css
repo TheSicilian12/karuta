@@ -10,7 +10,6 @@
 
 .study-card-question-buttons-container {
     display: flex;
-    border: 1px solid black;
     justify-content: space-around;
     width: 70px;
 }
