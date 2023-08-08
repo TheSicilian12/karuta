@@ -64,6 +64,7 @@ export default function StudyDeckPage() {
       </button>}
 
       {!displaySelection && <button
+        className="button-basic"
         onClick={makeCard}>
         <i className="fa fa-plus"></i> New Card
       </button>}

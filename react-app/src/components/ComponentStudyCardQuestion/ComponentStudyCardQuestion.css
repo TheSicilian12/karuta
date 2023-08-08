@@ -1,10 +1,18 @@
 .study-card-question-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 5px solid green;
     width: 500px;
     height: 200px;
+}
+
+.study-card-question-buttons-container {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    width: 70px;
 }
 
 .study-card-question-edit-icon {
