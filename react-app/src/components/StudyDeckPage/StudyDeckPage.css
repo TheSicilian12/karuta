@@ -20,6 +20,16 @@
     overflow: hidden;
     padding: 10px;
     margin: 5px;
+
+    /* background-color: lime; */
+    /* -webkit-transition: color 10s;
+    -moz-transition:    color 10s;
+    -ms-transition:     color 10s;
+    -o-transition:      color 10s; */
+    transition: background-color 1s;
+}
+.study-deck-page-deck:hover {
+    background-color: rgb(216, 173, 216);
 }
 
 .study-deck-page-deck-container {
