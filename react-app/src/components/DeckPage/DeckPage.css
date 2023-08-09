@@ -7,13 +7,20 @@
 
 .deck-page-title-container {
     border: 1px solid black;
+    width: 1000px;
 }
 
 .deck-page-title {
     font-size: xx-large;
     font-weight: 900;
+    width: 100%;
 }
 
 .deck-page-deck-edit-buttons-container {
     display: flex;
+    justify-content: right;
+}
+
+.deck-page-medit-buttons-margin {
+    margin-left: 5px;
 }
