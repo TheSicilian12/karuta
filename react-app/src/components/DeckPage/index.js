@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams, useHistory } from 'react-router-dom';
 
+import deckPage from "../../resources/images/deckPage.jpg";
+
 import OpenModalButton from "../OpenModalButton";
 import OpenModalAddCardToDeck from "../OpenModalAddCardToDeck";
 import OpenModalDeleteDeck from "../OpenModalDeleteDeck";
@@ -11,6 +13,8 @@ import ComponentStudyCardAnswer from "../ComponentStudyCardAnswer";
 
 import { getDeckTHUNK } from "../../store/decks";
 import { getCardsDeckTHUNK, getCardsDivideTHUNK } from "../../store/studyCards";
+import ComponentPageHeader from "../ComponentPageHeader";
+
 
 import "./DeckPage.css";
 
@@ -49,9 +53,8 @@ export default function DeckPage() {
   }
 
   return (
-    <div>
-      DeckPage
-      <div>name: {deck.name}</div>
+    <div className="deck-page-container">
+      <ComponentPageHeader title={`Deck: ${deck.name}`} image={deckPage} />
 
       <div>
         <OpenModalButton
