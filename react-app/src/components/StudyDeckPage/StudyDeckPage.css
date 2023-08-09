@@ -74,5 +74,14 @@
 }
 
 .study-deck-page-cards-container {
-    margin: 5px;
+    margin: 10px;
+    /* padding: 5px; */
+    /* background: purple; */
+    transition: box-shadow 1s;
+
+}
+.study-deck-page-cards-container:hover {
+    /* border: 2px solid purple; */
+    /* border-radius: 10px; */
+    box-shadow: 0px 0px 15px 1px purple;
 }
