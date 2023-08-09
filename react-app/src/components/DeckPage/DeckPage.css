@@ -6,19 +6,19 @@
 }
 
 .deck-page-title-container {
-    border: 1px solid black;
     width: 1000px;
 }
 
 .deck-page-title {
     font-size: xx-large;
     font-weight: 900;
-    width: 100%;
+    width: max-content;
 }
 
 .deck-page-deck-edit-buttons-container {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    /* width: max-content; */
 }
 
 .deck-page-medit-buttons-margin {
