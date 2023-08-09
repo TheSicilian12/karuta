@@ -4,3 +4,16 @@
     align-items: center;
     justify-content: center;
 }
+
+.deck-page-title-container {
+    border: 1px solid black;
+}
+
+.deck-page-title {
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.deck-page-deck-edit-buttons-container {
+    display: flex;
+}

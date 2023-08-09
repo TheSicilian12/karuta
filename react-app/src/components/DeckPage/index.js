@@ -56,13 +56,27 @@ export default function DeckPage() {
     <div className="deck-page-container">
       <ComponentPageHeader title={`Deck: ${deck.name}`} image={deckPage} />
 
-      <div>
-        <OpenModalButton
-          className="study-card-question-edit-icon"
-          buttonText={<i className="fa fa-pen"></i>}
-          modalComponent={<OpenModalEditDeck deck={deck} />} />
-      </div>
+      <div className="deck-page-title-container">
+        <div className="deck-page-title">
+          {deck.name}
+        </div>
 
+        <div className="deck-page-deck-edit-buttons-container">
+          <div>
+            <OpenModalButton
+              className="study-card-question-edit-icon"
+              buttonText={<i className="fa fa-pen"></i>}
+              modalComponent={<OpenModalEditDeck deck={deck} />} />
+          </div>
+
+          <div>
+            <OpenModalButton
+              className="study-card-question-edit-icon"
+              buttonText={<i className="fa fa-trash"></i>}
+              modalComponent={<OpenModalDeleteDeck deckId={deckId} />} />
+          </div>
+        </div>
+      </div>
 
       <button
         onClick={makeCard}>
@@ -74,12 +88,6 @@ export default function DeckPage() {
           className="study-card-question-edit-icon"
           buttonText={<i className="fa fa-plus"></i>}
           modalComponent={<OpenModalAddCardToDeck deckId={deckId} />} />
-      </div>
-      <div>
-        <OpenModalButton
-          className="study-card-question-edit-icon"
-          buttonText={<i className="fa fa-minus">Delete</i>}
-          modalComponent={<OpenModalDeleteDeck deckId={deckId} />} />
       </div>
 
       {Object.values(cards).length !== 0 ? <button
