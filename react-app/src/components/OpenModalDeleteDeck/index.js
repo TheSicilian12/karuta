@@ -46,7 +46,9 @@ function OpenModalDeleteDeck({
           type='submit'>
           Yes, delete this deck
         </button>
-        <button>
+        <button
+          type="button"
+          onClick={closeModal}>
           No
         </button>
 
