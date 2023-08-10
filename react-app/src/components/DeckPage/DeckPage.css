@@ -21,6 +21,13 @@
     /* width: max-content; */
 }
 
-.deck-page-medit-buttons-margin {
+.deck-page-edit-buttons-margin {
     margin-left: 5px;
+}
+
+.deck-page-general-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    border: 1px solid black;
 }

@@ -67,14 +67,14 @@ export default function DeckPage() {
             <div className="deck-page-deck-edit-buttons-container">
               <div>
                 <OpenModalButton
-                  className="study-card-question-edit-icon deck-page-medit-buttons-margin"
+                  className="study-card-question-edit-icon deck-page-edit-buttons-margin"
                   buttonText={<i className="fa fa-pen"></i>}
                   modalComponent={<OpenModalEditDeck deck={deck} />} />
               </div>
 
               <div>
                 <OpenModalButton
-                  className="study-card-question-edit-icon deck-page-medit-buttons-margin"
+                  className="study-card-question-edit-icon deck-page-edit-buttons-margin"
                   buttonText={<i className="fa fa-trash"></i>}
                   modalComponent={<OpenModalDeleteDeck deckId={deckId} />} />
               </div>
@@ -84,25 +84,31 @@ export default function DeckPage() {
 
       </div>
 
-      <button
-        onClick={makeCard}>
-        <i className="fa fa-plus"></i> Make Card
-      </button>
+      <div className="deck-page-general-buttons">
+        <div className="displayFlex">
+          {Object.values(cards).length !== 0 ? <button
+            onClick={studyDeck}>
+            Study Deck
+          </button> :
+            <div>
+              This deck has no cards
+            </div>}
 
-      <div>
-        <OpenModalButton
-          className="study-card-question-edit-icon"
-          buttonText={<i className="fa fa-plus"></i>}
-          modalComponent={<OpenModalAddCardToDeck deckId={deckId} />} />
+          <div>
+            <OpenModalButton
+              className="study-card-question-edit-icon"
+              buttonText={<i className="fa fa-plus"></i>}
+              modalComponent={<OpenModalAddCardToDeck deckId={deckId} />} />
+          </div>
+        </div>
+
+        <button
+          onClick={makeCard}>
+          <i className="fa fa-plus"></i> Make Card
+        </button>
+
       </div>
 
-      {Object.values(cards).length !== 0 ? <button
-        onClick={studyDeck}>
-        Study Deck
-      </button> :
-        <div>
-          This deck has no cards
-        </div>}
 
       <div>
         Cards
