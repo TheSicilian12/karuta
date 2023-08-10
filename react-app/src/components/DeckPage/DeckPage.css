@@ -29,5 +29,10 @@
     display: flex;
     justify-content: space-between;
     width: 1000px;
-    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.deck-page-card-container {
+    display: flex;
+    margin: 5px;
 }

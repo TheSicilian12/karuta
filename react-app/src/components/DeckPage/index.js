@@ -87,6 +87,7 @@ export default function DeckPage() {
       <div className="deck-page-general-buttons">
         <div className="displayFlex">
           {Object.values(cards).length !== 0 ? <button
+            className="button-basic"
             onClick={studyDeck}>
             Study Deck
           </button> :
@@ -103,6 +104,7 @@ export default function DeckPage() {
         </div>
 
         <button
+          className="button-basic"
           onClick={makeCard}>
           <i className="fa fa-plus"></i> Make Card
         </button>
@@ -111,13 +113,16 @@ export default function DeckPage() {
 
 
       <div>
-        Cards
         {
           Object.values(cards).map((card) => {
             return (
-              <div className="displayFlex">
-                <ComponentStudyCardQuestion cardData={card} deckId={deckId} />
-                <ComponentStudyCardAnswer cardData={card} deckId={deckId} />
+              <div className="deck-page-card-container">
+                <div className="deck-page-card-container">
+                  <ComponentStudyCardQuestion cardData={card} deckId={deckId} />
+                </div>
+                <div className="deck-page-card-container">
+                  <ComponentStudyCardAnswer cardData={card} deckId={deckId} />
+                </div>
               </div>
             )
           })
