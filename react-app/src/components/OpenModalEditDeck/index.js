@@ -44,12 +44,16 @@ function OpenModalEditDeck({
   }
 
   return (
-    <div className="open-modal-edit-deck">
+    <div className="open-modal-edit-deck-container">
       <form
         onSubmit={handleSubmit}>
 
-        <div>
-          Change deck: {deck.name}
+        <div className="open-modal-edit-deck-title-general">
+          Change deck:
+        </div>
+
+        <div className="open-modal-edit-deck-title-name">
+          {deck.name}
         </div>
 
         <input

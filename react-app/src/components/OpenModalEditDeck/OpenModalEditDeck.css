@@ -1,4 +1,15 @@
-.open-modal-edit-deck {
+.open-modal-edit-deck-container {
     width: 500px;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-modal-edit-deck-title-general {
+    font-size: large;
+}
+
+.open-modal-edit-deck-title-name {
+    font-size: xx-large;
 }
