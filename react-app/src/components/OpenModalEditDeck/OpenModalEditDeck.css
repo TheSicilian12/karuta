@@ -13,11 +13,11 @@
 
 .open-modal-edit-deck-title-name {
     font-size: xx-large;
+    margin-bottom: 10px;
 }
 
 .open-modal-edit-deck-input {
     border: 1px solid black;
-    max-width: 300px;
-    min-width: 300px;
-    /* height: 10px; */
+    width: 280px;
+    margin-bottom: 10px;
 }

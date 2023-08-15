@@ -49,6 +49,7 @@ function OpenModalEditDeck({
         className="open-modal-edit-deck-form-container"
         onSubmit={handleSubmit}>
 
+      <div>
         <div className="open-modal-edit-deck-title-general">
           Change deck:
         </div>
@@ -56,6 +57,8 @@ function OpenModalEditDeck({
         <div className="open-modal-edit-deck-title-name">
           {deck.name}
         </div>
+      </div>
+
 
         <input
           type="text"
