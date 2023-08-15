@@ -1,28 +1,4 @@
-.open-modal-add-card-to-deck {
-    overflow: auto;
-    border: 10px solid green;
-    height: 90vh;
-    width: 90vw;
-}
-
-.add-card-to-deck-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.add-card-to-deck-title-selector-container {
-    display: flex;
-    border-bottom: 1px solid black;
-}
-
-.add-card-to-deck-all-selection {
-    border: 1px solid black;
-}
-
-.add-card-to-deck-deck-selection {
-    border: 1px solid blue;
-}
-
-.add-card-to-deck-notDeck-selection {
-    border: 1px solid red;
+.open-modal-edit-deck {
+    width: 500px;
+    height: 200px;
 }

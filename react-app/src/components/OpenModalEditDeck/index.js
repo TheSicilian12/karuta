@@ -44,7 +44,7 @@ function OpenModalEditDeck({
   }
 
   return (
-    <div className="">
+    <div className="open-modal-edit-deck">
       <form
         onSubmit={handleSubmit}>
 
