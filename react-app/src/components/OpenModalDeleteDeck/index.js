@@ -40,11 +40,11 @@ function OpenModalDeleteDeck({
       onSubmit={handleSubmit}>
 
     <div>
-      <div>
+      <div className="open-modal-delete-deck-title-general">
         Delete
       </div>
 
-      <div>
+      <div className="open-modal-delete-deck-title-name">
         {deck.name}
       </div>
 

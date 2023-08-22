@@ -1,9 +1,18 @@
 .modal-delete-deck-container {
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.open-modal-delete-deck-title-general {
+    font-size: large;
+}
+
+.open-modal-delete-deck-title-name {
+    font-size: xx-large;
+    margin-bottom: 10px;
 }
