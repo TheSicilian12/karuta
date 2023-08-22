@@ -70,6 +70,7 @@ function OpenModalEditDeck({
         </input>
 
         <button
+          className="button-basic"
           type="submit">
           Confirm edit
         </button>
