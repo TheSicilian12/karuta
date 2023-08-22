@@ -105,6 +105,7 @@ function OpenModalEditStudyCard({
         </div>}
 
         {additional === false && <button
+          className="button-basic"
           onClick={handleAdditionalEdit}>
           Would you like to edit the {editType === 'question' ? 'answer' : 'question'}
         </button>}
@@ -129,6 +130,7 @@ function OpenModalEditStudyCard({
         </div>}
 
         <button
+          className="button-basic"
           type="submit">
           Save
         </button>
