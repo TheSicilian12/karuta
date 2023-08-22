@@ -41,7 +41,7 @@ function OpenModalDeleteDeck({
 
     <div>
       <div className="open-modal-delete-deck-title-general">
-        Delete
+        Delete:
       </div>
 
       <div className="open-modal-delete-deck-title-name">
@@ -51,13 +51,15 @@ function OpenModalDeleteDeck({
     </div>
       <div>
         <button
-          type='submit'>
-          Yes, delete this deck
-        </button>
-        <button
+          className="open-modal-delete-no-button-margin button-basic"
           type="button"
           onClick={closeModal}>
           No
+        </button>
+        <button
+          className="button-basic"
+          type='submit'>
+          Yes, delete this deck
         </button>
       </div>
 
