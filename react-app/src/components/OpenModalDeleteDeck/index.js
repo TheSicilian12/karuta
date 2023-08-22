@@ -36,6 +36,7 @@ function OpenModalDeleteDeck({
 
   return (
       <form
+        className="modal-delete-deck-container"
         onSubmit={handleSubmit}>
 
         <div>
@@ -51,7 +52,6 @@ function OpenModalDeleteDeck({
           onClick={closeModal}>
           No
         </button>
-
 
       </form>
   );

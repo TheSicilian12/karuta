@@ -37,8 +37,9 @@ function OpenModalDeleteStudyCard({
 
   return (
       <form
-        onSubmit={handleSubmit}>
 
+        onSubmit={handleSubmit}>
+          
         <div>
           Delete
           Are you sure?
@@ -50,7 +51,6 @@ function OpenModalDeleteStudyCard({
         <button>
           No
         </button>
-
 
       </form>
   );
