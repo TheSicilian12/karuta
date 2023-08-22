@@ -20,10 +20,18 @@
 
 .open-modal-answer-short-title-container {
     border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
 }
 
 .open-modal-answer-long-title-container {
     border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
 }
 
 .open-modal-edit-card-short-long-answer-text-container {
