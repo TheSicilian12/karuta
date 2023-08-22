@@ -51,7 +51,7 @@ function OpenModalDeleteDeck({
     </div>
       <div>
         <button
-          className="open-modal-delete-no-button-margin button-basic"
+          className="open-modal-delete-deck-no-button-margin button-basic"
           type="button"
           onClick={closeModal}>
           No

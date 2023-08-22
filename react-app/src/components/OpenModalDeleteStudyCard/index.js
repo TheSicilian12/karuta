@@ -36,23 +36,33 @@ function OpenModalDeleteStudyCard({
   }
 
   return (
-      <form
+    <form
+      className="modal-delete-study-card-container"
+      onSubmit={handleSubmit}>
 
-        onSubmit={handleSubmit}>
-          
-        <div>
-          Delete
-          Are you sure?
+      <div>
+        <div className="open-modal-delete-study-card-title-general">
+          Delete this card?
         </div>
+
+
+      </div>
+
+
         <button
+          className="open-modal-delete-study-card-no-button-margin button-basic"
+          type="button"
+          onClick={closeModal}>
+          No
+        </button>
+        <button
+          className="button-basic"
           type='submit'>
           Yes, delete this study card
         </button>
-        <button>
-          No
-        </button>
 
-      </form>
+
+    </form>
   );
 }
 

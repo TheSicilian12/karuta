@@ -1,1 +1,23 @@
+.modal-delete-study-card-container {
+    width: 300px;
+    height: 150px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-modal-delete-study-card-title-general {
+    font-size: large;
+}
+
+.open-modal-delete-study-card-title-name {
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+.open-modal-delete-study-card-no-button-margin {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
