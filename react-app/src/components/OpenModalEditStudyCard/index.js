@@ -80,7 +80,7 @@ function OpenModalEditStudyCard({
   }
 
   return (
-    <div className="delete-comment-modal-container">
+    <div className="open-modal-edit-card-container">
       <form
         onSubmit={handleSubmit}>
 

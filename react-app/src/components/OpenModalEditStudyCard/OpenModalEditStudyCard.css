@@ -1,5 +1,15 @@
-.open-modal-edit-question-text-container {
+.open-modal-edit-card-container {
     width: 500px;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.open-modal-edit-question-text-container {
+    width: 400px;
+    max-width: 400px;
+    max-height: 50px;
 }
 
 .open-modal-answers-title-container {
