@@ -65,7 +65,7 @@ function OpenModalEditStudyCard({
         </div>
 
         <textarea
-          className="open-modal-edit-question-text-container"
+          className="open-modal-edit-card-short-long-answer-text-container"
           type="text"
           value={displayAnswer === 'short' ? answer : answerLong}
           onChange={(e) => {

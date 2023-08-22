@@ -1,14 +1,16 @@
 .open-modal-edit-card-container {
-    width: 500px;
+    width: 550px;
     height: 500px;
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .open-modal-edit-question-text-container {
     width: 400px;
     max-width: 400px;
+    height: 50px;
     max-height: 50px;
 }
 
@@ -22,4 +24,11 @@
 
 .open-modal-answer-long-title-container {
     border: 2px solid blue;
+}
+
+.open-modal-edit-card-short-long-answer-text-container {
+    width: 400px;
+    max-width: 400px;
+    height: 200px;
+    max-height: 200px;
 }
