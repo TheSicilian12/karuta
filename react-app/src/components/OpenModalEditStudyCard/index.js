@@ -54,11 +54,11 @@ function OpenModalEditStudyCard({
     return (
       <>
         <div className="displayFlex open-modal-answers-title-container">
-          <h2 className={displayAnswer === 'short' ? `open-modal-answer-${displayAnswer}-title-container` : ''}
+          <h2 className={displayAnswer === 'short' ? `open-modal-answer-${displayAnswer}-title-container` : 'open-modal-answer-standard-container'}
             onClick={() => setDisplayAnswer('short')}>
             Edit Short Answer
           </h2>
-          <h2 className={displayAnswer === 'long' ? `open-modal-answer-${displayAnswer}-title-container` : ''}
+          <h2 className={displayAnswer === 'long' ? `open-modal-answer-${displayAnswer}-title-container` : 'open-modal-answer-standard-container'}
             onClick={() => setDisplayAnswer('long')}>
             Edit Long Answer
           </h2>
