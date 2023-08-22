@@ -16,33 +16,40 @@ function OpenModalDeleteDeck({
   className,
   cardData,
   editType,
-  deckId
+  // deckId,
+  deck
 }) {
   const dispatch = useDispatch();
 
   const sessionUser = useSelector(state => state.session.user);
   const cardsAll = useSelector(state => state.studyCards);
-  const deck = useSelector(state => state.decks)
 
   const { closeModal } = useModal();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("delete button")
-    dispatch(deleteDeckTHUNK(deckId))
+    dispatch(deleteDeckTHUNK(deck.id))
 
     closeModal();
   }
 
   return (
-      <form
-        className="modal-delete-deck-container"
-        onSubmit={handleSubmit}>
+    <form
+      className="modal-delete-deck-container"
+      onSubmit={handleSubmit}>
 
-        <div>
-          Delete
-          Are you sure?
-        </div>
+    <div>
+      <div>
+        Delete
+      </div>
+
+      <div>
+        {deck.name}
+      </div>
+
+    </div>
+      <div>
         <button
           type='submit'>
           Yes, delete this deck
@@ -52,8 +59,9 @@ function OpenModalDeleteDeck({
           onClick={closeModal}>
           No
         </button>
+      </div>
 
-      </form>
+    </form>
   );
 }
 

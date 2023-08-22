@@ -76,7 +76,7 @@ export default function DeckPage() {
                 <OpenModalButton
                   className="study-card-question-edit-icon deck-page-buttons-margin"
                   buttonText={<i className="fa fa-trash"></i>}
-                  modalComponent={<OpenModalDeleteDeck deckId={deckId} />} />
+                  modalComponent={<OpenModalDeleteDeck deck={deck} />} />
               </div>
             </div>
           </div>
@@ -110,7 +110,6 @@ export default function DeckPage() {
         </button>
 
       </div>
-
 
       <div>
         {
