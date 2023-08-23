@@ -1,0 +1,13 @@
+.make-deck-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.make-deck-page-input-container {
+    width: 400px;
+    max-width: 400px;
+    height: 50px;
+    max-height: 50px;
+}

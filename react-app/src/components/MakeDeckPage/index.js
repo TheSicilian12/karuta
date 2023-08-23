@@ -34,16 +34,15 @@ export default function MakeDeckPage() {
     <div>
     <ComponentPageHeader title={`Make Deck`} image={deckPage} />
 
-      Make Deck Page
-
       <form
+        className="make-deck-page-container"
         onSubmit={handleSubmit}>
 
-        <label>
+        <h1>
           Deck Name
-        </label>
+        </h1>
         <textarea
-          className=''
+          className='make-deck-page-input-container'
           type='text'
           placeholder='deck name'
           value={deckName}
