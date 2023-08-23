@@ -19,7 +19,7 @@ export default function MakeCardPage({ deckId }) {
   const [answerLong, setAnswerLong] = useState("");
   const [question, setQuestion] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
     let payload = {
@@ -30,8 +30,10 @@ export default function MakeCardPage({ deckId }) {
     }
 
     if (deckId) payload.deckId = deckId;
-    console.log("handleSubmit")
-    dispatch(addCardTHUNK(payload));
+
+    setAnswer("");
+    setAnswerLong("");
+    setQuestion("");
   }
 
 

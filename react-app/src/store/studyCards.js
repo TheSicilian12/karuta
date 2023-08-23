@@ -125,6 +125,8 @@ export const addCardTHUNK = (cardData) => async (dispatch) => {
 			console.log("deck: ", deckId)
 			dispatch(associateCardDeckTHUNK(card, deckId))
 		}
+
+		return data;
 	}
 }
 
