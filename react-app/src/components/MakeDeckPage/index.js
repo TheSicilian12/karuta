@@ -53,6 +53,7 @@ export default function MakeDeckPage() {
         ></textarea>
 
           <button
+            className="button-basic"
             type='submit'>
             Make Deck
           </button>
