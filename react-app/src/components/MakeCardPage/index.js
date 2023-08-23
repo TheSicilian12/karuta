@@ -31,9 +31,12 @@ export default function MakeCardPage({ deckId }) {
 
     if (deckId) payload.deckId = deckId;
 
+    dispatch(addCardTHUNK(payload));
+
     setAnswer("");
     setAnswerLong("");
     setQuestion("");
+
   }
 
 
