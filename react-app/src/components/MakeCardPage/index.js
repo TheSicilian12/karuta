@@ -40,13 +40,14 @@ export default function MakeCardPage({ deckId }) {
        <ComponentPageHeader title={`Make Card`} image={deckPage} />
 
       <form
+        className="make-card-page-container"
         onSubmit={handleSubmit}>
 
         <label>
           Question
         </label>
         <textarea
-          className=''
+          className='make-card-page-input-question-container'
           type='text'
           placeholder='question'
           value={question}
@@ -60,7 +61,7 @@ export default function MakeCardPage({ deckId }) {
           Answer
         </label>
         <textarea
-          className=''
+          className='make-card-page-input-answer-container'
           type='text'
           placeholder='answer'
           value={answer}
@@ -74,7 +75,7 @@ export default function MakeCardPage({ deckId }) {
           Long answer
         </label>
         <textarea
-          className=''
+          className='make-card-page-input-answer-container'
           type='text'
           placeholder='long answer'
           value={answerLong}
@@ -85,6 +86,7 @@ export default function MakeCardPage({ deckId }) {
         ></textarea>
 
           <button
+            className="button-basic"
             type='submit'>
             Make Card
           </button>
