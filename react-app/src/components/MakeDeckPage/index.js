@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink, useParams, useHistory } from 'react-router-dom';
 
+import deckPage from "../../resources/images/deckPage.jpg";
+
+import ComponentPageHeader from "../ComponentPageHeader";
+
 import "./MakeDeckPage.css";
 import { addDeckTHUNK } from "../../store/decks";
 
@@ -28,6 +32,8 @@ export default function MakeDeckPage() {
 
   return (
     <div>
+    <ComponentPageHeader title={`Make Deck`} image={deckPage} />
+
       Make Deck Page
 
       <form
