@@ -64,11 +64,11 @@ function Navigation({ isLoaded }) {
 			>
 				Poems
 			</button>
-			<button
+			{/* <button
 				onClick={() => redirectHomepage()}
 			>
 				Homepage
-			</button>
+			</button> */}
 			<button
 				onClick={() => redirectPoemPractice()}
 			>
