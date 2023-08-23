@@ -39,7 +39,7 @@ export default function MakeCardPage({ deckId }) {
 
   return (
     <div>
-       <ComponentPageHeader title={`Make Card`} image={deckPage} />
+      <ComponentPageHeader title={`Make Card`} image={deckPage} />
 
       <form
         className="make-card-page-container"
@@ -87,11 +87,18 @@ export default function MakeCardPage({ deckId }) {
           }}
         ></textarea>
 
+        <div>
           <button
             className="button-basic"
             type='submit'>
             Make Card
           </button>
+          {deckId && <button
+            className="button-basic make-card-page-deck-button"
+            onClick={() => history.push(`/studyDecks/${deckId}`)}>
+            Go to Deck
+          </button>}
+        </div>
       </form>
     </div>
   );
