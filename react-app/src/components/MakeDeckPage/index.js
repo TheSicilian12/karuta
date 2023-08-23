@@ -31,7 +31,6 @@ export default function MakeDeckPage() {
     history.push(`studyDecks/${newDeck.deck.id}`)
   }
 
-
   return (
     <div>
     <ComponentPageHeader title={`Make Deck`} image={deckPage} />
