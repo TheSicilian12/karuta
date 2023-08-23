@@ -50,8 +50,7 @@ export const addDeckTHUNK = (payload) => async (dispatch) => {
 	})
 	if (response.ok) {
 		const data = await response.json();
-		console.log("data: ", data)
-
+		return data
 	}
 }
 
@@ -60,7 +59,7 @@ export const editDeckTHUNK = (payload) => async (dispatch) => {
 	console.log("----edit deck thunk----")
 
 	const {deckId} = payload;
-	
+
 	const response = await fetch (`/api/decks/${deckId}`, {
 		method: "PUT",
         headers: {

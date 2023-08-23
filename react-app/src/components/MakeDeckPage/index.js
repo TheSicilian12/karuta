@@ -17,16 +17,18 @@ export default function MakeDeckPage() {
 
   const [deckName, setDeckName] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
     let payload = {
       name: deckName,
       owner_id: sessionUser.id
     }
-    console.log("payload: ", payload)
-    console.log("handleSubmit")
-    dispatch(addDeckTHUNK(payload));
+
+    let newDeck = await dispatch(addDeckTHUNK(payload));
+
+    // console.log("newDeck: ", newDeck)
+    history.push(`studyDecks/${newDeck.deck.id}`)
   }
 
 
