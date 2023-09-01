@@ -1,6 +1,6 @@
 .nav-bar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid darkgray;
   background-color: rgba(128, 128, 128, 0.123);
@@ -17,4 +17,9 @@
 }
 .nav-bar-links:hover {
   color: rgb(56, 56, 56);
+}
+
+.nav-user-button {
+  position: absolute;
+  right: 10px;
 }

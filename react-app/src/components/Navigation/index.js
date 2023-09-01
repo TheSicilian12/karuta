@@ -59,7 +59,6 @@ function Navigation({ isLoaded }) {
 
 	return (
 		<div className="nav-bar-container">
-			<div>test</div>
 			<div className="nav-bar-links-container">
 				<div
 					onClick={() => redirectPoems()}
@@ -82,7 +81,9 @@ function Navigation({ isLoaded }) {
 				</div>
 			</div>
 			{isLoaded &&
-				<ProfileButton user={sessionUser} />
+				<div className="nav-user-button">
+					<ProfileButton user={sessionUser} />
+				</div>
 			}
 		</div>
 	);
