@@ -40,16 +40,6 @@ export default function GameKarutaMemory({ gameSize }) {
   let key = 0;
   return (
     <div className="game-memory-container">
-      Hello
-      Karuta Memory
-
-      <div>
-        <button>Match first half to second half</button>
-        <button>Match the first unique sounds</button>
-      </div>
-
-
-
       <LanguageToggle displayLanguage={displayLanguage} setDisplayLanguage={setDisplayLanguage} languageOne={"english"} languageTwo={"japanese"} />
       <div className="game-memory-layout">
         {randomCardsArr.map((card) => {
