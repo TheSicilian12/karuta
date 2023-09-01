@@ -1,5 +1,6 @@
 .nav-bar-container {
   display: flex;
-  border: 1px solid green;
+  border-bottom: 1px solid darkgray;
+  background-color: rgba(128, 128, 128, 0.123);
   height: 50px;
 }
