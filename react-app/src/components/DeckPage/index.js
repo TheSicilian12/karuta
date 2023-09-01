@@ -12,7 +12,7 @@ import ComponentStudyCardQuestion from "../ComponentStudyCardQuestion";
 import ComponentStudyCardAnswer from "../ComponentStudyCardAnswer";
 
 import { getDeckTHUNK } from "../../store/decks";
-import { getCardsDeckTHUNK, getCardsDivideTHUNK } from "../../store/studyCards";
+import { getCardsDivideTHUNK } from "../../store/studyCards";
 import ComponentPageHeader from "../ComponentPageHeader";
 
 
@@ -37,6 +37,7 @@ export default function DeckPage() {
     dispatch(getCardsDivideTHUNK(deckId));
   }, [dispatch])
 
+  // if (!sessionsUser) return <div>please log in</div>
   if (!cardsObj) return <div>No cards object</div>
   if (!cardsObj.inDeck) return <div>This deck has no cards</div>
   if (!deck) return <div>No deck</div>
@@ -62,7 +63,7 @@ export default function DeckPage() {
 
           <div className="deck-page-title">
             {deck.name}
-
+            
 
             <div className="deck-page-deck-edit-buttons-container">
               <div>

@@ -25,10 +25,11 @@ export default function StudyDeckPage() {
   const [displaySelection, setDisplaySelection] = useState(true);
 
   useEffect(() => {
-    dispatch(getCurrentUserDecksTHUNK(sessionUser.id));
+    if (sessionUser) dispatch(getCurrentUserDecksTHUNK(sessionUser.id));
     dispatch(getCardsTHUNK());
   }, [dispatch])
 
+  if (!sessionUser) return <div>Please sign in</div>
   if (Object.values(decks).length === 0) return <div>No decks</div>
 
   const makeCard = () => {
