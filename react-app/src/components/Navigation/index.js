@@ -59,16 +59,13 @@ function Navigation({ isLoaded }) {
 
 	return (
 		<div className="nav-bar-container">
-			<button
+			<div
 				onClick={() => redirectPoems()}
+				className="nav-bar-links"
 			>
 				Poems
-			</button>
-			{/* <button
-				onClick={() => redirectHomepage()}
-			>
-				Homepage
-			</button> */}
+			</div>
+
 			<button
 				onClick={() => redirectPoemPractice()}
 			>

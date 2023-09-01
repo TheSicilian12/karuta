@@ -4,3 +4,11 @@
   background-color: rgba(128, 128, 128, 0.123);
   height: 50px;
 }
+
+
+.nav-bar-links {
+  color: rgb(153, 153, 153);
+}
+.nav-bar-links:hover {
+  color: rgb(56, 56, 56);
+}
