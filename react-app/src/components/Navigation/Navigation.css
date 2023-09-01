@@ -1,13 +1,19 @@
 .nav-bar-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid darkgray;
   background-color: rgba(128, 128, 128, 0.123);
   height: 50px;
 }
 
+.nav-bar-links-container {
+  display: flex;
+}
 
 .nav-bar-links {
   color: rgb(153, 153, 153);
+  margin: 10px;
 }
 .nav-bar-links:hover {
   color: rgb(56, 56, 56);

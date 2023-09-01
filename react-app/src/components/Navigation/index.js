@@ -59,23 +59,28 @@ function Navigation({ isLoaded }) {
 
 	return (
 		<div className="nav-bar-container">
-			<div
-				onClick={() => redirectPoems()}
-				className="nav-bar-links"
-			>
-				Poems
-			</div>
+			<div>test</div>
+			<div className="nav-bar-links-container">
+				<div
+					onClick={() => redirectPoems()}
+					className="nav-bar-links"
+				>
+					Poems
+				</div>
 
-			<button
-				onClick={() => redirectPoemPractice()}
-			>
-				Poem Practice
-			</button>
-			<button
-				onClick={() => redirectStudyDeck()}
-			>
-				Study Decks
-			</button>
+				<div
+					onClick={() => redirectPoemPractice()}
+					className="nav-bar-links"
+				>
+					Poem Practice
+				</div>
+				<div
+					onClick={() => redirectStudyDeck()}
+					className="nav-bar-links"
+				>
+					Study Decks
+				</div>
+			</div>
 			{isLoaded &&
 				<ProfileButton user={sessionUser} />
 			}
