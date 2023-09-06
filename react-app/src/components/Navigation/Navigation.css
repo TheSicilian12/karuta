@@ -45,6 +45,7 @@
 
 .nav-bar-dropwdown-container {
   position: absolute;
+  z-index: 100;
   top: 70px;
   right: 10px;
 }
