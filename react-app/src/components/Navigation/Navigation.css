@@ -44,8 +44,14 @@
 }
 
 .nav-bar-dropwdown-container {
-  position: absolute;
+  position: fixed;
   z-index: 100;
+
   top: 70px;
-  right: 10px;
+  right: 0px;
+
+  width: 100px;
+
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
