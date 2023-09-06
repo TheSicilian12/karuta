@@ -47,12 +47,19 @@ function ProfileButton({ user }) {
   return (
     <>
       <ul className={`${ulClassName} nav-bar-profile-dropdown nav-bar-font`} ref={ulRef}>
+        <div className="nav-profile-button-container"
+          onClick={() => setShowMenu(!showMenu)}>
+          <i className="fa fa-user"></i>
+        </div>
+
         {user ? (
-          <div className="nav-bar-user-dropdown">
+          <>
+          {showMenu && <div className="nav-bar-user-dropdown">
             <div className="nav-bar-dropwdown-margin">{user.username}</div>
             <div className="nav-bar-dropwdown-margin">{user.email}</div>
             <button className="nav-bar-dropwdown-margin button-full" onClick={handleLogout}>Log Out</button>
-          </div>
+          </div>}
+          </>
         ) : (
           <div className="nav-bar-logged-out-dropdown">
             {/* <OpenModalButton
@@ -60,10 +67,6 @@ function ProfileButton({ user }) {
               onItemClick={closeMenu}
               modalComponent={<LoginFormModal />}
             /> */}
-            <div className="nav-profile-button-container"
-              onClick={() => setShowMenu(!showMenu)}>
-              <i className="fa fa-user"></i>
-            </div>
 
             {showMenu && <div>
               <button
@@ -84,7 +87,7 @@ function ProfileButton({ user }) {
                 Sign Up
               </button>
             </div>}
-            
+
           </div>
         )}
       </ul>
