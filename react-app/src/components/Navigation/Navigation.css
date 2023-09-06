@@ -28,9 +28,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
+  border: 2px solid rgb(153, 153, 153);
+  color: rgb(153, 153, 153);
   border-radius: 50px;
   width: 24px;
   height: 24px;
-
+}
+.nav-profile-button-container:hover {
+  border: 2px solid green;
+  color: green;
 }
