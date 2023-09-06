@@ -54,23 +54,23 @@ function ProfileButton({ user }) {
 
         {user ? (
           <>
-          {showMenu && <div className="nav-bar-user-dropdown">
-            <div className="nav-bar-dropwdown-margin">{user.username}</div>
-            <div className="nav-bar-dropwdown-margin">{user.email}</div>
-            <button className="nav-bar-dropwdown-margin button-full" onClick={handleLogout}>Log Out</button>
+          {showMenu && <div className="nav-bar-dropwdown-container">
+            <div className="">{user.username}</div>
+            <div className="">{user.email}</div>
+            <button className="button-full" onClick={handleLogout}>Log Out</button>
           </div>}
           </>
         ) : (
-          <div className="nav-bar-logged-out-dropdown">
+          <div className="">
             {/* <OpenModalButton
               buttonText="Log In"
               onItemClick={closeMenu}
               modalComponent={<LoginFormModal />}
             /> */}
 
-            {showMenu && <div>
+            {showMenu && <div className="nav-bar-dropwdown-container">
               <button
-                className="nav-bar-dropwdown-margin button-full"
+                className="button-full"
                 onClick={() => {
                   history.push("/login")
                   closeMenu()
@@ -79,7 +79,7 @@ function ProfileButton({ user }) {
               </button>
 
               <button
-                className="nav-bar-dropwdown-margin button-full"
+                className="button-full"
                 onClick={() => {
                   history.push("/signup")
                   closeMenu()

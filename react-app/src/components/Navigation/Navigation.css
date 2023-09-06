@@ -42,3 +42,9 @@
   border: 2px solid green;
   color: green;
 }
+
+.nav-bar-dropwdown-container {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+}
