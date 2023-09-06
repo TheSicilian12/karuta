@@ -59,6 +59,10 @@ function ProfileButton({ user }) {
               onItemClick={closeMenu}
               modalComponent={<LoginFormModal />}
             /> */}
+            <div className="nav-profile-button-container">
+              <i className="fa fa-user"></i>
+            </div>
+
             <button
                 className="nav-bar-dropwdown-margin button-full"
                 onClick={() => {
