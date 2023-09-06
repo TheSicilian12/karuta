@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
   const [showMenu, setShowMenu] = useState(false);
+
   const ulRef = useRef();
   const history = useHistory();
   const sessionUser = useSelector(state => state.session.user);
@@ -49,8 +50,8 @@ function ProfileButton({ user }) {
         {user ? (
           <div className="nav-bar-user-dropdown">
             <div className="nav-bar-dropwdown-margin">{user.username}</div>
-              <div className="nav-bar-dropwdown-margin">{user.email}</div>
-              <button className="nav-bar-dropwdown-margin button-full" onClick={handleLogout}>Log Out</button>
+            <div className="nav-bar-dropwdown-margin">{user.email}</div>
+            <button className="nav-bar-dropwdown-margin button-full" onClick={handleLogout}>Log Out</button>
           </div>
         ) : (
           <div className="nav-bar-logged-out-dropdown">
@@ -59,32 +60,31 @@ function ProfileButton({ user }) {
               onItemClick={closeMenu}
               modalComponent={<LoginFormModal />}
             /> */}
-            <div className="nav-profile-button-container">
+            <div className="nav-profile-button-container"
+              onClick={() => setShowMenu(!showMenu)}>
               <i className="fa fa-user"></i>
             </div>
 
-            <button
+            {showMenu && <div>
+              <button
                 className="nav-bar-dropwdown-margin button-full"
                 onClick={() => {
-                history.push("/login")
-                closeMenu()
-              }}>
-              Log In
-            </button>
+                  history.push("/login")
+                  closeMenu()
+                }}>
+                Log In
+              </button>
 
-            {/* <OpenModalButton
-              buttonText="Sign Up"
-              onItemClick={closeMenu}
-              modalComponent={<SignupFormModal />}
-            /> */}
-            <button
-              className="nav-bar-dropwdown-margin button-full"
-              onClick={() => {
-                history.push("/signup")
-                closeMenu()
-              }}>
-              Sign Up
-            </button>
+              <button
+                className="nav-bar-dropwdown-margin button-full"
+                onClick={() => {
+                  history.push("/signup")
+                  closeMenu()
+                }}>
+                Sign Up
+              </button>
+            </div>}
+            
           </div>
         )}
       </ul>
