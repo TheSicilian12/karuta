@@ -4,6 +4,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --navBarMain: rgba(128, 128, 128, 0.123);
+}
+
 .border-green {
     border: 1px solid green;
 }
