@@ -86,7 +86,6 @@ export default function StudyDeckPage() {
         return (
           <div className="study-deck-page-cards-container">
               <ComponentStudyCardQuestion cardData={card} deckId={""} />
-              {/* <ComponentStudyCardAnswer cardData={card} deckId={""}/> */}
           </div>
         )
       })}
