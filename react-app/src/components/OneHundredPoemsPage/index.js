@@ -36,20 +36,15 @@ export default function OneHundredPoemsPage() {
     <div>
       <div className="poems-page-nav-buttons-container">
         <div>
-
-          {currentSelection !== "1 - 100" && <button
-            className="button-basic poems-page-nav-buttons"
+         <button
+            className={currentSelection === "1 - 100" ? "button-basic-selected poems-page-nav-buttons" :
+                                                      "button-basic poems-page-nav-buttons"}
             onClick={() => displayCards(1, 100)}
           >
             All
-          </button>}
-          {currentSelection === "1 - 100" && <button
-            className="button-basic-selected poems-page-nav-buttons"
-            onClick={() => displayCards(1, 100)}
-          >
-            All
-          </button>}
+          </button>
         </div>
+
         <div>
           {currentSelection !== "1 - 10" && <button
             className="button-basic poems-page-nav-buttons"
