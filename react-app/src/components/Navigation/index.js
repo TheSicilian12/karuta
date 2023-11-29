@@ -11,7 +11,7 @@ function Navigation({ isLoaded }) {
 	const history = useHistory();
 
 	const [showMenu, setShowMenu] = useState(false);
-	const [selected, setSelected] = useState('op1');
+	const [selected, setSelected] = useState('/homepage');
 
 	const sessionUser = useSelector(state => state.session.user);
 

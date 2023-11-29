@@ -45,7 +45,7 @@ export default function OneHundredPoemsPage() {
           </button>
         </div>
 
-        <div>
+        <div className='poems-page-nav-group'>
          <button
             className={currentSelection === "1 - 10" ? "button-basic-selected poems-page-nav-buttons" :
             "button-basic poems-page-nav-buttons"}

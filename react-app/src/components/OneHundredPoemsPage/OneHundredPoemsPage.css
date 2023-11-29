@@ -17,6 +17,12 @@
     margin-bottom: 10px;
 }
 
+.poems-page-nav-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .poems-page-nav-buttons {
     margin: 5px;
 }
