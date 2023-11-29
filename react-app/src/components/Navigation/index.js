@@ -11,6 +11,7 @@ function Navigation({ isLoaded }) {
 	const history = useHistory();
 
 	const [showMenu, setShowMenu] = useState(false);
+	const [selected, setSelected] = useState('op1');
 
 	const sessionUser = useSelector(state => state.session.user);
 
@@ -56,13 +57,14 @@ function Navigation({ isLoaded }) {
 	const redirectStudyDeck = () => {
 		history.push('/studyDecks')
 	}
-
+	console.log('selected: ', selected)
 	return (
 		<div className="nav-bar-container">
 			<div className="nav-bar-links-container">
 				<div
 					onClick={() => redirectPoems()}
-					className="nav-bar-links"
+					// className="nav-bar-links"
+					className = {selected === 'op1' ? 'nav-bar-link-select' : 'nav-bar-links'}
 				>
 					Poems
 				</div>

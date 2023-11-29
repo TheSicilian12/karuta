@@ -14,11 +14,16 @@
 .nav-bar-links {
   color: var(--navBarText);
   margin: 10px;
-
   cursor: pointer;
 }
 .nav-bar-links:hover {
   color: var(--navBarSelect);
+}
+
+.nav-bar-link-select {
+  color: var(--navBarSelect);
+  margin: 10px;
+  cursor: pointer;
 }
 
 .nav-user-button {
