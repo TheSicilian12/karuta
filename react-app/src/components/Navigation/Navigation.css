@@ -12,13 +12,13 @@
 }
 
 .nav-bar-links {
-  color: var(--navBarHover);
+  color: var(--navBarText);
   margin: 10px;
 
   cursor: pointer;
 }
 .nav-bar-links:hover {
-  color: var(--navBarMain);
+  color: var(--navBarSelect);
 }
 
 .nav-user-button {
@@ -30,8 +30,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--navBarHover);
-  color: var(--navBarHover);
+  border: 2px solid var(--navBarText);
+  color: var(--navBarText);
   border-radius: 50px;
   width: 24px;
   height: 24px;

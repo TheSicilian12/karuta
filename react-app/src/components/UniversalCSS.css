@@ -6,8 +6,8 @@ body {
 
 :root {
     --navBarMain: rgba(128, 128, 128, 0.123);
-    /* --navBarHover: rgb(153, 153, 153); */
-    --navBarHover: rgb(39, 39, 39);
+    --navBarText: rgb(153, 153, 153);
+    --navBarSelect: rgb(53, 53, 53);
 }
 
 .border-green {
