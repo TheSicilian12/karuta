@@ -44,26 +44,30 @@ function Navigation({ isLoaded }) {
 
 	const redirectPoems = () => {
 		history.push('/100poems')
+		setSelected('op1');
+	}
+
+
+	const redirectPoemPractice = () => {
+		history.push('/poempractice')
+		setSelected('op2');
+	}
+
+	const redirectStudyDeck = () => {
+		history.push('/studyDecks')
+		setSelected('op3');
 	}
 
 	const redirectHomepage = () => {
 		history.push('/')
 	}
 
-	const redirectPoemPractice = () => {
-		history.push('/poempractice')
-	}
-
-	const redirectStudyDeck = () => {
-		history.push('/studyDecks')
-	}
 	console.log('selected: ', selected)
 	return (
 		<div className="nav-bar-container">
 			<div className="nav-bar-links-container">
 				<div
 					onClick={() => redirectPoems()}
-					// className="nav-bar-links"
 					className = {selected === 'op1' ? 'nav-bar-link-select' : 'nav-bar-links'}
 				>
 					Poems
@@ -71,13 +75,13 @@ function Navigation({ isLoaded }) {
 
 				<div
 					onClick={() => redirectPoemPractice()}
-					className="nav-bar-links"
+					className = {selected === 'op2' ? 'nav-bar-link-select' : 'nav-bar-links'}
 				>
 					Poem Practice
 				</div>
 				<div
 					onClick={() => redirectStudyDeck()}
-					className="nav-bar-links"
+					className = {selected === 'op3' ? 'nav-bar-link-select' : 'nav-bar-links'}
 				>
 					Study Decks
 				</div>
