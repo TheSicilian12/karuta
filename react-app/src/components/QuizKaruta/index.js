@@ -21,7 +21,11 @@ export default function QuizKaruta() {
   console.log('randomcards: ', randomCards)
   return (
     <div>
-      Hello
+      QuizKaruta
+
+      {randomCards.map((card) => {
+        <div>{card.id}</div>
+      })}
     </div>
   );
 }
